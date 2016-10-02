@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.photostory{
+	border: 1px solid silver;
+}
+
+.progress {
+	position: absolute;
+	
+}
+
+.photostory_holder{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.photostory .strip{
+	position: absolute;
+}
+
+.photostory .cell{
+	position: absolute;	
+	
+}
+
+.progressButton{
+	position: absolute;
+	width : 12px ;
+	height: 12px;
+	background: silver;
+	border-radius: 50%;
+}
+
+.progressButton.over{
+	background: black;
+}
+
+.progressButton.disabled {
+	background: red;
+}

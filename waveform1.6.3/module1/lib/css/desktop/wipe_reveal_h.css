@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wipeContent
+{
+	position : absolute;
+	top : 0px;
+	background-color :  #FFFFFF;
+}
+.wipeTab
+{
+	position : absolute;
+}
+.wipeTitle
+{
+	position : absolute;
+	-webkit-transform-origin : 0px 0px;
+	-webkit-transform : rotate(-90deg);
+	position : relative;
+	left : 0px;
+	text-align : center;
+}
+.wipeTitle p
+{
+	position : relative;
+	top : 6px;
+	color :  #FFFFFF;
+	font-weight : bold;
+}

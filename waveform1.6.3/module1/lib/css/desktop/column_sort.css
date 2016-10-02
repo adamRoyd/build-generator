@@ -1,0 +1,63 @@
+/* column sort css */
+
+.column_sort  table{
+	box-sizing: border-box; 
+    width: 100%;
+    
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+.column_sort  th{
+	text-align: center;
+    background: #979797;
+	border: 1px solid #979797;
+    padding: 3px;
+}
+.column_sort  th p{
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.column_sort  th.empty{
+    background: transparent;
+	border:none;
+}
+
+.column_sort .even td{
+    background: #dddddd; 
+}
+.column_sort .odd td{
+    background: #eeeeee; 
+}
+
+.column_sort  td{
+    padding: 3px;   
+	
+    border: 1px solid #979797;
+}
+.column_sort  td.statement{
+    padding: 13px 20px;
+}
+.column_sort  td.statement p{
+	margin: 0px;
+}
+.column_sort .radiocell{
+    text-align: center;
+    overflow: hidden;
+    width: 115px;
+    vertical-align: middle;
+    line-height: 0;
+}
+.column_sort .radio{
+    display: inline-block;
+    position: relative;
+    background: url('../../images/ui/ui_spritesheet.png') no-repeat -9px -429px;
+	width: 18px;
+	height: 18px
+}
+.column_sort .radio.selected{
+	background-position: -9px -639px;
+}
+.column_sort .radio.over{
+	background-position: -9px -639px;
+}

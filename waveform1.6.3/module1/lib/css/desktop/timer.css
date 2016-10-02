@@ -1,0 +1,725 @@
+
+
+/*
+TIMER
+*/
+.timer .clock p{
+	
+    position: absolute;
+	width: 45px;
+	top: 100px;
+	left: 20px;
+	text-align: center;
+	color: #0D6D3F;
+	font-weight: bold;
+	
+}
+
+
+.timer .clock{
+	
+	background: url('../../images/ui/clock.png') no-repeat -5px -18px;
+		width: 76px;
+		height: 76px;
+	
+}
+
+
+.timer .clock.time1{
+	
+	background-position: -5px -18px;
+	
+}
+
+
+.timer .clock.time2{
+	
+	background-position: -92px -18px;
+	
+}
+
+
+.timer .clock.time3{
+	
+	background-position: -179px -18px;
+	
+}
+
+
+.timer .clock.time4{
+	
+	background-position: -266px -18px;
+	
+}
+
+
+.timer .clock.time5{
+	
+	background-position: -353px -18px;
+	
+}
+
+
+.timer .clock.time6{
+	
+	background-position: -440px -18px;
+	
+}
+
+
+.timer .clock.time7{
+	
+	background-position: -527px -18px;
+	
+}
+
+
+.timer .clock.time8{
+	
+	background-position: -614px -18px;
+	
+}
+
+
+.timer .clock.time9{
+	
+	background-position: -701px -18px;
+	
+}
+
+
+.timer .clock.time10{
+	
+	background-position:-788px -18px;
+	
+}
+
+
+.timer .clock.time11{
+	
+	background-position:-5px -118px;
+	
+}
+
+
+.timer .clock.time12{
+	
+	background-position:-92px -118px;
+	
+}
+
+
+.timer .clock.time13{
+	
+	background-position:-179px -118px;
+	
+}
+
+
+.timer .clock.time14{
+	
+	background-position:-266px -118px;
+	
+}
+
+
+.timer .clock.time15{
+	
+	background-position:-353px -118px;
+	
+}
+
+
+.timer .clock.time16{
+	
+	background-position:-440px -118px;
+	
+}
+
+
+.timer .clock.time17{
+	
+	background-position:-527px -118px;
+	
+}
+
+
+.timer .clock.time18{
+	
+	background-position:-614px -118px;
+	
+}
+
+
+.timer .clock.time19{
+	
+	background-position:-701px -118px;
+	
+}
+
+
+.timer .clock.time20{
+	
+	background-position:-788px -118px;
+	
+}
+
+
+.timer .clock.time21{
+	
+	background-position:-5px -218px;
+	
+}
+
+
+.timer .clock.time22{
+	
+	background-position:-92px -218px;
+	
+}
+
+
+.timer .clock.time23{
+	
+	background-position:-179px -218px;
+	
+}
+
+
+.timer .clock.time24{
+	
+	background-position:-266px -218px;
+	
+}
+
+
+.timer .clock.time25{
+	
+	background-position:-353px -218px;
+	
+}
+
+
+.timer .clock.time26{
+	
+	background-position:-440px -218px;
+	
+}
+
+
+.timer .clock.time27{
+	
+	background-position:-527px -218px;
+	
+}
+
+
+.timer .clock.time28{
+	
+	background-position:-614px -218px;
+	
+}
+
+
+.timer .clock.time29{
+	
+	background-position:-701px -218px;
+	
+}
+
+
+.timer .clock.time30{
+	
+	background-position:-788px -218px;
+	
+}
+
+
+.timer .clock.time31{
+	
+	background-position:-5px -318px;
+	
+}
+
+
+.timer .clock.time32{
+	
+	background-position:-92px -318px;
+	
+}
+
+
+.timer .clock.time33{
+	
+	background-position: -179px -318px;
+	
+}
+
+
+.timer .clock.time34{
+	
+	background-position:-266px -318px;
+	
+}
+
+
+.timer .clock.time35{
+	
+	background-position:-353px -318px;
+	
+}
+
+
+.timer .clock.time36{
+	
+	background-position:-440px -318px;
+	
+}
+
+
+.timer .clock.time37{
+	
+	background-position:-527px -318px;
+	
+}
+
+
+.timer .clock.time38{
+	
+	background-position:-614px -318px;
+	
+}
+
+
+.timer .clock.time39{
+	
+	background-position:-701px -318px;
+	
+}
+
+
+.timer .clock.time40{
+	
+	background-position:-788px -318px;
+	
+}
+
+
+.timer .clock.time41{
+	
+	background-position:-5px -418px;
+	
+}
+
+
+.timer .clock.time42{
+	
+	background-position:-92px -418px;
+	
+}
+
+
+.timer .clock.time43{
+	
+	background-position:-179px -418px;
+	
+}
+
+
+.timer .clock.time44{
+	
+	background-position:-266px -418px;
+	
+}
+
+
+.timer .clock.time45{
+	
+	background-position:-353px -418px;
+	
+}
+
+
+.timer .clock.time46{
+	
+	background-position:-440px -418px;
+	
+}
+
+
+.timer .clock.time47{
+	
+	background-position:-527px -418px;
+	
+}
+
+
+.timer .clock.time48{
+	
+	background-position:-614px -418px;
+	
+}
+
+
+.timer .clock.time49{
+	
+	background-position:-701px -418px;
+	
+}
+
+
+.timer .clock.time50{
+	
+	background-position:-788px -418px;
+	
+}
+
+
+.timer .clock.time51{
+	
+	background-position:-5px -518px;
+	
+}
+
+
+.timer .clock.time52{
+	
+	background-position: -92px -518px;
+	
+}
+
+
+.timer .clock.time53{
+	
+	background-position: -179px -518px;
+	
+}
+
+
+.timer .clock.time54{
+	
+	background-position: -266px -518px;
+	
+}
+
+
+.timer .clock.time55{
+	
+	background-position:-353px -518px;
+	
+}
+
+
+.timer .clock.time56{
+	
+	background-position: -440px -518px;
+	
+}
+
+
+.timer .clock.time57{
+	
+	background-position: -527px -518px;
+	
+}
+
+
+.timer .clock.time58{
+	
+	background-position: -614px -518px;
+	
+}
+
+
+.timer .clock.time59{
+	
+	background-position: -701px -518px;
+	
+}
+
+
+.timer .clock.time60{
+	
+	background-position: -788px -518px;
+	
+}
+
+
+.timer .clock.time61{
+	
+	background-position:-5px -618px;
+	
+}
+
+
+.timer .clock.time62{
+	
+	background-position:-92px -618px;
+	
+}
+
+
+.timer .clock.time63{
+	
+	background-position: -179px -618px;
+	
+}
+
+
+.timer .clock.time64{
+	
+	background-position: -266px -618px;
+	
+}
+
+
+.timer .clock.time65{
+	
+	background-position: -353px -618px;
+	
+}
+
+
+.timer .clock.time66{
+	
+	background-position:-440px -618px;
+	
+}
+
+
+.timer .clock.time67{
+	
+	background-position: -527px -618px;
+	
+}
+
+
+.timer .clock.time68{
+	
+	background-position: -614px -618px;
+	
+}
+
+
+.timer .clock.time69{
+	
+	background-position: -701px -618px;
+	
+}
+
+
+.timer .clock.time70{
+	
+	background-position: -788px -618px;
+	
+}
+
+
+.timer .clock.time71{
+	
+	background-position: -5px -718px;
+	
+}
+
+
+.timer .clock.time72{
+	
+	background-position: -92px -718px;
+	
+}
+
+
+.timer .clock.time73{
+	
+	background-position: -179px -718px;
+	
+}
+
+
+.timer .clock.time74{
+	
+	background-position: -266px -718px;
+	
+}
+
+
+.timer .clock.time75{
+	
+	background-position: -353px -718px;
+	
+}
+
+
+.timer .clock.time76{
+	
+	background-position:-440px -718px;
+	
+}
+
+
+.timer .clock.time77{
+	
+	background-position:-527px -718px;
+	
+}
+
+
+.timer .clock.time78{
+	
+	background-position:-614px -718px;
+	
+}
+
+
+.timer .clock.time79{
+	
+	background-position: -701px -718px;
+	
+}
+
+
+.timer .clock.time80{
+	
+	background-position: -788px -718px;
+	
+}
+
+
+.timer .clock.time81{
+	
+	background-position:-5px -818px;
+	
+}
+
+
+.timer .clock.time82{
+	
+	background-position:-92px -818px;
+	
+}
+
+
+.timer .clock.time83{
+	
+	background-position: -179px -818px;
+	
+}
+
+
+.timer .clock.time84{
+	
+	background-position:-266px -818px;
+	
+}
+
+
+.timer .clock.time85{
+	
+	background-position:-353px -818px;
+	
+}
+
+
+.timer .clock.time86{
+	
+	background-position:-440px -818px;
+	
+}
+
+
+.timer .clock.time87{
+	
+	background-position:-527px -818px;
+	
+}
+
+
+.timer .clock.time88{
+	
+	background-position:-614px -818px;
+	
+}
+
+
+.timer .clock.time89{
+	
+	background-position:-701px -818px;
+	
+}
+
+
+.timer .clock.time90{
+	
+	background-position: -788px -818px;
+	
+}
+
+
+.timer .clock.time91{
+	
+	background-position:-5px -918px;
+	
+}
+
+
+.timer .clock.time92{
+	
+	background-position:-92px -918px;
+	
+}
+
+
+.timer .clock.time93{
+	
+	background-position:-179px -918px;
+	
+}
+
+
+.timer .clock.time94{
+	
+	background-position:-266px -918px;
+	
+}
+
+
+.timer .clock.time95{
+	
+	background-position:-353px -918px;
+	
+}
+
+
+.timer .clock.time96{
+	
+	background-position: -440px -918px;
+	
+}
+
+
+.timer .clock.time97{
+	
+	background-position:-527px -918px;
+	
+}
+
+
+.timer .clock.time98{
+	
+	background-position:-614px -918px;
+	
+}
+
+
+.timer .clock.time99{
+	
+	background-position: -701px -918px;
+	
+}
+
+
+.timer .clock.time100{
+	
+	background-position: -788px -918px;
+	
+}

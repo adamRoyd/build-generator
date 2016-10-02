@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.mcq_graphical .option>.after{
+	position: absolute;
+	top: 15px;
+	left:10px;
+	background: url('../../images/ui/ui_spritesheet.png') no-repeat -10px -430px;
+	width: 17px;
+	height: 17px;
+	z-index: 1;
+}
+.mcq_graphical .option.selected>.after
+{
+	background-position: -10px -640px;
+}
+.mcq_graphical .option.over>.after
+{
+	background-position: -10px -640px;
+}
+
+.mcq_graphical .tick
+{
+	top: 15px;
+	left: -15px;
+}

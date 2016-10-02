@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<settings autocomplete="false" />
+	
+	<events>
+		<event id="1">
+			<log>CLICK 1</log>
+		</event>
+		<event id="2">
+			<log>CLICK 2</log>
+		</event>
+		<event id="3">
+			<log>CLICK 3</log>
+		</event>
+		<trigger id="allClicked" events="1,2,3">
+			<log>ALL CLICKED</log>
+			<screencompleted />
+		</trigger>		
+	</events>
+	
+	<text id="screentext" x="80" y="100" width="450"><![CDATA[
+		<p class="title">Tab Reveal</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. </p>
+		<p class="prompt">Select each tab for more details.</p>		]]>
+	</text>
+  
+	<tabs id="tabs" x="100" y="205" width="820" height="320" autoselectdelay="0.3">
+		
+        <click selected="true" event="1"><![CDATA[<p>Tab 1</p>]]></click>
+        <click event="2"><![CDATA[<p>Tab title 2 is longer</p>]]></click>
+        <click event="3"><![CDATA[<p>Tab 3</p>]]></click>
+
+        <reveal>
+            <image x="400" y="20"><![CDATA[lib/images/content/placeholder.png]]></image>
+			
+            <text x="20" y="20" width="350"><![CDATA[<p class="title">Tab 1</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices ligula orci, in ultrices elit condimentum at. Nullam aliquam mauris vitae risus sagittis mattis. Etiam pretium leo dolor, sit amet porttitor leo pharetra ut. </p>
+			]]></text>
+        </reveal>
+
+        <reveal>
+            <image x="400" y="20"><![CDATA[lib/images/content/placeholder.png]]></image>
+            <text x="20" y="20" width="350"><![CDATA[<p class="title">Tab title 2 is longer</p>
+			<p>Vestibulum eget lectus mauris. Nulla sit amet odio nibh. Nulla ultrices ligula orci, in ultrices elit condimentum at. Nullam aliquam mauris vitae risus sagittis mattis. Etiam pretium leo dolor, sit amet porttitor leo pharetra ut. </p>
+			]]></text>
+        </reveal>
+
+        <reveal>
+            <image x="400" y="20"><![CDATA[lib/images/content/placeholder.png]]></image>
+            <text x="20" y="20" width="350"><![CDATA[<p class="title">Tab 3</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+			]]></text>
+        </reveal>
+
+    </tabs>
+</data>

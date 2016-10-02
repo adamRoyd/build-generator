@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>	
+
+    <text id="titleText" x="80" y="100" width="915">
+	<![CDATA[<p class="title">Multiple Choice Question - One correct answer</p>
+	<p>This is a text-based multiple choice question with just one correct answer. </p>
+	<p class="prompt">Select your answer, then Confirm.</p>
+	]]></text>
+
+	<custom id="mcq" x="110" y="250">
+		<settings optwidth="345" radiomode="true" randomise="true" />
+		<option correct="false"><![CDATA[	<p>Copenhagen is the capital of France</p>]]></option>
+		<option correct="false"><![CDATA[	<p>Paris is the capital of Spain</p>]]></option>
+		<option correct="true"><![CDATA[	<p>Rome is the capital of Italy</p>]]></option>
+		<option correct="false"><![CDATA[	<p>London is the capital of Norway</p>]]></option>
+		
+	</custom>
+
+	<fb id="pass" event="submit">
+		<text id="fb" x="550" y="230" width="335" height="170" class="reveal pass" ><![CDATA[<p>Yes, that's right. Rome is the capital of Italy. All of the other statements are incorrect</p>]]></text>
+	</fb>				
+	<fb id="fail" event="submit">	
+		<text id="fb" x="550" y="230" width="335" height="170" class="reveal fail" ><![CDATA[<p>Sorry, that's not right.</p>
+		<p>The third option is the correct answer.</p>]]></text>				
+	</fb>
+		
+	<box id="btns" x="80" y="545">		
+		<button id="resetBtn" x="110" y="0" anim="alpha" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
+		<button id="submitBtn" x="0" y="0" anim="alpha" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	</box>
+	
+</data>

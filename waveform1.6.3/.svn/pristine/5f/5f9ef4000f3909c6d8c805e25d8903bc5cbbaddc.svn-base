@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<text id="title" x="15" y="15" width="280"><![CDATA[<p class="title">Help</p>]]></text>
+	
+	
+	<text id="text" scroll="true" x="15" y="75" height="315" width="650"><![CDATA[
+		<p>You can select any topic to start but if you are taking the learning for the first time we suggest you look at them in order.</p>
+		<p>Each topic has a number of screens. A page indicator shows you what screen you are on and how many pages there are in each topic.</p>
+		<p>When you exit the course your progress will be remembered. So when you return you can return to the same place if you want to.</p>
+		<p>To complete the course you'll need to pass the assessment with a score of 80% or more.</p>
+		<p>At the top of the screen are these buttons: </p>
+		<ul>
+			<li>Exit - to close the module</li>
+			<li>Help - to open this help screen</li>
+			<li>Menu - to return to the main menu</li>
+			<li>Resources - to open a list of useful links for further information</li>
+		</ul>
+		<p>Either side of the screen are these buttons: </p>
+		<ul>
+			<li>Back - to move back a screen</li>
+			<li>Next - to move forward a screen</li>
+		</ul>
+	]]></text>
+
+	
+</data>

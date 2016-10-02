@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mcq .option
+{
+	padding: 5px 40px;
+	position:relative;
+	background: #FFFFFF;
+	border: 2px solid #42B1B2;
+	border-left: none;
+	border-right: none;
+	margin-bottom: 10px !important; 
+	text-align: center;
+}
+.mcq .option.selected  {
+	background: #42B1B2;
+}
+.mcq .option.over {
+	background: #42B1B2;
+}
+.mcq .tick{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 29px;
+	height: 28px;
+	margin-top: -14px;
+}
+
+.tick:after{
+  font: normal normal normal 30px/1 FontAwesome;
+	
+  content: '\f00c';
+	color: #333333;
+}
+.cross:after{
+  font: normal normal normal 30px/1 FontAwesome;
+  content: '\f00d';
+	color: #333333;
+}
+.selected .tick:after,
+.selected .cross:after{
+	color: #FFFFFF !important;
+}
+
+.mcq .cross{
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 29px;
+	height: 28px;
+	margin-top: -14px;
+}
+
+
+.mcq .option p
+{
+	margin-bottom: 0;
+}
+.mcq .option.selected p
+{
+	color: white;
+}
+
+.mcq .option.disabled
+{
+	display: none;
+}
+
+.mcq .option.disabled.selected,
+.mcq .option.disabled.correct
+{
+	display: block;
+}

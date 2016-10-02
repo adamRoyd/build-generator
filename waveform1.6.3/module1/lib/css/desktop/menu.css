@@ -1,0 +1,45 @@
+
+/* MENU */
+#menuholder
+{		
+	position: absolute;
+	width:1014px;
+	height: 644px;
+	top: 0;
+	left: 0;	
+}
+
+
+
+
+.topicStatus{
+    background: url('../../images/ui/ui_spritesheet.png') no-repeat -530px -430px;
+    position: absolute;
+	width: 28px;
+	height: 28px;
+}
+
+
+.topicStatus.locked {
+	background-position: -270px -430px;
+}
+
+
+.topicStatus.notattempted {
+	background-position: -530px -430px;
+}
+
+
+.topicStatus.incomplete {
+	background-position: -790px -430px;
+}
+
+
+.topicStatus.completed,
+.topicStatus.passed {
+	background-position: -1050px -430px;
+}
+
+
+
+/* end MENU */

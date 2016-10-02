@@ -1,0 +1,11 @@
+
+@import url("list_sort.css");
+@import url("column_sort.css");
+@import url("drag_drop.css");
+@import url("mcq.css");
+@import url("mcq_graphical.css");
+@import url("parallax.css");
+@import url("photostory.css");
+@import url("score.css");
+@import url("sliding_scale.css");
+@import url("text_graphic.css");

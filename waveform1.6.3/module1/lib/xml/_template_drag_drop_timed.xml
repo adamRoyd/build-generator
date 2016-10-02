@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<events>
+		<event id="timerend">
+			<click>
+				<function name="submit" />
+			</click>
+		</event>
+		
+		<event id="submit">
+			<click>
+				<timer action="stop" id="screentimer" />
+				<function name="enableNext" />
+			</click>
+		</event>
+	</events>
+	
+    <text id="titleText" x="80" y="100" width="450" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[<p class="title">Drag and drop question screen</p>
+	<p>The Sterling family use both Direct Debits and Standing Orders. Do you know the difference between them?</p>
+	<p class="prompt">Drag the description to the correct column, then select Confirm.</p>]]></text>
+		
+	
+	<!--button id="undoBtn" 	x="435" y="507" anim="alpha" enabled="false" func="undo"><![CDATA[<p>Undo</p>]]></button-->
+	<button id="resetBtn" x="435" y="530" anim="alpha" func="reset"><![CDATA[<p>Reset</p>]]></button>
+	<button id="smaBtn" x="200" y="530" width="210" anim="alpha" enabled="false" func="showMyAnswers"><![CDATA[<p>See my answer</p>]]></button>
+	<button id="scaBtn" x="200" y="590" width="210" anim="alpha" enabled="false" func="showAnswers"><![CDATA[<p>See correct answers</p>]]></button>
+	<button id="submitBtn" x="75" y="530" anim="alpha" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	
+	
+	<!-- Dropboxes  -->
+	<box id="dropBox1" x="587" y="150" width="170" height="370" corner="0" bgcol="CCCCCC" bgalpha="1" linewidth="1" linecol="000000" anim="alpha" animtime="1" />
+	<box id="dropBox2" x="765" y="150" width="170" height="370" corner="0" bgcol="CCCCCC" bgalpha="1" linewidth="1" linecol="000000" anim="alpha" animtime="1" />
+	
+	<!-- Drop labels -->
+	<text id="dropLabel1" target="dropBox1" x="27" y="-25" width="190" anim="alpha" animtime="1"><![CDATA[<p>Standing Order</p>]]></text>
+	<text id="dropLabel2" target="dropBox2" x="35" y="-25" width="190" anim="alpha" animtime="1"><![CDATA[<p>Direct Debit</p>]]></text>
+	
+	<!-- Drag items  -->
+	<box id="drag1" x="80" y="301" width="230" height="95" corner="0" bgcol="FF5050" bgalpha="100" anim="alpha" animtime="1" animdelay="0" class="dragBox">
+		<text x="20" y="28" width="190">
+			<![CDATA[<p>Protected by the Direct Debit Guarantee scheme</p>]]>
+		</text>
+	</box>
+	
+	<box id="drag2" x="80" y="401" width="230" height="95" corner="0" bgcol="00CC66" bgalpha="100" anim="alpha" animtime="1" animdelay="0" class="dragBox">
+		<text x="20" y="18" width="190">
+			<![CDATA[<p>Used to transfer money regularly into another UK bank account</p>]]>
+		</text>
+	</box>
+	
+	
+	<box id="drag3" x="317" y="301" width="230" height="95" corner="0" bgcol="008AB8" bgalpha="100" anim="alpha" animtime="1" animdelay="0" class="dragBox">
+		<text x="20" y="18" width="190">
+			<![CDATA[<p>Often used to pay a retailer or meet monthly bills</p>]]>
+		</text>
+	</box>
+	
+	
+	<box id="drag4" x="317" y="401" width="230" height="95" corner="0" bgcol="6666FF" bgalpha="100" anim="alpha" animtime="1" animdelay="0" class="dragBox">
+		<text x="20" y="38" width="190">
+			<![CDATA[<p>Drag nowhere</p>]]>
+		</text>
+	</box>
+	
+	
+
+	<timer id="screentimer" time="10" autoplay="true" x="925" y="55" anim="alpha" animtime="0.5" animdelay="0.1">
+		<cue id="end" event="timerend" />
+	</timer>
+	
+	<!-- Drop settings  -->
+    <custom id="dragdrop">
+        <settings dropscale="0.7" />
+        <drag id="1" match="2">drag1</drag>
+        <drag id="2" match="1">drag2</drag>
+        <drag id="3" match="2">drag3</drag>
+        <drag id="4" match="0">drag4</drag>
+
+        <drop id="1" dropposition="over" stackitems="false" stackpaddingv="5" stackpaddingh="5" maxdrop="4" xoffset="5" yoffset="5">dropBox1</drop>
+        <drop id="2" dropposition="over" stackitems="false" stackpaddingv="5" stackpaddingh="5" maxdrop="4" xoffset="5" yoffset="5">dropBox2</drop>
+				
+		<!-- Feedback  -->
+		<fb id="pass" event="submit">
+			<text id="fb" x="80" y="255" width="450" class="revealText pass" anim="alpha" animtime="0.2" animdelay="0.2"><![CDATA[<p>That's right.</p>
+			<p><b>Standing Orders</b> are <a href="../docs/glossary_current accounts.pdf" target="_blank">fixed amounts</a>, usually paid into another bank account, controlled by the customer and deposited at certain times.</p>
+			<p><b>Direct Debits</b> vary in amount, are taken out by other organisations, usually to pay bills or retailers, and are released at certain times.</p>]]></text>			
+		</fb>		
+		<fb id="partial" event="submit">	
+			<text id="fb" x="80" y="255" width="450" class="revealText partial" anim="alpha" animtime="0.2" animdelay="0.2"><![CDATA[<p>That's not quite right. Select <b>See correct answers</b> to see where you went wrong.</p>]]></text>
+		</fb>		
+		<fb id="fail" event="submit">	
+			<text id="fb" x="80" y="255" width="450" class="revealText fail" anim="alpha" animtime="0.2" animdelay="0.2"><![CDATA[<p>That's not right. Select <b>See correct answers</b> to see where you went wrong.</p>]]></text>		
+		</fb>
+    </custom>
+</data>
+

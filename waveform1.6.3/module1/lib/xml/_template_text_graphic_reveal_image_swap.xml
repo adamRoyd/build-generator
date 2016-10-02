@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<events>
+
+		<event id="clearall">
+			<anim type="alphaout" animtime="0.25">reveal1</anim>
+			<anim type="alphaout" animtime="0.25">reveal2</anim>
+			<anim type="alphaout" animtime="0.25">reveal3</anim>
+			<anim type="alphaout" animtime="0.25">reveal4</anim>
+			<enable>click1</enable>
+			<enable>click2</enable>
+			<enable>click3</enable>
+			<enable>click4</enable>
+		</event>
+
+		<event id="1">
+			<anim type="alpha" animtime="0.3" >reveal1</anim>
+			<disable>click1</disable>
+		</event>
+
+		<event id="2">
+			<anim type="alpha" animtime="0.3" >reveal2</anim>
+			<disable>click2</disable>
+		</event>
+
+		<event id="3">
+			<anim type="alpha" animtime="0.3" >reveal3</anim>
+			<disable>click3</disable>
+		</event>
+
+		<event id="4">
+			<anim type="alpha" animtime="0.3" >reveal4</anim>
+			<disable>click4</disable>
+		</event>
+			
+		<trigger id="allClicked" events="1,2,3,4">
+			<anim type="alpha" animtime="0.3" >reveal_final</anim>
+		</trigger>
+		
+    </events>
+
+    <text id="introText" x="80" y="100" width="615"><![CDATA[
+	<p class="title">Text and Graphic Reveal</p>
+	<p>Photos, illustrations, diagrams, or pictures can be selected to reveal further information. This screen type allows learners to browse information at their own pace, breaking information into bit-sized chunks. Once all images have been clicked (in any order), a fifth image will display on screen.</p>
+	<p class="prompt">Select each picture to find out more.</p>]]></text>
+
+	<box id="click1" class="click" x="50" y="300" width="218" height="145" event="clearall,1">
+		<image class="clickImg"><![CDATA[lib/images/content/image_swap.gif]]></image>
+		<image class="over"><![CDATA[lib/images/content/image_swap_over.gif]]></image>
+	</box>
+	<box id="reveal1" class="reveal" x="100" y="480" width="570" height="100" bgcol="B4B4B4" bgalpha="1" anim="hidden">
+		<pointer x="40" y="-20" width="40" colour="B4B4B4" class="up" />
+		<text x="10" y="10" width="550" ><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<box id="click2" class="click" x="280" y="300" width="218" height="145" event="clearall,2">
+		<image class="clickImg"><![CDATA[lib/images/content/image_swap.gif]]></image>
+		<image class="over"><![CDATA[lib/images/content/image_swap_over.gif]]></image>
+	</box>
+	<box id="reveal2" class="reveal" x="220" y="480" width="570" height="100" bgcol="338833" bgalpha="1" anim="hidden">
+		<pointer x="160" y="-20" width="40" colour="338833" class="up" />
+		<text x="10" y="10" width="550" ><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<box id="click3" class="click" x="510" y="300" width="218" height="145" event="clearall,3">
+		<image class="clickImg"><![CDATA[lib/images/content/image_swap.gif]]></image>
+		<image class="over"><![CDATA[lib/images/content/image_swap_over.gif]]></image>
+	</box>
+	<box id="reveal3" class="reveal" x="220" y="480" width="570" height="100" bgcol="3333CC" bgalpha="1" anim="hidden">
+		<pointer x="370" y="-20" width="40" colour="3333CC" class="up" />
+		<text x="10" y="10" width="550" ><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<box id="click4" class="click" x="740" y="300" width="218" height="145" event="clearall,4">
+		<image class="clickImg"><![CDATA[lib/images/content/image_swap.gif]]></image>
+		<image class="over"><![CDATA[lib/images/content/image_swap_over.gif]]></image>
+	</box>
+	<box id="reveal4" class="reveal" x="350" y="480" width="570" height="100" bgcol="CC3333" bgalpha="1" anim="hidden">
+		<pointer x="490" y="-30" width="60" colour="CC3333" class="up" />
+		<text x="10" y="10" width="550" ><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	
+	<box id="reveal_final" class="reveal" x="790" y="70" width="220" height="40" bgcol="33CCCC" bgalpha="1" anim="hidden">
+		<pointer x="25" y="-15" width="30" colour="33CCCC" class="up" />
+		<text x="10" y="10" width="200" ><![CDATA[<p>You've clicked everything!</p>]]></text>
+	</box>
+	
+	
+	
+	
+
+
+</data>

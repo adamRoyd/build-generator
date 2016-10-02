@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<image id="quiz_pic" x="578" y="170"><![CDATA[lib/images/content/question_mark.png]]></image>
+	
+	<text id="titleText" x="80" y="100" width="500"><![CDATA[<p class="title">Assessment introduction</p>
+	<p>This is a test topic consisting of six different questions with a score screen at the end.</p>
+	<p class="prompt">Select the Next arrow to begin.</p>]]></text>
+
+</data> 

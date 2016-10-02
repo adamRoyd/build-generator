@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<events>
+		<event id="init">
+			<dialogue id="dialgoue_id" width="700" height="500" src="text_graphic" delay="2">
+				<text id="text_1" x="0" y="0" width="300" anim="alpha" animtime="0.2" animdelay="0">
+					<![CDATA[<p>Dialogue_text</p>]]>
+				</text>
+			</dialogue>
+		</event>		
+	</events>
+	
+	<image id="image1" x="580" y="150"><![CDATA[lib/images/content/internal_brand-2012-18.jpg]]></image>
+	
+	<text id="screentext" x="80" y="100" width="450">
+		<![CDATA[<p class="title">Text and graphic</p>]]>
+	</text>
+
+</data> 

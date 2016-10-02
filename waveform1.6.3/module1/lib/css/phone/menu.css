@@ -1,0 +1,128 @@
+
+/* MENU */
+#menuholder{	
+	width:100%;
+	top: 0;
+	left: 0;
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+	padding: 0 10px;
+	padding-top: 60px;
+}
+
+#menuCourseTitleDiv{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#menuCourseIntroDiv{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.menuTopicBtnDiv{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+	position: absolute;
+	padding: 10px 40px 10px 10px;
+	width:165px;
+	height:360px;
+	background: #e7e7e7;
+	top: 230px;	
+}
+
+.menuitemimage{
+	position: absolute;
+	top: 11px;
+	left: 11px;
+}
+
+#menuTopicTitleDiv{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;         /* Opera/IE 8+ */
+	
+	width: 100%;
+	position: absolute;
+	top:60px;
+	height: 30px;
+	padding: 2px;
+	padding-left: 12px;
+	border-bottom: 1px solid #E1E1E1;
+}
+
+.menuTopicBtnDiv.hover{
+	background: #ff0000;
+}
+
+.menuSection{
+	top: 100px;
+	position: absolute;
+	width:182px;
+	height: 544px;
+	border-right: 1px solid white;
+}
+
+
+.menuTopicBtnDiv p{
+	position: absolute;
+	margin:0;
+	padding:0;
+	/*color: #0000ff;*/
+	top: 170px;
+	font-size: 
+}
+
+/*
+.menuTopicBtnDiv:hover{
+	background: #00ff00;
+}
+
+.menuTopicBtnDiv:hover p{
+	color: #ff0000;
+}
+*/
+.topicStatus{
+	top: 10px !important;
+	right: 10px !important;
+	left: auto !important;
+    position: absolute;
+}
+.topicStatus.locked { 
+	background: url('../../images/ui/ui_spritesheet.png') no-repeat -270px -430px;
+	width: 23px;
+	height: 23px;
+}
+.topicStatus.notattempted { 
+	background: url('../../images/ui/ui_spritesheet.png') no-repeat -530px -430px;
+	width: 23px;
+	height: 23px;
+}
+.topicStatus.incomplete { 
+	background: url('../../images/ui/ui_spritesheet.png') no-repeat -789px -429px;
+	width: 24px;
+	height: 24px;
+}
+
+.topicStatus.completed,
+.topicStatus.passed {
+
+	background: url('../../images/ui/ui_spritesheet.png') no-repeat -1050px -430px;
+	width: 23px;
+	height: 23px;;
+}
+
+
+/* end MENU */

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<var id="failtext_1"><![CDATA[<li><b>Topic 1 title</b></li>]]></var>
+	<var id="failtext_2"><![CDATA[<li><b>Topic 2 title</b></li>]]></var>
+	<var id="failtext_3"><![CDATA[<li><b>Topic 3 title</b></li>]]></var>
+
+    <text id="title" x="80" y="140" width="515"><![CDATA[<p class="title">Score</p>]]></text>
+
+    <custom>
+        <pass>
+			<text id="pass" x="80" y="200" width="500"><![CDATA[<p>Congratulations! You have passed the assessment with a score of <span class="scoredata">[score]</span>%.</p>
+			<p class="prompt">Select menu to return to the main menu or the exit (X) button to leave.</p>]]></text>
+			
+		</pass>
+		
+        <fail>	
+			<text id="fail" x="80" y="200" width="500"><![CDATA[<p>Bad luck. You scored <span class="scoredata">[score]</span>% which is not enough to pass the assessment.</p>
+			<p>You should review the following topics and try the assessment again</p>
+			<ul class="feedbackdata">[feedback]</ul>
+			<p class="prompt">Select Menu to return to the main menu.</p>]]></text>
+		</fail>
+    </custom>
+
+	
+</data>
+

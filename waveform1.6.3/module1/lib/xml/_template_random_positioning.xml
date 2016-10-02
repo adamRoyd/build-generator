@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<events>
+		<event id="1">
+			<translate rotation="rand_0,360" scale="rand_0.5,1.5" animtime="rand_0.5,2">image1</translate>
+			<translate scale="rand_0.5,1.5" animtime="rand_0.5,2">box_1</translate>
+		</event>		
+	</events>
+
+
+	<image id="image1" x="rand_580,600" y="rand_150,180" rotation="rand_0,-90" event="1"><![CDATA[lib/images/content/internal_brand-2012-18.jpg]]></image>
+	<box id="box_1" x="50%" y="50%" width="100" height="100" linecol="FF0000" linewidth="1" />
+	
+	<text id="screentext" x="80" y="100" width="450"><![CDATA[
+		<p class="title">Text and graphic</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Duis in blandit erat.</i> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis in blandit erat.</b> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+		<ul>
+			<li>Etiam neque libero, cursus in ullamcorper ultricies, fringilla varius velit.</li>
+			<li>Donec sit amet auctor eros.</li>
+			<li>Aenean pellentesque ultrices magna, quis pulvinar mi adipiscing sit amet.</li>
+		</ul>
+		<p class="prompt">This was a text and graphic screen.</p>
+	]]></text>
+
+</data> 

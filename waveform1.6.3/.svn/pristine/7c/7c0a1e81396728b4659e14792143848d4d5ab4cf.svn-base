@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<events>
+
+
+		<event id="1">
+			<jump>0_910</jump>
+		</event>
+		<event id="2">
+			<jump>0_920</jump>
+		</event>
+		<event id="3">
+			<jump>0_930</jump>
+		</event>
+			
+		
+    </events>
+
+    <text id="introText" x="80" y="100" width="615"><![CDATA[
+	<p class="title">Jump Root</p>
+	<p>Photos, illustrations, diagrams, or pictures can be selected to reveal further information. This screen type allows learners to browse information at their own pace, breaking information into bit-sized chunks. Once all images have been clicked (in any order), a fifth image will display on screen.</p>
+	<p class="prompt">Select each picture to find out more.</p>]]></text>
+
+
+	<image id="click1" class="clickImg" x="115" y="300" event="1"><![CDATA[lib/images/content/internal_brand-2012-73.jpg]]></image>
+	
+
+	
+	<image id="click2" class="clickImg" x="322" y="300" event="2"><![CDATA[lib/images/content/internal_brand-2012-72.jpg]]></image>
+
+	
+	<image id="click3" class="clickImg" x="528" y="300" event="3"><![CDATA[lib/images/content/internal_brand-2012-74.jpg]]></image>
+
+
+	
+
+
+</data>

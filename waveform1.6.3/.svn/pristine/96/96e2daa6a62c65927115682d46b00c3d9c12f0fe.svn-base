@@ -1,0 +1,9 @@
+.scrollingbox{
+    border: 1px silver solid;
+}
+
+.subscreentextbox{
+    box-sizing: border-box;
+    padding:  10px;
+    background: rgba( 255,255,255,0.8 );
+}

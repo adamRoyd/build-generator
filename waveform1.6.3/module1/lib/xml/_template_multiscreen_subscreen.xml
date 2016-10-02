@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+<image id="bg" x="0" y="0"><![CDATA[lib/images/content/internal_skyline-2013-1.jpg]]></image>
+
+	<image id="image1" x="435" y="15"><![CDATA[lib/images/content/internal_brand-2012-72.jpg]]></image>
+	<image id="image2" x="490" y="55"><![CDATA[lib/images/content/internal_brand-2012-73.jpg]]></image>
+	<image id="image3" x="545" y="95"><![CDATA[lib/images/content/internal_brand-2012-74.jpg]]></image>
+	<image id="image4" x="600" y="135"><![CDATA[lib/images/content/internal_brand-2012-75.jpg]]></image>
+	
+	<text id="screentext" class="subscreentextbox" x="10" y="10" width="415"><![CDATA[
+		<p class="title">Text and graphic</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Duis in blandit erat.</i> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+		<p class="prompt">This was a text and graphic sub screen.</p>
+	]]></text>
+
+</data> 

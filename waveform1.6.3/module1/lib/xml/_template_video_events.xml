@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<events>
+		<event id="reset_images">
+            <hide>image1</hide>
+            <hide>image2</hide>
+            <hide>image3</hide>
+		</event>
+        <event id="vid_start">
+            <hide>intro</hide>
+        </event>
+        <event id="1">
+            <show>image1</show>
+        </event>
+        <event id="2">
+            <show>image2</show>
+        </event>
+        <event id="3">
+            <show>image3</show>
+        </event>
+        <event id="vid_end">
+            <show>intro</show>
+			<event id="reset_images" />
+        </event>
+	</events>
+	
+	<box id="intro" class="shadow" x="100" y="370" z="10" width="570" height="120" bgcol="FFFFFF" bgalpha="1">
+		<pointer x="75" y="120" width="30" colour="FFFFFF" class="down" />
+		<text x="10" y="10" width="550" ><![CDATA[<p class="title">Video that triggers events</p>
+	<p>This video will trigger three images to appear at intervals of 5 seconds. </p>
+	<p class="prompt">Select the Play button to begin.</p>]]></text>
+	</box>
+	
+
+	<video id="vid" x="170" y="150" width="676" height="380" autoplay="true" controls="true" autorewind="false" useclosedcaptions="true" closedcaptionsoninit="true" src="lib/video/BW_day_in_life.mp4">
+		<cue id="start" 			event="vid_start" />
+		<cue starttime="5" 	event="1" />
+		<cue starttime="10" 	event="2" />
+		<cue starttime="15" 	event="3" />
+		<cue id="end" 			event="vid_end" />
+	</video> 
+	
+	<image id="image1" x="180" y="160" anim="hidden"><![CDATA[lib/images/content/internal_brand-2012-73.jpg]]></image>
+	<image id="image2" x="350" y="160" anim="hidden"><![CDATA[lib/images/content/internal_brand-2012-72.jpg]]></image>
+	<image id="image3" x="520" y="160" anim="hidden"><![CDATA[lib/images/content/internal_brand-2012-74.jpg]]></image>
+</data>

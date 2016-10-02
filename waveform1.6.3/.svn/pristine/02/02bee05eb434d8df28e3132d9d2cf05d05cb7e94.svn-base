@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<image id="menu_logo" x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">		
+		<![CDATA[lib/images/ui/waveform_small_logo.png]]>
+	</image>
+	
+	
+	<text id="course_title" x="290" y="45" width="640" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+		<![CDATA[<p class="courseTitle">Waveform test course v1.6</p>]]>
+	</text>
+	
+	<box id="intro_box" x="290" y="90" width="650" height="115" corner="0" bgcol="FFFFFF" bgalpha="60" linewidth="1" linecol="AAAAAA" anim="alpha" animtime="1" animdelay="0">
+		<text id="txt" x="5" y="5" width="640" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[
+			<p class="menuTitle">Menu</p>
+			<p>This is the menu screen from which the learner can launch a number of topics.</p>
+			<p>Select a topic from the list below.</p>
+			]]>
+		</text>
+	</box>
+	
+	<box id="topic0" class="topicButton" x="55" y="425" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="0" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">		
+			<![CDATA[lib/images/content/menu_icon-01.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Experimental screens</p>]]>
+		</text>
+	</box>
+	
+	
+	<box id="topic1" class="topicButton" x="55" y="230" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="1" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">		
+			<![CDATA[lib/images/content/menu_icon-01.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Presentation screens</p>]]>
+		</text>
+	</box>
+	
+	<box id="topic2" class="topicButton" x="290" y="230" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="2" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">		
+			<![CDATA[lib/images/content/menu_icon-02.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Audio screens</p>]]>
+		</text>
+	</box>
+	
+	<box id="topic3" class="topicButton" x="525" y="230" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="3" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">	
+			<![CDATA[lib/images/content/menu_icon-03.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Video screens</p>]]>
+		</text>
+	</box>
+	
+	<box id="topic4" class="topicButton" x="760" y="230" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="4" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">		
+			<![CDATA[lib/images/content/menu_icon-04.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Question screens</p>]]>
+		</text>
+	</box>
+	
+	<box id="topic5" class="topicButton" x="525" y="425" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="5" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">	
+			<![CDATA[lib/images/content/menu_icon-05.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Assessment</p>]]>
+		</text>
+	</box>
+	
+	<box id="topic6" class="topicButton" x="760" y="425" width="182" height="150" corner="0" bgcol="FFFFFF" bgalpha="1" linewidth="1" linecol="1B9DED" anim="none" topicbtn="6" status_x="150" status_y="10">
+		
+		<image x="30" y="30" anim="alpha" animtime="0.1" animdelay="0">	
+			<![CDATA[lib/images/content/menu_icon-06.png]]>
+		</image>
+		<text x="20" y="90" width="160" anim="alpha" animtime="0.1" animdelay="0" rotation="0">
+			<![CDATA[<p class="title">Assessment 2</p>]]>
+		</text>
+	</box>
+
+</data>
+

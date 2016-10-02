@@ -1,0 +1,5 @@
+@import url("font-awesome.min.css");
+@import url("fonts.css");
+#courseholder{
+	display: none;
+}

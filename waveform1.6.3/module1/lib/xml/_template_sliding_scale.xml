@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <events>
+        <event id="submit">
+            <click>
+                <function name="enableNext">true</function>
+            </click>
+        </event>
+    </events>
+      
+    <text id="titleText" x="80" y="100" width="615"><![CDATA[<p class="title">Sliding scale</p>
+	<p>Useful for subjective questions and getting the learner to think - perhaps asking level of confidence and the start of the course, and then repeating at the end of the course to ask how the e-learning has helped their confidence to be raised. For instance - </p>
+	<p>How confident are you about using the new system now?</p>
+	<p class="prompt">Select a point on the scale, then Confirm (1=low, 5=high).</p>]]></text>
+
+	<custom id="slider" x="90" y="380" anim="alpha" animtime="0.5" animdelay="0">
+		<settings width="350" optionwidth="100" linewidth="2" linecolour="A2A2A2" reset="45" />
+		<option correct="false"><![CDATA[<p>1</p>]]></option>
+		<option correct="false"><![CDATA[<p>2</p>]]></option>
+		<option correct="false"><![CDATA[<p>3</p>]]></option>
+	    <option correct="false"><![CDATA[<p>4</p>]]></option>
+	    <option correct="true"><![CDATA[<p>5</p>]]></option>
+
+		<fb id="1,2,3" event="submit">	
+			<text id="fb" x="545" y="248" width="350" class="reveal fail" anim="alpha" animtime="0.5"><![CDATA[<p>This is the feedback that will appear if the learner selects option 1,2 or 3. </p>
+			<p>Use it to reinforce the benefits they will receive after taking the course, for instance:</p>
+			<p>Don't worry, you may not feel confident now, but by the end of the course we hope you'll understand exactly how to use the new system.</p>]]></text>
+		</fb>
+		
+		<fb id="4" event="submit">	
+			<text id="fb" x="545" y="248" width="350" class="reveal fail" anim="alpha" animtime="0.5"><![CDATA[<p>This is the feedback that will appear if the learner selects option 4.</p>
+			<p>Use it to reinforce the benefits they will receive after taking the course, for instance:</p>
+			<p>That's good you're already feeling quite confident. By the end of the course we hope you'll understand exactly how to use the new system and perhaps learn some things you don't already know!</p>]]></text>
+			
+		</fb>
+
+		<fb id="5" event="submit">
+			<text id="fb" x="545" y="248" width="350" class="reveal fail" anim="alpha" animtime="0.5"><![CDATA[<p>Correct. This is the feedback that will appear if the learner selects option 5.</p>
+			<p>Use it to reinforce the benefits they will receive after taking the course, for instance:</p>
+			<p>That's great that you already feel really confident. By the end of the course we hope you'll understand exactly how to use the new system and perhaps learn some things you don't already know!</p>]]></text>
+
+		</fb>
+			
+	</custom>
+	
+	<box id="btns" x="80" y="545">		
+		<button id="resetBtn" x="110" y="0" anim="alpha" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
+		<button id="submitBtn" x="0" y="0" anim="alpha" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	</box>
+	
+</data>
+
+

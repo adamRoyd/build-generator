@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<text id="screentext" x="80" y="100" width="450"><![CDATA[
+	<p class="title">Audio Player</p>
+	<p>This is a screen with an audio player.</p>
+	<p class="prompt">Select the Play button.</p>
+	]]></text>
+
+	
+	<audio id="audio1" controls="true" autoplay="false" x="80" y="250" width="250" src="lib/audio/audio_test.mp3" />
+
+</data>

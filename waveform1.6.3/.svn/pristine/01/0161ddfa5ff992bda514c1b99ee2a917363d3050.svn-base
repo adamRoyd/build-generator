@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<events>
+		<event id="init">
+			<translate x="800" animtime="8">animbox</translate>
+			<translate animtime="8" rotation="1000">animbox</translate>
+		</event>
+		
+		<event id="go">
+			<function name="goNext" />
+		</event>
+		
+		<event id="exit">
+			<translate y="600" animtime="1" animease="Back.easeIn">animbox</translate>
+			<translate animtime="1" rotation="-120">animbox</translate>
+			<function name="readyToLeave" delay="1.1" />
+		</event>
+	</events>
+	
+	<text id="screentext" x="80" y="100" width="450">
+		<![CDATA[<p class="title">Text and graphic</p>]]>
+	</text>
+	
+	<box id="animbox" x="50" y="250" width="50" height="50" bgcol="ff0000" event="go"/>
+
+</data> 

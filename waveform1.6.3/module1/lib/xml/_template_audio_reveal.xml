@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<events>
+		
+        <event id="1">
+			<anim type="alpha" animtime="0.3">reveal1</anim>
+			<media id="audio1" action="play" />
+        </event>
+		
+    </events>
+
+    <text id="screentext" x="80" y="100" width="615">
+	<![CDATA[<p class="title">Text and Graphic Audio Reveal</p>
+	<p>An image with reveal audio triggers a second audio file to play automatically.</p>
+	<p class="prompt">Select the picture to trigger the audio.</p>]]></text>
+
+	<image id="image1" class="clickImg" x="115" y="230" event="1"><![CDATA[lib/images/content/internal_brand-2012-73.jpg]]></image>
+
+	
+	<box id="reveal1" class="reveal" x="275" y="230" height="105" width="300" bgcol="333333" bgalpha="1" anim="hidden" event="clearall">
+		<pointer x="-15" y="35" width="30" colour="333333" class="left" />
+		<text x="10" y="10" width="280" ><![CDATA[
+		<p>Clicking on this picture should have started a short test audio file playing. </p>
+		]]></text>
+	</box>
+	
+
+	<audio id="audio1" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+
+</data>

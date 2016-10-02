@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<events>
+		<event id="init">
+			<event id="update" />
+			<function name="initNav" />
+		</event>
+	
+		<event id="exit">
+			<hide>burger_menu</hide>
+			<dialogue id="exit" />
+		</event>
+	
+		<event id="help">
+			<hide>burger_menu</hide>
+			<dialogue id="help" />
+		</event>
+
+		<event id="glossary">
+			<hide>burger_menu</hide>
+			<link>lib/docs/glossary.pdf</link>
+		</event>
+		
+		<event id="resources">
+			<hide>burger_menu</hide>
+			<dialogue id="resources" />
+		</event>
+
+		
+		<event id="menu">
+			<hide>burger_menu</hide>
+			<function name="returnToMenu"/>
+		</event>
+		
+		<event id="next">
+			<hide>burger_menu</hide>
+			<function name="nextButtonPressed"/>
+		</event>
+		
+		<event id="back">
+			<hide>burger_menu</hide>
+			<function name="backButtonPressed"/>
+		</event>	
+		
+		<event id="in_topic">
+			<anim type="alpha" animtime="0.2">menuBtn</anim>
+			<anim type="alpha" animtime="0.2">pagenavbuttons</anim>
+			<anim type="alpha" animtime="0.2">pagecounter</anim>
+			<anim type="alpha" animtime="0.2">topictitle</anim>
+			<hide>burger_menu</hide>
+		</event>
+		<event id="in_menu">
+			<anim type="alphaout" animtime="0.2">menuBtn</anim>
+			<anim type="alphaout" animtime="0.2">pagenavbuttons</anim>
+			<anim type="alphaout" animtime="0.2">pagecounter</anim>
+			<anim type="alphaout" animtime="0.2">topictitle</anim>
+			<hide>burger_menu</hide>
+		</event>
+		
+		
+		<event id="update">
+			<function name="update" target="pagecounter" />
+		</event>
+		
+		<event id="toggleburger">
+			<function name="scrollTop" />
+			<toggle>burger_menu</toggle>
+		</event>
+		
+	</events>
+	
+	
+	<box id="fixed">
+	
+		<box id="pagenavbuttons">
+			<box id="backBtn" x="0" y="50" width="46" height="594" class="navbutton" event="back"  />
+			
+			<pagecounter id="pagecounter" type="text" jump="true" x="810" y="15" width="80" height="27" >
+				<text x="0" y="0" width="80">
+					<![CDATA[<p><span class="from">a</span> / <span class="to">b</span></p>]]>
+				</text>
+			</pagecounter>
+		
+			<box id="nextBtn" x="968" 	y="50" width="46" height="594" class="navbutton" event="next"  />
+			
+		</box>
+		
+		<box id="burgerBtn" x="0" y="0" height="35" width="35" class="navbutton" event="toggleburger" />
+	</box>
+	
+	<text id="topictitle" x="0" y="50" anim="hidden">
+		<![CDATA[<p class="topicTitle"><span class="ui_topic_title">topic title</span></p>]]>
+	</text>
+	
+	<box id="burger_menu" bgcol="FFFFFF" bgalpha="0.8" anim="hidden">
+
+	
+		<box id="menuitems">
+			<text id="menuBtn" event="menu">
+				<![CDATA[<p>MAIN MENU</p>]]>
+			</text>
+			<text event="exit">
+				<![CDATA[<p>EXIT</p>]]>
+			</text>
+			<text event="help">
+				<![CDATA[<p>HELP</p>]]>
+			</text>
+			<text event="glossary">
+				<![CDATA[<p>GLOSSARY</p>]]>
+			</text>
+			<text event="resources">
+				<![CDATA[<p>RESOURCES</p>]]>
+			</text>
+		</box>
+	
+	</box>
+	
+	
+	
+		
+	
+</data> 

@@ -1,0 +1,1 @@
+This is a fix for IE8. For example it can give boxes rounded corners. It hasn't been fully tested. Documentation is here: http://css3pie.com/documentation/

@@ -1,0 +1,201 @@
+/*
+	*	brightwave colour and size adaptations to jplayer skin
+ */
+
+.jp-flat-video,
+.jp-flat-audio 
+{
+	/* define your text color here */
+	color: #ffffff;
+	border: 1px solid #333333;
+	overflow: hidden;
+}
+.jp-flat-video .jp-jplayer video 
+{
+	background-color:#000;
+}
+
+video::-webkit-media-text-track-container{
+	bottom: 35px !important;
+}
+video::-moz-media-text-track-container{
+	bottom: 35px !important;
+}
+
+.jp-flat-video.jp-video-auto .jp-gui, 
+.jp-flat-audio .jp-gui,
+.jp-flat-audio 
+{
+	height: 34px;
+    min-width: 150px;
+}
+
+.jp-flat-video.jp-video-auto .jp-control, 
+.jp-flat-audio .jp-control 
+{
+	width: 34px;
+	height: 34px;
+}
+
+.jp-flat-video .jp-control,
+.jp-flat-audio .jp-control 
+{
+	/* define your pause/play and fullscreen/restore button background color here */
+	background-color: #B3DFF9;
+}
+.jp-flat-video.jp-video-auto .jp-button,
+.jp-flat-audio .jp-button 
+{
+
+	font-size: 24px;
+	line-height: 34px;
+}
+.jp-flat-video .jp-button,
+.jp-flat-audio .jp-button 
+{
+	/* define your pause/play and fullscreen/restore button icon color here */
+	color: #333333;
+}
+.jp-flat-video .jp-button:hover, 
+.jp-flat-audio .jp-button:hover 
+{
+	/* define your pause/play and fullscreen/restore button icon color here */
+	color: #000000;
+}
+
+.jp-flat-video .jp-pause,
+.jp-flat-video .jp-restore-screen ,
+.jp-flat-audio .jp-pause
+{
+	display: none;
+}
+
+.jp-flat-video.jp-video-auto .jp-button:before,
+.jp-flat-audio .jp-button:before  {
+	width: 34px;
+	line-height: 34px;
+}
+
+.jp-flat-video.jp-video-auto .jp-bar
+{
+
+	left: 34px;
+	right: 34px;
+} 
+.jp-flat-audio .jp-bar 
+{
+
+	left: 34px;
+	right: 0;
+}
+
+.jp-flat-video .jp-bar, 
+.jp-flat-audio .jp-bar 
+{
+	/* define your unplayed progress bar background color here */
+	background-color: #333333;
+}
+
+.jp-flat-video .jp-play-bar, 
+.jp-flat-audio .jp-play-bar 
+{
+	/* define your played progress bar background color here */
+	background-color: #444444;
+	border-right: 1px solid #B3DFF9;
+}
+
+.jp-flat-video.jp-video-auto .jp-details,
+.jp-flat-video.jp-video-auto .jp-timing,
+.jp-flat-audio .jp-details,
+.jp-flat-audio .jp-timing 
+{
+	padding: 1px 10px;
+	font-size: 10px;
+	line-height: 34px;
+}
+
+.jp-flat-video.jp-video-auto .jp-title,
+.jp-flat-video.jp-video-auto .jp-duration, 
+.jp-flat-video.jp-video-auto .jp-current-time,
+.jp-flat-audio .jp-title,
+.jp-flat-audio .jp-duration,
+.jp-flat-audio .jp-current-time
+{
+	font-size: 16px;
+	line-height: 34px;
+}
+
+.jp-flat-video .jp-no-solution, 
+.jp-audio .jp-no-solution 
+{	
+	/* define your error message text color here */
+	color: #000000;
+	/* define your error message background color here */
+	background-color: #b28282;
+}
+
+
+
+
+/* video closed caption buitton */
+
+.ccbutton{
+	background: url('../images/ui/ui_spritesheet.png') no-repeat -530px -640px;
+	width: 38px;
+	height: 30px;
+    position: absolute;
+    top:5px;
+    right: 5px;
+}
+
+.ccbutton.over{
+		background-color: rgba(0,0,0,0.1);
+		box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+		/*
+		-webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+		-moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+		-ms-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+		-o-filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+		filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+		*/
+}
+
+
+.ccbutton.on{
+	background-position: -790px -640px;
+}
+div.jp-closed-captions{
+    position: absolute;
+    bottom: 40px;
+    width: 100% !important;
+    text-align: center;
+    z-index:1 !important;
+}
+div.jp-closed-captions p{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 0 15px;
+    line-height: 1.5em !important;
+    font-size: 20px !important;
+}
+
+
+div.jp-flat-video-full{
+	background: black;
+}
+
+div.jp-flat-video-full div.ccbutton{
+    z-index:1001 !important;
+}
+
+div.jp-flat-video-full div.jp-closed-captions{
+    position: absolute;
+    bottom: 100px;
+    width: 100% !important;
+    text-align: center;
+    z-index:1001 !important;
+}
+div.jp-flat-video-full div.jp-closed-captions p{
+    font-size: 50px !important;
+}

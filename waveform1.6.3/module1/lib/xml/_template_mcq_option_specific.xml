@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>	
+	<events>
+		<event id="submit">
+			<click>
+				<function name="enableNext">true</function>          
+			</click>
+		</event>
+	</events>
+	
+	
+    <text id="titleText" x="80" y="100" width="915">
+	<![CDATA[<p class="title">Multiple Choice Question - with option specific feedback</p>
+	<p>This is a text-based multiple choice question. It displays feedback that corresponds to the specific option that the user chose regardless of whether it was right or wrong. Consequently the user can only select a single option. The order of the options have been shuffled.</p>
+	<p class="prompt">Select your answer, then Confirm.</p>]]></text>
+
+	<custom id="mcq_mc" x="110" y="280">
+		<settings optwidth="345" radiomode="true" randomise="true" />
+		<option correct="false"><![CDATA[	<p>This is option 1</p>]]></option>
+		<option correct="false"><![CDATA[	<p>This is option 2</p>]]></option>
+		<option correct="true"><![CDATA[	<p>This is option 3 (the correct one)</p>]]></option>
+		<option correct="false"><![CDATA[	<p>This is option 4</p>]]></option>
+			
+		<!-- OPTION SPECIFIC FEEDBACK
+		will override standard feedback if standard feedbacks are present
+		(only one feedback will show)
+		-->
+		<fb id="1" event="submit">
+			<text  id="fb" x="550" y="230" width="335" height="170" class="reveal"><![CDATA[<p>No, that is not correct.</p>
+			<p>Specific feedback for option 1</p>]]></text>
+		</fb>
+		<fb id="2" event="submit">
+			<text  id="fb" x="550" y="230" width="335" height="170" class="reveal"><![CDATA[<p>No, that is not correct.</p>
+			<p>Specific feedback for option 2</p>]]></text>
+		</fb>
+		<fb id="3" event="submit">
+			<text  id="fb" x="550" y="230" width="335" height="170" class="reveal"><![CDATA[<p>Yes, that is correct.</p>
+			<p>Specific feedback for option 3</p>]]></text>
+		</fb>
+		<fb id="4" event="submit">
+			<text  id="fb" x="550" y="230" width="335" height="170" class="reveal"><![CDATA[<p>No, that is not correct.</p>
+			<p>Specific feedback for option 4</p>]]></text>
+		</fb>
+		
+	</custom>
+	
+	<box id="btns" x="80" y="545">		
+		<button id="resetBtn" x="110" y="0" anim="alpha" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
+		<button id="submitBtn" x="0" y="0" anim="alpha" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	</box>
+	
+</data>

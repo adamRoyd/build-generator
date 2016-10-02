@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<data>
+
+	<events>
+		
+		<event id="submit">
+			<click>
+				<function name="enableNext" />
+			</click>
+		</event>
+	</events>
+    <text id="titleText" x="80" y="100" width="715" anim="alpha" animtime="0.5" animdelay="0">
+	<![CDATA[<p class="title">Graphical Multiple Choice Question - Option specific feedback</p>
+	<p>This is an image based multiple choice question. It displays feedback that corresponds to the specific option that the user chose regardless of whether it was right or wrong. Consequently the user can only select a single option. </p>
+	<p class="prompt">Select your answer, then Confirm.</p>]]></text>
+
+	<image id="item_1" x="140" y="280"><![CDATA[lib/images/content/mcq_image_option_01.png]]></image>
+	
+	<image id="item_2" x="390" y="280"><![CDATA[lib/images/content/mcq_image_option_02.png]]></image>
+
+	<image id="item_3" x="660" y="280"><![CDATA[lib/images/content/mcq_image_option_03.png]]></image>
+
+	<image id="item_4" x="70" y="400"><![CDATA[lib/images/content/mcq_image_option_04.png]]></image>
+
+	<image id="item_5" x="320" y="400"><![CDATA[lib/images/content/mcq_image_option_05.png]]></image>
+
+	<custom id="gMCQ">
+
+		<settings radiomode="true" />
+		<option correct="false">item_1</option>
+		<option correct="false">item_2</option>
+		<option correct="false">item_3</option>
+		<option correct="false">item_4</option>
+		<option correct="true">item_5</option>
+
+		<fb id="1,2,3" event="submit">
+			<text id="fb" x="570" y="395" width="320" height="125" anim="bottom" animtime="0.5" class="revealText fail" ><![CDATA[<p>Feedback for options 1,2,3. Option 5 is correct.</p>]]></text>	
+		</fb>
+		<fb id="4" event="submit">	
+			<text id="fb" x="570" y="395" width="320" height="125" anim="bottom" animtime="0.5" class="revealText fail" ><![CDATA[<p>Feedback for option 4. Option 5 is correct.</p>]]></text>		
+		</fb>
+		<fb id="5" event="submit">
+			<text id="fb" x="570" y="395" width="320" height="125" anim="bottom" animtime="0.5" class="revealText pass" ><![CDATA[<p>Feedback for option 5 (correct)</p>]]></text>
+		</fb>
+	</custom>
+	
+	<box id="btns" x="130" y="545" anim="alpha" animtime="1.5" animdelay="0.8">		
+		<button id="resetBtn" x="110" y="0" anim="alpha" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
+		<button id="submitBtn" x="0" y="0" anim="alpha" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	</box>
+	
+</data>
+
+

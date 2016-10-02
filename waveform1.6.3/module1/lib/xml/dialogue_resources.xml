@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<text id="intro" x="15" y="15" width="600"><![CDATA[<p class="title">Resources</p>
+		<p>This is the Resources panel which is available from every screen.</p>
+		<p>It can contain links to further information held on your intranet, on the internet, or links to download files that can be included with the course.</p>
+	]]></text>
+  
+    <box id="scrollingbox" x="15" y="150" height="330" width="640" scroll="true">
+	
+		<text x="10" y="10" width="600"><![CDATA[
+			<ul>
+				<li><a href="http://www.brightwave.co.uk" target="_blank">Select this link to visit Brightwave's website.</a></li>
+				<li><a href="http://www.brightwave.co.uk/images/stories/PDF/Brightideas/Rapid-getting-behind-the-hype.pdf" target="_blank">Select this link to download Brightwave's white paper about Rapid e-learning.</a></li>
+				<li><a href="../module1/lib/docs/example.docx" target="_blank">Example word document.</a></li>
+			</ul>
+		]]></text>
+
+	</box>
+
+</data>
