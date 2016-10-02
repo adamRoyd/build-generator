@@ -13,7 +13,11 @@ public class Main {
 
 		HashMap<String,String> m = w.findScreens(w.getDocumentAsString(w.my_word));
 		
-		System.out.println(m);
+		WriteXMLFile x = new WriteXMLFile();
+		
+		
+		
+		//System.out.println(x.doc.getLocalName());
     }	
 	
 }
