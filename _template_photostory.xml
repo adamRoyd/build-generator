@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<text id="screentext" x="80" y="100" width="450"><![CDATA[
+		<p class="title">Photostory</p>
+		]]>
+    </text>
+	
+	<custom id="photostory1" x="150" y="150" width="720" height="310" anim="alpha" animtime="0.5" animdelay="0.1">
+		<settings buttonspacing="10" buttony="330" dragnav="true" overridenav="true" />
+	
+        <cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-90.jpg]]></image>
+			
+			<text x="40" y="40" width="250">
+				<![CDATA[<p>A sequence of pictures, like a comic strip or photo story. Selected one by one, each reveals a matching text caption with audio if required.</p>
+				<p class="prompt">Select the right arrow to find out more.</p>]]>
+			</text>
+		</cell>
+		
+		<cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-79.jpg]]></image>
+			<text x="40" y="40" width="250">
+				<![CDATA[<p>This is the text that is revealed when the <b>second</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullm ac.</p>]]>
+			</text>
+			
+		</cell>
+		
+        <cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-80.jpg]]></image>
+		
+			<text x="40" y="40" width="250">
+				<![CDATA[<p>This is the text that is revealed when the <b>third</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullam ac.</p>]]>
+			</text>
+		</cell>
+		
+        <cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-82.jpg]]></image>
+		
+			<text x="40" y="40" width="250">
+				<![CDATA[<p>This is the text that is revealed when the <b>fourth</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullam ac.</p>]]>
+			</text>
+		</cell>
+		
+    </custom>
+    
+
+    
+</data>
+

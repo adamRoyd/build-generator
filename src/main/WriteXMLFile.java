@@ -17,23 +17,53 @@ import org.xml.sax.SAXException;
 
 public class WriteXMLFile {
 
-	File xmlFile = new File("_template_text_graphic.xml");
 	DocumentBuilderFactory docFactory;
 	DocumentBuilder docBuilder;	
 	Document doc;
 	
-	public WriteXMLFile() throws ParserConfigurationException, SAXException, IOException, TransformerException{
-		docFactory = DocumentBuilderFactory.newInstance();
-		docBuilder = docFactory.newDocumentBuilder();
-		doc = docBuilder.parse(xmlFile);
-		doc.getDocumentElement().normalize();
-		System.out.println(doc.getDocumentElement().getNodeName());
+	public WriteXMLFile(){
+
+	}
+	
+	protected void writeFile(String filepath, String screenType){
 		
-		//use a transformer for output
-		TransformerFactory tFactory = TransformerFactory.newInstance();
-		Transformer transformer = tFactory.newTransformer();
-		DOMSource source = new DOMSource(doc);
-		StreamResult result = new StreamResult(System.out);
-		transformer.transform(source, result);
+		File xmlFile = getScreenTemplate(screenType);
+		
+		try{
+			docFactory = DocumentBuilderFactory.newInstance();
+			docBuilder = docFactory.newDocumentBuilder();
+			doc = docBuilder.parse(xmlFile);
+			doc.getDocumentElement().normalize();
+			
+			//use a transformer for output
+			TransformerFactory tFactory = TransformerFactory.newInstance();
+			Transformer transformer = tFactory.newTransformer();
+			DOMSource source = new DOMSource(doc);
+			StreamResult result = new StreamResult(new File(filepath));
+			transformer.transform(source, result);
+			
+			//for logging
+			//StreamResult consoleResult = new StreamResult(System.out);
+			//transformer.transform(source, consoleResult);			
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	private File getScreenTemplate(String s){
+		String filepath = null;
+		System.out.println(s);
+		switch(s){
+			case "SCREEN TYPE: Text and graphic" : 
+				filepath = "_template_text_graphic.xml";
+				break;
+			case "SCREEN TYPE: Photostory" :
+				filepath = "_template_photostory.xml";
+				break;
+			default : filepath = "_template_text_graphic.xml";
+		}
+		
+		return new File(filepath);
 	}
 }
