@@ -1,17 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><data>
 
-	<image id="image1" x="580" y="150"><![CDATA[lib/images/content/internal_brand-2012-18.jpg]]></image>
+	<settings autocomplete="false" resizereload="true"/>
+
+	<events>
+
+		<event id="showreveal">
+			<anim animtime="0.25" type="alphaout">reveal_click1</anim>
+			<anim animtime="0.25" type="alphaout">reveal_click2</anim>
+			<anim animtime="0.25" type="alphaout">reveal_click3</anim>
+			<anim animtime="0.25" type="alphaout">reveal_click4</anim>
+			<enable>click1</enable>
+			<enable>click2</enable>
+			<enable>click3</enable>
+			<enable>click4</enable>
+			<anim animtime="0.3" type="alpha">reveal_[ITEM]</anim>
+			<disable>[ITEM]</disable>
+		</event>
+
+		<event id="1"/>
+		<event id="2"/>
+		<event id="3"/>
+		<event id="4"/>
+			
+		<trigger events="1,2,3,4" id="allClicked">
+			<function name="screenCompleted"/>
+			<anim animtime="0.3" type="alpha">final_image</anim>
+		</trigger>
+		
+    </events>
+
+    <text id="introText" width="615" x="80" y="100"><![CDATA[
+	<p class="title">Text and Graphic Reveal</p>
+	<p>Photos, illustrations, diagrams, or pictures can be selected to reveal further information. This screen type allows learners to browse information at their own pace, breaking information into bit-sized chunks. Once all images have been clicked (in any order), a fifth image will display on screen.</p>
+	<p class="prompt">Select each picture to find out more.</p>]]></text>
+
+
+	<image class="clickImg" event="showreveal,1" id="click1" x="115" y="300"><![CDATA[lib/images/content/internal_brand-2012-73.jpg]]></image>
 	
-	<text id="screentext" width="450" x="80" y="100"><![CDATA[
-		<p class="title">Text and graphic</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Duis in blandit erat.</i> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis in blandit erat.</b> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
-		<ul>
-			<li>Etiam neque libero, cursus in ullamcorper ultricies, fringilla varius velit.</li>
-			<li>Donec sit amet auctor eros.</li>
-			<li>Aenean pellentesque ultrices magna, quis pulvinar mi adipiscing sit amet.</li>
-		</ul>
-		<p class="prompt">This was a text and graphic screen.</p>
-	]]></text>
+	<box anim="hidden" bgalpha="1" bgcol="B4B4B4" class="reveal" height="150" id="reveal_click1" width="570" x="135" y="430">
+		<pointer class="up" colour="B4B4B4" width="40" x="40" y="-20"/>
+		<text width="550" x="10" y="10"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<image class="clickImg" event="showreveal,2" id="click2" x="322" y="300"><![CDATA[lib/images/content/internal_brand-2012-72.jpg]]></image>
+
+	<box anim="hidden" bgalpha="1" bgcol="338833" class="reveal" height="150" id="reveal_click2" width="570" x="220" y="430">
+		<pointer class="up" colour="338833" width="40" x="160" y="-20"/>
+		<text width="550" x="10" y="10"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<image class="clickImg" event="showreveal,3" id="click3" x="528" y="300"><![CDATA[lib/images/content/internal_brand-2012-74.jpg]]></image>
+
+	<box anim="hidden" bgalpha="1" bgcol="3333CC" class="reveal" height="150" id="reveal_click3" width="570" x="220" y="430">
+		<pointer class="up" colour="3333CC" width="40" x="370" y="-20"/>
+		<text width="550" x="10" y="10"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<image class="clickImg" event="showreveal,4" id="click4" x="730" y="300"><![CDATA[lib/images/content/internal_brand-2012-75.jpg]]></image>
+	
+	<box anim="hidden" bgalpha="1" bgcol="CC3333" class="reveal" height="150" id="reveal_click4" width="570" x="290" y="430">
+		<pointer class="up" colour="CC3333" width="60" x="490" y="-30"/>
+		<text width="550" x="10" y="10"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae bibendum tortor. Fusce varius nibh lacus. Nullam non nunc vel odio varius lobortis nec ut lorem. Sed vitae aliquet eros. Vestibulum pellentesque auctor tincidunt.</p>]]></text>
+	</box>
+	
+	<!-- trigger revealed image -->
+	<image anim="hidden" id="final_image" x="730" y="146"><![CDATA[lib/images/content/internal_brand-2012-75.jpg]]></image>
+
+	
+
 
 </data>

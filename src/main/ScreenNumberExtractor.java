@@ -47,6 +47,7 @@ public class ScreenNumberExtractor {
 			String s1 = it.next();
 			String s2 = s1;
 			if(s1.contains("TYPE")){
+
 				type.add(s1);				
 			}			
 			if(s2.contains("SCREEN") && s2.contains("_") && s2.contains("0")){

@@ -1,17 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><data>
-
-	<image id="image1" x="580" y="150"><![CDATA[lib/images/content/internal_brand-2012-18.jpg]]></image>
-	
 	<text id="screentext" width="450" x="80" y="100"><![CDATA[
-		<p class="title">Text and graphic</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Duis in blandit erat.</i> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis in blandit erat.</b> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
-		<ul>
-			<li>Etiam neque libero, cursus in ullamcorper ultricies, fringilla varius velit.</li>
-			<li>Donec sit amet auctor eros.</li>
-			<li>Aenean pellentesque ultrices magna, quis pulvinar mi adipiscing sit amet.</li>
-		</ul>
-		<p class="prompt">This was a text and graphic screen.</p>
-	]]></text>
+		<p class="title">Photostory</p>
+		]]>
+    </text>
+	
+	<custom anim="alpha" animdelay="0.1" animtime="0.5" height="310" id="photostory1" width="720" x="150" y="150">
+		<settings buttonspacing="10" buttony="330" dragnav="true" overridenav="true"/>
+	
+        <cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-90.jpg]]></image>
+			
+			<text width="250" x="40" y="40">
+				<![CDATA[<p>A sequence of pictures, like a comic strip or photo story. Selected one by one, each reveals a matching text caption with audio if required.</p>
+				<p class="prompt">Select the right arrow to find out more.</p>]]>
+			</text>
+		</cell>
+		
+		<cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-79.jpg]]></image>
+			<text width="250" x="40" y="40">
+				<![CDATA[<p>This is the text that is revealed when the <b>second</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullm ac.</p>]]>
+			</text>
+			
+		</cell>
+		
+        <cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-80.jpg]]></image>
+		
+			<text width="250" x="40" y="40">
+				<![CDATA[<p>This is the text that is revealed when the <b>third</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullam ac.</p>]]>
+			</text>
+		</cell>
+		
+        <cell>
+			<image x="375" y="40"><![CDATA[lib/images/content/internal_brand-2012-82.jpg]]></image>
+		
+			<text width="250" x="40" y="40">
+				<![CDATA[<p>This is the text that is revealed when the <b>fourth</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullam ac.</p>]]>
+			</text>
+		</cell>
+		
+    </custom>
+    
 
+    
 </data>

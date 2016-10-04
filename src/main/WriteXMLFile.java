@@ -52,17 +52,29 @@ public class WriteXMLFile {
 	}
 	
 	private File getScreenTemplate(String s){
-		String filepath = null;
-		System.out.println(s);
-		switch(s){
-			case "SCREEN TYPE: Text and graphic" : 
-				filepath = "_template_text_graphic.xml";
-				break;
-			case "SCREEN TYPE: Photostory" :
-				filepath = "_template_photostory.xml";
-				break;
-			default : filepath = "_template_text_graphic.xml";
+		String filepath = "xml/templates/_dud.xml";
+
+		if(s.toLowerCase().contains("photostory")){
+			filepath = "xml/templates/_template_photostory.xml";
 		}
+		if(s.toLowerCase().contains("text and graphic")){
+			filepath = "xml/templates/_template_text_graphic.xml";
+		}
+		if(s.toLowerCase().contains("multiple choice question")){
+			filepath = "xml/templates/_template_mcq.xml";
+		}
+		if(s.toLowerCase().contains("animation") || s.toLowerCase().contains("video")){
+			filepath = "xml/templates/_template_video.xml";
+		}
+		if(s.toLowerCase().contains("drag")){
+			filepath = "xml/templates/_template_drag_drop.xml";
+		}
+		if(s.toLowerCase().contains("drag")){
+			filepath = "xml/templates/_template_drag_drop.xml";
+		}				
+		if(s.toLowerCase().contains("graphic reveal")){
+			filepath = "xml/templates/_template_text_graphic_reveal.xml";
+		}						
 		
 		return new File(filepath);
 	}
