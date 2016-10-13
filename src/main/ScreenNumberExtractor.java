@@ -28,11 +28,16 @@ public class ScreenNumberExtractor {
 		return w.getText();
 	}
 	
+	protected String[] getDocumentAsParagraphs(WordExtractor w){
+		//cleanUpDocument(w);
+		return w.getParagraphText();
+	}
+	
 	private String cleanUpDocument(WordExtractor w){
 		//one big string out of document
 		String s = w.getText();
-		//remove line breaks and duplicate spaces
-		//s = s.replace("\n", "").replace("\r", "").replaceAll("\\s+", " ");
+		s = s.replaceAll("(?m)^[ \t]*\r?\n", ""); //remove empty line breaks
+		
 		return s;
 	}
 	
@@ -42,17 +47,23 @@ public class ScreenNumberExtractor {
 		ArrayList<String> type = new ArrayList<String>();
 		
 		//iterate and add lines to either the number or type lists
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(str.split("\n"))).iterator();
+		Iterator<String> it = new ArrayList<String>
+		(Arrays.asList(str.split("\n"))).iterator();
+		
 		while(it.hasNext()){
 			String s1 = it.next();
-			String s2 = s1;
-			if(s1.contains("TYPE")){
+			
+//			if(s1.contains("TYPE:")){
+//				type.add(s1);			
+//			}			
+			if(s1.contains("SCREEN") && s1.contains("_") && s1.contains("0")){
+				s1 = s1.replaceAll("[^\\d_]",""); //regEx ^(any thing thats not) \\d_ (a digit or underscore) 
+				s1 = s1.substring(0, 6);
+				number.add(s1);
+				it.next();
+				String s2 = it.next();
+				type.add(s2);
 
-				type.add(s1);				
-			}			
-			if(s2.contains("SCREEN") && s2.contains("_") && s2.contains("0")){
-				s2 = s2.replaceAll("[^\\d_]",""); //regEx ^(any thing thats not) \\d_ (a digit or underscore) 
-				number.add(s2);
 			}
 		}
 

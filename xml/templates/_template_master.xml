@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<course 
+engine="waveform 1.6.3"
+version="0.2.0.0" 
+title="Waveform test course v1.6.3" 
+bitprjcode="BWS919" 
+lmstracking="scorm1.2" 
+
+devmode="true" 
+devunlockmode="true"
+devunlockscreenmode="false"
+cheatmode="true"
+clientbitmode="false" 
+
+responsive="true"
+
+menu="true"
+autotopic="1"  
+navbetweentopics="true" 
+completionmode="pass" 
+
+maintaincomplete="true" 
+bookmark="true" 
+>
+
+	<dialogue id="exit" 	closebtn="false" width="290" height="200" xml="lib/xml/dialogue_exit.xml" />
+	<dialogue id="bookmark" closebtn="false" width="325" height="250" xml="lib/xml/dialogue_bookmark.xml" />
+	<dialogue id="help" width="680" height="420" xml="lib/xml/dialogue_help.xml" />
+	<dialogue id="resources" width="680" height="420" xml="lib/xml/dialogue_resources.xml" />
+
+	<menu id="menuscreen" 	xml="lib/xml/menu_screen.xml" />
+	<navigation id="navscreen" xml="lib/xml/nav_screen.xml" phonexml="lib/xml/nav_screen_phone.xml" />
+
+	
+	<topic id="1" label="Presentation screens">
+		<page id="1_160" xml="lib/xml/_template_multiscreen.xml" />
+		
+		<page id="1_100" 	xml="lib/xml/_template_text_graphic.xml" />
+		<page id="1_110" 	xml="lib/xml/_template_text_graphic_reveal.xml" />
+		<page id="1_120" 	xml="lib/xml/_template_text_graphic_reveal_image_swap.xml" />
+		<page id="1_130" type="photostory"	xml="lib/xml/_template_photostory.xml" />
+		<page id="1_140"	xml="lib/xml/_template_tab_reveal.xml" />
+		<page id="1_150" type="parallax"	xml="lib/xml/_template_parallax.xml" phonetype="text_graphic" phonexml="lib/xml/_template_unsupported_replacement.xml" />
+	
+	</topic>
+	
+	<topic id="2" label="Audio screens" locked="true">
+
+	</topic>
+
+
+
+
+</course>
