@@ -88,12 +88,6 @@ public class MasterXMLbuilder {
 	public void editMasterXML(){
 		//////////   EDIT XML   /////////////
 
-
-		//add page nodes to topic 2
-
-		for(int i=1;i<10;i++){
-
-		}
 		
 		//TO DO: 
 		//PUT ATTRIBUTE GENERATION INSIDE ITERATOR

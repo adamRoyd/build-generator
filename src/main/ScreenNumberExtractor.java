@@ -13,6 +13,10 @@ import org.apache.poi.hwpf.extractor.WordExtractor;
 
 public class ScreenNumberExtractor {
 	
+	//TO DO
+	//put screen content into a list of hashmaps, 
+	//each hashmap representing a screen	
+	
 	FileInputStream input_document;	
 	WordExtractor my_word;
 
@@ -20,27 +24,27 @@ public class ScreenNumberExtractor {
 		input_document = new FileInputStream(f);	
 		my_word = new WordExtractor(input_document);
 		input_document.close();
-		cleanUpDocument(my_word);
+
 	}
 	
 	protected String getDocumentAsString(WordExtractor w){
-		cleanUpDocument(w);
-		return w.getText();
-	}
-	
-	protected String[] getDocumentAsParagraphs(WordExtractor w){
-		//cleanUpDocument(w);
-		return w.getParagraphText();
-	}
-	
-	private String cleanUpDocument(WordExtractor w){
-		//one big string out of document
 		String s = w.getText();
 		s = s.replaceAll("(?m)^[ \t]*\r?\n", ""); //remove empty line breaks
-		
 		return s;
 	}
-	
+
+	protected ArrayList<HashMap<String,String>> getScreenContent(String str){
+		Iterator<String> it = new ArrayList<String>
+		(Arrays.asList(str.split("\n"))).iterator();
+		while(it.hasNext()){
+			String s1 = it.next();
+			System.out.println(s1);
+			//START HERE - Identify screen number and then alternate between all caps lines
+		}
+		
+		return null;
+	}
+
 	protected HashMap<String,String> findScreens(String str){
 		HashMap<String,String> screenMap = new HashMap<String,String>();
 		ArrayList<String> number = new ArrayList<String>();

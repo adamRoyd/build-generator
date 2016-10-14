@@ -6,6 +6,7 @@ import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
@@ -20,9 +21,10 @@ public class WriteXMLFile {
 	DocumentBuilderFactory docFactory;
 	DocumentBuilder docBuilder;	
 	Document doc;
+	XMLEditor xmlEditor;
 	
 	public WriteXMLFile(){
-
+		xmlEditor = new XMLEditor();
 	}
 	
 	protected void writeFile(String filepath, String screenType){
@@ -35,12 +37,15 @@ public class WriteXMLFile {
 			doc = docBuilder.parse(xmlFile);
 			doc.getDocumentElement().normalize();
 			
+			doc = xmlEditor.editXML(doc,screenType);
+			
 			//use a transformer for output
 			TransformerFactory tFactory = TransformerFactory.newInstance();
 			Transformer transformer = tFactory.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			DOMSource source = new DOMSource(doc);
-			StreamResult result = new StreamResult(new File(filepath));
-			transformer.transform(source, result);
+//			StreamResult result = new StreamResult(new File(filepath));
+//			transformer.transform(source, result);
 			
 			//for logging
 			//StreamResult consoleResult = new StreamResult(System.out);
