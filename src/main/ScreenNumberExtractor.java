@@ -9,6 +9,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.apache.http.impl.io.SocketOutputBuffer;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 
 public class ScreenNumberExtractor {
@@ -16,34 +17,41 @@ public class ScreenNumberExtractor {
 	//TO DO
 	//put screen content into a list of hashmaps, 
 	//each hashmap representing a screen	
-	
-	FileInputStream input_document;	
-	WordExtractor my_word;
 
-	public ScreenNumberExtractor(File f) throws IOException{
-		input_document = new FileInputStream(f);	
-		my_word = new WordExtractor(input_document);
-		input_document.close();
+	public ScreenNumberExtractor(){
 
 	}
+
+	protected ArrayList<String> getScreenContent(String str){
+		//split string by its screen numbers
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(str.split("SCREEN 0"))).iterator();
+		ArrayList<String> screens = new ArrayList<String>();
+		while(it.hasNext()){
+			String s = it.next();
+			
+			//RETURN HASHMAP OF ITEMS OF THE SCREEN
+			
+			screens.add(s);
+			}
+		
+		return screens;
+	}
+		
+
 	
-	protected String getDocumentAsString(WordExtractor w){
-		String s = w.getText();
-		s = s.replaceAll("(?m)^[ \t]*\r?\n", ""); //remove empty line breaks
+	private boolean isScreenNumber(String s){
+		return s.contains("SCREEN") && s.contains("_") && s.contains("0");
+
+
+	}		
+	
+
+	private String cleanScreenNumber(String s){
+		s = s.replaceAll("[^\\d_]", ""); //regEx ^(any thing thats not) \\d_ (a digit or underscore) 
+		//s = s.substring(0, 6);
 		return s;
 	}
-
-	protected ArrayList<HashMap<String,String>> getScreenContent(String str){
-		Iterator<String> it = new ArrayList<String>
-		(Arrays.asList(str.split("\n"))).iterator();
-		while(it.hasNext()){
-			String s1 = it.next();
-			System.out.println(s1);
-			//START HERE - Identify screen number and then alternate between all caps lines
-		}
 		
-		return null;
-	}
 
 	protected HashMap<String,String> findScreens(String str){
 		HashMap<String,String> screenMap = new HashMap<String,String>();
@@ -56,16 +64,13 @@ public class ScreenNumberExtractor {
 		
 		while(it.hasNext()){
 			String s1 = it.next();
-			
-//			if(s1.contains("TYPE:")){
-//				type.add(s1);			
-//			}			
-			if(s1.contains("SCREEN") && s1.contains("_") && s1.contains("0")){
-				s1 = s1.replaceAll("[^\\d_]",""); //regEx ^(any thing thats not) \\d_ (a digit or underscore) 
-				s1 = s1.substring(0, 6);
+	
+			if(isScreenNumber(s1)){
+				cleanScreenNumber(s1);
 				number.add(s1);
+				//screen type follows screen number
 				it.next();
-				String s2 = it.next();
+				String s2 = it.next(); 
 				type.add(s2);
 
 			}

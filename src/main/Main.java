@@ -6,50 +6,54 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class Main {
+import org.docx4j.Docx4J;
+import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
+import org.docx4j.samples.AbstractSample;
 
-	public static void main(String[]args) throws Exception{
+public class Main extends AbstractSample{
 
-		File f = new File("DGO658005.doc");
-		
-		ScreenNumberExtractor w = new ScreenNumberExtractor(f);
-
-		String documentString = w.getDocumentAsString(w.my_word);
-		
-		HashMap<String,String> m = w.findScreens(documentString);
-		
-		ArrayList<HashMap<String,String>> content = w.getScreenContent(documentString);
+	// Config for non-command line version
+	static {
 	
-		WriteXMLFile x = new WriteXMLFile();
-		
-		String projectCode = "dgo658005";
+    	inputfilepath = System.getProperty("user.dir") + "/BOE858.docx";
 
-		MasterXMLbuilder masterXML = new MasterXMLbuilder();
-		masterXML.loadMasterFile();
+	}	
+	
+	public static void main(String[]args) throws Exception {
 		
-		//iterate through map
-		Iterator it = m.entrySet().iterator();
-		while(it.hasNext()){
-			Map.Entry pair = (Map.Entry)it.next();
-			
-			System.out.println(pair.getKey() + "=" + pair.getValue());
-			
-			String screenNumber = (String) pair.getKey();
-			String screenType = (String) pair.getValue();
-			String filepath = projectCode + "_" + pair.getKey();
-			
-
-			//writefile method creates xml file from template
-			//x.writeFile("/xml/" + filepath + ".xml", screenType);
-			
-			//create page nodes in master xml
-			//masterXML.createPageNodes(screenNumber,screenType,projectCode);	
-			
-			//remove to avoid errors
-			it.remove();
+		try {
+			getInputFilePath(args);
+		} catch (IllegalArgumentException e) {
+		}
+		
+		// LOAD DOCUMENT
+		WordprocessingMLPackage wordMLPackage;
+		if (inputfilepath==null) {
+			System.out.println("No imput path passed, creating dummy document");
+			 wordMLPackage = WordprocessingMLPackage.createPackage();
+			SampleDocument.createContent(wordMLPackage.getMainDocumentPart());	
+		} else {
+			System.out.println("Loading file from " + inputfilepath);
+			wordMLPackage = Docx4J.load(new java.io.File(inputfilepath));
 		}
 
+		//Convert doc to html and return string
+		HTMLConverter htmlConverter = new HTMLConverter();
+		String documentString = htmlConverter.convertMLtoHTML(wordMLPackage, inputfilepath);
 		
+
+		ScreenNumberExtractor screenNumberExtractor = new ScreenNumberExtractor();
+		ArrayList<String> content = screenNumberExtractor.getScreenContent(documentString);
+		
+		//TO DO: ArrayList of screens achieved. Now split each arraylist item into a hashmap
+		
+	
+		for(String s : content){
+			System.out.println("THIS IS ANOTHER SCREEN");
+			System.out.println(s);
+		}
+		
+		//WriteXMLFile x = new WriteXMLFile();	
 		//masterXML.printMaster();
 
 

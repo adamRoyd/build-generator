@@ -9,5 +9,31 @@
 	<classpathentry kind="lib" path="C:/Users/ADMIN/Downloads/poi-bin-3.15-20160924/poi-3.15/poi-ooxml-schemas-3.15.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ADMIN/Downloads/poi-bin-3.15-20160924/poi-3.15/poi-scratchpad-3.15.jar"/>
 	<classpathentry kind="lib" path="D:/Java libraries/xmlbeans-2.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/docx4j-3.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/antlr-runtime-3.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/avalon-framework-api-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/avalon-framework-impl-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/jackson-annotations-2.7.0.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/jackson-core-2.7.3.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/jackson-databind-2.7.3.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/jaxb-svg11-1.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/lorem-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/mbassador-1.2.4.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/stringtemplate-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/wmf2svg-0.9.8.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/docx4j-community-3.3.1/dependencies/xmlgraphics-commons-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/jsoup-1.9.2.jar" sourcepath="D:/Java libraries/jsoup-1.9.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Java libraries/jsoup-1.9.2-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
