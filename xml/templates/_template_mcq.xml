@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>	
 
-    <text id="titleText" x="80" y="100" width="915">
+    <text id="text" x="80" y="100" width="915">
 	<![CDATA[<p class="title">Multiple Choice Question - One correct answer</p>
 	<p>This is a text-based multiple choice question with just one correct answer. </p>
 	<p class="prompt">Select your answer, then Confirm.</p>

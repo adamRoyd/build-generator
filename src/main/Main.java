@@ -15,7 +15,7 @@ public class Main extends AbstractSample{
 	// Config for non-command line version
 	static {
 	
-    	inputfilepath = System.getProperty("user.dir") + "/BOE858.docx";
+    	inputfilepath = System.getProperty("user.dir") + "/scripts/simpledoc.docx";
 
 	}	
 	
@@ -41,21 +41,15 @@ public class Main extends AbstractSample{
 		HTMLConverter htmlConverter = new HTMLConverter();
 		String documentString = htmlConverter.convertMLtoHTML(wordMLPackage, inputfilepath);
 		
-
-		ScreenNumberExtractor screenNumberExtractor = new ScreenNumberExtractor();
-		ArrayList<String> content = screenNumberExtractor.getScreenContent(documentString);
+		//split string into an arraylist of strings, corresponding to the scrrens
+		ScreenContentExtractor screenContentExtractor = new ScreenContentExtractor();
+		ArrayList<String> contentList = screenContentExtractor.getScreenContent(documentString);
 		
-		//TO DO: ArrayList of screens achieved. Now split each arraylist item into a hashmap
+		//pass screen arrayList into the XMLbuilder that determines the template to use
+		XMLManager manager = new XMLManager();
+		manager.allocateScreen(contentList);
 		
-	
-		for(String s : content){
-			System.out.println("THIS IS ANOTHER SCREEN");
-			System.out.println(s);
-		}
-		
-		//WriteXMLFile x = new WriteXMLFile();	
-		//masterXML.printMaster();
-
+		//NEXT create textGraphicbuilder class to create the xml
 
     }	
 	
