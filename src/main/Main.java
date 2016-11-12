@@ -1,11 +1,21 @@
+/*
+ *  Copyright 2016, XXXXXXXXXXXXX.
+ *   
+ *  This file is part of XXXXXX.
+    XXXXXX is licensed under the Apache License, Version 2.0 (the "License"); 
+    you may not use this file except in compliance with the License. 
+    You may obtain a copy of the License at 
+        http://www.apache.org/licenses/LICENSE-2.0 
+    Unless required by applicable law or agreed to in writing, software 
+    distributed under the License is distributed on an "AS IS" BASIS, 
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+    See the License for the specific language governing permissions and 
+    limitations under the License.
+ */
+
 package main;
 
-import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-
 import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 import org.docx4j.samples.AbstractSample;
@@ -14,11 +24,10 @@ public class Main extends AbstractSample{
 
 	// Config for non-command line version
 	static {
+    	inputfilepath = System.getProperty("user.dir") + "/scripts/MDL851004_BPBT_Landmarks_ITS_script_v2.1.docx";
+	}
 	
-    	inputfilepath = System.getProperty("user.dir") + "/scripts/simpledoc.docx";
 
-	}	
-	
 	public static void main(String[]args) throws Exception {
 		
 		try {
@@ -26,31 +35,35 @@ public class Main extends AbstractSample{
 		} catch (IllegalArgumentException e) {
 		}
 		
-		// LOAD DOCUMENT
-		WordprocessingMLPackage wordMLPackage;
-		if (inputfilepath==null) {
-			System.out.println("No imput path passed, creating dummy document");
-			 wordMLPackage = WordprocessingMLPackage.createPackage();
-			SampleDocument.createContent(wordMLPackage.getMainDocumentPart());	
-		} else {
-			System.out.println("Loading file from " + inputfilepath);
-			wordMLPackage = Docx4J.load(new java.io.File(inputfilepath));
-		}
+		//Get project code
+		//String projectCode = args[1];
+		String projectCode = "mdl851004";	
+		System.out.println("PROJECT CODE = " + projectCode);
+		
+		// Load document
+		System.out.println("Loading file from " + inputfilepath);
+		WordprocessingMLPackage wordMLPackage = Docx4J.load(new java.io.File(inputfilepath));
+		
+		//accept all changes
+		Utils.acceptAllChanges(wordMLPackage);
+		
+		//Remove header and footer
+		Utils.removeHFFromFile(wordMLPackage);
 
 		//Convert doc to html and return string
-		HTMLConverter htmlConverter = new HTMLConverter();
-		String documentString = htmlConverter.convertMLtoHTML(wordMLPackage, inputfilepath);
+		String documentString = Utils.convertMLtoHTML(wordMLPackage, inputfilepath);
 		
-		//split string into an arraylist of strings, corresponding to the scrrens
-		ScreenContentExtractor screenContentExtractor = new ScreenContentExtractor();
-		ArrayList<String> contentList = screenContentExtractor.getScreenContent(documentString);
+		//Split string into an arraylist of strings, corresponding to the screens
+		ArrayList<String> contentList = Utils.getScreenContent(documentString);
 		
-		//pass screen arrayList into the XMLbuilder that determines the template to use
+		//pass screen arrayList into the XMLManager that determines the template to use
 		XMLManager manager = new XMLManager();
-		manager.allocateScreen(contentList);
+		manager.setProjectCode(projectCode);
+		manager.createScreens(contentList);
+		manager.writeMaster();
 		
-		//NEXT create textGraphicbuilder class to create the xml
+		System.out.println("////////FINISHED//////////");
 
-    }	
-	
+    }
+
 }

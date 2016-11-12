@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<data>
-
-	<image id="image1" x="580" y="150"><![CDATA[lib/images/content/internal_brand-2012-18.jpg]]></image>
-	
-	<text id="introText" x="80" y="100" width="450"></text>
-
-</data> 

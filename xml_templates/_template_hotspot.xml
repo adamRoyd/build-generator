@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><data>
+
+	<settings autocomplete="true" resizereload="true"/>
+
+	<events>
+	
+		<event id="reset">
+			<anim animtime="0.25" type="alphaout">reveal_hotspot1</anim>
+			<enable>hotspot1</enable>
+	
+		</event>
+
+		<event id="showreveal">
+			<anim animtime="0.3" type="alpha">reveal_[ITEM]</anim>
+			<disable>[ITEM]</disable>
+		</event>
+
+	</events>
+
+	<image id="bg" y="74"><![CDATA[lib/images/content/placeholder.jpg]]></image>
+	
+	
+    <text id="introText" class="white" width="615" x="80" y="90"></text>
+
+	
+	<box id="hotspotHolder">
+		<box id="hotspot1" class="hotspot" x="195" y="335" width="30" height="30" event="reset,showreveal"/>	
+	</box>
+	
+	<box id="labelHolder">
+		<text id="hotspotLabel1" target="hotspot1" class="hotspotLabel" x="40" y="-20"/>		
+	</box>
+
+	<box id="revealHolder">
+		<box id="reveal_hotspot1" anim="hidden" bgalpha="0.8" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
+			<box id="title1banner" bgcol="0036A3" width="100%" height="40">
+				<text id="revealtitle" x="20" y="10"></text>		
+				<svg id="closeBtn1" class="navBtn" x="300" y="10" width="20" height="20" src="lib/images/ui/nav_buttons/close.svg" event="reset"/>
+			</box>
+			<text id="reveal1text" width="300" x="20" y="120"></text>
+			<box id="reveal1media" x="20" y="60">
+
+			</box>
+		</box>
+		
+
+
+
+	</box>
+
+
+</data>

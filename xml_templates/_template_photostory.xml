@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<events>
+		<event id="init">
+			<media id="audio1" action="play" />
+		</event>
+	
+		<event id="update">
+			<log>UPDATE</log>
+		</event>
+
+		<event id="cell1">
+			<log>CELL1 EVENT</log>
+		</event>	
+		<event id="cell3">
+			<log>CELL3 EVENT</log>
+		</event>	
+		<event id="cell4">
+			<log>CELL4 EVENT</log>
+		</event>		
+	</events>	
+	
+	<audio id="audio1" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+
+	<custom id="photostory1" x="45" y="100" width="922" height="442" >
+		<settings buttony="450" buttonnumbers="true" progressnav="true" dragnav="true" overridenav="false" autox="5" transition="fade" transitiontime="0.5" startframe="0" />
+	
+        <cell>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			
+			<text x="80" y="45" width="365">
+				<![CDATA[<p>A sequence of pictures, like a comic strip or photo story. Selected one by one, each reveals a matching text caption with audio if required.</p>
+				<p class="prompt">Select the right arrow to find out more.</p>]]>
+			</text>
+		</cell>
+		
+		<cell>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text x="80" y="45" width="365">
+				<![CDATA[<p>This is the text that is revealed when the <b>second</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullm ac.</p>]]>
+			</text>
+			
+		</cell>
+		
+        <cell>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+		
+			<text x="80" y="45" width="365">
+				<![CDATA[<p>This is the text that is revealed when the <b>third</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullam ac.</p>]]>
+			</text>
+		</cell>
+		
+        <cell>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+		
+			<text x="80" y="45" width="365">
+				<![CDATA[<p>This is the text that is revealed when the <b>fourth</b> picture is displayed.</p>
+				<p>Maecenas eu nunc eu dolor porta mollis et eget nibh. Aliquam at justo lectus. Duis dignissim tincidunt aliquam. Nullam ac.</p>]]>
+			</text>
+		</cell>
+		
+    </custom>
+    
+
+	<box id="buttons" x="45" y="100" screensize="desktop">
+		<box id="backBtn" x="0" y="0" width="50" height="440" bgcol="bac405" bgalpha="0.8" func="backCell">
+			<svg x="12" y="170" width="25" height="95" src="lib/images/ui/arrow_left.svg"></svg>
+		</box>
+		
+		<box id="nextBtn" x="870" y="0" width="50" height="440" bgcol="bac405" bgalpha="0.8" func="nextCell">
+			<svg x="12" y="170" width="25" height="95" src="lib/images/ui/arrow_right.svg"></svg>
+		</box>
+
+	</box>
+    
+</data>
+
