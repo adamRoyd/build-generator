@@ -1,48 +1,55 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
 
-# Folder config file
-Desktop.ini
+# Created by https://www.gitignore.io/api/eclipse
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+### Eclipse ###
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
 
-# Windows shortcuts
-*.lnk
+# Eclipse Core
+.project
 
-# =========================
-# Operating System Files
-# =========================
+# External tool builders
+.externalToolBuilders/
 
-# OSX
-# =========================
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
 
-# Thumbnails
-._*
+# CDT-specific (C/C++ Development Tooling)
+.cproject
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-/bin/
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
