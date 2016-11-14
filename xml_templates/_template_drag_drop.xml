@@ -1,78 +1,180 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-
-    <events>
-        <event id="submit">
-            <click>
-                <function name="enableNext" />
-            </click>
-        </event>
+	<events>
 		
-		<event id="exit">
-			<function name="play" target="outro" />
-			<function name="readyToLeave" delay="0.6" />
+		<event id="init">
+				<media id="audio1" action="play" />
 		</event>
 		
-    </events>
+		<event id="myanswers">
+			<log>myanswers</log>
+			<hide>smaBtn</hide>
+			<show>scaBtn</show>
+		</event>
+		<event id="correctanswers">
+			<log>correctanswers</log>
+			<hide>scaBtn</hide>
+			<show>smaBtn</show>
+		</event>
 	
-	<timeline id="outro" autoplay="false">
-		<tween element="drag1" time="0.5"><![CDATA[ y:100, alpha:0]]></tween>
-		<tween element="drag2" time="0.5"><![CDATA[ y:100, alpha:0]]></tween>
-		<tween element="drag3" time="0.5"><![CDATA[ y:100, alpha:0]]></tween>
-		<tween element="drag4" time="0.5"><![CDATA[ y:100, alpha:0]]></tween>
-	</timeline>
+		<event id="pass">
+			<media id="pass" action="play" />
+			<show>feedback_pass</show>
+		</event>
+		
+		<event id="partial">
+			<media id="partial" action="play" />
+			<show>resetBtn</show>
+			<show>scaBtn</show>
+			<show>feedback_partial</show>
+		</event>
+		
+		<event id="fail">
+			<media id="fail" action="play" />
+			<show>resetBtn</show>
+			<show>scaBtn</show>
+			<show>feedback_fail</show>
+		</event>
+
+		
+		<event id="reset">
+			<show>submitBtn</show>
+			<hide>resetBtn</hide>
+			<hide>scaBtn</hide>
+			<hide>smaBtn</hide>
+			<hide delay="0.3">feedbackHolder</hide>
+			<translate x="370" animtime="0.3">feedbackHolder</translate>
+			<hide delay="0.3">feedback_pass</hide>
+			<hide delay="0.3">feedback_partial</hide>
+			<hide delay="0.3">feedback_fail</hide>
+			<hide delay="0.3">feedback_fail_attempt</hide>
+		</event>
+		
+		<event id="submit">
+			<hide>submitBtn</hide>
+			<log>submit</log>
+			<translate x="370">feedbackHolder</translate>
+			<show>feedbackHolder</show>
+			<translate x="0" animtime="0.5">feedbackHolder</translate>
+		</event>
+				
+	</events>
+
+	<audio id="audio1" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
 	
-    <text id="introText" x="80" y="100" width="450" anim="alpha" animtime="0.5" animdelay="0"><![CDATA[
-		<p class="title">Drag and drop question screen</p>
-		<p>The Sterling family use both Direct Debits and Standing Orders. Do you know the difference between them?</p>
-		<p class="prompt">Drag the description to the correct column, then select Confirm.</p>
-	]]></text>
+    <text id="introText" x="25" y="100" width="600">
+		<![CDATA[
+		<p>DRAG_DROP</p>
+		]]>
+	</text>
 	
-	<box id="buttonbox" x="100" y="530" width="150" height="150" anim="bottom" animtime="1" >
-		<button id="resetBtn" x="350" y="0" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
-		<button id="smaBtn" x="120" y="0" width="210" enabled="false" func="showMyAnswers"><![CDATA[<p>See my answer</p>]]></button>
-		<button id="scaBtn" x="120" y="60" width="210" enabled="false" func="showAnswers"><![CDATA[<p>See correct answers</p>]]></button>
-		<button id="submitBtn" x="0" y="0" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	<box id="buttonbox" x="25" y="590" width="150" height="150" >
+		<button id="resetBtn" x="0" y="0" 	width="140"	enabled="false" anim="hidden" func="reset"><![CDATA[<p>Reset</p>]]></button>
+		<button id="submitBtn" x="0" y="0" 	width="140"	enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+		<button id="smaBtn" x="150" y="0" width="260" 	enabled="false" anim="hidden" func="showMyAnswers"><![CDATA[<p>Show my answers</p>]]></button>
+		<button id="scaBtn" x="150" y="0" width="260" 	enabled="false" anim="hidden" func="showAnswers"><![CDATA[<p>Show answers</p>]]></button>
 	</box>
+	
+	<box id="dropArea1" class="dropArea" x="25" y="200" width="310" height="180" bgcol="DFDFDF">
+		<box width="100%" height="90" bgcol="006883">
+			<text x="10" y="10" width="calc(100% - 20px)">
+				<![CDATA[<p>DROP_1</p>]]>
+			</text>
+		</box>
+	</box>
+	
+	<box id="dropArea2" class="dropArea" x="355" y="200" width="310" height="180" bgcol="DFDFDF">
+		<box width="100%" height="90" bgcol="006883">
+			<text x="10" y="10" width="calc(100% - 20px)">
+				<![CDATA[<p>DROP_2</p>]]>
+			</text>
+		</box>
+	</box>
+
+	<box id="dropArea3" class="dropArea" x="25" y="390" width="310" height="180" bgcol="DFDFDF">
+		<box width="100%" height="90" bgcol="006883">
+			<text x="10" y="10" width="calc(100% - 20px)">
+				<![CDATA[<p>DROP_3</p>]]>
+			</text>
+		</box>
+	</box>
+	
+	<box id="dropArea4" class="dropArea" x="355" y="390" width="310" height="180" bgcol="DFDFDF">
+		<box width="100%" height="90" bgcol="006883">
+			<text x="10" y="10" width="calc(100% - 20px)">
+				<![CDATA[<p>DROP_4</p>]]>
+			</text>
+		</box>
+	</box>
+
+	
+	
 	<!-- Dropboxes  -->
-	<box id="dropBox1" x="587" y="150" width="170" height="370" bgcol="CCCCCC" bgalpha="1" linewidth="1" linecol="000000" anim="right" animtime="0.5" animdelay="0.2" />
-	<box id="dropBox2" x="765" y="150" width="170" height="370" bgcol="CCCCCC" bgalpha="1" linewidth="1" linecol="000000" anim="right" animtime="0.5" animdelay="0.6" />
+	<box id="dropBox1" x="25"  y="290" width="310" height="90" linewidth="0" linecol="ff0000" />
+	<box id="dropBox2" x="355" y="290" width="310" height="90" linewidth="0" linecol="ff0000" />
+	<box id="dropBox3" x="25"  y="480" width="310" height="90" linewidth="0" linecol="ff0000" />
+	<box id="dropBox4" x="355" y="480" width="310" height="90" linewidth="0" linecol="ff0000" />
 	
-	<!-- Drop labels -->
-	<text id="dropLabel1" target="dropBox1" x="0" y="-25" width="170"><![CDATA[<p>Standing Order</p>]]></text>
-	<text id="dropLabel2" target="dropBox2" x="0" y="-25" width="170"><![CDATA[<p>Direct Debit</p>]]></text>
-
-	<!-- Drag items  -->
-	<box id="drag_items">
-		<box id="drag1" x="80" y="301" width="230" height="95" bgcol="FF5050" anim="left" animtime="0.5" animdelay="0.6" class="dragBox">
-			<text width="230" height="95"><![CDATA[<p>TEMPLATE</p>]]></text>
-		</box>	
+	<!-- Drag items -->
+	<box id="drag1" x="710" y="110 " width="270" height="70" class="dragBox">
+		<text><![CDATA[<p>DRAG_1</p>]]></text>
+	</box>
+	<box id="drag2" x="710" y="200" width="270" height="70" class="dragBox">
+		<text width="100%" height="100%"><![CDATA[<p>DRAG_2</p>]]></text>
+	</box>
+	<box id="drag3" x="710" y="290" width="270" height="70" class="dragBox">
+		<text><![CDATA[<p>DRAG_3</p>]]></text>
+	</box>
+	<box id="drag4" x="710" y="380" width="270" height="70" class="dragBox">
+		<text><![CDATA[<p>DRAG_4</p>]]></text>
 	</box>
 
+		
 	<!-- Drop settings  -->
     <custom id="dragdrop">
-        <settings dropscale="0.7" />
+        <settings dropscale="1" />
         <drag id="1" match="2">drag1</drag>
+        <drag id="2" match="3">drag2</drag>
+        <drag id="3" match="4">drag3</drag>
+        <drag id="4" match="1">drag4</drag>
 
 
-        <drop id="1" dropposition="over" stackitems="false" stackpaddingv="5" stackpaddingh="5" maxdrop="4" xoffset="5" yoffset="5">dropBox1</drop>
-        <drop id="2" dropposition="over" stackitems="false" stackpaddingv="5" stackpaddingh="5" maxdrop="4" xoffset="5" yoffset="5">dropBox2</drop>				
+        <drop id="1" maxdrop="1" stackpaddingv="20" stackpaddingh="20" xoffset="0" yoffset="0">dropBox1</drop>
+        <drop id="2" maxdrop="1" stackpaddingv="20" stackpaddingh="20" xoffset="0" yoffset="0">dropBox2</drop>		
+        <drop id="3" maxdrop="1" stackpaddingv="20" stackpaddingh="20" xoffset="0" yoffset="0">dropBox3</drop>
+        <drop id="4" maxdrop="1" stackpaddingv="20" stackpaddingh="20" xoffset="0" yoffset="0">dropBox4</drop>		
+		
     </custom>
 	
-	<!-- Feedback  -->
-	<fb id="pass" event="submit">
-		<text id="fb" x="80" y="255" width="450" class="revealText pass" ><![CDATA[
-			<p>That's right.</p>
-			<p><b>Standing Orders</b> are <a href="../docs/glossary_current accounts.pdf" target="_blank">fixed amounts</a>, usually paid into another bank account, controlled by the customer and deposited at certain times.</p>
-			<p><b>Direct Debits</b> vary in amount, are taken out by other organisations, usually to pay bills or retailers, and are released at certain times.</p>
-		]]></text>			
-	</fb>		
-	<fb id="partial" event="submit">	
-		<text id="fb" x="80" y="255" width="450" class="revealText partial" ><![CDATA[<p>That's not quite right. Select <b>See correct answers</b> to see where you went wrong.</p>]]></text>
-	</fb>		
-	<fb id="fail" event="submit">	
-		<text id="fb" x="80" y="255" width="450" class="revealText fail" ><![CDATA[<p>That's not right. Select <b>See correct answers</b> to see where you went wrong.</p>]]></text>		
-	</fb>
+	<audio id="pass" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="partial" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="fail" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />	
+	
+	<box id="feedbackHolder" x="670" y="50" width="365" height="595" anim="hidden">
+		<box id="feedback_pass" x="30" y="50" width="280" anim="hidden">
+			<text id="text_pass">
+				<![CDATA[
+				<p>That's right!</p>
+				]]>
+			</text>
+		</box>
+		<box id="feedback_partial" x="30" y="50" width="280" anim="hidden">
+			<text id="text_partial">
+				<![CDATA[
+				<p>That's nearly right.</p>
+				]]>
+			</text>
+		</box>
+		<box id="feedback_fail" x="30" y="50" width="280" anim="hidden">
+			<text id="text_fail">
+				<![CDATA[
+				<p>That's not quite right.</p>
+				]]>
+			</text>
+		</box>
+	</box>
+	
+	
 	
 </data>
 

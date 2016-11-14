@@ -24,7 +24,7 @@ public class Main extends AbstractSample{
 
 	// Config for non-command line version
 	static {
-    	inputfilepath = System.getProperty("user.dir") + "/scripts/MDL851004_BPBT_Landmarks_ITS_script_v2.1.docx";
+    	inputfilepath = System.getProperty("user.dir") + "/scripts/DDP123001.docx";
 	}
 	
 
@@ -37,7 +37,7 @@ public class Main extends AbstractSample{
 		
 		//Get project code
 		//String projectCode = args[1];
-		String projectCode = "mdl851004";	
+		String projectCode = "ddp123001";	
 		System.out.println("PROJECT CODE = " + projectCode);
 		
 		// Load document

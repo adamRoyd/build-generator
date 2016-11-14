@@ -89,7 +89,7 @@ public class XMLManager {
 					"/../module1/lib/xml/" + filepath + ".xml");
 		} else{
 			xmlFile = new File(System.getProperty("user.dir") +
-					"/../module1/lib/xml/templates/_template_" + screenType + ".xml");
+					"/xml_templates/_template_" + screenType + ".xml");
 		}
 		
 		try{

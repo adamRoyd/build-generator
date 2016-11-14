@@ -41,7 +41,7 @@ public class Utils {
     	
     	htmlSettings.setWmlPackage(wordMLPackage);
 
-    	String userCSS = "html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img,  ol, ul, li, table, caption, tbody, tfoot, thead, tr, th, td " +
+    	String userCSS = "html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img,  ol, ul, li, b, table, caption, tbody, tfoot, thead, tr, th, td " +
     			"{ margin: 0; padding: 0; border: 0;}" +
     			"body {line-height: 1;} ";
     	htmlSettings.setUserCSS(userCSS);
@@ -152,9 +152,6 @@ public class Utils {
 //		System.out.println(
 //				XmlUtils.marshaltoString(mdp.getJaxbElement(), true, true) );			
 	}
-	
-
-	
 	
 	protected static ArrayList<String> getScreenContent(String str){
 		//split string by its screen numbers

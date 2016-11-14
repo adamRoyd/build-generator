@@ -22,7 +22,7 @@ public class Master {
 	DocumentBuilder docBuilder;	
 	Document doc;
 
-	public void MasterXMLbuilder(){
+	public Master(){
 
 	};
 	

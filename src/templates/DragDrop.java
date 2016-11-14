@@ -29,10 +29,10 @@ public class DragDrop extends XMLEditor{
 
 		//editDragsAndDropboxes(doc,screenContent);
 		
+		editFeedbacks();
+		
 		return doc;
 	}
-	
-	
 
 	private void editIntroText() {
 
@@ -45,6 +45,23 @@ public class DragDrop extends XMLEditor{
 		replaceText(introTextNode, cdata);
 	}
 
+
+	protected void editFeedbacks(){
+
+		CDATASection pass = doc.createCDATASection(getHeadingContent(screenContent,"CORRECT TEXT"));
+		CDATASection partial = doc.createCDATASection(getHeadingContent(screenContent,"PARTIAL TEXT"));
+		CDATASection fail = doc.createCDATASection(getHeadingContent(screenContent,"INCORRECT TEXT"));
+		
+		Node passNode = getNodeById(doc, "text", "text_pass");
+		Node partialNode = getNodeById(doc, "text", "text_partial");
+		Node failNode = getNodeById(doc, "text", "text_fail");		
+		
+		replaceText(passNode,pass);
+		replaceText(partialNode,partial);
+		replaceText(failNode,fail);
+	
+	}	
+	
 	private void editDragsAndDropboxes() {
 		
 		
