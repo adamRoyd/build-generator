@@ -110,7 +110,7 @@ public class XMLEditor {
 			Object exprResult = expr.evaluate(doc, XPathConstants.NODE);
 			Node node = (Node) exprResult;
 			if(node == null){
-				System.out.println(id + " IS NOT A NODE");
+				//System.out.println(id + " IS NOT A NODE");
 			}
 			return node;
 		} catch (XPathExpressionException e) {

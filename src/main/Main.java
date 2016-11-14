@@ -16,9 +16,15 @@
 package main;
 
 import java.util.ArrayList;
+
 import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
 import org.docx4j.samples.AbstractSample;
+
+import utils.AcceptAllChanges;
+import utils.HTMLconverter;
+import utils.RemoveHeaderFooter;
+import utils.ScreenSplitter;
 
 public class Main extends AbstractSample{
 
@@ -45,16 +51,16 @@ public class Main extends AbstractSample{
 		WordprocessingMLPackage wordMLPackage = Docx4J.load(new java.io.File(inputfilepath));
 		
 		//accept all changes
-		Utils.acceptAllChanges(wordMLPackage);
+		AcceptAllChanges.acceptAllChanges(wordMLPackage);
 		
 		//Remove header and footer
-		Utils.removeHFFromFile(wordMLPackage);
+		RemoveHeaderFooter.remove(wordMLPackage);
 
 		//Convert doc to html and return string
-		String documentString = Utils.convertMLtoHTML(wordMLPackage, inputfilepath);
+		String documentString = HTMLconverter.convertMLtoHTML(wordMLPackage, inputfilepath);
 		
 		//Split string into an arraylist of strings, corresponding to the screens
-		ArrayList<String> contentList = Utils.getScreenContent(documentString);
+		ArrayList<String> contentList = ScreenSplitter.getScreenContent(documentString);
 		
 		//pass screen arrayList into the XMLManager that determines the template to use
 		XMLManager manager = new XMLManager();

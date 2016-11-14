@@ -111,7 +111,6 @@ public class Hotspot extends XMLEditor{
 		Node labelHolder = getNodeById(doc, "box", "labelHolder");
 		Node labelNode = getNodeById(doc,"text","hotspotLabel1");
 		Node n = labelNode.cloneNode(true);
-		editAttribute(n, "target", "hotspot" + count);
 		editAttribute(n, "id", "hotspotLabel" + count);
 		labelHolder.appendChild(n);		
 	}	
