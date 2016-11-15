@@ -58,33 +58,10 @@ public class HTMLconverter {
 		
 		//BOLD TEXT
 		//use DOM parser to locate 'style="font-weight:bold"' and delete other style attributes
-//		Document doc = Jsoup.parse(htmlString);
-//		Elements e = doc.getElementsByTag("span");
-//		
-//		Vector<String> allowedItems = new Vector<String>();
-//		allowedItems.add("font-weight");
-//		
-//		for(Element element : e){
-//			String[] styles = element.attr("style").split(";");
-//			Vector<String> filteredItems = new Vector<String>();
-//			for(String item : styles){
-//				String key = (item.split(":"))[0].trim().toLowerCase();
-//				if(allowedItems.contains(key)){
-//					filteredItems.add(item);
-//				}
-//			}
-//			if(filteredItems.size() == 0){
-//				element.removeAttr("style");
-//			} else{
-//				element.attr("style",StringUtils.join(filteredItems, ";"));
-//			}
-//		}
-//		
-//		
-//		System.out.println(doc.html());
+		//htmlString = createBoldTags(htmlString);
 		
-		System.out.println(htmlString);
-		
+
+
 		// Clean up, so any ObfuscatedFontPart temp files can be deleted 
 		if (wordMLPackage.getMainDocumentPart().getFontTablePart()!=null) {
 			wordMLPackage.getMainDocumentPart().getFontTablePart().deleteEmbeddedFontTempFiles();
@@ -94,6 +71,36 @@ public class HTMLconverter {
 		wordMLPackage = null;
 		
 		return htmlString;	
+	}
+
+	private static String createBoldTags(String htmlString) {
+
+		Document doc = Jsoup.parse(htmlString);
+		Elements e = doc.getElementsByTag("span");
+		
+		
+		for(Element element : e){
+			String[] styles = element.attr("style").split(";");
+			Vector<String> filteredItems = new Vector<String>();
+			for(String item : styles){
+				String key = (item.split(":"))[0].trim().toLowerCase();
+				if(key.contains("font-weight")){
+					filteredItems.add(item);
+				}
+			}
+			if(filteredItems.size() == 0){
+				element.removeAttr("style");
+			} else{
+				element.removeAttr("style");
+				element.tagName("b");
+			}
+		}
+		
+		String s = doc.html();
+		s = s.replace("<span>", "").replace("</span>", "");
+		
+		return s;
+
 	}	
 	
 }
