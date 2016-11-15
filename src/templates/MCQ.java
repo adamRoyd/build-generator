@@ -38,6 +38,7 @@ public class MCQ extends XMLEditor{
 		String prompt = getHeadingContent(screenContent,"PROMPT");
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
+		
 		introText = title + "\r" + introText + "\r" + prompt;	
 		CDATASection question = doc.createCDATASection(introText);
 		Node introtext = getNodeById(doc,"text", "introText");

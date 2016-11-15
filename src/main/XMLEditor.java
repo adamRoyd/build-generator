@@ -151,8 +151,10 @@ public class XMLEditor {
 		if(text == null || text.length()<3){
 			return "";
 		}
-		String classHTML = " class=\"" + classType + "\"";  
-		text = new StringBuilder(text).insert(3, classHTML).toString();
+
+		String classHTML = "<p class=\"" + classType + "\">";  
+		//text = new StringBuilder(text).insert(3, classHTML).toString();
+		text = text.replace("<p>",classHTML);
 		return text;
 	}	
 	

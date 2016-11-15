@@ -76,7 +76,7 @@ public class Photostory extends XMLEditor{
 		ArrayList<String> list = new ArrayList<String>();
 		
 		//split content based on frame number
-		String[]arr = s.split("<p>\\d</p>");
+		String[]arr = s.split("<p><b>\\d</b></p>");
 		
 		for(int i=0;i<arr.length;i++){
 
