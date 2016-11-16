@@ -51,7 +51,7 @@ public class RevealText extends XMLEditor{
 		String revealText = "";
 		
 		while(true){
-			headingText = getHeadingContent(screenContent, "HEADING " + count + " TEXT", "TEXT FOR HEADING " + count);
+			headingText = getHeadingContent(screenContent, "HEADING " + count + " TEXT");
 			revealText = getHeadingContent(screenContent, "TEXT FOR HEADING " + count);
 			if(headingText == ""){
 				break;

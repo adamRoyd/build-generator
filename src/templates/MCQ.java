@@ -47,14 +47,14 @@ public class MCQ extends XMLEditor{
 	
 	private void editOptions() {
 
-		String options = getHeadingContent(screenContent,"OPTIONS","CORRECT AUDIO FEEDBACK");
+		String options = getHeadingContent(screenContent,"OPTIONS");
 		
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 
 		/* option string contains the option number, option text and true/false attribute 
 		*  Iterate through the lines and perform operation in groups of threes.
 		*/
-		
+		System.out.println(options);
 		Iterator<String> it = new ArrayList<String>(Arrays.asList(options.split("\r"))).iterator();
 		Node custom = doc.getElementsByTagName("custom").item(0);
 		Node option;
@@ -64,8 +64,8 @@ public class MCQ extends XMLEditor{
 		while(it.hasNext()){
 			
 			////OPTION NUMBER////
-			String optionNumber = it.next().replaceAll("\\<.*?>","").replaceAll(" ","");
-			//System.out.println("OPTION NUMBER " + optionNumber);
+			String optionNumber = it.next().replaceAll("\\<.*?>","").trim();
+			System.out.println("OPTION NUMBER " + optionNumber);
 			
 			//get the corresponding option node
 			option = doc.getElementsByTagName("option").item(Integer.parseInt(optionNumber) - 1);

@@ -78,28 +78,7 @@ public class XMLEditor {
 		return text;
 	}
 	
-	//this method also specifies the heading on which to stop adding content
-	protected String getHeadingContent(String screenContent,String startHeading,String endHeading){
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\r?\\n"))).iterator();
-		String text = "";
-		while(it.hasNext()){
-			String line = it.next();
-			
-			if(line.contains(startHeading) && isAHeading(line)){
-				//add the rest of the lines to the text.
-				//this equates to FALSE when we reach a new heading (i.e. OPTIONS)
-				while(it.hasNext()){ 
-					line = it.next();					
-					if(line.contains(endHeading) && isAHeading(line)){
-						break;
-					}					
-					text += "\r" + line;
-				}
-			}
-		}
-		text = text.replaceAll("(?m)^[ \t]*\r?\n", "");
-		return text;
-	}	
+
 	
 	protected Node getNodeById(Document doc, String nodeType, String id){
 		
@@ -121,7 +100,19 @@ public class XMLEditor {
 	
 	private boolean isAHeading(String line){
 		line = line.replaceAll("\\(.*?\\)", "").trim(); //remove bracketedText
-		if(isAllUpperCase(line)){
+
+		if(isAllUpperCase(line) && isBold(line)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
+	protected boolean isBold(String s){
+
+		if(s.matches("<p><b>(.*?)</b></p>")){
+			//System.out.println(s);
 			return true;
 		}
 		else{

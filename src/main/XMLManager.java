@@ -56,6 +56,8 @@ public class XMLManager {
 				String screenNumber = cleanScreenNumber(lines[0]);
 				String screenType = cleanScreenType(lines[1]);
 				
+				removeTopicHeadings(lines);
+				
 				if(screenType.equals("unknown")){
 					masterxmlbuilder.createPageNodes(screenNumber, screenType, projectCode);
 					System.out.println("UNKNOWN TEMPLATE: " + lines[1]);
@@ -68,7 +70,7 @@ public class XMLManager {
 		}
 	}
 
-	
+
 	public void writeMaster() {
 
 		masterxmlbuilder.writeMaster();	
@@ -200,6 +202,16 @@ public class XMLManager {
 		return type;
 	}	
 	
+	private void removeTopicHeadings(String[] lines) {
+		
+		for(int i=0;i<lines.length;i++){
+			if(lines[i].contains("Topic ")){
+
+				lines[i] = "";
+			}
+		}
+	}	
+	
 	public String getProjectCode(){
 		return this.projectCode;
 	}
@@ -207,6 +219,7 @@ public class XMLManager {
 	public void setProjectCode(String projectCode){
 		this.projectCode = projectCode;
 	}
+	
 	
 	
 }

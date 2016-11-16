@@ -66,7 +66,7 @@ public class DragDrop extends XMLEditor{
 		
 		
 		//get options text
-		String options = getHeadingContent(screenContent, "OPTIONS","CORRECT AUDIO FEEDBACK");
+		String options = getHeadingContent(screenContent, "OPTIONS");
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 		
 		//separate options by option number 

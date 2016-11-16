@@ -11,7 +11,7 @@
   <p>Big Purple Bus Tour: Landmarks</p> 
   <p>02 Research, Design &amp; Quality (RDQ)</p> 
   <p>project no: MDL851</p> 
-  <p>reply to: Elizabeth Hughes <b>elizabeth.hughes@brightwavegroup.co</b><b>m</b></p> 
+  <p>reply to: Elizabeth Hughes <b>elizabeth.hughes@brightwavegroup.com</b></p> 
   <p>Revision history</p> 
   <p>Version</p> 
   <p>Date</p> 
@@ -182,8 +182,8 @@
   <p>Show a screen from this module.</p> 
   <p>TEXT</p> 
   <p>When you're on the tour there are other buttons you'll use to move around.</p> 
-  <p><b>[Menu</b><b> icon]</b> Takes you back to the menu.</p> 
-  <p><b>[Back</b><b>] </b>Takes you to the previous screen.</p> 
+  <p><b>[Menu icon]</b> Takes you back to the menu.</p> 
+  <p><b>[Back] </b>Takes you to the previous screen.</p> 
   <p><b>[Next]</b> Takes you to the next screen.</p> 
   <p>Welcome</p> 
   <p>SCREEN TYPE Video</p> 
@@ -230,9 +230,9 @@
   <p>A series of images with text that the learner explores in a fixed sequence that provides a linear narrative. </p> 
   <p>GUIDE AUDIO / TEXT:</p> 
   <p>Let's take a look at what the RDQ function does. I'll explain the role of the different teams, how they're structured and what value they contribute to Mondelēz International.</p> 
-  <p><b>NOTES</b><b> TO BW </b><b>GRAPHIC DESIGN TEAM:</b> </p> 
+  <p><b>NOTES TO BW GRAPHIC DESIGN TEAM:</b> </p> 
   <ol> 
-   <li>Images of <b>single individuals</b><b> in the workplace</b><b> are not allowed</b> within the RDQ module. Collaboration is key to this department so pics and photos <b>should</b> <b>show people working as a team, 2 people minimum</b><b>, whenever possible</b>.</li> 
+   <li>Images of <b>single individuals in the workplace are not allowed</b> within the RDQ module. Collaboration is key to this department so pics and photos <b>should show people working as a team, 2 people minimum, whenever possible</b>.</li> 
    <li>If a specific image is not provided… Whenever we show people with products, please make sure we show <b>smallish, healthy portions</b>.</li> 
    <li>Latest &amp; greatest key source document is this one, saved on BW network on 1st November. Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031</li> 
    <li>Show MDLZ diversity as well as collaboration. i.e. not just white males and not just chocolate.</li> 
@@ -583,7 +583,7 @@
   <p>REVEAL 3 IMAGES</p> 
   <p><b>Photo credit: NASA</b></p> 
   <p></p> 
-  <p><b>BW Build team</b><b>: </b>Use TANG sachet pic within the Reveal text screen, Keep the astronaut on the Hotspot screen please.</p> 
+  <p><b>BW Build team: </b>Use TANG sachet pic within the Reveal text screen, Keep the astronaut on the Hotspot screen please.</p> 
   <p>REVEAL 4 ICON PLACEMENT</p> 
   <p>Analytical Science </p> 
   <p></p> 

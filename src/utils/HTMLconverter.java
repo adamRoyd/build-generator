@@ -116,6 +116,7 @@ public class HTMLconverter {
 		String s = doc.html();
 		s = s.replace("<span>", "").replace("</span>", "");
 		s = s.replace("<b></b>", "").replace("<b> </b>", " ");
+		s = s.replace("</b><b>", "").replace("</b> <b>", " ");
 		
 		return s;
 
