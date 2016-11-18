@@ -50,7 +50,7 @@ public class XMLManager {
 		
 		
 		for(String content : contentList){
-		String[] lines = content.split("\\r?\\n");
+		String[] lines = content.split("\\n");
 
 			if(lines.length>1){ //1st screen passed through is a dud with only 1 value
 				String screenNumber = cleanScreenNumber(lines[0]);
@@ -134,7 +134,7 @@ public class XMLManager {
 			
 			editor.setFilePath(filepath);
 			doc = editor.editXML();
-			
+			doc = editor.replaceCarriageReturns(doc);
 			////////////////WRITE XML FILE///////////////////
 			TransformerFactory tFactory = TransformerFactory.newInstance();
 			Transformer transformer = tFactory.newTransformer();

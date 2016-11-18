@@ -5,8 +5,13 @@
 	<events>
 	
 		<event id="reset">
-			<anim id="1" animtime="0.25" type="alphaout">reveal_hotspot1</anim>
-			<enable id="1">hotspot1</enable>
+			<anim animtime="0.25" type="alphaout">reveal_hotspot1</anim>
+			<enable>hotspot1</enable>
+			<anim animtime="0.25" type="alphaout">reveal_hotspot2</anim>
+			<enable>hotspot2</enable>
+			<anim animtime="0.25" type="alphaout">reveal_hotspot3</anim>
+			<enable>hotspot3</enable>
+
 	
 		</event>
 
@@ -17,31 +22,60 @@
 
 	</events>
 
-	<image id="bg" y="0"><![CDATA[lib/images/content/mdl851002_02_110_01.jpg]]></image>
+	<image id="bg" y="74"><![CDATA[lib/images/content/placeholder.jpg]]></image>
 	
 	
-    <text id="introText" class="white" width="615" x="80" y="90"></text>
+    <text id="introText" class="white" width="615" x="80" y="100"></text>
 
+	<box id="labelHolder">
+		<text id="hotspotLabel1" class="hotspotLabel" x="180" y="250"/>
+		<text id="hotspotLabel2" class="hotspotLabel" x="280" y="250"/>
+		<text id="hotspotLabel3" class="hotspotLabel" x="380" y="250"/>
+
+	</box>	
 	
 	<box id="hotspotHolder">
 		<box id="hotspot1" class="hotspot" x="195" y="335" width="30" height="30" event="reset,showreveal"/>	
+		<box id="hotspot2" class="hotspot" x="295" y="335" width="30" height="30" event="reset,showreveal"/>	
+		<box id="hotspot3" class="hotspot" x="395" y="335" width="30" height="30" event="reset,showreveal"/>	
+
 	</box>
 	
-	<box id="labelHolder">
-		<text id="hotspotLabel1" target="hotspot1" class="hotspotLabel" x="40" y="-20"/>		
-	</box>
 
 	<box id="revealHolder">
-		<box id="reveal_hotspot1" anim="hidden" bgalpha="0.8" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
+		<box id="reveal_hotspot1" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
 			<box id="title1banner" bgcol="0036A3" width="100%" height="40">
-				<text id="revealtitle" x="20" y="10"></text>		
-				<svg id="closeBtn1" class="navBtn" x="300" y="10" width="20" height="20" src="lib/images/ui/nav_buttons/close.svg" event="reset"/>
+				<text id="reveal1title" x="20" y="10"></text>		
+				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal1text" width="300" x="20" y="120"></text>
+			<text id="reveal1text" width="300" x="20" y="60"></text>
 			<box id="reveal1media" x="20" y="60">
 
 			</box>
 		</box>
+		
+		<box id="reveal_hotspot2" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
+			<box id="title2banner" bgcol="0036A3" width="100%" height="40">
+				<text id="reveal2title" x="20" y="10"></text>		
+				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
+			</box>
+			<text id="reveal2text" width="300" x="20" y="60"></text>
+			<box id="reveal2media" x="20" y="60">
+
+			</box>
+		</box>
+
+		<box id="reveal_hotspot3" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
+			<box id="title3banner" bgcol="0036A3" width="100%" height="40">
+				<text id="reveal3title" x="20" y="10"></text>		
+				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
+			</box>
+			<text id="reveal3text" width="300" x="20" y="60"></text>
+			<box id="reveal3media" x="20" y="60">
+
+			</box>
+		</box>
+
 		
 
 

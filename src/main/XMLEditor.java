@@ -1,9 +1,20 @@
 package main;
 
+import java.io.IOException;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
@@ -15,6 +26,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 public class XMLEditor {
 	
@@ -57,7 +70,7 @@ public class XMLEditor {
 	protected String getHeadingContent(String screenContent,String heading){
 		
 		//split content by paragraph breaks
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\r?\\n"))).iterator();
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\n"))).iterator();
 		String text = "";
 		while(it.hasNext()){
 			String line = it.next();
@@ -70,7 +83,7 @@ public class XMLEditor {
 					if(isAHeading(line)){
 						break;
 					}					
-					text += "\r" + line;
+					text += "\n" + line;
 				}
 			}
 		}
@@ -80,7 +93,7 @@ public class XMLEditor {
 	
 	//this method also specifies the heading on which to stop adding content
 	protected String getHeadingContent(String screenContent,String startHeading,String endHeading){
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\r?\\n"))).iterator();
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\n"))).iterator();
 		String text = "";
 		while(it.hasNext()){
 			String line = it.next();
@@ -93,7 +106,7 @@ public class XMLEditor {
 					if(line.contains(endHeading) && isAHeading(line)){
 						break;
 					}					
-					text += "\r" + line;
+					text += "\n" + line;
 				}
 			}
 		}
@@ -119,9 +132,28 @@ public class XMLEditor {
 		return null;
 	}
 	
+	protected NodeList getNodeListById(Document doc, String nodeType, String id){
+		
+		String expression = "//" + nodeType + "[@id=\"" + id + "\"]";
+		XPath xpath = XPathFactory.newInstance().newXPath();
+		try {
+			XPathExpression expr = xpath.compile(expression);
+			NodeList nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+			if(nodeList == null){
+				//System.out.println(id + " IS NOT A NODE");
+			}
+			return nodeList;
+		} catch (XPathExpressionException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}	
+	
 	private boolean isAHeading(String line){
 		line = line.replaceAll("\\(.*?\\)", "").trim(); //remove bracketedText
 		if(isAllUpperCase(line)){
+			return true;
+		} else if(line.matches("Topic \\d(.*?)")){
 			return true;
 		}
 		else{
@@ -151,8 +183,10 @@ public class XMLEditor {
 		if(text == null || text.length()<3){
 			return "";
 		}
-		String classHTML = " class=\"" + classType + "\"";  
-		text = new StringBuilder(text).insert(3, classHTML).toString();
+
+		String classHTML = "<p class=\"" + classType + "\">";  
+		//text = new StringBuilder(text).insert(3, classHTML).toString();
+		text = text.replace("<p>",classHTML);
 		return text;
 	}	
 	
@@ -162,7 +196,7 @@ public class XMLEditor {
 		String prompt = getHeadingContent(s,"PROMPT");
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
-		introText = title + "\r" + introText + "\r" + prompt;	
+		introText = title + "\n" + introText + "\n" + prompt;	
 		return introText;
 	}
 	
@@ -187,6 +221,47 @@ public class XMLEditor {
 	
 	public void setFilePath(String filepath) {
 		this.filepath = filepath;
+	}
+	
+	protected Document replaceCarriageReturns(Document doc) throws SAXException, IOException{
+
+		String docAsString;
+		
+		//convert document to string
+	    try {
+	        StringWriter sw = new StringWriter();
+	        TransformerFactory tf = TransformerFactory.newInstance();
+	        Transformer transformer = tf.newTransformer();
+	        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
+	        transformer.setOutputProperty(OutputKeys.METHOD, "xml");
+	        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+	        transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+
+	        transformer.transform(new DOMSource(doc), new StreamResult(sw));
+	        docAsString = sw.toString();
+	    } catch (Exception ex) {
+	        throw new RuntimeException("Error converting to String", ex);
+	    }
+	    
+	    //replace carraige returns
+	    //docAsString = docAsString.replace("\r", "\n");
+	    		
+	    //convert string back to document
+	    try {
+			DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+			InputSource is = new InputSource();
+		    is.setCharacterStream(new StringReader(docAsString));
+		    Document newDoc = db.parse(is);
+		    return newDoc;
+		    
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return null;
+		}
+	     
+		
+		
 	}
 	
 

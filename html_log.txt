@@ -1,0 +1,90 @@
+<html>
+ <head></head>
+ <body>
+  <p>SCREEN 02_110</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p>Note for Build team: Color code the words <b>Discover</b>, <b>Develop</b> and <b>Deploy</b> whenever they are used in the Reveal Text.</p> 
+  <p>Mondelēz red for Discover, blue for Develop and Mondelēz purple for Deploy.</p> 
+  <p>Also, please make each of these colored words <b>bold</b></p> 
+  <p>+ Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: \\brightfs1\company\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\RDQ\MLDZ Landmark Tour RDQ Outline 20160926.pptx Slide 11</p> 
+  <p>MAIN IMAGE</p> 
+  <p>MDLZ RDQ global sites map. Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 <b>Slide 7 </b></p> 
+  <p><b>BW Build team: Remove all text &amp; devices except Map, </b>ADVANTAGED<b> Sites list &amp; location markers. (Change list from 'Strategic' Sites to Advantaged Sites.)</b></p> 
+  <p></p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Luckily RDQ has teams of experts all over the world.</p> 
+  <p>PROMPT</p> 
+  <p>Select each Advantaged Technical Center to find out more.</p> 
+  <p>REVEAL 1 ICON PLACEMENT</p> 
+  <p>Mexico City, Mexico</p> 
+  <p>REVEAL 1 TEXT (50 words max)</p> 
+  <p>¡Hola! The teams in the busy Mexican capital city work in the Gum, Candy Powdered Beverages and Meals categories.</p> 
+  <p>They <b>deploy</b> all four categories and they've got the skills to <b>develop</b> Candy and Meals here. RDQ in Mexico also work hard to <b>discover</b> new Candy products.</p> 
+  <p>REVEAL 1 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 Slide 11</p> 
+  <p>REVEAL 2 ICON PLACEMENT</p> 
+  <p>East Hanover, USA.</p> 
+  <p>REVEAL 2 TEXT (50 words max)</p> 
+  <p>Hi there! In the township of East Hanover in New Jersey, USA, the RDQ teams <b>deploy</b> our Biscuits, Gum and Candy.</p> 
+  <p>They also <b>discover</b> and <b>develop</b> great new Biscuits and Gum products.</p> 
+  <p>REVEAL 2 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 Slide 11</p> 
+  <p>REVEAL 3 ICON PLACEMENT</p> 
+  <p>Curitiba, Brazil.</p> 
+  <p>REVEAL 3 TEXT (50 words max)</p> 
+  <p>Olá! Here in Curitiba, the capital city of Parana state in Brazil, our teams are busy <b>discovering</b> and <b>developing</b> new kinds of Powdered Beverages. Other RDQ teams here <b>deploy</b> our Powdered Beverages along with, Chocolate and Meals. </p> 
+  <p>REVEAL 3 IMAGE/VIDEO</p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 "</p> 
+  <p>Slide 11</p> 
+  <p>REVEAL 4 ICON PLACEMENT</p> 
+  <p>Bournville, UK</p> 
+  <p>REVEAL 4 TEXT (50 words max)</p> 
+  <p>Hello. Bournville is a historic village, south of Birmingham, right in the middle of England. We have been making Cadbury chocolate here since 1879 and Chocolate is the only category we specialize in at this Center. We <b>discover, develop</b> and <b>deploy</b> delicious chocolate treats our consumers love.</p> 
+  <p>REVEAL 4 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 Slide 11</p> 
+  <p>REVEAL 5 ICON PLACEMENT</p> 
+  <p>Reading, UK.</p> 
+  <p>REVEAL 5 TEXT (50 words max)</p> 
+  <p>Welcome to Reading, 42 miles from London. There's a university here and many scientific companies nearby, so we've got lots of talented people working in our teams. We use all that scientific knowledge to discover new ingredients and support the development of products across all our categories: Biscuits, Chocolate, Gum, Candy and Powdered Beverages.</p> 
+  <p>REVEAL 5 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031</p> 
+  <p>Slide 11</p> 
+  <p>REVEAL 6 ICON PLACEMENT</p> 
+  <p>Thane, India.</p> 
+  <p>REVEAL 6 TEXT (50 words max)</p> 
+  <p>Namaste! Thane is a suburb of Mumbai, known for its many beautiful lakes. At the RDQ Technical Center here we <b>develop</b> and <b>deploy</b> both Chocolate and Powdered Beverages.</p> 
+  <p>REVEAL 6 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031</p> 
+  <p>Slide 11</p> 
+  <p>REVEAL 7 ICON PLACEMENT</p> 
+  <p>Suzhou, China.</p> 
+  <p>REVEAL 7 TEXT (50 words max)</p> 
+  <p>Nǐ hǎo! Suzhou is a major city on the Yangtze river, famous for its canals, bridges and beautiful gardens. The RDQ Technical Center here focuses just on our Biscuits category, <b>developing</b> and <b>deploying</b> delicious cookies and snacks.</p> 
+  <p>REVEAL 7 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. Source: </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031</p> 
+  <p>Slide 11</p> 
+  <p>REVEAL 8 ICON PLACEMENT</p> 
+  <p>Wroclaw, Poland</p> 
+  <p>REVEAL 8 TEXT (50 words max)</p> 
+  <p>Cześć! Welcome to Wroclaw, Poland's fourth-largest city, known for its beautiful medieval architecture. The RDQ teams here <b>deploy</b> Biscuits and Chocolate.</p> 
+  <p>REVEAL 8 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 Slide 11</p> 
+  <p>REVEAL 9 ICON PLACEMENT</p> 
+  <p>Singapore</p> 
+  <p>REVEAL 9 TEXT (50 words max)</p> 
+  <p>Hello! Singapore is an island city-state off southern Malaysia. The climate is tropical, it has a large multicultural population, and English is one of the national languages spoken. Our colleagues here <b>deploy</b> Candy and Gum. Yes, gum! </p> 
+  <p><b>Did you know…?</b> Contrary to popular belief, selling chewing gum <b>has </b>been allowed here since 2004, as long as it's for "therapeutic purposes", such as nicotine replacement or teeth whitening. Importing gum is still illegal though and you'll get a big fine if you drop gum or litter in Singapore. </p> 
+  <p>REVEAL 9 IMAGE/VIDEO </p> 
+  <p>Use relevant MDLZ Category icons to match the ones listed in the Reveal Text. </p> 
+  <p>Source: L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\02_RDQMLDZ Landmark Tour RDQ Outline 20161031 Slide 11</p> 
+ </body>
+</html>

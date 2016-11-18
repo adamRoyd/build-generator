@@ -2,9 +2,9 @@ package utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.util.Vector;
 
-import org.apache.commons.lang3.StringUtils;
 import org.docx4j.Docx4J;
 import org.docx4j.Docx4jProperties;
 import org.docx4j.convert.out.HTMLSettings;
@@ -49,8 +49,8 @@ public class HTMLconverter {
 		
 		//CLEAN UP HTML CODE
 		Whitelist w1 = Whitelist.simpleText();
-		w1.addTags("p", "ul", "b", "li","strong","ol");
-		//w1.addAttributes("span", "style");
+		w1.addTags("p", "ul", "span", "b", "li","strong","ol");
+		w1.addAttributes("span","style");
 		htmlString = Jsoup.clean(htmlString, w1);
 		htmlString = htmlString.replace("<p>&nbsp;</p>", "").replace("&nbsp;", " "); //remove nbsp's
 		htmlString = htmlString.replaceAll("<p></p>",""); //remove empty p tags
@@ -58,9 +58,9 @@ public class HTMLconverter {
 		
 		//BOLD TEXT
 		//use DOM parser to locate 'style="font-weight:bold"' and delete other style attributes
-		//htmlString = createBoldTags(htmlString);
 		
-
+		htmlString = createBoldTags(htmlString);
+		createTextFile(htmlString);
 
 		// Clean up, so any ObfuscatedFontPart temp files can be deleted 
 		if (wordMLPackage.getMainDocumentPart().getFontTablePart()!=null) {
@@ -70,7 +70,24 @@ public class HTMLconverter {
 		htmlSettings = null;
 		wordMLPackage = null;
 		
-		return htmlString;	
+		return htmlString;
+	}
+
+	private static void createTextFile(String htmlString) {
+		
+		String[] s = htmlString.split("\\n");
+		
+		try{
+		    PrintWriter writer = new PrintWriter("html_log.txt", "UTF-8");
+		    
+			for(int i=0;i<s.length;i++){
+				writer.println(s[i]);
+			}
+			
+		    writer.close();
+		} catch (Exception e) {
+		   
+		}
 	}
 
 	private static String createBoldTags(String htmlString) {
@@ -98,6 +115,8 @@ public class HTMLconverter {
 		
 		String s = doc.html();
 		s = s.replace("<span>", "").replace("</span>", "");
+		s = s.replace("<b></b>", "").replace("<b> </b>", " ");
+		s = s.replace("</b><b>", "").replace("</b> <b>", " ");
 		
 		return s;
 

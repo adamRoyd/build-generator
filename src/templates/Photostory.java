@@ -53,7 +53,7 @@ public class Photostory extends XMLEditor{
 			String promptText = getHeadingContent(cellContent, "PROMPT");
 			titleText = addClass(titleText,"headline");
 			promptText = addClass(promptText,"prompt");
-			text = titleText + "\r" + text + "\r" + promptText;
+			text = titleText + "\n" + text + "\n" + promptText;
 			cdata = doc.createCDATASection(text);
 			
 			//get text child node of cell and replace text
@@ -76,7 +76,7 @@ public class Photostory extends XMLEditor{
 		ArrayList<String> list = new ArrayList<String>();
 		
 		//split content based on frame number
-		String[]arr = s.split("<p>\\d</p>");
+		String[]arr = s.split("<p><b>\\d</b></p>");
 		
 		for(int i=0;i<arr.length;i++){
 

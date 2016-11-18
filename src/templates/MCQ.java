@@ -38,7 +38,8 @@ public class MCQ extends XMLEditor{
 		String prompt = getHeadingContent(screenContent,"PROMPT");
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
-		introText = title + "\r" + introText + "\r" + prompt;	
+		
+		introText = title + "\n" + introText + "\n" + prompt;	
 		CDATASection question = doc.createCDATASection(introText);
 		Node introtext = getNodeById(doc,"text", "introText");
 		replaceText(introtext,question);
@@ -54,7 +55,7 @@ public class MCQ extends XMLEditor{
 		*  Iterate through the lines and perform operation in groups of threes.
 		*/
 		
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(options.split("\r"))).iterator();
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(options.split("\n"))).iterator();
 		Node custom = doc.getElementsByTagName("custom").item(0);
 		Node option;
 		CDATASection cdata;
@@ -84,7 +85,7 @@ public class MCQ extends XMLEditor{
 			String correct = it.next();
 			NamedNodeMap attr = option.getAttributes();
 			Node nodeAttr = attr.getNamedItem("correct");
-			if(correct.toLowerCase().replaceAll("\\<.*?>","").replaceAll(" ","").equals("correct")){
+			if(correct.toLowerCase().replaceAll("\\<.*?>","").trim().equals("correct")){
 				nodeAttr.setTextContent("true");
 				correctCount ++;
 			} else{
