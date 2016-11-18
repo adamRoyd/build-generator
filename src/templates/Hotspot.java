@@ -46,6 +46,7 @@ public class Hotspot extends XMLEditor{
 		String labelText = "";
 		Node revealTextNode;
 		Node labelNode;
+		Node revealTitleNode;
 		
 		while(true){
 
@@ -64,10 +65,13 @@ public class Hotspot extends XMLEditor{
 			revealTextNode = getNodeById(doc, "text", "reveal" + count + "text");
 			replaceText(revealTextNode,doc.createCDATASection(revealText));
 			
-			labelNode = getNodeById(doc,"text","hotspotLabel" + count);
+			
 			labelText = getHeadingContent(screenContent,"REVEAL " + count + " ICON PLACEMENT");
+			labelNode = getNodeById(doc,"text","hotspotLabel" + count);
+			revealTitleNode = getNodeById(doc,"text","reveal" + count + "title");
 
 			replaceText(labelNode,doc.createCDATASection(labelText));
+			replaceText(revealTitleNode,doc.createCDATASection(labelText));
 
 			count++;
 		}	
@@ -80,20 +84,27 @@ public class Hotspot extends XMLEditor{
 
 		Node revealHolder = getNodeById(doc, "box", "revealHolder");
 		//clone heading node
-		Node revealNode = getNodeById(doc,"box","reveal_hotspot1").cloneNode(true);
-		editAttribute(revealNode,"id","reveal_hotspot" + count);
+		Node revealNode = getNodeById(doc,"box","reveal_hotspot1").cloneNode(true);	
 		
-		//change id of child text node
-		NodeList revealNodeist = revealNode.getChildNodes();
-		for(int i=0;i<revealNodeist.getLength();i++){
-			
-			Node n = revealNodeist.item(i);
-			if("text".equals(n.getNodeName())){
+		editAttribute(revealNode,"id","reveal_hotspot" + count);
 				
-				editAttribute(n,"id","reveal" + count + "text");
-			}
-		}				
 		revealHolder.appendChild(revealNode);		
+		
+		//change id of revealtext
+		NodeList revealText1List = getNodeListById(doc, "text", "reveal1text");
+		editAttribute(revealText1List.item(1),"id","reveal" + count + "text");
+		
+		//change id of titlebanner
+		NodeList title1bannerList = getNodeListById(doc, "box", "title1banner");
+		editAttribute(title1bannerList.item(1),"id","title" + count + "banner");
+		
+		//change id of revealtitle
+		NodeList reveal1titleList = getNodeListById(doc, "text", "reveal1title");
+		editAttribute(reveal1titleList.item(1),"id","reveal" + count + "title");	
+		
+		//change id of revealmedia
+		NodeList reveal1mediaList = getNodeListById(doc, "box", "reveal1media");	
+		editAttribute(reveal1mediaList.item(1),"id","reveal" + count + "media");	
 	}
 
 	private void constructHotspot(int count) {
@@ -107,7 +118,7 @@ public class Hotspot extends XMLEditor{
 	}
 
 	private void constructLabel(int count) {
-		// TODO Auto-generated method stub
+
 		Node labelHolder = getNodeById(doc, "box", "labelHolder");
 		Node labelNode = getNodeById(doc,"text","hotspotLabel1");
 		Node n = labelNode.cloneNode(true);
@@ -116,6 +127,7 @@ public class Hotspot extends XMLEditor{
 	}	
 	
 	private void constructEvent(int count) {
+		
 		Node eventHolder = getNodeById(doc,"event","reset");
 		
 		//create anim node

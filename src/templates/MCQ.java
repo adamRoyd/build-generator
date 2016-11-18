@@ -39,7 +39,7 @@ public class MCQ extends XMLEditor{
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
 		
-		introText = title + "\r" + introText + "\r" + prompt;	
+		introText = title + "\n" + introText + "\n" + prompt;	
 		CDATASection question = doc.createCDATASection(introText);
 		Node introtext = getNodeById(doc,"text", "introText");
 		replaceText(introtext,question);
@@ -47,15 +47,15 @@ public class MCQ extends XMLEditor{
 	
 	private void editOptions() {
 
-		String options = getHeadingContent(screenContent,"OPTIONS");
+		String options = getHeadingContent(screenContent,"OPTIONS","CORRECT AUDIO FEEDBACK");
 		
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 
 		/* option string contains the option number, option text and true/false attribute 
 		*  Iterate through the lines and perform operation in groups of threes.
 		*/
-		System.out.println(options);
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(options.split("\r"))).iterator();
+		
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(options.split("\n"))).iterator();
 		Node custom = doc.getElementsByTagName("custom").item(0);
 		Node option;
 		CDATASection cdata;
@@ -64,8 +64,8 @@ public class MCQ extends XMLEditor{
 		while(it.hasNext()){
 			
 			////OPTION NUMBER////
-			String optionNumber = it.next().replaceAll("\\<.*?>","").trim();
-			System.out.println("OPTION NUMBER " + optionNumber);
+			String optionNumber = it.next().replaceAll("\\<.*?>","").replaceAll(" ","");
+			//System.out.println("OPTION NUMBER " + optionNumber);
 			
 			//get the corresponding option node
 			option = doc.getElementsByTagName("option").item(Integer.parseInt(optionNumber) - 1);
@@ -85,7 +85,7 @@ public class MCQ extends XMLEditor{
 			String correct = it.next();
 			NamedNodeMap attr = option.getAttributes();
 			Node nodeAttr = attr.getNamedItem("correct");
-			if(correct.toLowerCase().replaceAll("\\<.*?>","").replaceAll(" ","").equals("correct")){
+			if(correct.toLowerCase().replaceAll("\\<.*?>","").trim().equals("correct")){
 				nodeAttr.setTextContent("true");
 				correctCount ++;
 			} else{

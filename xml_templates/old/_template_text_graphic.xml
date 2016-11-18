@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
 
-	<image id="image1" x="580" y="150"><![CDATA[lib/images/content/mdl851_bkg_blue_d_1.jpg]]></image>
+	<image id="image1" y="74"><![CDATA[lib/images/content/placeholder.jpg]]></image>
 	
 	<!--
 		For quoteText there are:
@@ -10,7 +10,7 @@
 	-->
 	<text id="quoteText" class="white" width="430" x="550" y="170"></text>	
 	
-	<text id="screentext" x="80" y="100" width="450"><![CDATA[
+	<text id="screentext" class="white" x="80" y="100" width="450"><![CDATA[
 		<p class="title">Text and graphic</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Duis in blandit erat.</i> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <b>Duis in blandit erat.</b> Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>

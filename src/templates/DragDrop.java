@@ -66,7 +66,7 @@ public class DragDrop extends XMLEditor{
 		
 		
 		//get options text
-		String options = getHeadingContent(screenContent, "OPTIONS");
+		String options = getHeadingContent(screenContent, "OPTIONS","CORRECT AUDIO FEEDBACK");
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 		
 		//separate options by option number 
@@ -77,7 +77,7 @@ public class DragDrop extends XMLEditor{
 		
 		while(it.hasNext()){
 			String s = (String) it.next();
-			ArrayList<String> dropBoxes = new ArrayList<String>(Arrays.asList(s.split("\r")));
+			ArrayList<String> dropBoxes = new ArrayList<String>(Arrays.asList(s.split("\n")));
 			//remove first item from list as it is not a dropbox
 			ListIterator listIterator = dropBoxes.listIterator();
 			listIterator.next();
@@ -100,7 +100,7 @@ public class DragDrop extends XMLEditor{
 		while(it.hasNext()){
 			String s = (String) it.next();
 			s = s.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
-			String[]array = s.split("\r");
+			String[]array = s.split("\n");
 			//first entry is the drag item
 			dragItems.add(array[0]);
 			//create the match numbers from the rest of the array

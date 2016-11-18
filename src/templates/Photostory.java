@@ -53,7 +53,7 @@ public class Photostory extends XMLEditor{
 			String promptText = getHeadingContent(cellContent, "PROMPT");
 			titleText = addClass(titleText,"headline");
 			promptText = addClass(promptText,"prompt");
-			text = titleText + "\r" + text + "\r" + promptText;
+			text = titleText + "\n" + text + "\n" + promptText;
 			cdata = doc.createCDATASection(text);
 			
 			//get text child node of cell and replace text

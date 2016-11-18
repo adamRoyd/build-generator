@@ -45,16 +45,14 @@
 
 	<audio id="audio1" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />		
 	
-    <text id="introText" x="80" y="100" width="915">
-	<![CDATA[<p class="title">Multiple Choice Question - One correct answer</p>
-	<p>This is a text-based multiple choice question with just one correct answer. </p>
-	<p class="prompt">Select your answer, then Confirm.</p>
+    <text id="introText" x="25" y="100" width="600">
+	<![CDATA[<p>INTRO_TEXT</p>
 	]]></text>
 
-	<custom id="mcq" x="110" y="250">
-		<settings optwidth="345" radiomode="true" randomise="true" />
-		<option correct="false"><![CDATA[	<p>Copenhagen is the capital of France</p>]]></option>
-		<option correct="false"><![CDATA[	<p>Paris is the capital of Spain</p>]]></option>
+	<custom id="mcq" x="55" y="200" width="570">
+		<settings optwidth="345" radiomode="true" randomise="false" />
+		<option correct="false"><![CDATA[	<p>OPTION_1</p>]]></option>
+		<option correct="false"><![CDATA[	<p>OPTION_2</p>]]></option>
 	</custom>
 	
 	<box id="btns" x="55" y="550">		
@@ -64,24 +62,24 @@
 
 	<box id="feedbackHolder" x="655" y="50" width="365" height="595" anim="alpha">
 		<box id="feedback_pass" x="30" y="50" width="280" anim="hidden">
-			<text>
+			<text id="text_pass">
 				<![CDATA[
-				<p>That's right!</p>
+				<p>FEEDBACK_PASS</p>
 
 				]]>
 			</text>
 		</box>
 		<box id="feedback_partial" x="30" y="50" width="280" anim="hidden">
-			<text>
+			<text id="text_partial">
 				<![CDATA[
-				<p>That's nearly right.</p>
+				<p>FEEDBACK_PARTIAL/p>
 				]]>
 			</text>
 		</box>
 		<box id="feedback_fail" x="30" y="50" width="280" anim="hidden">
-			<text>
+			<text id="text_fail">
 				<![CDATA[
-				<p>Feedback - failed!</p>
+				<p>FEEDBACK_FAIL</p>
 
 				]]>
 			</text>

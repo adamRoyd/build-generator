@@ -50,13 +50,11 @@ public class XMLManager {
 		
 		
 		for(String content : contentList){
-		String[] lines = content.split("\\r?\\n");
+		String[] lines = content.split("\\n");
 
 			if(lines.length>1){ //1st screen passed through is a dud with only 1 value
 				String screenNumber = cleanScreenNumber(lines[0]);
 				String screenType = cleanScreenType(lines[1]);
-				
-				removeTopicHeadings(lines);
 				
 				if(screenType.equals("unknown")){
 					masterxmlbuilder.createPageNodes(screenNumber, screenType, projectCode);
@@ -70,7 +68,7 @@ public class XMLManager {
 		}
 	}
 
-
+	
 	public void writeMaster() {
 
 		masterxmlbuilder.writeMaster();	
@@ -136,7 +134,7 @@ public class XMLManager {
 			
 			editor.setFilePath(filepath);
 			doc = editor.editXML();
-			
+			doc = editor.replaceCarriageReturns(doc);
 			////////////////WRITE XML FILE///////////////////
 			TransformerFactory tFactory = TransformerFactory.newInstance();
 			Transformer transformer = tFactory.newTransformer();
@@ -202,16 +200,6 @@ public class XMLManager {
 		return type;
 	}	
 	
-	private void removeTopicHeadings(String[] lines) {
-		
-		for(int i=0;i<lines.length;i++){
-			if(lines[i].contains("Topic ")){
-
-				lines[i] = "";
-			}
-		}
-	}	
-	
 	public String getProjectCode(){
 		return this.projectCode;
 	}
@@ -219,7 +207,6 @@ public class XMLManager {
 	public void setProjectCode(String projectCode){
 		this.projectCode = projectCode;
 	}
-	
 	
 	
 }
