@@ -116,17 +116,17 @@
 	<box id="dropBox4" x="355" y="480" width="310" height="90" linewidth="0" linecol="ff0000" />
 	
 	<!-- Drag items -->
-	<box id="drag1" x="710" y="110 " width="270" height="70" class="dragBox">
-		<text><![CDATA[<p>DRAG_1</p>]]></text>
+	<box id="drag1" x="710" y="200" width="270" height="70" class="dragBox">
+		<text><![CDATA[<p>RDQ</p>]]></text>
 	</box>
-	<box id="drag2" x="710" y="200" width="270" height="70" class="dragBox">
-		<text width="100%" height="100%"><![CDATA[<p>DRAG_2</p>]]></text>
+	<box id="drag2" x="710" y="280" width="270" height="70" class="dragBox">
+		<text width="100%" height="100%"><![CDATA[<p>Strategy Insights Analytics & Marketing</p>]]></text>
 	</box>
-	<box id="drag3" x="710" y="290" width="270" height="70" class="dragBox">
-		<text><![CDATA[<p>DRAG_3</p>]]></text>
+	<box id="drag3" x="710" y="360" width="270" height="70" class="dragBox">
+		<text><![CDATA[<p>Integrated Supply Chain</p>]]></text>
 	</box>
-	<box id="drag4" x="710" y="380" width="270" height="70" class="dragBox">
-		<text><![CDATA[<p>DRAG_4</p>]]></text>
+	<box id="drag4" x="710" y="440" width="270" height="70" class="dragBox">
+		<text><![CDATA[<p>Legal</p>]]></text>
 	</box>
 
 		

@@ -38,11 +38,6 @@ public class XMLEditor {
 	
 	public XMLEditor(){
 	}
-
-	public Document editXML(Document doc,String screenContent){
-		
-		return doc;
-	};
 	
 	public Document editXML(){
 		//method should be overridden by child class
@@ -150,10 +145,8 @@ public class XMLEditor {
 	}	
 	
 	private boolean isAHeading(String line){
-		line = line.replaceAll("\\(.*?\\)", "").trim(); //remove bracketedText
-		if(isAllUpperCase(line)){
-			return true;
-		} else if(line.matches("Topic \\d(.*?)")){
+		line = line.replaceAll("\\(.*?\\)", "").replaceAll("\\[.*?\\]", "").trim(); //remove bracketedText
+		if(isAllUpperCase(line) || isATopicHeading(line)){
 			return true;
 		}
 		else{
@@ -161,6 +154,17 @@ public class XMLEditor {
 		}
 	}
 	
+	private boolean isATopicHeading(String line) {
+		
+		line = line.replaceAll("\\<.*?>","").trim(); //remove html tags
+		
+		if(line.startsWith("Topic")){
+			return true;
+		}
+		
+		return false;
+	}
+
 	protected boolean isAllUpperCase(String s){
 		s = s.replaceAll("\\<.*?>",""); //remove html tags
 		//if line is just an html tag
@@ -189,16 +193,7 @@ public class XMLEditor {
 		text = text.replace("<p>",classHTML);
 		return text;
 	}	
-	
-	protected String getIntroText(String s){
-		String title = getHeadingContent(s,"TITLE");
-		String introText = getHeadingContent(s, "TEXT");
-		String prompt = getHeadingContent(s,"PROMPT");
-		title = addClass(title, "title");
-		prompt = addClass(prompt,"prompt");
-		introText = title + "\n" + introText + "\n" + prompt;	
-		return introText;
-	}
+
 	
 	protected boolean isNumeric(String s) {
 		s = s.replaceAll("\\<.*?>",""); //remove html tags
@@ -222,47 +217,7 @@ public class XMLEditor {
 	public void setFilePath(String filepath) {
 		this.filepath = filepath;
 	}
-	
-	protected Document replaceCarriageReturns(Document doc) throws SAXException, IOException{
 
-		String docAsString;
-		
-		//convert document to string
-	    try {
-	        StringWriter sw = new StringWriter();
-	        TransformerFactory tf = TransformerFactory.newInstance();
-	        Transformer transformer = tf.newTransformer();
-	        transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "no");
-	        transformer.setOutputProperty(OutputKeys.METHOD, "xml");
-	        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-	        transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
-
-	        transformer.transform(new DOMSource(doc), new StreamResult(sw));
-	        docAsString = sw.toString();
-	    } catch (Exception ex) {
-	        throw new RuntimeException("Error converting to String", ex);
-	    }
-	    
-	    //replace carraige returns
-	    //docAsString = docAsString.replace("\r", "\n");
-	    		
-	    //convert string back to document
-	    try {
-			DocumentBuilder db = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-			InputSource is = new InputSource();
-		    is.setCharacterStream(new StringReader(docAsString));
-		    Document newDoc = db.parse(is);
-		    return newDoc;
-		    
-		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			return null;
-		}
-	     
-		
-		
-	}
 	
 
 }

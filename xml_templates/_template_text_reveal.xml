@@ -23,10 +23,7 @@
 	<image id="bg" y="74"><![CDATA[lib/images/ui/color_bg/placeholder.jpg]]></image>
 	
 	
-    <text id="introText" class="white" width="615" x="80" y="100"><![CDATA[
-	<p>GRAPHIC REVEAL</p> 
-
-	]]></text>
+    <text id="introText" class="white" width="615" x="80" y="100"></text>
 
 	<box id="revealHolder">
 		<box class="click" event="reset,showreveal" id="click1" width="180" height="180" x="115" y="235">
@@ -34,7 +31,7 @@
 			<text id="clickText1"></text>
 		</box>
 		
-		<box anim="hidden" bgalpha="1" bgcol="4F2070" class="reveal" id="reveal_click1" width="570" height="175" x="115" y="440">
+		<box anim="hidden" bgalpha="1" bgcol="4F2070" class="reveal" id="reveal_click1" width="570" height="175" x="115" y="450">
 			<pointer class="up" colour="4F2070" width="40" x="90" y="-20"/>
 			<text id="reveal1text" width="calc(100% - 40px)" x="20" y="20"></text>
 		</box>
@@ -44,7 +41,7 @@
 			<text id="clickText2"></text>
 		</box>
 
-		<box anim="hidden" bgalpha="1" bgcol="4F2070" class="reveal" id="reveal_click2" width="570" height="195" x="215" y="440">
+		<box anim="hidden" bgalpha="1" bgcol="4F2070" class="reveal" id="reveal_click2" width="570" height="195" x="215" y="450">
 			<pointer class="up" colour="4F2070" width="40" x="285" y="-20"/>
 			<text id="reveal2text"  width="calc(100% - 40px)" x="20" y="20"></text>
 		</box>
@@ -54,7 +51,7 @@
 			<text id="clickText3"></text>
 		</box>
 
-		<box anim="hidden" bgalpha="1" bgcol="4F2070" class="reveal" id="reveal_click3" width="570" height="150" x="310" y="440">
+		<box anim="hidden" bgalpha="1" bgcol="4F2070" class="reveal" id="reveal_click3" width="570" height="150" x="310" y="450">
 			<pointer class="up" colour="4F2070" width="40" x="480" y="-20"/>
 			<text id="reveal3text"  width="calc(100% - 40px)" x="20" y="20"></text>
 		</box>

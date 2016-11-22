@@ -134,7 +134,8 @@ public class XMLManager {
 			
 			editor.setFilePath(filepath);
 			doc = editor.editXML();
-			doc = editor.replaceCarriageReturns(doc);
+			//doc = editor.replaceCarriageReturns(doc);
+			
 			////////////////WRITE XML FILE///////////////////
 			TransformerFactory tFactory = TransformerFactory.newInstance();
 			Transformer transformer = tFactory.newTransformer();

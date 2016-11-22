@@ -41,8 +41,8 @@ public class MCQ extends XMLEditor{
 		
 		introText = title + "\n" + introText + "\n" + prompt;	
 		CDATASection question = doc.createCDATASection(introText);
-		Node introtext = getNodeById(doc,"text", "introText");
-		replaceText(introtext,question);
+		Node introTextNode = getNodeById(doc,"text", "introText");
+		replaceText(introTextNode,question);
 	};		
 	
 	private void editOptions() {
@@ -51,7 +51,8 @@ public class MCQ extends XMLEditor{
 		
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 
-		/* option string contains the option number, option text and true/false attribute 
+		/* 
+		 * option string contains the option number, option text and true/false attribute 
 		*  Iterate through the lines and perform operation in groups of threes.
 		*/
 		
@@ -59,7 +60,7 @@ public class MCQ extends XMLEditor{
 		Node custom = doc.getElementsByTagName("custom").item(0);
 		Node option;
 		CDATASection cdata;
-		int correctCount = 0; //count number of correct options
+		int correctCount = 0;
 		
 		while(it.hasNext()){
 			
@@ -75,33 +76,31 @@ public class MCQ extends XMLEditor{
 				custom.appendChild(option);
 			}
 			
-			//OPTION TEXT//
+			/////OPTION TEXT/////
 			String optionText = it.next();
 			//System.out.println("OPTION TEXT" + optionText);
 			cdata = doc.createCDATASection(optionText);
 			replaceText(option,cdata);
 			
-			//TRUE OR FALSE ATTRIBUTE//
+			////TRUE OR FALSE ATTRIBUTE////
 			String correct = it.next();
-			NamedNodeMap attr = option.getAttributes();
-			Node nodeAttr = attr.getNamedItem("correct");
+
 			if(correct.toLowerCase().replaceAll("\\<.*?>","").trim().equals("correct")){
-				nodeAttr.setTextContent("true");
+				editAttribute(option, "correct", "true");
 				correctCount ++;
 			} else{
-				nodeAttr.setTextContent("false");
+				editAttribute(option, "correct", "false");
 			}
 			
 		}
 		
 		///MCQ SETTINGS///
 		Node settings = doc.getElementsByTagName("settings").item(0);
-		NamedNodeMap attr = settings.getAttributes();
-		Node radioModeNode = attr.getNamedItem("radiomode");
+
 		if(correctCount>1){
-			radioModeNode.setTextContent("false");
+			editAttribute(settings, "radiomode", "false");
 		} else{
-			radioModeNode.setTextContent("true");
+			editAttribute(settings, "radiomode", "true");
 		}
 		
 	}

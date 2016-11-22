@@ -25,7 +25,7 @@
 	<image id="bg" y="74"><![CDATA[lib/images/content/placeholder.jpg]]></image>
 	
 	
-    <text id="introText" class="white" width="615" x="80" y="100"></text>
+    <text id="introText" class="white" width="615" x="25" y="100"></text>
 
 	<box id="labelHolder">
 		<text id="hotspotLabel1" class="hotspotLabel" x="180" y="250"/>

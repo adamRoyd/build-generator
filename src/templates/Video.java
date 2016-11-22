@@ -18,7 +18,9 @@ public class Video extends XMLEditor{
 		this.screenContent = screenContent;
 	}	
 	
-	public Document editXML(Document doc,String screenContent){
+	public Document editXML(){
+		
+		System.out.println("hi");
 		
 		editIntroText();
 
