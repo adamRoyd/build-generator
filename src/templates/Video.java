@@ -19,9 +19,7 @@ public class Video extends XMLEditor{
 	}	
 	
 	public Document editXML(){
-		
-		System.out.println("hi");
-		
+
 		editIntroText();
 
 		addTranscript(doc,screenContent);

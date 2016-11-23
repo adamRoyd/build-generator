@@ -45,8 +45,11 @@ public class XMLEditor {
 	}
 	
 	protected void replaceText(Node node, CDATASection cdata){
-		removeChilds(node);
-		node.appendChild(cdata);
+		//replace text if there is content
+		if(cdata.getLength() != 0){
+			removeChilds(node);
+			node.appendChild(cdata);
+		}
 	}
 
 	

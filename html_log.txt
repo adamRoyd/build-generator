@@ -8,9 +8,6 @@
   <p><b>VIDEO</b> </p> 
   <p>"L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\01_Sales\MDLZ-ACCT Video One v1.mp4" Fade out and end at 00:00:54 after "measuring and learning as we go." and before the ACCT circle disappears.</p> 
   <p><b>OPENING TEXT (Max 30 words)</b></p> 
-  <p>You already know that Mondelēz International wants to become a truly global snacking company, driving growth in snacking around the world.</p> 
-  <p><b>PROMPT</b></p> 
-  <p>Watch the video to see how we will achieve this.</p> 
   <p><b>TRANSCRIPT</b> </p> 
   <p>Mondelēz International wants to be a global snacking company that drives growth in snacking around the world. We need to build our capabilities in how we work together to drive snacking growth. We've developed a simple, common approach to Activating Category and Customer Growth Together (ACCT). </p> 
   <p>ACCT is our new way of working, establishing one way of driving category growth across all Mondelēz International markets, from identifying growth opportunities to implementing in key retail environments with strategic customers. </p> 
