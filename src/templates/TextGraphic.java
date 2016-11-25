@@ -12,6 +12,7 @@ public class TextGraphic extends XMLEditor{
 	String screenContent;
 	
 	public TextGraphic(Document doc, String screenContent){
+		super(doc,screenContent);
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}
@@ -30,22 +31,22 @@ public class TextGraphic extends XMLEditor{
 	
 	private void editQuoteText() {
 
-		String quoteText = getHeadingContent(screenContent, "QUOTE TEXT");
-		Node quote = getNodeById(doc,"text","quoteText");
+		String quoteText = getHeadingContent("QUOTE TEXT");
+		Node quote = getNodeById("text","quoteText");
 		replaceText(quote,doc.createCDATASection(quoteText));		
 	}
 
 
 	private void editIntroText(){
 		
-		String title = getHeadingContent(screenContent,"TITLE");
-		String introText = getHeadingContent(screenContent, "BODY TEXT");
-		String prompt = getHeadingContent(screenContent,"PROMPT");
+		String title = getHeadingContent("TITLE");
+		String introText = getHeadingContent("BODY TEXT");
+		String prompt = getHeadingContent("PROMPT");
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
 		introText = title + introText + prompt;
 
-		Node text = getNodeById(doc, "text", "screentext");
+		Node text = getNodeById("text", "screentext");
 		CDATASection cdata = doc.createCDATASection(introText);
 		replaceText(text,cdata);		
 	}
@@ -54,7 +55,7 @@ public class TextGraphic extends XMLEditor{
 		
 		String imagePath = "lib/images/content/" + getFilePath() + ".jpg";
 		CDATASection cdata = doc.createCDATASection(imagePath);
-		Node image = getNodeById(doc,"image","image1");
+		Node image = getNodeById("image","image1");
 		replaceText(image,cdata);
 	};
 	

@@ -1,6 +1,8 @@
 package templates;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 
 import org.w3c.dom.CDATASection;
 import org.w3c.dom.Document;
@@ -15,6 +17,7 @@ public class Photostory extends XMLEditor{
 	String screenContent;
 	
 	public Photostory(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}
@@ -48,9 +51,9 @@ public class Photostory extends XMLEditor{
 			}
 			
 			//get text content
-			String titleText = getHeadingContent(cellContent, "HEADLINE");
-			String text = getHeadingContent(cellContent, "TEXT");
-			String promptText = getHeadingContent(cellContent, "PROMPT");
+			String titleText = getCellContent(cellContent, "HEADLINE");
+			String text = getCellContent(cellContent, "TEXT");
+			String promptText = getCellContent(cellContent, "PROMPT");
 			titleText = addClass(titleText,"headline");
 			promptText = addClass(promptText,"prompt");
 			text = titleText + "\n" + text + "\n" + promptText;
@@ -89,5 +92,29 @@ public class Photostory extends XMLEditor{
 		return list;
 	};
 	
+	
+	private String getCellContent(String cellContent, String heading){
+		
+		//split content by paragraph breaks
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(cellContent.split("\\n"))).iterator();
+		String text = "";
+		while(it.hasNext()){
+			String line = it.next();
+			
+			if(line.contains(heading) && isAHeading(line)){
+				//add the subsequent lines to the text String
+				//stops when it reaches a new heading (i.e. OPTIONS)
+				while(it.hasNext()){ 
+					line = it.next();					
+					if(isAHeading(line)){
+						break;
+					}					
+					text += "\n" + line;
+				}
+			}
+		}
+		text = text.replaceAll("(?m)^[ \t]*\r?\n", "");
+		return text;
+	}	
 
 }

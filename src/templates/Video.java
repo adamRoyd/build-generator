@@ -14,6 +14,7 @@ public class Video extends XMLEditor{
 	String screenContent;
 	
 	public Video(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}	
@@ -22,40 +23,40 @@ public class Video extends XMLEditor{
 
 		editIntroText();
 
-		addTranscript(doc,screenContent);
+		addTranscript();
 		
-		editVideoPath(doc);
+		editVideoPath();
 		
 		return doc;
 	}
 
 	private void editIntroText() {
 
-		String title = getHeadingContent(screenContent,"TITLE");
-		String introText = getHeadingContent(screenContent, "TEXT");
-		String prompt = getHeadingContent(screenContent,"PROMPT");
+		String title = getHeadingContent("TITLE");
+		String introText = getHeadingContent("TEXT");
+		String prompt = getHeadingContent("PROMPT");
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
 		introText = title + introText + prompt;		
-		Node textNode = getNodeById(doc, "text", "screentext");
+		Node textNode = getNodeById("text", "screentext");
 		CDATASection cdata = doc.createCDATASection(introText);
 		replaceText(textNode, cdata);		
 	}
 
-	private void addTranscript(Document doc, String screenContent) {
+	private void addTranscript() {
 		
-		String transcriptText = getHeadingContent(screenContent,"TRANSCRIPT");
+		String transcriptText = getHeadingContent("TRANSCRIPT");
 		Element transcript = doc.createElement("transcript");
 		transcript.appendChild(doc.createCDATASection(transcriptText));
-		Node video = getNodeById(doc, "video", "vid");
+		Node video = getNodeById("video", "vid");
 		removeChilds(video);
 		video.appendChild(transcript);
 	};
 	
-	private void editVideoPath(Document doc) {
+	private void editVideoPath() {
 		
 		String videoPath = "lib/video/" + getFilePath() + ".mp4";
-		Node video = getNodeById(doc, "video", "vid");
+		Node video = getNodeById("video", "vid");
 		NamedNodeMap attrs = video.getAttributes();
 		Node srcAttr = attrs.getNamedItem("src");
 		srcAttr.setTextContent(videoPath);

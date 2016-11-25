@@ -15,6 +15,7 @@ public class Hotspot extends XMLEditor{
 	String screenContent;
 	
 	public Hotspot(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}	
@@ -30,12 +31,12 @@ public class Hotspot extends XMLEditor{
 	
 	private void editIntroText() {
 
-		String openingText = getHeadingContent(screenContent, "OPENING TEXT");
-		String prompt = getHeadingContent(screenContent,"PROMPT");
+		String openingText = getHeadingContent( "OPENING TEXT");
+		String prompt = getHeadingContent("PROMPT");
 		prompt = addClass(prompt, "prompt");
 		openingText = openingText + prompt;
 		CDATASection cdata = doc.createCDATASection(openingText);
-		Node node = getNodeById(doc, "text", "introText");
+		Node node = getNodeById( "text", "introText");
 		replaceText(node, cdata);		
 	}
 
@@ -50,11 +51,11 @@ public class Hotspot extends XMLEditor{
 		
 		while(true){
 
-			revealText = getHeadingContent(screenContent, "REVEAL " + count + " TEXT");
+			revealText = getHeadingContent( "REVEAL " + count + " TEXT");
 			if(revealText == ""){
 				break;
 			}
-			Node revealNode = getNodeById(doc, "box", "reveal_hotspot" + count);
+			Node revealNode = getNodeById( "box", "reveal_hotspot" + count);
 			if(revealNode == null){
 				constructReveal(count);
 				constructHotspot(count);
@@ -62,13 +63,13 @@ public class Hotspot extends XMLEditor{
 				constructEvent(count);
 			}
 			
-			revealTextNode = getNodeById(doc, "text", "reveal" + count + "text");
+			revealTextNode = getNodeById( "text", "reveal" + count + "text");
 			replaceText(revealTextNode,doc.createCDATASection(revealText));
 			
 			
-			labelText = getHeadingContent(screenContent,"REVEAL " + count + " ICON PLACEMENT");
-			labelNode = getNodeById(doc,"text","hotspotLabel" + count);
-			revealTitleNode = getNodeById(doc,"text","reveal" + count + "title");
+			labelText = getHeadingContent("REVEAL " + count + " ICON PLACEMENT");
+			labelNode = getNodeById("text","hotspotLabel" + count);
+			revealTitleNode = getNodeById("text","reveal" + count + "title");
 
 			replaceText(labelNode,doc.createCDATASection(labelText));
 			replaceText(revealTitleNode,doc.createCDATASection(labelText));
@@ -82,9 +83,9 @@ public class Hotspot extends XMLEditor{
 
 	private void constructReveal(int count) {
 
-		Node revealHolder = getNodeById(doc, "box", "revealHolder");
+		Node revealHolder = getNodeById( "box", "revealHolder");
 		//clone heading node
-		Node revealNode = getNodeById(doc,"box","reveal_hotspot1").cloneNode(true);	
+		Node revealNode = getNodeById("box","reveal_hotspot1").cloneNode(true);	
 		
 		editAttribute(revealNode,"id","reveal_hotspot" + count);
 				
@@ -109,8 +110,8 @@ public class Hotspot extends XMLEditor{
 
 	private void constructHotspot(int count) {
 		//clone hotspot 1 to create other hotspots
-		Node hotspotHolder = getNodeById(doc, "box", "hotspotHolder");
-		Node firstHotspotNode = getNodeById(doc,"box","hotspot1");
+		Node hotspotHolder = getNodeById( "box", "hotspotHolder");
+		Node firstHotspotNode = getNodeById("box","hotspot1");
 		Node hotspot = firstHotspotNode.cloneNode(true);
 		editAttribute(hotspot, "id", "hotspot" + count);
 		editAttribute(hotspot,"x",Integer.toString(count * 30));
@@ -119,8 +120,8 @@ public class Hotspot extends XMLEditor{
 
 	private void constructLabel(int count) {
 
-		Node labelHolder = getNodeById(doc, "box", "labelHolder");
-		Node labelNode = getNodeById(doc,"text","hotspotLabel1");
+		Node labelHolder = getNodeById( "box", "labelHolder");
+		Node labelNode = getNodeById("text","hotspotLabel1");
 		Node n = labelNode.cloneNode(true);
 		editAttribute(n, "id", "hotspotLabel" + count);
 		labelHolder.appendChild(n);		
@@ -128,7 +129,7 @@ public class Hotspot extends XMLEditor{
 	
 	private void constructEvent(int count) {
 		
-		Node eventHolder = getNodeById(doc,"event","reset");
+		Node eventHolder = getNodeById("event","reset");
 		
 		//create anim node
 		Element animNode = doc.createElement("anim");

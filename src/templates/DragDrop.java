@@ -19,6 +19,7 @@ public class DragDrop extends XMLEditor{
 	String screenContent;
 	
 	public DragDrop(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}			
@@ -36,11 +37,11 @@ public class DragDrop extends XMLEditor{
 
 	private void editIntroText() {
 
-		String openingText = getHeadingContent(screenContent, "OPENING TEXT");
-		String prompt = getHeadingContent(screenContent,"PROMPT");
+		String openingText = getHeadingContent("OPENING TEXT");
+		String prompt = getHeadingContent("PROMPT");
 		prompt = addClass(prompt, "prompt");
 		openingText = openingText + prompt;
-		Node introTextNode = getNodeById(doc, "text", "introText");
+		Node introTextNode = getNodeById("text", "introText");
 		CDATASection cdata = doc.createCDATASection(openingText);
 		replaceText(introTextNode, cdata);
 	}
@@ -48,13 +49,13 @@ public class DragDrop extends XMLEditor{
 
 	protected void editFeedbacks(){
 
-		CDATASection pass = doc.createCDATASection(getHeadingContent(screenContent,"CORRECT TEXT"));
-		CDATASection partial = doc.createCDATASection(getHeadingContent(screenContent,"PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent(screenContent,"INCORRECT TEXT"));
+		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
+		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
+		CDATASection fail = doc.createCDATASection(getHeadingContent("INCORRECT TEXT"));
 		
-		Node passNode = getNodeById(doc, "text", "text_pass");
-		Node partialNode = getNodeById(doc, "text", "text_partial");
-		Node failNode = getNodeById(doc, "text", "text_fail");		
+		Node passNode = getNodeById("text", "text_pass");
+		Node partialNode = getNodeById("text", "text_partial");
+		Node failNode = getNodeById("text", "text_fail");		
 		
 		replaceText(passNode,pass);
 		replaceText(partialNode,partial);
@@ -66,7 +67,7 @@ public class DragDrop extends XMLEditor{
 		
 		
 		//get options text
-		String options = getHeadingContent(screenContent, "OPTIONS","CORRECT AUDIO FEEDBACK");
+		String options = getHeadingContent("OPTIONS","CORRECT AUDIO FEEDBACK");
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 		
 		//separate options by option number 
@@ -118,16 +119,16 @@ public class DragDrop extends XMLEditor{
 		}
 		
 		Node dragNode;
-		Node dragParent = getNodeById(doc,"box","drag_items");
+		Node dragParent = getNodeById("box","drag_items");
 		CDATASection cdata;
 		int dragCount = 1;
 		for(String drag : dragItems){
 			cdata = doc.createCDATASection(drag);
-			dragNode = getNodeById(doc,"box", "drag" + dragCount);
+			dragNode = getNodeById("box", "drag" + dragCount);
 			
 			//create new node if none left
 			if(dragNode == null){
-				dragNode = getNodeById(doc,"box","drag1").cloneNode(true);
+				dragNode = getNodeById("box","drag1").cloneNode(true);
 				NamedNodeMap attr = dragNode.getAttributes();
 				Node id = attr.getNamedItem("id");
 				id.setTextContent("drag" + dragCount);
@@ -148,7 +149,7 @@ public class DragDrop extends XMLEditor{
 		}
 
 		///EDIT DROP SETTINGS////
-		Node custom = getNodeById(doc,"custom","dragdrop");
+		Node custom = getNodeById("custom","dragdrop");
 		//TO DO create drag nodes using the drag box id's, and edit the match attribute
 			
 	};	

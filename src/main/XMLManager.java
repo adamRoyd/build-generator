@@ -128,7 +128,7 @@ public class XMLManager {
 					break;
 				default: 
 					System.out.println(screenNumber + " no change");
-					editor = new XMLEditor();
+					editor = new XMLEditor(doc,screenContent);
 					
 			}
 			
