@@ -48,7 +48,7 @@
 				<text id="reveal1title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal1text" width="300" x="20" y="60"></text>
+			<text id="reveal1text" width="calc(100% - 40px)" x="20" y="60"></text>
 			<box id="reveal1media" x="20" y="60">
 
 			</box>
@@ -59,7 +59,7 @@
 				<text id="reveal2title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal2text" width="300" x="20" y="60"></text>
+			<text id="reveal2text" width="calc(100% - 40px)" x="20" y="60"></text>
 			<box id="reveal2media" x="20" y="60">
 
 			</box>
@@ -70,7 +70,7 @@
 				<text id="reveal3title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal3text" width="300" x="20" y="60"></text>
+			<text id="reveal3text" width="calc(100% - 40px)" x="20" y="60"></text>
 			<box id="reveal3media" x="20" y="60">
 
 			</box>

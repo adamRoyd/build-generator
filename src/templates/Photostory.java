@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import org.w3c.dom.Attr;
 import org.w3c.dom.CDATASection;
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
@@ -23,12 +25,12 @@ public class Photostory extends XMLEditor{
 	}
 	
 	public Document editXML(){
-		
 
 		ArrayList<String> cellList = splitContentIntoCells(screenContent); 
 		
 		editCells(cellList);
-
+		
+		editTriggerEvent(cellList.size());
 		
 		return doc;
 	}
@@ -45,9 +47,18 @@ public class Photostory extends XMLEditor{
 			//get cell node
 			cellNode = doc.getElementsByTagName("cell").item(cellNumber);
 			
+			
+			//clone node
 			if(cellNode == null){
 				cellNode = doc.getElementsByTagName("cell").item(0).cloneNode(true);
 				custom.appendChild(cellNode);
+				
+				//edit text node attribute
+				editAttribute(getNodeListById(doc,"text","cell1text").item(1),
+						"id", "cell" + (cellNumber + 1) + "text");
+				
+				//create event for the trigger
+				createCellEvent(cellNumber);
 			}
 			
 			//get text content
@@ -74,6 +85,33 @@ public class Photostory extends XMLEditor{
 		}
 		
 	}
+	
+
+	private void editTriggerEvent(int numberOfCells) {
+
+		Node triggerNode = doc.getElementsByTagName("trigger").item(0);
+		String triggerEventString = "";
+		
+		for(int i=0;i<numberOfCells;i++){
+	
+			triggerEventString += "cell" + i + ",";
+		}
+		
+		//remove last comma off string
+		triggerEventString = triggerEventString.substring(0, triggerEventString.length() - 1);
+		
+		editAttribute(triggerNode, "events", triggerEventString);
+	}	
+	
+	private void createCellEvent(int cellNumber) {
+		
+		Node eventsNode = doc.getElementsByTagName("events").item(0);		
+		Element event = doc.createElement("event");
+		Attr eventAttr = doc.createAttribute("id");		
+		eventAttr.setValue("cell" + cellNumber);
+		event.setAttributeNode(eventAttr);
+		eventsNode.appendChild(event);		
+	}	
 
 	private ArrayList<String> splitContentIntoCells(String s) {
 		ArrayList<String> list = new ArrayList<String>();

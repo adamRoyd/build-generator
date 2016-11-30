@@ -12,22 +12,6 @@
 		<event id="update">
 			<log>UPDATE</log>
 		</event>
-
-		<event id="cell0">
-			<log>CELL0 EVENT</log>
-		</event>
-		
-		<event id="cell1">
-			<log>CELL1 EVENT</log>
-		</event>
-		
-		<event id="cell2">
-			<log>CELL2 EVENT</log>
-		</event>	
-		
-		<event id="cell3">
-			<log>CELL3 EVENT</log>
-		</event>	
 		
 		<event id="onContentNotSeen">
 			<anim type="alpha" animtime="0.2">contentWarning</anim>
@@ -40,6 +24,11 @@
 		<trigger retrigger="-1" id="triggerId" events="cell0,cell1,cell2,cell3">
 			<screencompleted/>
 		</trigger>
+		
+		<event id="cell0"/>	
+		<event id="cell1"/>
+		<event id="cell2"/>
+		<event id="cell3"/>		
 
 	</events>
 
@@ -51,41 +40,22 @@
 	
         <cell>
 			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-
-			<text id="cell1text" x="80" y="45" width="365" height="295">
-
-			</text>
-
+			<text id="cell1text" x="80" y="45" width="365"/>
 		</cell>
 		
 		<cell>
 			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			
-
-			<text id="cell2text" x="80" y="30" width="345">
-
-			</text>
-
-			
+			<text id="cell2text" x="80" y="30" width="345"/>
 		</cell>
 		
         <cell>
 			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-		
-
-			<text id="cell3text" x="70" y="40" width="285">
-
-			</text>
-
+			<text id="cell3text" x="70" y="40" width="285"/>
 		</cell>
 		
         <cell>
 			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-		
-			<text id="cell4text" x="80" y="30" width="345">
-
-			</text>
-
+			<text id="cell4text" x="80" y="30" width="345"/>
 		</cell>
 		
     </custom>

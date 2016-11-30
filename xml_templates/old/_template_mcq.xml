@@ -27,8 +27,7 @@
 		</event>
 		
 		<event id="reset">
-			<hide delay="0.3">feedbackHolder</hide>
-<!-- 			<translate x="370" animtime="0.3">feedbackHolder</translate> -->
+
 			<hide delay="0.3">feedback_pass</hide>
 			<hide delay="0.3">feedback_partial</hide>
 			<hide delay="0.3">feedback_fail</hide>
@@ -37,13 +36,18 @@
 		
 		<event id="submit">
 			<log>submit</log>
-<!-- 			<translate x="370">feedbackHolder</translate> -->
-			<show>feedbackHolder</show>
-<!-- 			<translate x="0" animtime="0.5">feedbackHolder</translate> -->
-		</event>
-	</events>
 
-	<audio id="audio1" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />		
+			<show>feedbackHolder</show>
+
+		</event>
+		
+		<event id="playScreenAudio">
+			<media id="audio1" action="play" />
+		</event>		
+		
+	</events>
+	
+	<audio id="audio1" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />		
 	
     <text id="introText" x="25" y="100" width="600">
 	<![CDATA[<p>INTRO_TEXT</p>
@@ -61,7 +65,7 @@
 	</box>	
 
 	<box id="feedbackHolder" x="655" y="50" width="365" height="595" anim="alpha">
-		<box id="feedback_pass" x="30" y="50" width="280" anim="hidden">
+		<box id="feedback_pass" x="30" y="50" width="265" anim="hidden">
 			<text id="text_pass">
 				<![CDATA[
 				<p>FEEDBACK_PASS</p>
@@ -69,14 +73,14 @@
 				]]>
 			</text>
 		</box>
-		<box id="feedback_partial" x="30" y="50" width="280" anim="hidden">
+		<box id="feedback_partial" x="30" y="50" width="265" anim="hidden">
 			<text id="text_partial">
 				<![CDATA[
 				<p>FEEDBACK_PARTIAL/p>
 				]]>
 			</text>
 		</box>
-		<box id="feedback_fail" x="30" y="50" width="280" anim="hidden">
+		<box id="feedback_fail" x="30" y="50" width="265" anim="hidden">
 			<text id="text_fail">
 				<![CDATA[
 				<p>FEEDBACK_FAIL</p>
@@ -87,6 +91,6 @@
 
 	</box>
 		
-
+	<image id="audioIcon" x="940" y="80" event="playScreenAudio"><![CDATA[lib/images/ui/ui_audio_icon.png]]></image>	
 	
 </data>

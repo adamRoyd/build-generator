@@ -45,7 +45,7 @@
 	<box id="revealHolder">
 		<box id="reveal_hotspot1" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
 			<box id="title1banner" bgcol="0036A3" width="100%" height="40">
-				<text id="reveal1title" x="20" y="10"></text>		
+				<text id="reveal1title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
 			<text id="reveal1text" width="300" x="20" y="60"></text>
@@ -56,7 +56,7 @@
 		
 		<box id="reveal_hotspot2" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
 			<box id="title2banner" bgcol="0036A3" width="100%" height="40">
-				<text id="reveal2title" x="20" y="10"></text>		
+				<text id="reveal2title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
 			<text id="reveal2text" width="300" x="20" y="60"></text>
@@ -67,7 +67,7 @@
 
 		<box id="reveal_hotspot3" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
 			<box id="title3banner" bgcol="0036A3" width="100%" height="40">
-				<text id="reveal3title" x="20" y="10"></text>		
+				<text id="reveal3title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
 			<text id="reveal3text" width="300" x="20" y="60"></text>

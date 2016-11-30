@@ -35,7 +35,10 @@
 			<show>scaBtn</show>
 			<show>feedback_fail</show>
 		</event>
-
+		
+		<event id="fail_attempt">			
+			<show>feedback_fail_attempt</show>
+		</event>
 		
 		<event id="reset">
 			<show>submitBtn</show>
@@ -58,9 +61,13 @@
 			<translate x="0" animtime="0.5">feedbackHolder</translate>
 		</event>
 				
+		<event id="playScreenAudio">
+			<media id="audio1" action="play" />
+		</event>
+				
 	</events>
 
-	<audio id="audio1" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="audio1" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
 	
     <text id="introText" x="25" y="100" width="600">
 		<![CDATA[
@@ -117,16 +124,16 @@
 	
 	<!-- Drag items -->
 	<box id="drag1" x="710" y="200" width="270" height="70" class="dragBox">
-		<text><![CDATA[<p>RDQ</p>]]></text>
+		<text><![CDATA[<p>DRAG_1</p>]]></text>
 	</box>
 	<box id="drag2" x="710" y="280" width="270" height="70" class="dragBox">
-		<text width="100%" height="100%"><![CDATA[<p>Strategy Insights Analytics & Marketing</p>]]></text>
+		<text width="100%" height="100%"><![CDATA[<p>DRAG_2</p>]]></text>
 	</box>
 	<box id="drag3" x="710" y="360" width="270" height="70" class="dragBox">
-		<text><![CDATA[<p>Integrated Supply Chain</p>]]></text>
+		<text><![CDATA[<p>DRAG_3</p>]]></text>
 	</box>
 	<box id="drag4" x="710" y="440" width="270" height="70" class="dragBox">
-		<text><![CDATA[<p>Legal</p>]]></text>
+		<text><![CDATA[<p>DRAG_4</p>]]></text>
 	</box>
 
 		
@@ -146,26 +153,26 @@
 		
     </custom>
 	
-	<audio id="pass" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	<audio id="partial" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	<audio id="fail" controls="false" autoplay="false" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />	
+	<audio id="pass" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="partial" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="fail" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />	
 	
 	<box id="feedbackHolder" x="670" y="50" width="365" height="595" anim="hidden">
-		<box id="feedback_pass" x="30" y="50" width="280" anim="hidden">
+		<box id="feedback_pass" x="30" y="50" width="265" anim="hidden">
 			<text id="text_pass">
 				<![CDATA[
 				<p>That's right!</p>
 				]]>
 			</text>
 		</box>
-		<box id="feedback_partial" x="30" y="50" width="280" anim="hidden">
+		<box id="feedback_partial" x="30" y="50" width="265" anim="hidden">
 			<text id="text_partial">
 				<![CDATA[
 				<p>That's nearly right.</p>
 				]]>
 			</text>
 		</box>
-		<box id="feedback_fail" x="30" y="50" width="280" anim="hidden">
+		<box id="feedback_fail" x="30" y="50" width="265" anim="hidden">
 			<text id="text_fail">
 				<![CDATA[
 				<p>That's not quite right.</p>
@@ -174,7 +181,7 @@
 		</box>
 	</box>
 	
-	
+	<image id="audioIcon" x="940" y="80" event="playScreenAudio"><![CDATA[lib/images/ui/ui_audio_icon.png]]></image>		
 	
 </data>
 
