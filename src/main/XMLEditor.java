@@ -36,11 +36,13 @@ public class XMLEditor {
 	String screenContent;
 	Document doc;
 	
-	public XMLEditor(){
+	public XMLEditor(Document doc, String screenContent){
+		this.doc = doc;
+		this.screenContent = screenContent;		
 	}
 	
 	public Document editXML(){
-		//method should be overridden by child class
+		//called if screentype is not recognised
 		return doc;
 	}
 	
@@ -51,7 +53,6 @@ public class XMLEditor {
 			node.appendChild(cdata);
 		}
 	}
-
 	
 	protected void removeChilds(Node node){
 		while(node.hasChildNodes()){
@@ -65,7 +66,18 @@ public class XMLEditor {
 		attribute.setTextContent(value);
 	}
 	
-	protected String getHeadingContent(String screenContent,String heading){
+	protected String addClass(String text, String classType){
+		if(text == null || text.length()<3){
+			return "";
+		}
+
+		String classHTML = "<p class=\"" + classType + "\">";  
+		//text = new StringBuilder(text).insert(3, classHTML).toString();
+		text = text.replace("<p>",classHTML);
+		return text;
+	}		
+	
+	protected String getHeadingContent(String heading){
 		
 		//split content by paragraph breaks
 		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\n"))).iterator();
@@ -90,7 +102,7 @@ public class XMLEditor {
 	}
 	
 	//this method also specifies the heading on which to stop adding content
-	protected String getHeadingContent(String screenContent,String startHeading,String endHeading){
+	protected String getHeadingContent(String startHeading,String endHeading){
 		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\n"))).iterator();
 		String text = "";
 		while(it.hasNext()){
@@ -112,7 +124,7 @@ public class XMLEditor {
 		return text;
 	}	
 	
-	protected Node getNodeById(Document doc, String nodeType, String id){
+	protected Node getNodeById(String nodeType, String id){
 		
 		String expression = "//" + nodeType + "[@id=\"" + id + "\"]";
 		XPath xpath = XPathFactory.newInstance().newXPath();
@@ -147,7 +159,7 @@ public class XMLEditor {
 		return null;
 	}	
 	
-	private boolean isAHeading(String line){
+	protected boolean isAHeading(String line){
 		line = line.replaceAll("\\(.*?\\)", "").replaceAll("\\[.*?\\]", "").trim(); //remove bracketedText
 		if(isAllUpperCase(line) || isATopicHeading(line)){
 			return true;
@@ -161,7 +173,7 @@ public class XMLEditor {
 		
 		line = line.replaceAll("\\<.*?>","").trim(); //remove html tags
 		
-		if(line.startsWith("Topic")){
+		if(line.startsWith("TOPIC")){
 			return true;
 		}
 		
@@ -174,7 +186,7 @@ public class XMLEditor {
 		if(s.equals(" ") || s.equals("")){
 			return false;
 		}
-		//if string is just a number (IS THIS WISE? MAYBE ONLY USE FOR MCQ's)
+		//if string is just a number
 		if(isNumeric(s)){
 			return false;
 		}
@@ -185,18 +197,6 @@ public class XMLEditor {
 		}
 		return true;
 	}	
-	
-	protected String addClass(String text, String classType){
-		if(text == null || text.length()<3){
-			return "";
-		}
-
-		String classHTML = "<p class=\"" + classType + "\">";  
-		//text = new StringBuilder(text).insert(3, classHTML).toString();
-		text = text.replace("<p>",classHTML);
-		return text;
-	}	
-
 	
 	protected boolean isNumeric(String s) {
 		s = s.replaceAll("\\<.*?>",""); //remove html tags

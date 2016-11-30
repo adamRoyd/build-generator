@@ -1,22 +1,842 @@
 <html>
  <head></head>
  <body>
-  <p><b>SCREEN 02_090</b></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p>Script</p> 
+  <p>Big Purple Bus Tour: Landmarks</p> 
+  <p>IS&amp;BPE [ITS]</p> 
+  <p>project no: <b>MDL851_BPBT</b></p> 
+  <p>reply to: <b>Ben Pester ben.pester@brightwavegroup.com</b></p> 
+  <p></p> 
+  <p>Revision history</p> 
+  <p>Version</p> 
+  <p>Date</p> 
+  <p>Initials</p> 
+  <p>Team </p> 
+  <p>Summary of Revisions Made / Comments</p> 
+  <p>0.1</p> 
+  <p>28/10/2016</p> 
+  <p>BP</p> 
+  <p>BW</p> 
+  <p>Initial draft</p> 
+  <p>0.2</p> 
+  <p>28/10/2016</p> 
+  <p>EC</p> 
+  <p>EC</p> 
+  <p>QA</p> 
+  <p>0.3</p> 
+  <p>28/10/2016</p> 
+  <p>BP</p> 
+  <p>BW</p> 
+  <p>Amends after QA</p> 
+  <p>0.4</p> 
+  <p>28/10/2016</p> 
+  <p>TF</p> 
+  <p>BW</p> 
+  <p>Internal review</p> 
+  <p>1.0</p> 
+  <p>28/10/2016</p> 
+  <p>NW</p> 
+  <p>BW</p> 
+  <p>Released to client</p> 
+  <p>2.0 </p> 
+  <p>10/11/2016</p> 
+  <p>BP</p> 
+  <p>BW</p> 
+  <p>Amends following client feedback</p> 
+  <p>2.1</p> 
+  <p>17/11/2016</p> 
+  <p>BP</p> 
+  <p>BW</p> 
+  <p>Amends following client feedback</p> 
+  <p>3.0</p> 
+  <p>18/11/2016</p> 
+  <p>LL</p> 
+  <p>BW</p> 
+  <p>Released for client sign off</p> 
+  <p>3.1</p> 
+  <p>23/11/2016</p> 
+  <p>AB</p> 
+  <p>BW</p> 
+  <p>Amends</p> 
+  <p>Purpose of this document</p> 
+  <p>This script details the exact text that will appear on each screen of the course, together with the interactions and any buttons that appear. It also indicates the kind of graphics or images that will be used, although these are not final at this stage.</p> 
+  <p>It's important that you check everything appears as you want it within the script, so that there are minimal changes once the course is built.</p> 
+  <p><b>As you read through this document, please use the Review tab to track any changes you would like made. You can also use comment boxes for more general points. </b></p> 
+  <p>Contents</p> 
+  <p>Purpose of this document 1</p> 
+  <p>Contents 1</p> 
+  <p>Splash Screen 1</p> 
+  <p>Help 1</p> 
+  <p>Welcome 1</p> 
+  <p>Menu 1</p> 
+  <p>Topic 1: Introduction to ITS 1</p> 
+  <p>01_100 1</p> 
+  <p>01_110 1</p> 
+  <p>01_120 1</p> 
+  <p>01_130 1</p> 
+  <p>01_140 1</p> 
+  <p>Topic 2: Empowering growth 1</p> 
+  <p>02_100 1</p> 
+  <p>02_110 1</p> 
+  <p>02_120 1</p> 
+  <p>02_130 1</p> 
+  <p>Topic 3: How we work 1</p> 
+  <p>03_100 1</p> 
+  <p>03_110 1</p> 
+  <p>03_120 1</p> 
+  <p>03_130 1</p> 
+  <p>03_140 1</p> 
+  <p>03_150 1</p> 
+  <p>03_160 1</p> 
+  <p>03_170 1</p> 
+  <p>03_180 1</p> 
+  <p>Topic: Resources room 1</p> 
+  <p></p> 
+  <p>Splash Screen</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The splash screen appears when the module is launched. It provides a summary of the module content and a note on audio. There is a button for learners to select when they are ready to start the module. This will open the module in a new window. </p> 
+  <p>While the module is open, the module open text will be shown.</p> 
+  <p>When the module has been closed, the module closed text will be shown.</p> 
+  <p><b>TEXT </b></p> 
+  <p>Welcome to the ITS landmark.</p> 
+  <p>At this landmark you'll see:</p> 
+  <ul> 
+   <li>an introduction to ITS</li> 
+   <li>what our mission is</li> 
+   <li>how we work</li> 
+   <li>and the Resource room.</li> 
+  </ul> 
+  <p>This landmark contains optional sound. Please connect speakers or headphones if you want to listen. Use the audio controls on your device to adjust the volume or to mute the sound. You'll see this symbol on all screens with optional sound:</p> 
+  <p></p> 
+  <p>Your tour of this landmark is expected to last about 25 minutes. You can come back another time and complete your tour over several visits, if you want. Each time you come back to this landmark, we'll return you to the last point you visited.</p> 
+  <p><b>BUTTON </b></p> 
+  <p>Begin the tour</p> 
+  <p><b>MODULE OPEN TEXT </b></p> 
+  <p>The landmark tour has opened in a new window. Please leave this window open while you go on your visit.</p> 
+  <p><b>MODULE CLOSED TEXT </b></p> 
+  <p>You may now close this window.</p> 
+  <p><b>FOOTER </b></p> 
+  <p>Copyright Mondelēz International 2016 </p> 
+  <p>Produced by Brightwave.</p> 
+  <p>Help</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The help popover appears above the current content whenever the help button is selected. It has two tabs - one explaining the menu, the other explaining how to navigate within topics. The popover has a close button that removes the popover and restores the content the learner was viewing.</p> 
+  <p><b>TAB TITLE</b></p> 
+  <p>Getting around the menu</p> 
+  <p><b>IMAGE</b></p> 
+  <p>Show a segment of the menu from this module including a topic hotspot.</p> 
+  <p><b>TEXT</b></p> 
+  <p>You'll need to scroll left and right to see all areas in the menu.</p> 
+  <p><b>[Topic icon]</b> These Mondelēz International 'bursts' link to different parts of the tour. Select a burst to open a new area of the tour.</p> 
+  <p><b>[Help icon] </b>Help is always available. Select this icon if you need us to point the way.</p> 
+  <p><b>[Exit]</b> Select this when you're ready to end your visit to this landmark and return to the map.</p> 
+  <p> </p> 
+  <p><b>TAB TITLE</b></p> 
+  <p>Going on the tour</p> 
+  <p><b>IMAGE</b></p> 
+  <p>Show a screen from this module.</p> 
+  <p><b>TEXT</b></p> 
+  <p>When you're on the tour there are other buttons you'll use to move around.</p> 
+  <p><b>[Menu icon]</b> Takes you back to the menu.</p> 
+  <p><b>[Back] </b>Takes you to the previous screen.</p> 
+  <p><b>[Next]</b> Takes you to the next screen.</p> 
+  <p> </p> 
+  <p>Welcome</p> 
   <p><b>SCREEN TYPE</b> Video </p> 
   <p><b>DESCRIPTION</b></p> 
-  <p>This screen plays a video in a player with the following controls: play/pause; seek/progress bar; full screen toggle/ transcript toggle.</p> 
-  <p><b>VIDEO</b> </p> 
-  <p>"L:\Projects\MDL851_BPBT_Landmarks\from_client\content\Module content\01_Sales\MDLZ-ACCT Video One v1.mp4" Fade out and end at 00:00:54 after "measuring and learning as we go." and before the ACCT circle disappears.</p> 
-  <p><b>OPENING TEXT (Max 30 words)</b></p> 
+  <p><b>NOTE</b>: This screen may become part of the Super Menu, pending a technical investigation into the capabilities of the MDLZ LMS. Failing that, it will be the first screen of the module, prior to the menu.</p> 
+  <p>The tour guide provides an overview of the content for this landmark before the learner enters the tour for this landmark. The button will either launch the module (if this screen is in the Super Menu) or take the learner to the menu (if it is the first screen in the module)</p> 
+  <p><b>VIDEO</b></p> 
+  <p>Character animation (lip-synched) of tour guide in front of the ITS landmark.</p> 
   <p><b>TRANSCRIPT</b> </p> 
-  <p>Mondelēz International wants to be a global snacking company that drives growth in snacking around the world. We need to build our capabilities in how we work together to drive snacking growth. We've developed a simple, common approach to Activating Category and Customer Growth Together (ACCT). </p> 
-  <p>ACCT is our new way of working, establishing one way of driving category growth across all Mondelēz International markets, from identifying growth opportunities to implementing in key retail environments with strategic customers. </p> 
-  <p>ACCT helps us: </p> 
+  <p>Welcome to the ITS landmark. Here you will discover the mission and practices of one of the most diverse, collaborative functions in MDLZ. </p> 
+  <p>You will see how ITS works as partners across the organization, providing technology and process-based solutions that empower sustainable growth. </p> 
+  <p></p> 
+  <p>Feel free to explore at your own pace – any time you want to stop, you can leave the landmark and come back to the same place.</p> 
+  <p><b>BUTTON</b></p> 
+  <p>Enter ITS</p> 
+  <p>Menu</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The menu is a horizontally scrolling stylized interpretation of the work environment. It has several areas representing each of the topics in this module. Each area has an icon that the learner selects to access the relevant topic. Topic titles and durations are shown next to the icon as it passes through the central areas of the screen. No duration is shown for the Resources Room is this is contains multiple items of discretionary content of variable length. The menu has audio, so it shows the audio icon. The first topic icon should be in view and showing its title at the opening position of the menu.</p> 
+  <p></p> 
+  <p><b>TOPIC 1 TITLE</b></p> 
+  <p>Introduction to ITS</p> 
+  <p><b>TOPIC 1 DURATION</b></p> 
+  <p>5 MINS</p> 
+  <p><b>TOPIC 2 TITLE</b></p> 
+  <p>Empowering growth</p> 
+  <p><b>TOPIC 2 DURATION</b></p> 
+  <p>5 MINS</p> 
+  <p><b>TOPIC 3 TITLE</b></p> 
+  <p>How we Work </p> 
+  <p><b>TOPIC 3 DURATION</b></p> 
+  <p>11 MINS</p> 
+  <p><b>RESOURCES TOPIC TITLE</b></p> 
+  <p>Resources Room</p> 
+  <p><b>GUIDE AUDIO</b></p> 
+  <p>Now that you're inside the ITS landmark, you can scroll to the right to see different areas. To enter an area, select the icon next to its title, like the one you can see here. Whenever you want to leave this landmark, select the exit icon at the top of the screen. It'll remember where you were, so we can continue your tour when you return. Now please select an area to begin your tour of ITS.</p> 
+  <p><b>INSTRUCTION TEXT</b></p> 
+  <p>Scroll to the right to see all the areas. Select an icon to enter an area.</p> 
+  <p>Topic 1: Introduction to ITS</p> 
+  <p>SCREEN 01_100</p> 
+  <p>SCREEN TYPE Text and Graphic</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>This screen presents information, sometimes with an illustrative graphic/image, and sometimes with typography, such as a pull-quote. There are no learning instructions or interactions. The layout of text and image will vary based on the requirements of the content.</p> 
+  <p>We will challenge learners to think about how MDLZ relies on Information Technology and Solutions. </p> 
+  <p><b>IMAGE</b></p> 
+  <p>Image echoing the menu screens across this and other Landmarks. People working in different locations in MDLZ, all using technology solutions. </p> 
+  <p><b>BODY TEXT</b> </p> 
+  <p>Hi there! You probably already know that technology is ingrained in every part of our business – from the humble day-to-day work to our greatest strategic ambitions. </p> 
+  <p>ITS stands for Information Technology and Solutions. All of these three words describe what we provide for the company to run the business and attain its goals– It is about using information to provide technology and process based solutions that enable business capabilities and connect our Mondelēz world.</p> 
+  <p>Let's try a quick exercise – you don't need to write anything down. Just think about your own role in Mondelēz International (MDLZ). Think about what you know about the rest of the organization. Can you think of any area that isn't supported by a technology or process-based solution? Sometimes these solutions work so well, you hardly notice they're even there. </p> 
+  <p>Take a moment to reflect. When you're ready, we can start to explore the exciting ways that ITS connects the whole MDLZ world. </p> 
+  <p>SCREEN 01_110</p> 
+  <p>SCREEN TYPE<b>: </b>Multiple choice question (correct, partial &amp; incorrect feedback)</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>A question and several answer options. The learner selects the option or options that they believe are correct, then they select a Confirm button. The correct answer(s) are then indicated and feedback once the user submits their chosen answer. The guide provides narration for these screens, so the audio icon will be present.</p> 
+  <p><b>QUESTION AUDIO </b></p> 
+  <p>That was probably a tricky thing to do. That's because ITS solutions reach into just about every part of our work. Let's think some more about your contact with ITS today. </p> 
+  <p><b>QUESTION TEXT </b>(30 words max)</p> 
+  <p>When would be a good time to make contact with ITS?</p> 
+  <p><b>PROMPT</b> </p> 
+  <p>Select your answers, then Confirm.</p> 
+  <p><b>OPTIONS</b> </p> 
+  <p>1</p> 
+  <p>When your new project requires a technology or process solution</p> 
+  <p>Correct</p> 
+  <p>2</p> 
+  <p>When your existing project requires a technology or process solution</p> 
+  <p>Correct</p> 
+  <p>3</p> 
+  <p>When you have a great idea for a new project, and need to make sure it can work</p> 
+  <p>Correct</p> 
+  <p>4</p> 
+  <p>When you want to know if your project implementation goals are achievable and realistic.</p> 
+  <p>Correct</p> 
+  <p><b>CORRECT AUDIO FEEDBACK </b></p> 
+  <p>Great! You're already thinking along the right lines. You can see that ITS is all about Solutions. </p> 
+  <p><b>CORRECT TEXT FEEDBACK </b>(50 words max)</p> 
+  <p>That's right! All of these are good reasons to get in touch with ITS – that's because they are all about solutions. </p> 
+  <p><b>PARTIAL AUDIO FEEDBACK</b> </p> 
+  <p>Almost – you're definitely getting close to understanding what ITS is all about. </p> 
+  <p><b>PARTIAL TEXT FEEDBACK </b>(50 words max) </p> 
+  <p>Not quite. In fact all of these are excellent reasons to get in touch with ITS – that's because they are all about finding a solution using processes or technology to support MDLZ.</p> 
+  <p><b>INCORRECT AUDIO FEEDBACK </b></p> 
+  <p>NA</p> 
+  <p><b>INCORRECT TEXT FEEDBACK </b>(50 words max)</p> 
+  <p>NA</p> 
+  <p>SCREEN 01_120</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p>We're going to pick apart the ITS value proposition, pulling out the meanings </p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>Using strong typography, the ITS value proposition dominates the screen. The phrases themselves are the hotspots: </p> 
+  <p>ITS: Connecting the MDLZ world to drive sustainable growth through competitive solutions.</p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>As we have spoke about it already, the work of ITS is huge, and stretches throughout the entire organization. So, let's make things simple for a minute – here is ITS in a single sentence. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each icon to find out more.</p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>ITS</p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>Information Technology and Solutions</p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Connecting our MDLZ world</p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p>We strive to partner with our eco-system which makes MDLZ thrive. That means consumers, customers, suppliers, stakeholders and functions. People across the world of MDLZ have us on their side. </p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>To drive sustainable growth</p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p>Technology and process-based solutions are at the heart of Ambition 2020's objectives for growth. Through our enterprise strategy solutions, we help meet the needs of our organization. </p> 
+  <p><b>REVEAL 4 ICON PLACEMENT</b></p> 
+  <p>Through competitive solutions</p> 
+  <p><b>REVEAL 4 TEXT (50 words max)</b></p> 
+  <p>Being competitive allows us to deliver both technology and process solutions with speed and efficiency.</p> 
+  <p>SCREEN 01_130</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p>Images from across the different functions represent concrete examples of the work of ITS in people's everyday lives. Reveal text gives more information on each individual project.</p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>Similar to a menu screen, but using examples that are specific to each function: </p> 
+  <p>RDQ – the image of an ideas lab</p> 
+  <p>Sales – field sales agent in a store</p> 
+  <p>HR – recruitment interview</p> 
+  <p>ISC?</p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>So, how does our mission unleash growth in MDLZ? To get an idea, we can take a look at just a few examples of how we help each function achieve their goals. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each function pictured to find out more.</p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>Research Development and Quality (RDQ)</p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>We are making it possible for RDQ to move faster from concept to market. The impact of this is that we drive growth and become more competitive. </p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Sales</p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p>We help sales by focusing on efficient retail execution, including distributor management and competitive revenue management capability. This means our sales teams are supported every step of the way. By providing the platform and tablets for in-store execution we help drive more sales and increased growth. </p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>Human Resources (HR)</p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p>Our solutions have improved talent management (getting the best out of the people of MDLZ) through automated global processes and tools, as well as integrated employee data. You may already have experienced some of the technical solutions integrated into our Mondelēz International University (MIU). If so, you will know that our solutions bring all your learning under one roof, meaning consistent ways to build learning plans and access global learning opportunities. Using these solutions, we can connect your work and ambitions to help you realize your potential.</p> 
+  <p><b>REVEAL 4 ICON PLACEMENT</b></p> 
+  <p>ISC </p> 
+  <p><b>REVEAL 4 TEXT</b></p> 
+  <p>Colleagues in manufacturing have benefitted from Integrated Digital Factory (IDF) - technology solutions that help enable the Factory of the Future</p> 
+  <p>.</p> 
+  <p>One element of IDF delivers real time manufacturing performance information, in a simple, visually intuitive way that enables shop floor colleagues to take immediate actions to improve the performance of their area or production line. This reduces waste, improves output and helps the plant meet its daily, weekly and overall targets.</p> 
+  <p>SCREEN 01_140</p> 
+  <p>SCREEN TYPE Text reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects text headings to reveal further information, images or media.</p> 
+  <p>This is a positive message about why ITS love what they do, and why every solution matters. Each brief statement is expanded in more detail when selected by the learner. </p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>Now you have a better idea of what ITS is. Here's what our function means to us. Our mission is to empower growth, this is what drives us to do what we do for the MDLZ world. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each heading to find out more.</p> 
+  <p><b>HEADING 1 TEXT (5 words max)</b></p> 
+  <p>Empowering Growth is creativity</p> 
+  <p><b>TEXT FOR HEADING 1 (50 words max)</b></p> 
+  <p>We champion smart, simple and cost-effective solutions that build capabilities for MDLZ.</p> 
+  <p><b>HEADING 2 TEXT (5 words max)</b></p> 
+  <p>Empowering Growth is being proactive</p> 
+  <p><b>TEXT FOR HEADING 2 (50 words max)</b></p> 
+  <p>We get involved early and help to set the direction. We also look for the root causes of any system issues to ensure business continuity in all areas.</p> 
+  <p></p> 
+  <p><b>HEADING 3 TEXT (5 words max)</b></p> 
+  <p>Empowering Growth is forward thinking</p> 
+  <p><b>TEXT FOR HEADING 3 (50 words max)</b></p> 
+  <p>We think long term and invest in sustainable solutions. (Should we mention something about enterprise architecture here?)</p> 
+  <p></p> 
+  <ol> 
+   <li></li> 
+   <li></li> 
+  </ol> 
+  <p><b>HEADING 4 TEXT (5 words max)</b></p> 
+  <p>Empowering Growth is agile</p> 
+  <p><b>TEXT FOR HEADING 4 (50 words max)</b></p> 
+  <p>We are quick to respond to changing needs and priorities across all functions.</p> 
+  <p><b>HEADING 5 TEXT (5 words max)</b></p> 
+  <p>Empowering Growth is global reach </p> 
+  <p><b>TEXT FOR HEADING 5 (50 words max)</b></p> 
+  <ol> 
+   <li>We provide a consistent service to everyone, everywhere.</li> 
+  </ol> 
+  <p>FINAL PROMPT</p> 
+  <p>Select the Home icon to return to the menu.</p> 
+  <p>Topic 2: Empowering growth </p> 
+  <p>SCREEN 02_100</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p>Breaking down the reasons for the ITS work , this screen will use the three strategic pillars to look at the mission that drives this function. This screen will use the three strategic pillars to further understand the mission that drives this function. </p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>A simplified diagram representing the three strategic pillars connected by ITS. The Pillars shown are: Accelerate Growth, Future-proof the Foundation, Strengthen the Core. At the centre is ITS Empowering Growth </p> 
+  <p></p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>You've seen what ITS does, and how we are dedicated to empowering growth. You have also  been able to think about where our solutions support you in your role. Now let's look at the strategy that guides us. All of our work is driven by three strategic pillars. Achieving these objectives helps us achieve our goals and meet our targets.</p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each of the strategic pillars to find out more.</p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>Accelerate growth. </p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>During our strategic planning process we work with key leaders across MDLZ to identify the right capabilities to achieve our Ambition 2020 goals. </p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Strengthen the Core </p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p>We create solutions that help MDLZ achieve operating excellence. Solutions that are efficient, reliable, cost effective and sustainable in the long and short term. DIAL is the MDLZ Way we achieve this. The DIAL framework has two major phases and 4 minor phases. <b>D</b>efine and <b>I</b>mplement or 'Transformation' enables projects to deliver up front everything required. At the back end in <b>A</b>pply &amp; Sustain and <b>L</b>everage &amp; Improve or 'Operational Excellence' we sustain, continuously improve and deliver our committed value. </p> 
+  <p></p> 
+  <p></p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>Future-Proof the Foundation </p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p>Technology around us and the technology architecture of MDLZ is evolving all the time. </p> 
+  <p> We look to enable flexibility for MDLZ as a whole, increase our speed in getting products to market and improve consumer engagement, and digital enterprise. All of these things allow MDLZ to maintain its place as a leading global organization today, tomorrow and beyond. </p> 
+  <p>SCREEN 02_110</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>The same image as screen 02_100 is displayed, but this time we only see the text: </p> 
+  <p>Build Capability, reduce Cost and Reduce Complexity</p> 
+  <p></p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>When you work hard, you want to make sure you have achieved what you set out to do, right? Like you, we are clear that our success is connected to the success of the whole MDLZ world. We measure our achievements against three guiding objectives. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each measure of success to find out more.</p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>Build Capability</p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>Building capability means that our work will result in visible top and bottom line growth. This is achieved when we increase organizational excellence and efficiency. </p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Reduce Complexity</p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p>World class technology and process solutions make life simpler. With each project, we aim to make MDLZ a faster, more agile organization. We ask ourselves, have we moved towards having MDLZ data in one source? Have we made the processes and technology across MDLZ work together? When we can answer yes, then we are succeeding. </p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>Reduce Cost</p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p>Reducing cost is something we all strive for, but in ITS it means making our own processes more efficient, and reducing cost for MDLZ on a global level. We ask ourselves: Have we moved towards more engaging user experiences? Are we making people more self-sufficient? Are we being ruthless in the technology choices we make and ensuring anything outside of our portfolio is quickly retired? Are we keeping our costs within a competitive range? </p> 
+  <p></p> 
+  <p>SCREEN 02_120</p> 
+  <p>SCREEN TYPE Photostory</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>A series of images with text that the learner explores in a fixed sequence that provides a linear narrative. The text in each </p> 
+  <p>Key people from MDLZ functions – represented as images or illustrations - will describe how a particular ITS solution has been successfully delivered, and how they work now. </p> 
+  <p><b>Frame</b></p> 
+  <p><b>Picture</b></p> 
+  <p><b>Text (Max 15 words per speech/caption)</b></p> 
+  <p><b>1</b></p> 
+  <p>A factory machine operator is smiling, using their machine. A colleague is checking output on a screen  </p> 
+  <p><b>TEXT</b></p> 
+  <p>In manufacturing, we aim for zero waste in our factories. Let’s take a look at how ITS helps make this happen, and empower growth in manufacturing. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select the numbers below to find out more.</p> 
+  <p><b>2</b></p> 
+  <p>Close up of the factory workers looking at the screen. Screen shows the letters iDF = 0% defect and waste</p> 
+  <p><b>TEXT</b></p> 
+  <p><b>Operator:</b> Thanks to the iDF Line solution that was delivered by ITS, we protect the quality of our products and eliminate waste.</p> 
+  <p><b>3</b></p> 
+  <p>The snacks leaving the factory in a truck, waved off by the machine operator </p> 
+  <p><b>TEXT</b></p> 
+  <p>Our products leave the factory 100% defect free. Protecting our brands and empowering growth. </p> 
+  <p><b>4</b></p> 
+  <p>Procurement office, a procurement worker is on the phone </p> 
+  <p><b>TEXT</b></p> 
+  <p><b>Procurement professional</b>: Since we rolled out our new procurement strategy, using solutions developed in partnership with ITS… </p> 
+  <p><b>5</b></p> 
+  <p>Procurement worker's screen showing Coupa platform </p> 
+  <p><b>TEXT</b></p> 
+  <p><b>Procurement professional: </b>Our procurement process has been transformed.  </p> 
+  <p><b>6</b></p> 
+  <p>A map of the world</p> 
+  <p><b>TEXT</b></p> 
+  <p><b>Procurement professional: </b>We now have vital, efficient Coupa platform rolled out round the world. One tool, live in 51 countries, efficiently handling a $2.8billion spend in the first year</p> 
+  <p>SCREEN 02_130</p> 
+  <p>SCREEN TYPE Text and Graphic</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>This screen presents information, sometimes with an illustrative graphic/image, and sometimes with typography, such as a pull-quote. There are no learning instructions or interactions. The layout of text and image will vary based on the requirements of the content.</p> 
+  <p>A quick review of where we are now. </p> 
+  <p><b>PULL-QUOTE TEXT</b> </p> 
+  <p>ITS </p> 
+  <p>We Are Connected</p> 
+  <p><b>BODY TEXT (Max 100 words)</b></p> 
+  <p>We've come a long way, and you've seen who we are, what we do, and why we do it. Next we're going to look at how we work. </p> 
+  <p>Remember, everything we do is about connecting the MDLZ world – and that includes you. If you haven't already, take a look at the resources room, and discover more about the ITS solutions at work in your function, and across the organization. </p> 
+  <ol> 
+   <li></li> 
+  </ol> 
+  <p>FINAL PROMPT</p> 
+  <p>Select the Home icon to return to the menu.</p> 
+  <p>Topic 3: How we work </p> 
+  <p>SCREEN 03_100</p> 
+  <p>SCREEN TYPE Text and Graphic</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>This screen presents information, sometimes with an illustrative graphic/image, and sometimes with typography, such as a pull-quote. There are no learning instructions or interactions. The layout of text and image will vary based on the requirements of the content.</p> 
+  <p>This screen introduces the learner to the ins and outs of ITS. How the function works, and who its people are. </p> 
+  <p><b>IMAGE</b></p> 
+  <p>Use menu imagery to show the whole ITS team together </p> 
+  <p><b>BODY TEXT (Max 100 words)</b></p> 
+  <p>Now that you know what we do, it's time to get to know us even better. In this part of the tour, you're going to meet some ITS people and find out how we partner across MDLZ. </p> 
+  <p>You will discover that there are ITS colleagues all over the world, and how you can work with them. </p> 
+  <p>SCREEN 03_110</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p>The image shows the three operational layers of ITS, when the learner selects each area, they will discover more about how this function works</p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>A simplified version of this diagram – keeping: </p> 
+  <p>Strategy, Engagement, Execution areas, plus each of the headlines: </p> 
+  <p>Empowering growth </p> 
+  <p>Strategy &amp; markets</p> 
+  <p>Technology &amp; architecture</p> 
+  <p>Business Engagement</p> 
+  <p>Project Services</p> 
+  <p>Service Operations. </p> 
+  <p></p> 
+  <p>But separated out into areas on a table.  Some examples of MDLZ snacks lie on the table too.</p> 
+  <p></p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>Just like some of the tastiest snacks of MDLZ, ITS is textured and works on many levels. Our operations are split between three delicious areas. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each layer to find out more.</p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>Strategy </p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>We ensure the execution of every aspect of ITS is in line with our strategic focus. This means taking a global and cross-functional view of projects.  </p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Engagement</p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p>Engagement is at the heart of all we do in ITS. We know it's the best way to support the whole organization. By working as a partner to each of the main functions, we are able to deliver real value for MDLZ. </p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>Execution</p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p>The execution layer is all about keeping us competitive in our work. Our projects are delivered using a 'factory model' approach. This means delivering each piece of work quickly, reliably and at the lowest possible cost while also providing ongoing support services. </p> 
+  <p>SCREEN 03_120</p> 
+  <p>SCREEN TYPE Text and Graphic</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>This screen presents information, sometimes with an illustrative graphic/image, and sometimes with typography, such as a pull-quote. There are no learning instructions or interactions. The layout of text and image will vary based on the requirements of the content.</p> 
+  <p><b>IMAGE</b> </p> 
+  <p>An illustrated word cloud represents the different roles with ITS: </p> 
   <ul> 
-   <li>identify compelling insights, do a commercial assessment, and discover global growth opportunities</li> 
-   <li>prioritize the ones most relevant for each region</li> 
-   <li>plan with our customers the best activations that will grow the snacking category</li> 
-   <li>then finally implement it all brilliantly, measuring and learning as we go. </li> 
+   <li>Tower BPE Lead</li> 
   </ul> 
+  <ul> 
+   <li>Change Control</li> 
+  </ul> 
+  <ul> 
+   <li>Tower BPE Implementation</li> 
+  </ul> 
+  <ul> 
+   <li>Market Lead</li> 
+  </ul> 
+  <ul> 
+   <li>Data Modeler</li> 
+  </ul> 
+  <ul> 
+   <li>Enterprise Architect</li> 
+  </ul> 
+  <ul> 
+   <li>Tower Lead</li> 
+  </ul> 
+  <ul> 
+   <li>Change Manager</li> 
+  </ul> 
+  <ul> 
+   <li>Region Implementation</li> 
+  </ul> 
+  <ul> 
+   <li>Tower Planning &amp; Delivery Lead</li> 
+  </ul> 
+  <ul> 
+   <li>Technical Analyst</li> 
+  </ul> 
+  <ul> 
+   <li>Project Manager</li> 
+  </ul> 
+  <ul> 
+   <li>Solution Architect</li> 
+  </ul> 
+  <ul> 
+   <li>Support Analyst</li> 
+  </ul> 
+  <ul> 
+   <li>Capability Lead</li> 
+  </ul> 
+  <ul> 
+   <li>Capability Implementation</li> 
+  </ul> 
+  <ul> 
+   <li>Region Engagement</li> 
+  </ul> 
+  <ul> 
+   <li>Solution Process Expert</li> 
+  </ul> 
+  <ul> 
+   <li>Global Solution Owner</li> 
+  </ul> 
+  <ul> 
+   <li>Solution Delivery Expert</li> 
+  </ul> 
+  <ul> 
+   <li>On Site Services</li> 
+  </ul> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p><b>BODY TEXT (Max 100 words)</b></p> 
+  <p>ITS is a partner for every function of the MDLZ world. We collaborate within ITS, and across the organization to find the best possible solutions. </p> 
+  <p>Each role is structured to maximize the possibilities that open up when we collaborate, share ideas, and think creatively about each solution. </p> 
+  <p>SCREEN 03_130</p> 
+  <p>SCREEN TYPE<b>: </b>Multiple choice question (correct &amp; incorrect feedback)</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>A question and several answer options. The learner selects the option or options that they believe are correct, then they select a Confirm button. The correct answer(s) are then indicated and feedback once the user submits their chosen answer. The guide provides narration for these screens, so the audio icon will be present.</p> 
+  <p><b>QUESTION AUDIO </b></p> 
+  <p>Let's think again about the projects at MDLZ that need ITS partnership </p> 
+  <p><b>QUESTION TEXT </b>(30 words max)</p> 
+  <p>When do you think ITS come in to partner on a new project? Remember, we work as partners throughout the organization, and can help shape ideas into projects. </p> 
+  <p></p> 
+  <p><b>PROMPT</b> </p> 
+  <p>Select your answer, then Confirm. </p> 
+  <p><b>OPTIONS </b>(15 words max. per option)</p> 
+  <p>1</p> 
+  <p>During the ITS quarterly rolling portfolio review</p> 
+  <p>Correct</p> 
+  <p>2</p> 
+  <p>As soon as the business need has been identified</p> 
+  <p>Correct</p> 
+  <p>3</p> 
+  <p>At the project definition phase</p> 
+  <p>Incorrect</p> 
+  <p>4</p> 
+  <p>Later than that </p> 
+  <p>Incorrect</p> 
+  <p><b>CORRECT AUDIO FEEDBACK </b></p> 
+  <p>That's right. You can see where the project becomes a reality, and that's where we join. </p> 
+  <p><b>CORRECT TEXT FEEDBACK </b>(50 words max)</p> 
+  <p>That's right, we join at the moment a project becomes part of the ITS quarterly rolling portfolio review process. </p> 
+  <p><b>INCORRECT AUDIO FEEDBACK </b></p> 
+  <p>Ah, not quite. We join at the strategic planning process because that's the moment we can be the most effective. </p> 
+  <p><b>INCORRECT TEXT FEEDBACK </b>(50 words max)</p> 
+  <p>Sorry, that's wrong. We join at the moment a project becomes part of the annual strategic planning process. </p> 
+  <p>SCREEN 03_140</p> 
+  <p>SCREEN TYPE Text reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects text headings to reveal further information, images or media.</p> 
+  <p>The screen shows a list of 10 capabilities of ITS, each one can be selected, and the learner will discover more about that capability. </p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>The world of MDLZ is changing, and it's an exciting time for all of us. We are constantly discovering new solutions to make our shoppers happy and our consumers' lives easier. We become more competitive with each new innovation, but we have to prioritize to maintain our strategy and focus. We have 10 priority capabilities, let’s take a look at the first 5 here. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each of the first 5 priority capabilities to find out more.</p> 
+  <p><b>HEADING 1 TEXT (5 words max)</b></p> 
+  <p>Analytics</p> 
+  <p><b>TEXT FOR HEADING 1 (50 words max)</b></p> 
+  <p>Look across the MDLZ world, and you will see that each function relies on analytics to succeed. In ITS, we are creating an internal and external data market place. This means there is one single source of truth that all of us can learn from. </p> 
+  <p><b>HEADING 2 TEXT (5 words max)</b></p> 
+  <p>End-to-end IBP</p> 
+  <p><b>TEXT FOR HEADING 2 (50 words max)</b></p> 
+  <p>IBP means Integrated Business Planning. ITS are using technology and process solutions to connect all MDLZ operations, strategy and financial performance. Our integrated planning tower is improving planning efficiency and accuracy. </p> 
+  <p><b>HEADING 3 TEXT (5 words max)</b></p> 
+  <p>Digital innovation</p> 
+  <p><b>TEXT FOR HEADING 3 (50 words max)</b></p> 
+  <p>Our digital platforms are set to transform the way we work together, and connect and collaborate with our colleagues, business partners, shoppers and consumers. A few examples include crowd sourcing platforms, customer portals, employee kiosks, etc.</p> 
+  <p><b>HEADING 4 TEXT (5 words max)</b></p> 
+  <p>E-commerce</p> 
+  <p><b>TEXT FOR HEADING 4 (50 words max)</b></p> 
+  <p>Getting ahead in e-commerce means connecting our shoppers with delicious MDLZ snacks and driving growth. We are developing new platforms and new ways for them to integrate with consumers and partners. </p> 
+  <p><b>HEADING 5 TEXT (5 words max)</b></p> 
+  <p>Revenue management</p> 
+  <p></p> 
+  <p></p> 
+  <p><b>TEXT FOR HEADING 5 (50 words max)</b></p> 
+  <p>Our new Trade Promotion Management (TPM) tool makes it possible to optimize spending and improve margins across selected markets. </p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p>SCREEN 03_145</p> 
+  <p>SCREEN TYPE Text reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects text headings to reveal further information, images or media.</p> 
+  <p>The screen shows a list of 10 capabilities of ITS, each one can be selected, and the learner will discover more about that capability. </p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>Let's look at the final 5 priority capabilities.  </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each of the remaining 5 priority capability to find out more.</p> 
+  <p><b>HEADING 1 TEXT (5 words max)</b></p> 
+  <p>Retail execution </p> 
+  <p><b>TEXT FOR HEADING 1 (50 words max)</b></p> 
+  <p>Thanks to Distributor Management System (DMS) and WiSE, our work with retailers improves day by day. We have already seen how WiSE is empowering partners in Sales to improve execution in retail environments. </p> 
+  <p><b>HEADING 2 TEXT (5 words max)</b></p> 
+  <p>Digital supply chain</p> 
+  <p><b>TEXT FOR HEADING 2 (50 words max)</b></p> 
+  <p>It's thrilling when we connect solutions to real practical results. Improving our digital supply chain is about getting our products onto shelves, and into shoppers' hands. This is why our order management, planning, procurement, manufacturing and warehouse management solutions are making it easier for our partners across all areas of the Integrated Supply Chain (ISC). </p> 
+  <p><b>HEADING 3 TEXT (5 words max)</b></p> 
+  <p>Human capital management and automation</p> 
+  <p><b>TEXT FOR HEADING 3 (50 words max)</b></p> 
+  <p>You're probably already experiencing some of the ways we help develop talent at MDLZ. Our MIU Learning Catalogue is an IT solution which integrates learning management with performance and goal setting processes as part of our HR strategy. If you're looking forward to a long and varied career with MDLZ, our solutions will help you seize the opportunity.</p> 
+  <p><b>HEADING 4 TEXT (5 words max)</b></p> 
+  <p>Finance MBS and other functional transformation</p> 
+  <p><b>TEXT FOR HEADING 4 (50 words max)</b></p> 
+  <p>As we work to drive and support transformation across the MDLZ world, we are partners in many projects. By implementing one finance and one procurement solution, we are making our processes more efficient. We are also rolling out D-I-A-L Operational Excellence across the organization.</p> 
+  <p><b>HEADING 5 TEXT (5 words max)</b></p> 
+  <p>Enterprise collaboration and productivity</p> 
+  <p><b>TEXT FOR HEADING 5 (50 words max)</b></p> 
+  <p>As you have probably noticed, at MDLZ communicating and collaborating with each other is how we work best. ITS projects to improve collaboration and productivity are making a difference to all our working lives – from Lync and mobile technology to video enablement. </p> 
+  <p>SCREEN 03_150</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p></p> 
+  <p></p> 
+  <p>The screen shows a strategy meeting – all around are different considerations of the ITS strategic operational layer</p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>The screen is dominated by menu-art style image of a strategy meeting. There are three hotspots: </p> 
+  <p>Two people high-fiving</p> 
+  <p>A map of the world which is pinned to a board</p> 
+  <p>The closed door</p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>Our strategic area works in partnership across MDLZ. Our role is to support and focus MDLZ strategy using technology and process solutions. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each image to find out more about our strategic work. </p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>Strategy</p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>The technology evolution drives ITS and business transformation. As enterprise leaders increasingly participate in information and technology decisions, the strategy becomes a driver for the transformation, and an orchestrator of enterprise wide technology strategy.</p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Markets</p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p></p> 
+  <p>Taking advantage of the power of big and small we create global competitive and sustainable solutions that empower growth; across global functions, regions and markets, with suppliers, customers and partners. Market engagement plays a key role in ensuring the market needs are captured and transformed into solutions as well as champion the adoption of the solutions in the markets.</p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>CTO</p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p></p> 
+  <p>The technology office and Enterprise Architecture (EA) delivers value by evolving, maintaining and innovating our enterprise architecture foundation – to enable flexibility, speed to market, consumer engagement and digital enterprise driven technology platforms.</p> 
+  <p>SCREEN 03_155</p> 
+  <p>SCREEN TYPE Hotspot reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects icons on an image to reveal further information, images or media.</p> 
+  <p>The screen shows a strategy meeting – all around are different considerations of the ITS strategic operational layer</p> 
+  <p><b>MAIN IMAGE</b></p> 
+  <p>Use typography to list out: </p> 
+  <p>Growth</p> 
+  <p>Enabling Functions</p> 
+  <p>ISC</p> 
+  <p>Decision Solutions</p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>The engagement area of our operation is essential to the way we work. You've already seen how we partner with all functions in MDLZ – imagine how this would work without a dedicated engagement team. This is where we build the partnerships that make our work possible. </p> 
+  <p>Our Engagement team is the front line of partnerships across MDLZ. We are actively engaged with Global, Regional and function based teams. Within the engagement area you will find the following teams: </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each team name to find out more.</p> 
+  <p><b>REVEAL 1 ICON PLACEMENT</b></p> 
+  <p>Growth</p> 
+  <p><b>REVEAL 1 TEXT (50 words max)</b></p> 
+  <p>Delivers capabilities and co-leads the digital transformation while supporting Sales, Marketing and Categories. </p> 
+  <p><b>REVEAL 2 ICON PLACEMENT</b></p> 
+  <p>Enabling Functions</p> 
+  <p><b>REVEAL 2 TEXT (50 words max)</b></p> 
+  <p>Supports Finance, MBS, Human Resources (HR) and Legal (LIS).</p> 
+  <p><b>REVEAL 3 ICON PLACEMENT</b></p> 
+  <p>ISC</p> 
+  <p><b>REVEAL 3 TEXT (50 words max)</b></p> 
+  <p>Supports global Integrated Supply Chain (ISC) and Research Development &amp; Quality (RDQ).</p> 
+  <p><b>REVEAL 4 ICON PLACEMENT </b></p> 
+  <p>Decision Solutions</p> 
+  <p><b>REVEAL 4 TEXT</b></p> 
+  <p>Driven by our ambition to push forward analytics we have a dedicated analytics team (Decision Solutions) that partners with the enterprise wide Analytics SteerCo.</p> 
+  <p>SCREEN 03_160</p> 
+  <p>SCREEN TYPE Text and Graphic</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>This screen presents information, sometimes with an illustrative graphic/image, and sometimes with typography, such as a pull-quote. There are no learning instructions or interactions. The layout of text and image will vary based on the requirements of the content.</p> 
+  <p>This is the Engagement area of the ITS operating model </p> 
+  <p><b>IMAGE [Delete if using typography]</b></p> 
+  <p>ITS professional is giving a talk to another function – they are presenting using plasma screen. The 'slide' they are showing says 'Working with ITS Engagement Teams'</p> 
+  <p><b>BODY TEXT (Max 100 words)</b></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p>Collaborating with business stakeholders, our engagement structure allows us to effectively prioritize each project requirement. The global solution owner will help drive solution evaluation around a capability, while the Planning &amp; Delivery lead will help evaluate how each project fits into the overall roadmap and the regional roadmaps. </p> 
+  <p>We also engage with other key players (ITS teams like CTO, Architecture, Strategy, etc. as well as Software and Delivery partners) throughout the process, to ensure our solutions meet the business need.   </p> 
+  <p>The BE team also help to develop the business case for new projects. Once the business case has been approved, the engagement team will work with the delivery team to make the prject happen. </p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p> </p> 
+  <p>SCREEN 03_170</p> 
+  <p>SCREEN TYPE Text reveal</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The learner selects text headings to reveal further information, images or media.</p> 
+  <p>The Execution  area is split into two parts, 'Project Delivery' and 'Service Operations' each user can click on the icons to learn more</p> 
+  <p></p> 
+  <p><b>OPENING TEXT (30 words max)</b></p> 
+  <p>The Execution area delivers new projects that bring new capabilities and supports and maintains the integrity of all MDLZ applications  to ensure the people in MDLZ remain productive.</p> 
+  <p>The teams are designed to leverage scale across MDLZ while providing the distinct skills and experience needed for each area. </p> 
+  <p><b>PROMPT</b></p> 
+  <p>Select each icon to learn more about execution area in ITS</p> 
+  <p><b>HEADING 1 TEXT (5 words max)</b></p> 
+  <p>Project Delivery </p> 
+  <p><b>TEXT FOR HEADING 1 (50 words max)</b></p> 
+  <p>Project delivery within the execution area is where proposed solutions become reality. These teams partner with the engagement layer to deliver projects for MDLZ by working in a collaborative way, in alignment with each tower. Using a deliver framework called DIAL (Define Implement Apply &amp; sustain Leverage) we capture what the project needs to achieve. We use the Define phase to design the solution, whilst testing and deploying in the 'Implement' phase. This ensures we measure whether we achieved what we were aiming to do. At that point the team hands over to the service operations area, we seek to maintain, sustain and continually improve. </p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p></p> 
+  <p><b>HEADING 2 TEXT (5 words max)</b></p> 
+  <p>Service Operations</p> 
+  <p><b>TEXT FOR HEADING 2 (50 words max)</b></p> 
+  <p>Service operations is where you'll find the teams that are manging both our application support processes and technology infrastructure operations through support contracts and partnerships  (such as Infosys, HCL, HP and others). </p> 
+  <p></p> 
+  <p></p> 
+  <p>SCREEN 03_180</p> 
+  <p>SCREEN TYPE Text and graphic</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>This screen presents information, sometimes with an illustrative graphic/image, and sometimes with typography, such as a pull-quote. There are no learning instructions or interactions. The layout of text and image will vary based on the requirements of the content.</p> 
+  <p>A long line of MDLZ professionals and partners from a variety of backgrounds – wearing high-vis, suits, retail uniforms, logistics uniforms, lab coats – the full range of the MDLZ working world – they thank you for learning about ITS. </p> 
+  <p><b>IMAGE [Delete if using typography]</b></p> 
+  <p>A long line of MDLZ professionals and partners from a variety of backgrounds – wearing high-vis, suits, retail uniforms, logistics uniforms, lab coats – the full range of the MDLZ working world – they thank you for learning about ITS. </p> 
+  <p><b>BODY TEXT (Max 100 words)</b></p> 
+  <p>Thank you for learning about ITS and how we work. We hope you enjoyed discovering how we work around the world, and around the clock, to connect our MDLZ world and drive sustainable growth. </p> 
+  <p>Remember that wherever you are working, and whatever you do, we are striving to provide solutions that help you. </p> 
+  <p>Don't be a stranger – talk to us about your ideas. Find your ITS partner and discover what new solutions are coming your way. </p> 
+  <ol> 
+   <li></li> 
+  </ol> 
+  <p>FINAL PROMPT</p> 
+  <p>Select the Home icon to return to the menu.</p> 
+  <p>Topic: Resources room</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>The Resources room is a visual catalogue of useful resources related to the function described in this module. Resources can be filtered by type:</p> 
+  <ul> 
+   <li>Watch (videos)</li> 
+   <li>Learn (e-learning)</li> 
+   <li>Read (PDFs)</li> 
+   <li>Visit (Intranet pages and external websites) </li> 
+  </ul> 
+  <p>Up to four most recently visited resources will be collected in a personal section (My list) so they can be found again easily.</p> 
+  <p><b>RESOURCE 1 TYPE</b></p> 
+  <p>Watch | Learn | Read | Visit (delete as applicable)</p> 
+  <p>ITS Intranet: https://intranet.mdlz.com/sites/informationsystems </p> 
+  <p>THUMBNAIL: Burst – Touch Screen  (Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images)</p> 
+  <p>MIU ITS Academy:</p> 
+  <p>THUMBNAIL: University graduates in hats</p> 
+  <p></p> 
+  <p><b>ITS Operating Model</b> (</p> 
+  <p>Podcast )</p> 
+  <p>THUMBNAIL: Burst – Cogs </p> 
+  <p>(Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images)</p> 
+  <p></p> 
+  <p><b>ITS Capablities (</b>Podcast)</p> 
+  <p>THUMBNAIL: team working together -  AdobeStock_112561865 </p> 
+  <p>(Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images)</p> 
+  <p><b>ITS Enterprise Architecture (</b>Podcast)</p> 
+  <p>THUMBNAIL: A complex network - AdobeStock_102696795 (Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images)</p> 
+  <p>WOW team site:</p> 
+  <p>THUMBNAIL: Burst WOW - (Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images)</p> 
+  <p>DIAL Overview Training (Will need link from LMS team)</p> 
+  <p>THUMBNAIL: Burst – Growth (Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images)  </p> 
+  <p>Process Managmeent Training (Will need link from LMS team)</p> 
+  <p>THUMBNAIL: AdobeStock_65696193 </p> 
+  <p>(Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images) </p> 
+  <p>Global PM Curriculum (Will need link from LMS team)</p> 
+  <p>THUMBNAIL: BURST – Cloud</p> 
+  <p>(Company/Projects/MDL851_BPBT_Landmarks/from_client/content/Module content/04_ITS/ITS images) </p> 
+  <p></p> 
+  <p><b>RESOURCE 1 TITLE</b></p> 
+  <p></p> 
+  <p><b>RESOURCE 1 THUMBNAIL</b></p> 
+  <p></p> 
+  <p><b>RESOURCE 1 SOURCE</b></p> 
+  <p></p> 
  </body>
 </html>

@@ -14,6 +14,7 @@ public class RevealText extends XMLEditor{
 	String screenContent;
 	
 	public RevealText(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}	
@@ -29,8 +30,8 @@ public class RevealText extends XMLEditor{
 	
 	private void editIntroText(){
 
-		String openingText = getHeadingContent(screenContent, "OPENING TEXT");
-		String prompt = getHeadingContent(screenContent,"PROMPT");
+		String openingText = getHeadingContent("OPENING TEXT");
+		String prompt = getHeadingContent("PROMPT");
 		prompt = addClass(prompt,"prompt");
 		openingText = openingText + prompt;
 		
@@ -42,7 +43,7 @@ public class RevealText extends XMLEditor{
 	private void editReveals() {
 		////HEADINGS and REVEALS////
 		int count = 1;
-		Node revealHolder = getNodeById(doc, "box", "revealHolder");
+		Node revealHolder = getNodeById("box", "revealHolder");
 		Node headingNode;
 		Node headingTextNode;
 		Node revealNode;
@@ -51,12 +52,12 @@ public class RevealText extends XMLEditor{
 		String revealText = "";
 		
 		while(true){
-			headingText = getHeadingContent(screenContent, "HEADING " + count + " TEXT", "TEXT FOR HEADING " + count);
-			revealText = getHeadingContent(screenContent, "TEXT FOR HEADING " + count);
+			headingText = getHeadingContent("HEADING " + count + " TEXT", "TEXT FOR HEADING " + count);
+			revealText = getHeadingContent("TEXT FOR HEADING " + count);
 			if(headingText == ""){
 				break;
 			}
-			headingNode = getNodeById(doc, "box", "click" + count);
+			headingNode = getNodeById("box", "click" + count);
 			if(headingNode == null){
 				constructHeadingNode(doc,count);
 				constructRevealNode(doc,count);
@@ -65,10 +66,10 @@ public class RevealText extends XMLEditor{
 				//TO DO change the id of the text child in the reveal box
 			}
 
-			headingTextNode = getNodeById(doc,"text", "clickText" + count);
+			headingTextNode = getNodeById("text", "clickText" + count);
 			replaceText(headingTextNode, doc.createCDATASection(headingText));
 			
-			revealTextNode = getNodeById(doc, "text", "reveal" + count + "text");
+			revealTextNode = getNodeById("text", "reveal" + count + "text");
 			replaceText(revealTextNode,doc.createCDATASection(revealText));
 
 			count++;
@@ -76,7 +77,7 @@ public class RevealText extends XMLEditor{
 	}
 
 	private void constructEvent(Document doc, int count) {
-		Node eventHolder = getNodeById(doc,"event","reset");
+		Node eventHolder = getNodeById("event","reset");
 		
 		//create anim node
 		Element animNode = doc.createElement("anim");
@@ -98,8 +99,8 @@ public class RevealText extends XMLEditor{
 	}
 
 	private void constructRevealNode(Document doc, int count) {
-		Node revealHolder = getNodeById(doc, "box", "revealHolder");
-		Node revealNode = getNodeById(doc,"box","reveal_click1").cloneNode(true);
+		Node revealHolder = getNodeById("box", "revealHolder");
+		Node revealNode = getNodeById("box","reveal_click1").cloneNode(true);
 
 		editAttribute(revealNode,"id","reveal_click" + count);
 		//change id of child text node
@@ -117,8 +118,8 @@ public class RevealText extends XMLEditor{
 
 	private void constructHeadingNode(Document doc, int count) {
 		
-		Node revealHolder = getNodeById(doc, "box", "revealHolder");
-		Node headingNode = getNodeById(doc,"box","click1").cloneNode(true);
+		Node revealHolder = getNodeById("box", "revealHolder");
+		Node headingNode = getNodeById("box","click1").cloneNode(true);
 		editAttribute(headingNode,"id","click" + count);
 		editAttribute(headingNode,"event","reset,showreveal," + count);
 		

@@ -17,6 +17,7 @@ public class MCQ extends XMLEditor{
 	String screenContent;
 	
 	public MCQ(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}
@@ -33,21 +34,21 @@ public class MCQ extends XMLEditor{
 	}
 
 	private void editIntroText() {
-		String title = getHeadingContent(screenContent,"TITLE");
-		String introText = getHeadingContent(screenContent, "QUESTION TEXT");
-		String prompt = getHeadingContent(screenContent,"PROMPT");
+		String title = getHeadingContent("TITLE");
+		String introText = getHeadingContent("QUESTION TEXT");
+		String prompt = getHeadingContent("PROMPT");
 		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
 		
 		introText = title + "\n" + introText + "\n" + prompt;	
 		CDATASection question = doc.createCDATASection(introText);
-		Node introTextNode = getNodeById(doc,"text", "introText");
+		Node introTextNode = getNodeById("text", "introText");
 		replaceText(introTextNode,question);
 	};		
 	
 	private void editOptions() {
 
-		String options = getHeadingContent(screenContent,"OPTIONS","CORRECT AUDIO FEEDBACK");
+		String options = getHeadingContent("OPTIONS","CORRECT AUDIO FEEDBACK");
 		
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 
@@ -107,13 +108,13 @@ public class MCQ extends XMLEditor{
 	
 	protected void editFeedbacks(){
 
-		CDATASection pass = doc.createCDATASection(getHeadingContent(screenContent,"CORRECT TEXT"));
-		CDATASection partial = doc.createCDATASection(getHeadingContent(screenContent,"PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent(screenContent,"INCORRECT TEXT"));
+		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
+		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
+		CDATASection fail = doc.createCDATASection(getHeadingContent("INCORRECT TEXT"));
 		
-		Node passNode = getNodeById(doc, "text", "text_pass");
-		Node partialNode = getNodeById(doc, "text", "text_partial");
-		Node failNode = getNodeById(doc, "text", "text_fail");		
+		Node passNode = getNodeById("text", "text_pass");
+		Node partialNode = getNodeById("text", "text_partial");
+		Node failNode = getNodeById("text", "text_fail");		
 		
 		replaceText(passNode,pass);
 		replaceText(partialNode,partial);

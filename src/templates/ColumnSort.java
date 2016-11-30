@@ -10,6 +10,7 @@ public class ColumnSort extends XMLEditor{
 	String screenContent;
 	
 	public ColumnSort(Document doc, String screenContent){
+		super(doc,screenContent);		
 		this.doc = doc;
 		this.screenContent = screenContent;
 	}		
