@@ -59,7 +59,7 @@ public class Hotspot extends XMLEditor{
 			if(revealNode == null){
 				constructReveal(count);
 				constructHotspot(count);
-				constructLabel(count);
+				//constructLabel(count);
 				constructEvent(count);
 			}
 			

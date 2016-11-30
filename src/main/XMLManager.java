@@ -139,7 +139,7 @@ public class XMLManager {
 			////////////////WRITE XML FILE///////////////////
 			TransformerFactory tFactory = TransformerFactory.newInstance();
 			Transformer transformer = tFactory.newTransformer();
-			transformer.setOutputProperty(OutputKeys.CDATA_SECTION_ELEMENTS, "script");
+			//transformer.setOutputProperty(OutputKeys.CDATA_SECTION_ELEMENTS, "script");
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");			
 			DOMSource source = new DOMSource(doc);

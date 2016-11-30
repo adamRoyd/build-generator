@@ -22,7 +22,7 @@ public class TextGraphic extends XMLEditor{
 	
 		editIntroText();
 		
-		editQuoteText();
+		//editQuoteText();
 		
 		//editImagePath(doc);
 		
