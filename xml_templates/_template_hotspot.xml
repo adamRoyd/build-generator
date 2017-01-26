@@ -25,14 +25,8 @@
 	<image id="bg" y="74"><![CDATA[lib/images/content/placeholder.jpg]]></image>
 	
 	
-    <text id="introText" class="white" width="615" x="25" y="100"></text>
+    <text id="screentext" width="615" x="25" y="100"></text>
 
-	<box id="labelHolder">
-		<text id="hotspotLabel1" class="hotspotLabel" x="180" y="250"/>
-		<text id="hotspotLabel2" class="hotspotLabel" x="280" y="250"/>
-		<text id="hotspotLabel3" class="hotspotLabel" x="380" y="250"/>
-
-	</box>	
 	
 	<box id="hotspotHolder">
 		<box id="hotspot1" class="hotspot" x="195" y="335" width="30" height="30" event="reset,showreveal"/>	
@@ -48,10 +42,8 @@
 				<text id="reveal1title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal1text" width="calc(100% - 40px)" x="20" y="60"></text>
-			<box id="reveal1media" x="20" y="60">
+			<text id="hotspot_1_text" width="calc(100% - 40px)" x="20" y="60"></text>
 
-			</box>
 		</box>
 		
 		<box id="reveal_hotspot2" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
@@ -59,10 +51,8 @@
 				<text id="reveal2title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal2text" width="calc(100% - 40px)" x="20" y="60"></text>
-			<box id="reveal2media" x="20" y="60">
+			<text id="hotspot_2_text" width="calc(100% - 40px)" x="20" y="60"></text>
 
-			</box>
 		</box>
 
 		<box id="reveal_hotspot3" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="340" height="340" x="495" y="170">
@@ -70,10 +60,8 @@
 				<text id="reveal3title" class="revealtitle" x="20" y="10"></text>		
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
-			<text id="reveal3text" width="calc(100% - 40px)" x="20" y="60"></text>
-			<box id="reveal3media" x="20" y="60">
+			<text id="hotspot_3_text" width="calc(100% - 40px)" x="20" y="60"></text>
 
-			</box>
 		</box>
 
 		

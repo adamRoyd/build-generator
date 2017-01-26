@@ -26,70 +26,112 @@ public class Photostory extends XMLEditor{
 	
 	public Document editXML(){
 
+		editIntroText();
+		
 		ArrayList<String> cellList = splitContentIntoCells(screenContent); 
 		
-		editCells(cellList);
+		editNumberOfCells(cellList.size());		
 		
-		editTriggerEvent(cellList.size());
+		editCellContents(cellList);
+		
+		//editTriggerEvent(cellList.size());
 		
 		return doc;
 	}
 
-	private void editCells(ArrayList<String> cellList) {
-		
+	private void editNumberOfCells(int numberOfCells) {
+
 		Node cellNode;
-		CDATASection cdata;
 		Node custom = doc.getElementsByTagName("custom").item(0);
-		int cellNumber = 1;
-	
-		for(String cellContent : cellList){
+
+		for(int i =0;i<numberOfCells;i++){
 			
 			//get cell node
-			cellNode = doc.getElementsByTagName("cell").item(cellNumber - 1);
+			cellNode = doc.getElementsByTagName("cell").item(i);
+
 			
-			
-			//clone node
+			//clone node if needed
 			if(cellNode == null){
+				System.out.println("YES");
 				cellNode = doc.getElementsByTagName("cell").item(0).cloneNode(true);
 				custom.appendChild(cellNode);
 				
 				//edit text node attribute. NodeList because attribute has been cloned
-				editAttribute(getNodeListById("text","cell1_text").item(1),
-						"id", "cell" + cellNumber + "_text");
+				//editAttribute(getNodeListById("text","cell1_text").item(1),"id", "cell" + cellNumber + "_text");
 				
 				//edit image node attribute
-				editAttribute(getNodeListById("image","cell1_image").item(1),
-						"id", "cell" + cellNumber + "_image");
+				//editAttribute(getNodeListById("image","cell1_image").item(1),"id", "cell" + cellNumber + "_image");
 				
 				//create event for the trigger (starts from zeroth index)
-				createCellEvent(cellNumber - 1);
+				//createCellEvent(cellNumber - 1);
 			}
+		}
+	}
+
+	private void editCellContents(ArrayList<String> cellList) {
+		
+			Node textNode;
+			CDATASection cdata;
+			Node custom = doc.getElementsByTagName("custom").item(0);
 			
-			//get text content
-			String titleText = getCellContent(cellContent, "HEADLINE");
+			NodeList cellNodeList =  ((Element) custom).getElementsByTagName("cell");
+			int cellNumber = 0;
+			
+			for(String cellContent : cellList){
+			
+
+			//get text content for individual cell
+			String titleText = getCellContent(cellContent, "TITLE");
 			String text = getCellContent(cellContent, "TEXT");
 			String promptText = getCellContent(cellContent, "PROMPT");
 			titleText = addClass(titleText,"headline");
 			promptText = addClass(promptText,"prompt");
 			text = titleText + "\n" + text + "\n" + promptText;
 			cdata = doc.createCDATASection(text);
+
+
+			//get text node
+			textNode = ((Element) cellNodeList.item(cellNumber)).getElementsByTagName("text").item(0);
+
 			
 			
-			//insert text
-			Node textNode = getNodeById("text", "cell" + cellNumber + "_text");
 			replaceText(textNode,cdata);
 			
 			
 			//edit image path
-			editImagePath("cell" + cellNumber + "_image", "_0" + cellNumber);
+			//editImagePath("cell" + cellNumber + "_image", "_0" + cellNumber,"jpg");
 			
 			//check asset
-			checkImageAsset("_0" + cellNumber);
+			//checkImageAsset("_0" + cellNumber);
 
 			cellNumber++;
 		}
-		
 	}
+		
+
+	private String getCellContent(String cellContent, String heading){
+		
+		//split content by paragraph breaks
+		Iterator<String> it = new ArrayList<String>(Arrays.asList(cellContent.split("\\n"))).iterator();
+		String text = "";
+		while(it.hasNext()){
+			String line = it.next();
+			
+			if(line.contains(heading) && isAHeading(line)){
+				//add the subsequent lines to the text String
+				//stops when it reaches a new heading (i.e. OPTIONS)
+				while(it.hasNext()){ 
+					line = it.next();					
+					if(isAHeading(line)){
+						break;
+					}					
+					text += "\n" + line;
+				}
+			}
+		}
+		text = text.replaceAll("(?m)^[ \t]*\r?\n", "");
+		return text;
+	}	
 	
 
 	private void editTriggerEvent(int numberOfCells) {
@@ -135,29 +177,19 @@ public class Photostory extends XMLEditor{
 		return list;
 	};
 	
-	
-	private String getCellContent(String cellContent, String heading){
 		
-		//split content by paragraph breaks
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(cellContent.split("\\n"))).iterator();
-		String text = "";
-		while(it.hasNext()){
-			String line = it.next();
-			
-			if(line.contains(heading) && isAHeading(line)){
-				//add the subsequent lines to the text String
-				//stops when it reaches a new heading (i.e. OPTIONS)
-				while(it.hasNext()){ 
-					line = it.next();					
-					if(isAHeading(line)){
-						break;
-					}					
-					text += "\n" + line;
-				}
-			}
-		}
-		text = text.replaceAll("(?m)^[ \t]*\r?\n", "");
-		return text;
+	
+	private void editIntroText(){
+
+		String introText = getHeadingContent("OPENING TEXT");
+		String prompt = getHeadingContent("PROMPT");
+
+		prompt = addClass(prompt,"prompt");
+		introText = introText + prompt;
+
+		Node text = getNodeById("text", "screentext");
+		CDATASection cdata = doc.createCDATASection(introText);
+		replaceText(text,cdata);		
 	}	
 
 }

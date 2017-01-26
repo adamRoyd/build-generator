@@ -20,6 +20,7 @@ import templates.Hotspot;
 import templates.MCQ;
 import templates.Master;
 import templates.Photostory;
+import templates.RevealGraphic;
 import templates.RevealText;
 import templates.TextGraphic;
 import templates.Video;
@@ -52,7 +53,7 @@ public class XMLManager {
 		for(String content : contentList){
 		String[] lines = content.split("\\n");
 
-			if(lines.length>1){ //1st screen passed through is a dud with only 1 value
+			if(lines.length>5){ //1st screen passed through is a dud with only 1 line
 				String screenNumber = cleanScreenNumber(lines[0]);
 				String screenType = cleanScreenType(lines[1]);
 				
@@ -114,6 +115,9 @@ public class XMLManager {
 				case "text_reveal":
 					editor = new RevealText(doc,screenContent);
 					break;
+				case "graphic_reveal":
+					editor = new RevealGraphic(doc,screenContent);
+					break;	
 				case "column_sort":
 					editor = new ColumnSort(doc,screenContent);
 					break;
@@ -180,7 +184,7 @@ public class XMLManager {
 			type = "drag_drop";
 		}		
 		else if(s.toLowerCase().contains("graphic reveal")){
-			type = "text_graphic_reveal";
+			type = "graphic_reveal";
 		}						
 		else if(s.toLowerCase().contains("tab")){
 			type = "tab_reveal";

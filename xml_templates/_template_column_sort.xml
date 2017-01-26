@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<events>
+		<event id="pass">
+			<show>feedback_pass</show>
+		</event>
+		
+		<event id="partial">
+			<show>feedback_partial</show>
+		</event>
+		
+		<event id="fail">
+			<show>feedback_fail</show>
+		</event>
+		
+		<event id="fail_attempt">			
+			<show>feedback_fail_attempt</show>
+		</event>
+		
+		<event id="reset">
+			<hide delay="0.3">feedbackHolder</hide>
+			<tween target="feedbackHolder" time="0.3"><![CDATA[x:370]]></tween>
+			<hide delay="0.3">feedback_pass</hide>
+			<hide delay="0.3">feedback_partial</hide>
+			<hide delay="0.3">feedback_fail</hide>
+			<hide delay="0.3">feedback_fail_attempt</hide>
+		</event>
+		
+		<event id="submit">
+			<log>submit</log>
+			<tween target="feedbackHolder" time="0"><![CDATA[x:370]]></tween>
+			<show>feedbackHolder</show>
+			<tween target="feedbackHolder" time="0.5"><![CDATA[x:0]]></tween>
+		</event>
+	</events>
+	
+	
+	<image x="686" y="50"><![CDATA[lib/images/content/bws919_04_160.jpg]]></image>
+	
+	<box x="25" y="75" width="600" class="relativeContents">
+		<text id="screentext">
+			<![CDATA[
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+			<p class="prompt">Select your answers, then Confirm.</p>
+			]]>
+		</text>
+		
+		<custom id="col_sort">
+			<settings radiomode="true" randomise="true" optwidth="115" optheight="50" />
+
+			<column id="1"/>
+
+			<row correct="1"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat.</p>]]></row>
+			<row correct="1"><![CDATA[<p>Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend.</p>]]></row>
+			<row correct="1"><![CDATA[<p>Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]></row>
+			<row correct="1"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat.</p>]]></row>
+			<row correct="1"><![CDATA[<p>Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend.</p>]]></row>
+
+		</custom>
+		
+		<box id="btns">		
+			<button id="resetBtn" 	x="150" y="0" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
+			<button id="submitBtn" 	x="0" 	y="0" enabled="false" func="submit" event="submit"><![CDATA[<p>Confirm</p>]]></button>
+		</box>
+	</box>
+	
+	
+	
+	<box id="feedbackHolder" x="655" y="50" width="365" height="595" class="relativeContents" anim="hidden">
+		<text id="feedback_pass" anim="hidden">
+			<![CDATA[
+			<p>Feedback - passed!</p>
+			]]>
+		</text>
+		<text id="feedback_partial" anim="hidden">
+			<![CDATA[
+			<p>Feedback - partial!</p>
+			]]>
+		</text>
+		<text id="feedback_fail" anim="hidden">
+			<![CDATA[
+			<p>Feedback - failed!</p>
+			]]>
+		</text>
+		<text id="feedback_fail_attempt" anim="hidden">
+			<![CDATA[<p>Feedback - fail attempt!</p>
+			]]>
+		</text>
+		<text>
+			<![CDATA[
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+			<p>Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+		</text>
+	</box>
+	
+</data>

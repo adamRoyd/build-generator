@@ -24,7 +24,7 @@ public class Hotspot extends XMLEditor{
 		
 		editIntroText();
 		
-		editHotspotContent();
+		//editHotspotContent();
 		
 		return doc;
 	};	
@@ -36,7 +36,7 @@ public class Hotspot extends XMLEditor{
 		prompt = addClass(prompt, "prompt");
 		openingText = openingText + prompt;
 		CDATASection cdata = doc.createCDATASection(openingText);
-		Node node = getNodeById( "text", "introText");
+		Node node = getNodeById( "text", "screentext");
 		replaceText(node, cdata);		
 	}
 
@@ -51,7 +51,7 @@ public class Hotspot extends XMLEditor{
 		
 		while(true){
 
-			revealText = getHeadingContent( "REVEAL " + count + " TEXT");
+			revealText = getHeadingContent( "HOTSPOT " + count + " TEXT");
 			if(revealText == ""){
 				break;
 			}

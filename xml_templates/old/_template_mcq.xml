@@ -59,6 +59,10 @@
 		<option correct="false"><![CDATA[	<p>OPTION_2</p>]]></option>
 	</custom>
 	
+	<audio id="pass" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="partial" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
+	<audio id="fail" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />		
+	
 	<box id="btns" x="55" y="550">		
 		<button id="resetBtn" 	x="150" y="0" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
 		<button id="submitBtn" 	x="0" 	y="0" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>

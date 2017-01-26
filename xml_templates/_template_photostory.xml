@@ -1,74 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
 
-	<settings autocomplete="false"/>
+	<text id="screentext" x="40" y="80" width="800"/>
 
-	<events>
-		<event id="init">
-			<media id="audio1" action="play" />
-			<function name="forceEnableNext"/>
-		</event>
-	
-		<event id="update">
-			<log>UPDATE</log>
-		</event>
-		
-		<event id="onContentNotSeen">
-			<anim type="alpha" animtime="0.2">contentWarning</anim>
-		</event>
-		
-		<event id="closeWarning">
-			<anim type="alphaout" animtime="0.2">contentWarning</anim>
-		</event>
-		
-		<trigger retrigger="-1" id="triggerId" events="cell0,cell1,cell2,cell3">
-			<screencompleted/>
-		</trigger>
-		
-		<event id="cell0"/>	
-		<event id="cell1"/>
-		<event id="cell2"/>
-		<event id="cell3"/>		
-
-	</events>
-
-	
-	
-	
 	<custom id="photostory1" x="45" y="100" width="922" height="442" >
 		<settings buttony="450" buttonnumbers="true" progressnav="true" dragnav="true" overridenav="false" autox="5" transition="fade" transitiontime="0.5" startframe="0" autocomplete="false"/>
 	
         <cell>
-			<image id="cell1_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell1_text" x="80" y="45" width="365"/>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text x="80" y="45" width="365"/>
 		</cell>
 		
 		<cell>
-			<image id="cell2_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell2_text" x="80" y="30" width="345"/>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text x="80" y="30" width="345"/>
 		</cell>
 		
         <cell>
-			<image id="cell3_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell3_text" x="70" y="40" width="285"/>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text x="70" y="40" width="285"/>
 		</cell>
 		
         <cell>
-			<image id="cell4_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell4_text" x="80" y="30" width="345"/>
+			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text x="80" y="30" width="345"/>
 		</cell>
 		
     </custom>
 	
-	<box id="contentWarning" anim="hidden" bgalpha="1" bgcol="FFFFFF" class="hotspotReveal" width="420" height="220" x="305" y="200">
-		<box bgcol="0036A3" width="100%" height="40">
-<!-- 			<text id="revealtitle" x="20" y="10"><![CDATA[<p>There is still more to see</p>]]></text>	 -->	
-			<svg class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="closeWarning"/>
-		</box>
-		<text width="380" x="20" y="70"><![CDATA[
-			<p>There's more information for you here. Select each of the numbers to see everything about this subject.</p>
-		]]></text>
-	</box>
+
 	
 
 </data>

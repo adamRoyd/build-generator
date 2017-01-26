@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>	
-
 	<events>
-
-		<event id="init">
-				<media id="audio1" action="play" />
-		</event>	
-	
 		<event id="pass">
-			<media id="pass" action="play" />		
 			<show>feedback_pass</show>
 		</event>
 		
 		<event id="partial">
-			<media id="partial" action="play" />		
 			<show>feedback_partial</show>
 		</event>
 		
 		<event id="fail">
-			<media id="fail" action="play" />		
 			<show>feedback_fail</show>
 		</event>
 		
@@ -27,7 +18,7 @@
 		</event>
 		
 		<event id="reset">
-
+			<hide delay="0.3">feedbackHolder</hide>
 			<hide delay="0.3">feedback_pass</hide>
 			<hide delay="0.3">feedback_partial</hide>
 			<hide delay="0.3">feedback_fail</hide>
@@ -35,66 +26,38 @@
 		</event>
 		
 		<event id="submit">
+			<hide>btns</hide>
 			<log>submit</log>
-
-			<show>feedbackHolder</show>
-
+			<show><![CDATA[feedbackHolder]]></show>
 		</event>
-		
-		<event id="playScreenAudio">
-			<media id="audio1" action="play" />
-		</event>		
-		
 	</events>
-	
-	<audio id="audio1" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />		
-	
-    <text id="introText" x="25" y="100" width="600">
-	<![CDATA[<p>INTRO_TEXT</p>
-	]]></text>
 
-	<custom id="mcq" x="55" y="200" width="570">
-		<settings optwidth="345" radiomode="true" randomise="false" />
-		<option correct="false"><![CDATA[	<p>OPTION_1</p>]]></option>
-		<option correct="false"><![CDATA[	<p>OPTION_2</p>]]></option>
-	</custom>
-	
-	<audio id="pass" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	<audio id="partial" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	<audio id="fail" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />		
-	
-	<box id="btns" x="55" y="550">		
-		<button id="resetBtn" 	x="150" y="0" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
-		<button id="submitBtn" 	x="0" 	y="0" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
-	</box>	
+	<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
 
-	<box id="feedbackHolder" x="655" y="50" width="365" height="595" anim="alpha">
-		<box id="feedback_pass" x="30" y="50" width="265" anim="hidden">
-			<text id="text_pass">
-				<![CDATA[
-				<p>FEEDBACK_PASS</p>
+	<box id="mcqholder" class="relativeContents">
+		<text id="screentext"/>
 
-				]]>
-			</text>
+		<custom id="mcq">
+			<settings radiomode="true" randomise="true" max_attempts="0"/>
+			<option correct="true"/>
+		</custom>
+
+
+		<box id="btns" class="center ">
+			<button id="submitBtn" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
 		</box>
-		<box id="feedback_partial" x="30" y="50" width="265" anim="hidden">
-			<text id="text_partial">
-				<![CDATA[
-				<p>FEEDBACK_PARTIAL/p>
-				]]>
-			</text>
-		</box>
-		<box id="feedback_fail" x="30" y="50" width="265" anim="hidden">
-			<text id="text_fail">
-				<![CDATA[
-				<p>FEEDBACK_FAIL</p>
-
-				]]>
-			</text>
-		</box>
-
-	</box>
 		
-	<image id="audioIcon" x="940" y="80" event="playScreenAudio"><![CDATA[lib/images/ui/ui_audio_icon.png]]></image>	
+		<box id="feedbackHolder" width="100%" class="relativeContents" anim="hidden">
+			<text id="feedback_pass" anim="hidden"/>
+			<text id="feedback_partial" anim="hidden"/>
+			<text id="feedback_fail" anim="hidden"/>
+
+		</box>
+	</box>
+	
+	
+	
+	
+	
 	
 </data>

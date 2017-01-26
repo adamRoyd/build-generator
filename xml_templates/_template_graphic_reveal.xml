@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<settings autocomplete="true" />
+
+	<events>
+
+		<event id="reset">
+			<hide>.reveal</hide>
+			<enable>.click</enable>
+			<class remove="selected">.click</class>
+		</event>
+		
+		<event id="click">
+			<event id="reset" />
+			<anim type="alpha" animtime="0.3" >reveal_[ITEM]</anim>
+			<disable>[ITEM]</disable>
+			<class add="selected">[ITEM]</class>
+		</event>
+
+    </events>
+
+	<box class="relativeContents" x="40" y="80" width="calc(100% - 80px)">
+		<text id="screentext" width="615"/>
+
+	
+		<box id="clickreveals" x="80" width="calc(100% - 160px)" class="relativeContents">
+
+			<box id="clicks">
+				<box id="click1" class="click" event="click"><image/></box>
+
+			</box>
+			
+			<box id="reveals">
+				<text id="reveal_click1" class="reveal" anim="hidden"/>
+
+			</box>
+		
+		</box>
+
+	</box>
+</data>

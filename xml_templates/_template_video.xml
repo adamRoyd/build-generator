@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
 	
+	<image id="bg" y="74"><![CDATA[lib/images/ui/color_bg/mdl851_bkg_orange_d_11.jpg]]></image>		
 	
 	<text id="screentext" x="170" y="100" width="450"><![CDATA[
 		<p class="title">Video</p>

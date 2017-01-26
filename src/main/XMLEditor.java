@@ -47,7 +47,7 @@ public class XMLEditor {
 			removeChilds(node);
 			node.appendChild(cdata);		
 		
-		}	
+		}
 		
 
 	}
@@ -102,28 +102,6 @@ public class XMLEditor {
 		return text;
 	}
 	
-	//this method also specifies the heading on which to stop adding content
-	protected String getHeadingContent(String startHeading,String endHeading){
-		Iterator<String> it = new ArrayList<String>(Arrays.asList(screenContent.split("\\n"))).iterator();
-		String text = "";
-		while(it.hasNext()){
-			String line = it.next();
-			
-			if(line.contains(startHeading) && isAHeading(line)){
-				//add the rest of the lines to the text.
-				//this equates to FALSE when we reach a new heading (i.e. OPTIONS)
-				while(it.hasNext()){ 
-					line = it.next();					
-					if(line.contains(endHeading) && isAHeading(line)){
-						break;
-					}					
-					text += "\n" + line;
-				}
-			}
-		}
-		text = text.replaceAll("(?m)^[ \t]*\r?\n", "");
-		return text;
-	}	
 	
 	protected Node getNodeById(String nodeType, String id){
 		
@@ -134,7 +112,7 @@ public class XMLEditor {
 			Object exprResult = expr.evaluate(doc, XPathConstants.NODE);
 			Node node = (Node) exprResult;
 			if(node == null){
-				//System.out.println(id + " IS NOT A NODE");
+				System.out.println(id + " IS NOT A NODE");
 			}
 			return node;
 		} catch (XPathExpressionException e) {
@@ -161,17 +139,25 @@ public class XMLEditor {
 	}	
 	
 	
-	protected void editImagePath(String id, String extension) {
+	protected void editImagePath(String id, String extension, String imageType) {
 		
-		String imagePath = "lib/images/content/" + getFilePath() + extension + ".jpg";
+		String imagePath = "lib/images/content/" + getFilePath() + extension + "." + imageType;
 		CDATASection cdata = doc.createCDATASection(imagePath);
 		Node n = getNodeById("image",id);
 		replaceText(n,cdata);
 	};	
+	
+	protected void editImagePath(Node n, String extension, String imageType) {
+		
+		String imagePath = "lib/images/content/" + getFilePath() + extension + "." + imageType;
+		CDATASection cdata = doc.createCDATASection(imagePath);
+		replaceText(n,cdata);
+	};		
 
 	
 	protected void checkImageAsset(String extension){
-		
+		//TO DO - discern between jpeg and png assets
+		/*
 		String directory = System.getProperty("user.dir") 
 				+ "/../module1/lib/images/content/";
 		
@@ -196,6 +182,7 @@ public class XMLEditor {
 			}
 			
 		}
+		*/
 		
 	}
 	

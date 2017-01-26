@@ -31,7 +31,7 @@ public class Main extends AbstractSample{
 
 	// Config for non-command line version
 	static {
-    	inputfilepath = System.getProperty("user.dir") + "/scripts/TAG123001.docx";
+    	inputfilepath = System.getProperty("user.dir") + "/scripts/STW971_script.docx";
 	}
 	
 
@@ -44,7 +44,7 @@ public class Main extends AbstractSample{
 		
 		//Get project code
 		//String projectCode = args[1];
-		String projectCode = "TAG123001";	
+		String projectCode = "stw971";	
 		System.out.println("PROJECT CODE = " + projectCode);
 		
 		// Load document

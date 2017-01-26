@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
 	<events>
-		
-		<event id="init">
-				<media id="audio1" action="play" />
-		</event>
+
 		
 		<event id="myanswers">
 			<log>myanswers</log>
@@ -60,16 +57,10 @@
 			<show>feedbackHolder</show>
 			<translate x="0" animtime="0.5">feedbackHolder</translate>
 		</event>
-				
-		<event id="playScreenAudio">
-			<media id="audio1" action="play" />
-		</event>
-				
+
 	</events>
 
-	<audio id="audio1" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	
-    <text id="introText" x="25" y="100" width="600">
+    <text id="screentext" x="25" y="100" width="600">
 		<![CDATA[
 		<p>DRAG_DROP</p>
 		]]>
@@ -153,35 +144,15 @@
 		
     </custom>
 	
-	<audio id="pass" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	<audio id="partial" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />
-	<audio id="fail" controls="false" autoplay="false" stopothers="true" x="480" y="140" width="250" src="lib/audio/audio_test.mp3" />	
+
 	
-	<box id="feedbackHolder" x="670" y="50" width="365" height="595" anim="hidden">
-		<box id="feedback_pass" x="30" y="50" width="265" anim="hidden">
-			<text id="text_pass">
-				<![CDATA[
-				<p>That's right!</p>
-				]]>
-			</text>
+		<box id="feedbackHolder" width="100%" class="relativeContents" anim="hidden">
+			<text id="feedback_pass" anim="hidden"/>
+			<text id="feedback_partial" anim="hidden"/>
+			<text id="feedback_fail" anim="hidden"/>
+
 		</box>
-		<box id="feedback_partial" x="30" y="50" width="265" anim="hidden">
-			<text id="text_partial">
-				<![CDATA[
-				<p>That's nearly right.</p>
-				]]>
-			</text>
-		</box>
-		<box id="feedback_fail" x="30" y="50" width="265" anim="hidden">
-			<text id="text_fail">
-				<![CDATA[
-				<p>That's not quite right.</p>
-				]]>
-			</text>
-		</box>
-	</box>
 	
-	<image id="audioIcon" x="940" y="80" event="playScreenAudio"><![CDATA[lib/images/ui/ui_audio_icon.png]]></image>		
 	
 </data>
 

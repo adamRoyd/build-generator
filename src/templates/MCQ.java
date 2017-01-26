@@ -34,21 +34,19 @@ public class MCQ extends XMLEditor{
 	}
 
 	private void editIntroText() {
-		String title = getHeadingContent("TITLE");
 		String introText = getHeadingContent("QUESTION TEXT");
 		String prompt = getHeadingContent("PROMPT");
-		title = addClass(title, "title");
 		prompt = addClass(prompt,"prompt");
 		
-		introText = title + "\n" + introText + "\n" + prompt;	
+		introText = introText + "\n" + prompt;	
 		CDATASection question = doc.createCDATASection(introText);
-		Node introTextNode = getNodeById("text", "introText");
+		Node introTextNode = getNodeById("text", "screentext");
 		replaceText(introTextNode,question);
 	};		
 	
 	private void editOptions() {
 
-		String options = getHeadingContent("OPTIONS","CORRECT AUDIO FEEDBACK");
+		String options = getHeadingContent("OPTIONS");
 		
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 
@@ -110,11 +108,11 @@ public class MCQ extends XMLEditor{
 
 		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
 		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent("INCORRECT TEXT"));
+		CDATASection fail = doc.createCDATASection(getHeadingContent("FAIL TEXT"));
 		
-		Node passNode = getNodeById("text", "text_pass");
-		Node partialNode = getNodeById("text", "text_partial");
-		Node failNode = getNodeById("text", "text_fail");		
+		Node passNode = getNodeById("text", "feedback_pass");
+		Node partialNode = getNodeById("text", "feedback_partial");
+		Node failNode = getNodeById("text", "feedback_fail");		
 		
 		replaceText(passNode,pass);
 		replaceText(partialNode,partial);
