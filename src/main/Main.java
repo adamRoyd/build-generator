@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 import org.docx4j.Docx4J;
 import org.docx4j.openpackaging.packages.WordprocessingMLPackage;
+import org.docx4j.openpackaging.parts.WordprocessingML.MainDocumentPart;
 import org.docx4j.samples.AbstractSample;
 
 import utils.AcceptAllChanges;
@@ -30,7 +31,7 @@ public class Main extends AbstractSample{
 
 	// Config for non-command line version
 	static {
-    	inputfilepath = System.getProperty("user.dir") + "/scripts/PTY123001.docx";
+    	inputfilepath = System.getProperty("user.dir") + "/scripts/TAG123001.docx";
 	}
 	
 
@@ -43,7 +44,7 @@ public class Main extends AbstractSample{
 		
 		//Get project code
 		//String projectCode = args[1];
-		String projectCode = "pty123001";	
+		String projectCode = "TAG123001";	
 		System.out.println("PROJECT CODE = " + projectCode);
 		
 		// Load document

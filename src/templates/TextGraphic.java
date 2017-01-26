@@ -24,7 +24,9 @@ public class TextGraphic extends XMLEditor{
 		
 		//editQuoteText();
 		
-		//editImagePath(doc);
+		editImagePath("image1","");
+
+		checkImageAsset("");
 		
 		return doc;
 	}
@@ -51,14 +53,5 @@ public class TextGraphic extends XMLEditor{
 		replaceText(text,cdata);		
 	}
 
-	private void editImagePath() {
-		
-		String imagePath = "lib/images/content/" + getFilePath() + ".jpg";
-		CDATASection cdata = doc.createCDATASection(imagePath);
-		Node image = getNodeById("image","image1");
-		replaceText(image,cdata);
-	};
-	
-	
 	
 }

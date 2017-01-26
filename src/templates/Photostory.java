@@ -40,12 +40,12 @@ public class Photostory extends XMLEditor{
 		Node cellNode;
 		CDATASection cdata;
 		Node custom = doc.getElementsByTagName("custom").item(0);
-		int cellNumber = 0;
+		int cellNumber = 1;
 	
 		for(String cellContent : cellList){
 			
 			//get cell node
-			cellNode = doc.getElementsByTagName("cell").item(cellNumber);
+			cellNode = doc.getElementsByTagName("cell").item(cellNumber - 1);
 			
 			
 			//clone node
@@ -53,12 +53,16 @@ public class Photostory extends XMLEditor{
 				cellNode = doc.getElementsByTagName("cell").item(0).cloneNode(true);
 				custom.appendChild(cellNode);
 				
-				//edit text node attribute
-				editAttribute(getNodeListById(doc,"text","cell1text").item(1),
-						"id", "cell" + (cellNumber + 1) + "text");
+				//edit text node attribute. NodeList because attribute has been cloned
+				editAttribute(getNodeListById("text","cell1_text").item(1),
+						"id", "cell" + cellNumber + "_text");
 				
-				//create event for the trigger
-				createCellEvent(cellNumber);
+				//edit image node attribute
+				editAttribute(getNodeListById("image","cell1_image").item(1),
+						"id", "cell" + cellNumber + "_image");
+				
+				//create event for the trigger (starts from zeroth index)
+				createCellEvent(cellNumber - 1);
 			}
 			
 			//get text content
@@ -70,17 +74,18 @@ public class Photostory extends XMLEditor{
 			text = titleText + "\n" + text + "\n" + promptText;
 			cdata = doc.createCDATASection(text);
 			
-			//get text child node of cell and replace text
-			NodeList cellChilds = cellNode.getChildNodes();
-			for(int i=0;i<cellChilds.getLength();i++){
-				Node n = cellChilds.item(i);
-
-				if("text".equals(n.getNodeName())){
-					
-					replaceText(n,cdata);
-				}
-			}
 			
+			//insert text
+			Node textNode = getNodeById("text", "cell" + cellNumber + "_text");
+			replaceText(textNode,cdata);
+			
+			
+			//edit image path
+			editImagePath("cell" + cellNumber + "_image", "_0" + cellNumber);
+			
+			//check asset
+			checkImageAsset("_0" + cellNumber);
+
 			cellNumber++;
 		}
 		

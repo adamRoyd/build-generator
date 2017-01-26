@@ -39,23 +39,23 @@
 		<settings buttony="450" buttonnumbers="true" progressnav="true" dragnav="true" overridenav="false" autox="5" transition="fade" transitiontime="0.5" startframe="0" autocomplete="false"/>
 	
         <cell>
-			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell1text" x="80" y="45" width="365"/>
+			<image id="cell1_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text id="cell1_text" x="80" y="45" width="365"/>
 		</cell>
 		
 		<cell>
-			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell2text" x="80" y="30" width="345"/>
+			<image id="cell2_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text id="cell2_text" x="80" y="30" width="345"/>
 		</cell>
 		
         <cell>
-			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell3text" x="70" y="40" width="285"/>
+			<image id="cell3_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text id="cell3_text" x="70" y="40" width="285"/>
 		</cell>
 		
         <cell>
-			<image><![CDATA[lib/images/content/placeholder.jpg]]></image>
-			<text id="cell4text" x="80" y="30" width="345"/>
+			<image id="cell4_image"><![CDATA[lib/images/content/placeholder.jpg]]></image>
+			<text id="cell4_text" x="80" y="30" width="345"/>
 		</cell>
 		
     </custom>

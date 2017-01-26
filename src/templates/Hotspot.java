@@ -59,7 +59,7 @@ public class Hotspot extends XMLEditor{
 			if(revealNode == null){
 				constructReveal(count);
 				constructHotspot(count);
-				//constructLabel(count);
+				constructLabel(count);
 				constructEvent(count);
 			}
 			
@@ -71,7 +71,7 @@ public class Hotspot extends XMLEditor{
 			labelNode = getNodeById("text","hotspotLabel" + count);
 			revealTitleNode = getNodeById("text","reveal" + count + "title");
 
-			replaceText(labelNode,doc.createCDATASection(labelText));
+			//replaceText(labelNode,doc.createCDATASection(labelText));
 			replaceText(revealTitleNode,doc.createCDATASection(labelText));
 
 			count++;
@@ -92,19 +92,19 @@ public class Hotspot extends XMLEditor{
 		revealHolder.appendChild(revealNode);		
 		
 		//change id of revealtext
-		NodeList revealText1List = getNodeListById(doc, "text", "reveal1text");
+		NodeList revealText1List = getNodeListById("text", "reveal1text");
 		editAttribute(revealText1List.item(1),"id","reveal" + count + "text");
 		
 		//change id of titlebanner
-		NodeList title1bannerList = getNodeListById(doc, "box", "title1banner");
+		NodeList title1bannerList = getNodeListById("box", "title1banner");
 		editAttribute(title1bannerList.item(1),"id","title" + count + "banner");
 		
 		//change id of revealtitle
-		NodeList reveal1titleList = getNodeListById(doc, "text", "reveal1title");
+		NodeList reveal1titleList = getNodeListById("text", "reveal1title");
 		editAttribute(reveal1titleList.item(1),"id","reveal" + count + "title");	
 		
 		//change id of revealmedia
-		NodeList reveal1mediaList = getNodeListById(doc, "box", "reveal1media");	
+		NodeList reveal1mediaList = getNodeListById("box", "reveal1media");	
 		editAttribute(reveal1mediaList.item(1),"id","reveal" + count + "media");	
 	}
 

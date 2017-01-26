@@ -2,16 +2,16 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>console</headerType>
-  <jar>C:\Users\adamb_000\workspace\build_generator\buildgenerator.jar</jar>
-  <outfile>C:\Users\adamb_000\workspace\build_generator\buildgenerator.exe</outfile>
+  <jar>C:\Users\adamb_000\workspace\Build-generator\buildgenerator.jar</jar>
+  <outfile>C:\Users\adamb_000\workspace\Build-generator\buildgenerator.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir>.</chdir>
   <priority>normal</priority>
   <downloadUrl>http://java.com/download</downloadUrl>
   <supportUrl></supportUrl>
-  <stayAlive>false</stayAlive>
-  <restartOnCrash>false</restartOnCrash>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
   <manifest></manifest>
   <icon></icon>
   <jre>

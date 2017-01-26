@@ -49,7 +49,7 @@ public class HTMLconverter {
 		
 		//CLEAN UP HTML CODE
 		Whitelist w1 = Whitelist.simpleText();
-		w1.addTags("p", "ul", "span", "b", "li","strong","ol");
+		w1.addTags("p", "ul", "span", "b", "li","strong","ol","a");
 		w1.addAttributes("span","style");
 		htmlString = Jsoup.clean(htmlString, w1);
 		htmlString = htmlString.replace("<p>&nbsp;</p>", "").replace("&nbsp;", " "); //remove nbsp's
@@ -60,6 +60,7 @@ public class HTMLconverter {
 		//use DOM parser to locate 'style="font-weight:bold"' and delete other style attributes
 		
 		htmlString = createBoldTags(htmlString);
+
 		createTextFile(htmlString);
 
 		// Clean up, so any ObfuscatedFontPart temp files can be deleted 

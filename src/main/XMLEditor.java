@@ -1,20 +1,16 @@
 package main;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.StringReader;
-import java.io.StringWriter;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
@@ -26,8 +22,6 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
 
 public class XMLEditor {
 	
@@ -47,11 +41,15 @@ public class XMLEditor {
 	}
 	
 	protected void replaceText(Node node, CDATASection cdata){
-		//replace text if there is content
-		if(cdata.getLength() != 0){
+		//replace text if there is content and node exists
+		if(node != null && cdata.getLength() != 0){
+			
 			removeChilds(node);
-			node.appendChild(cdata);
-		}
+			node.appendChild(cdata);		
+		
+		}	
+		
+
 	}
 	
 	protected void removeChilds(Node node){
@@ -92,9 +90,12 @@ public class XMLEditor {
 					line = it.next();					
 					if(isAHeading(line)){
 						break;
-					}					
+					}
+					line = line.trim();
 					text += "\n" + line;
+					
 				}
+				
 			}
 		}
 		text = text.replaceAll("(?m)^[ \t]*\r?\n", "");
@@ -142,7 +143,7 @@ public class XMLEditor {
 		return null;
 	}
 	
-	protected NodeList getNodeListById(Document doc, String nodeType, String id){
+	protected NodeList getNodeListById(String nodeType, String id){
 		
 		String expression = "//" + nodeType + "[@id=\"" + id + "\"]";
 		XPath xpath = XPathFactory.newInstance().newXPath();
@@ -159,6 +160,64 @@ public class XMLEditor {
 		return null;
 	}	
 	
+	
+	protected void editImagePath(String id, String extension) {
+		
+		String imagePath = "lib/images/content/" + getFilePath() + extension + ".jpg";
+		CDATASection cdata = doc.createCDATASection(imagePath);
+		Node n = getNodeById("image",id);
+		replaceText(n,cdata);
+	};	
+
+	
+	protected void checkImageAsset(String extension){
+		
+		String directory = System.getProperty("user.dir") 
+				+ "/../module1/lib/images/content/";
+		
+		String imagePath = directory + getFilePath() + extension;
+		
+		if( new File(imagePath + ".jpg").exists())
+		{
+			//System.out.println("FILE EXISTS");
+		} 
+		else if( new File(imagePath + ".png").exists())
+		{
+			
+		}	
+		else
+		{
+			
+			try {
+				createPlaceholderImage(directory, imagePath);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+	}
+	
+	private void createPlaceholderImage(String directory, String imagePath) throws IOException {
+		
+		InputStream is = null;
+		OutputStream os = null;
+		
+		try{
+			is = new FileInputStream(new File(directory + "placeholder.jpg"));
+			os = new FileOutputStream(new File(imagePath + ".jpg"));
+			byte[] buffer = new byte[1024];
+			int length;
+			while ((length = is.read(buffer)) > 0) {
+                os.write(buffer, 0, length);
+            }
+		} finally{
+			is.close();
+			os.close();
+		}	
+	}
+
 	protected boolean isAHeading(String line){
 		line = line.replaceAll("\\(.*?\\)", "").replaceAll("\\[.*?\\]", "").trim(); //remove bracketedText
 		if(isAllUpperCase(line) || isATopicHeading(line)){

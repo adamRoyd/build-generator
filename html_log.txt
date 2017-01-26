@@ -1,39 +1,27 @@
 <html>
  <head></head>
  <body>
-  <p>SCREEN 02_120</p> 
-  <p>SCREEN TYPE Photostory</p> 
-  <p><b>DESCRIPTION</b></p> 
-  <p>A series of images with text that the learner explores in a fixed sequence that provides a linear narrative. The text in each </p> 
-  <p>Key people from MDLZ functions – represented as images or illustrations - will describe how a particular ITS solution has been successfully delivered, and how they work now. </p> 
-  <p><b>Frame</b></p> 
-  <p><b>Picture</b></p> 
-  <p><b>Text (Max 15 words per speech/caption)</b></p> 
-  <p><b>1</b></p> 
-  <p>A factory machine operator is smiling, using their machine. A colleague is checking output on a screen </p> 
-  <p><b>TEXT</b></p> 
-  <p>In manufacturing, we aim for zero waste in our factories. Let’s take a look at how ITS helps make this happen, and empower growth in manufacturing. </p> 
-  <p><b>PROMPT</b></p> 
-  <p>Select the numbers below to find out more.</p> 
-  <p><b>2</b></p> 
-  <p>Close up of the factory workers looking at the screen. Screen shows the letters iDF = 0% defect and waste</p> 
-  <p><b>TEXT</b></p> 
-  <p><b>Operator:</b> Thanks to the iDF Line solution that was delivered by ITS, we protect the quality of our products and eliminate waste.</p> 
-  <p><b>3</b></p> 
-  <p>The snacks leaving the factory in a truck, waved off by the machine operator </p> 
-  <p><b>TEXT</b></p> 
-  <p>Our products leave the factory 100% defect free. Protecting our brands and empowering growth. </p> 
-  <p><b>4</b></p> 
-  <p>Procurement office, a procurement worker is on the phone </p> 
-  <p><b>TEXT</b></p> 
-  <p><b>Procurement professional</b>: Since we rolled out our new procurement strategy, using solutions developed in partnership with ITS… </p> 
-  <p><b>5</b></p> 
-  <p>Procurement worker's screen showing Coupa platform </p> 
-  <p><b>TEXT</b></p> 
-  <p><b>Procurement professional: </b>Our procurement process has been transformed.  </p> 
-  <p><b>6</b></p> 
-  <p>A map of the world</p> 
-  <p><b>TEXT</b></p> 
-  <p><b>Procurement professional: </b>We now have vital, efficient Coupa platform rolled out round the world. One tool, live in 51 countries, efficiently handling a $2.8billion spend in the first year</p> 
+  <p><a></a>SCREEN 01_110</p> 
+  <p><b>SCREEN TYPE</b>: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p><b>Text and graphic screen</b> </p> 
+  <p>IMAGE</p> 
+  <p></p> 
+  <p><b>L:\Projects\BOE858_Data_Protection\development\visuals\originals\Bank_front.jpg</b></p> 
+  <p>BODY TEXT </p> 
+  <p><a><b>This is a link</b></a></p> 
+  <p>This is replacement text. Whether it relates to staff you manage, business contacts, members of the public or customers and employees of firms we regulate, it's all personal data and we handle it every day.</p> 
+  <p>We rely on you to take care of this data appropriately and keep us out of the headlines. Personal data appears in all parts of the Bank, so everyone needs to understand what their responsibilities are.</p> 
+  <ul> 
+   <li>This</li> 
+   <li>Is an unordered</li> 
+   <li>List</li> 
+  </ul> 
+  <p><b>This is bold text</b></p> 
+  <p>This is emphasised text</p> 
+  <ol> 
+   <li>Numbered lists</li> 
+   <li>Number 2</li> 
+  </ol> 
  </body>
 </html>
