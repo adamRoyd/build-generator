@@ -52,7 +52,7 @@ public class Photostory extends XMLEditor{
 			
 			//clone node if needed
 			if(cellNode == null){
-				System.out.println("YES");
+
 				cellNode = doc.getElementsByTagName("cell").item(0).cloneNode(true);
 				custom.appendChild(cellNode);
 				
@@ -82,11 +82,13 @@ public class Photostory extends XMLEditor{
 
 			//get text content for individual cell
 			String titleText = getCellContent(cellContent, "TITLE");
+			String speechText = getCellContent(cellContent,"SPEECH BUBBLE");
+			String captionText = getCellContent(cellContent,"CAPTION");
 			String text = getCellContent(cellContent, "TEXT");
 			String promptText = getCellContent(cellContent, "PROMPT");
-			titleText = addClass(titleText,"headline");
+			titleText = addClass(titleText,"title");
 			promptText = addClass(promptText,"prompt");
-			text = titleText + "\n" + text + "\n" + promptText;
+			text = titleText + speechText + captionText + text + promptText;
 			cdata = doc.createCDATASection(text);
 
 

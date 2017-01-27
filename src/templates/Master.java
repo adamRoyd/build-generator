@@ -9,6 +9,11 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
@@ -58,7 +63,7 @@ public class Master {
 		
 		int topicNumber = Integer.parseInt(screenNumber.substring(0,1));
 				
-		Node topic = doc.getElementsByTagName("topic").item(topicNumber - 1); //indexed at 0
+		Node topic = getNodeById("topic", Integer.toString(topicNumber)); //indexed at 0
 		Element page = doc.createElement("page");
 		Attr id = doc.createAttribute("id");
 		Attr filepath = doc.createAttribute("xml");
@@ -68,7 +73,6 @@ public class Master {
 		page.setAttributeNode(filepath);
 		addLabelTypeAttribute(page,screenType);
 		topic.appendChild(page);
-		
 	}
 	
 	public void addLabelTypeAttribute(Element p, String screenType){
@@ -102,4 +106,22 @@ public class Master {
 		}
 	}
 
+	protected Node getNodeById(String nodeType, String id){
+		
+		String expression = "//" + nodeType + "[@id=\"" + id + "\"]";
+		XPath xpath = XPathFactory.newInstance().newXPath();
+		try {
+			XPathExpression expr = xpath.compile(expression);
+			Object exprResult = expr.evaluate(doc, XPathConstants.NODE);
+			Node node = (Node) exprResult;
+			if(node == null){
+				System.out.println(id + " IS NOT A NODE");
+			}
+			return node;
+		} catch (XPathExpressionException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}	
+	
 }

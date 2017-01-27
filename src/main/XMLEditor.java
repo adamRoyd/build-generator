@@ -41,15 +41,14 @@ public class XMLEditor {
 	}
 	
 	protected void replaceText(Node node, CDATASection cdata){
-		//replace text if there is content and node exists
-		if(node != null && cdata.getLength() != 0){
-			
-			removeChilds(node);
-			node.appendChild(cdata);		
-		
+		if(node == null){
+			System.out.println("NODE DOES NOT EXIST");
 		}
-		
-
+		//replace text if there is content and node exists
+		if(node != null && cdata.getLength() != 0){	
+			removeChilds(node);
+			node.appendChild(cdata);
+		}
 	}
 	
 	protected void removeChilds(Node node){
@@ -112,7 +111,7 @@ public class XMLEditor {
 			Object exprResult = expr.evaluate(doc, XPathConstants.NODE);
 			Node node = (Node) exprResult;
 			if(node == null){
-				System.out.println(id + " IS NOT A NODE");
+				//System.out.println(id + " IS NOT A NODE");
 			}
 			return node;
 		} catch (XPathExpressionException e) {
@@ -157,22 +156,13 @@ public class XMLEditor {
 	
 	protected void checkImageAsset(String extension){
 		//TO DO - discern between jpeg and png assets
-		/*
+
 		String directory = System.getProperty("user.dir") 
 				+ "/../module1/lib/images/content/";
 		
 		String imagePath = directory + getFilePath() + extension;
 		
-		if( new File(imagePath + ".jpg").exists())
-		{
-			//System.out.println("FILE EXISTS");
-		} 
-		else if( new File(imagePath + ".png").exists())
-		{
-			
-		}	
-		else
-		{
+		if(new File(imagePath + ".jpg").exists() == false || new File(imagePath + ".png").exists() == false){
 			
 			try {
 				createPlaceholderImage(directory, imagePath);
@@ -182,7 +172,7 @@ public class XMLEditor {
 			}
 			
 		}
-		*/
+
 		
 	}
 	
@@ -219,7 +209,8 @@ public class XMLEditor {
 		
 		line = line.replaceAll("\\<.*?>","").trim(); //remove html tags
 		
-		if(line.startsWith("TOPIC")){
+		if(line.startsWith("Topic") || line.startsWith("TOPIC")){
+			System.out.println(line);
 			return true;
 		}
 		

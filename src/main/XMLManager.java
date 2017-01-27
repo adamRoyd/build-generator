@@ -18,10 +18,12 @@ import templates.ColumnSort;
 import templates.DragDrop;
 import templates.Hotspot;
 import templates.MCQ;
+import templates.MCQ_Graphical;
 import templates.Master;
 import templates.Photostory;
 import templates.RevealGraphic;
 import templates.RevealText;
+import templates.TabReveal;
 import templates.TextGraphic;
 import templates.Video;
 
@@ -53,7 +55,7 @@ public class XMLManager {
 		for(String content : contentList){
 		String[] lines = content.split("\\n");
 
-			if(lines.length>5){ //1st screen passed through is a dud with only 1 line
+			if(lines.length>5){ // >5 avoids entries in 'contents' being mistaken as screens
 				String screenNumber = cleanScreenNumber(lines[0]);
 				String screenType = cleanScreenType(lines[1]);
 				
@@ -108,6 +110,9 @@ public class XMLManager {
 					break;
 				case "mcq":
 					editor = new MCQ(doc,screenContent);
+					break;					
+				case "mcq_graphical":
+					editor = new MCQ_Graphical(doc,screenContent);
 					break;
 				case "photostory":
 					editor = new Photostory(doc,screenContent);
@@ -130,6 +135,9 @@ public class XMLManager {
 				case "video":
 					editor = new Video(doc,screenContent);
 					break;
+				case "tab_reveal":
+					editor = new TabReveal(doc,screenContent);
+					break;	
 				default: 
 					System.out.println(screenNumber + " no change");
 					editor = new XMLEditor(doc,screenContent);
@@ -174,6 +182,9 @@ public class XMLManager {
 		else if(s.toLowerCase().contains("text and graphic")){
 			type = "text_graphic";
 		}
+		else if(s.toLowerCase().contains("graphic multiple choice")){
+			type = "mcq_graphical";
+		}		
 		else if(s.toLowerCase().contains("multiple choice question")){
 			type = "mcq";
 		}

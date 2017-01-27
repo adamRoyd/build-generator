@@ -51,11 +51,11 @@ public class DragDrop extends XMLEditor{
 
 		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
 		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent("INCORRECT TEXT"));
+		CDATASection fail = doc.createCDATASection(getHeadingContent("FAIL TEXT"));
 		
-		Node passNode = getNodeById("text", "text_pass");
-		Node partialNode = getNodeById("text", "text_partial");
-		Node failNode = getNodeById("text", "text_fail");		
+		Node passNode = getNodeById("text", "feedback_pass");
+		Node partialNode = getNodeById("text", "feedback_partial");
+		Node failNode = getNodeById("text", "feedback_fail");		
 		
 		replaceText(passNode,pass);
 		replaceText(partialNode,partial);
@@ -67,7 +67,7 @@ public class DragDrop extends XMLEditor{
 		
 		
 		//get options text
-		String options = getHeadingContent("OPTIONS","CORRECT AUDIO FEEDBACK");
+		String options = getHeadingContent("OPTIONS");
 		options = options.replaceAll("(?m)^\\s*$[\n\r]{1,}", ""); // remove empty lines
 		
 		//separate options by option number 

@@ -17,36 +17,24 @@ public class TextGraphic extends XMLEditor{
 		this.screenContent = screenContent;
 	}
 
-
 	public Document editXML(){
 	
 		editIntroText();
-		
-		//editQuoteText();
-		
-		editImagePath("image1","");
+
+		editImagePath(doc.getElementsByTagName("image").item(0),"","jpg");
 
 		checkImageAsset("");
 		
 		return doc;
 	}
-	
-	private void editQuoteText() {
-
-		String quoteText = getHeadingContent("QUOTE TEXT");
-		Node quote = getNodeById("text","quoteText");
-		replaceText(quote,doc.createCDATASection(quoteText));		
-	}
-
 
 	private void editIntroText(){
-		
-		String title = getHeadingContent("TITLE");
+
 		String introText = getHeadingContent("BODY TEXT");
 		String prompt = getHeadingContent("PROMPT");
-		title = addClass(title, "title");
+
 		prompt = addClass(prompt,"prompt");
-		introText = title + introText + prompt;
+		introText = introText + prompt;
 
 		Node text = getNodeById("text", "screentext");
 		CDATASection cdata = doc.createCDATASection(introText);

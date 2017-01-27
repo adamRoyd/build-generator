@@ -22,12 +22,125 @@ public class RevealText extends XMLEditor{
 	public Document editXML(){
 
 		editIntroText();
+	
+		editNumberOfReveals();
 		
-		editReveals();
+		editNumberOfClicks();
+		
+		editContents();
 
 		return doc;
 	}
 	
+	private void editNumberOfReveals() {
+		
+		Node reveals = getNodeById("box", "reveals");
+		Node revealNode;
+		String nodeType = getNodeType("reveals");
+
+		for(int i=1;i<=getNumberOfItems();i++){
+			revealNode = getNodeById(nodeType,"reveal_click" + i);
+			
+			//clone node if required
+			if(revealNode == null){
+				revealNode = getNodeById(nodeType,"reveal_click1").cloneNode(true);
+				reveals.appendChild(revealNode);
+				//change id of cloned node
+				editAttribute(getNodeListById(nodeType,"reveal_click1").item(1), "id", "reveal_click" + i);
+			}
+
+		}
+	}
+	
+	private void editNumberOfClicks() {
+		
+		Node reveals = getNodeById("box", "clicks");
+		Node revealNode;
+		String nodeType = getNodeType("clicks");
+		
+		for(int i=1;i<=getNumberOfItems();i++){
+			revealNode = getNodeById(nodeType,"click" + i);
+			
+			//clone node if required
+			if(revealNode == null){
+				revealNode = getNodeById(nodeType,"click1").cloneNode(true);
+				reveals.appendChild(revealNode);
+				//change id of cloned node
+				editAttribute(getNodeListById(nodeType,"click1").item(1), "id", "click" + i);
+			}
+
+		}
+	}	
+
+
+
+	private String getNodeType(String parentId) {
+		
+		Node parent = getNodeById("box",parentId);
+
+		NodeList boxNodes = ((Element) parent).getElementsByTagName("box");
+		
+		if(boxNodes.getLength() == 0){
+			return "text";
+		} else{
+			return "box";
+		}
+
+	}
+
+	private int getNumberOfItems() {
+		
+		int count = 0;
+		String s = "";
+		
+		while(true){
+			s = getHeadingContent("TEXT FOR REVEAL " + (count + 1));
+			if(s == ""){
+				break;
+			}
+			count ++;
+			
+		}
+		
+		return count;
+	}
+
+	private void editContents() {
+		Node clickNode;
+		Node revealNode;
+		String clickText = "";
+		String revealText = "";
+		String clickNodeType = getNodeType("clicks");
+		String revealNodeType = getNodeType("reveals");		
+		
+		for(int i=1;i<=getNumberOfItems();i++){
+			
+			//REPLACE CLICK TEXT
+			if(clickNodeType.equals("text")){
+				clickNode = getNodeById("text","click" + i);
+			} else{
+				clickNode = ((Element) getNodeById("box","click" + i)).getElementsByTagName("text").item(0);
+			}
+			
+			clickText = getHeadingContent("REVEAL HEADING " + i);
+			replaceText(clickNode, doc.createCDATASection(clickText));
+			
+			//REPLACE REVEAL TEXT
+			if(revealNodeType.equals("text")){
+				revealNode = getNodeById("text","reveal_click" + i);
+			} else{
+				revealNode = ((Element) getNodeById("box","reveal_click" + i)).getElementsByTagName("text").item(0);
+			}
+			
+			revealText = getHeadingContent("TEXT FOR REVEAL " + i);
+			replaceText(revealNode, doc.createCDATASection(revealText));
+			
+		}
+	}
+
+
+	
+
 	private void editIntroText(){
 
 		String openingText = getHeadingContent("OPENING TEXT");
@@ -38,103 +151,5 @@ public class RevealText extends XMLEditor{
 		Node introText = doc.getElementsByTagName("text").item(0);
 		replaceText(introText, doc.createCDATASection(openingText));		
 	}
-
-
-	private void editReveals() {
-		////HEADINGS and REVEALS////
-		int count = 1;
-		Node revealHolder = getNodeById("box", "revealHolder");
-		Node headingNode;
-		Node headingTextNode;
-		Node revealNode;
-		Node revealTextNode;
-		String headingText = "";
-		String revealText = "";
-		
-		while(true){
-			headingText = getHeadingContent("HEADING " + count + " TEXT", "TEXT FOR HEADING " + count);
-			revealText = getHeadingContent("TEXT FOR HEADING " + count);
-			if(headingText == ""){
-				break;
-			}
-			headingNode = getNodeById("box", "click" + count);
-			if(headingNode == null){
-				constructHeadingNode(doc,count);
-				constructRevealNode(doc,count);
-				constructEvent(doc,count);
-				
-				//TO DO change the id of the text child in the reveal box
-			}
-
-			headingTextNode = getNodeById("text", "clickText" + count);
-			replaceText(headingTextNode, doc.createCDATASection(headingText));
-			
-			revealTextNode = getNodeById("text", "reveal" + count + "text");
-			replaceText(revealTextNode,doc.createCDATASection(revealText));
-
-			count++;
-		}
-	}
-
-	private void constructEvent(Document doc, int count) {
-		Node eventHolder = getNodeById("event","reset");
-		
-		//create anim node
-		Element animNode = doc.createElement("anim");
-		Attr animTime = doc.createAttribute("animtime");
-		animTime.setValue("0.25");
-		animNode.setAttributeNode(animTime);
-		Attr type = doc.createAttribute("type");
-		type.setValue("alphaout");
-		animNode.setAttributeNode(type);
-
-		animNode.setTextContent("reveal_click" + count);
-		eventHolder.appendChild(animNode);
-		
-		//create enable node
-		Element enableNode = doc.createElement("enable");
-		enableNode.setTextContent("click" + count);
-		eventHolder.appendChild(enableNode);
-
-	}
-
-	private void constructRevealNode(Document doc, int count) {
-		Node revealHolder = getNodeById("box", "revealHolder");
-		Node revealNode = getNodeById("box","reveal_click1").cloneNode(true);
-
-		editAttribute(revealNode,"id","reveal_click" + count);
-		//change id of child text node
-		NodeList revealNodeList = revealNode.getChildNodes();
-		for(int i=0;i<revealNodeList.getLength();i++){
-			
-			Node n = revealNodeList.item(i);
-			if("text".equals(n.getNodeName())){
-
-				editAttribute(n,"id","reveal" + count + "text");
-			}
-		}
-		revealHolder.appendChild(revealNode);
-	}
-
-	private void constructHeadingNode(Document doc, int count) {
-		
-		Node revealHolder = getNodeById("box", "revealHolder");
-		Node headingNode = getNodeById("box","click1").cloneNode(true);
-		editAttribute(headingNode,"id","click" + count);
-		editAttribute(headingNode,"event","reset,showreveal," + count);
-		
-		//change id of child text node
-		NodeList headingNodeList = headingNode.getChildNodes();
-		for(int i=0;i<headingNodeList.getLength();i++){
-			
-			Node n = headingNodeList.item(i);
-			if("text".equals(n.getNodeName())){
-				
-				editAttribute(n,"id","clickText" + count);
-			}
-		}				
-		revealHolder.appendChild(headingNode);		
-	};	
-	
 	
 }

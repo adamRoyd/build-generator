@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<settings autocomplete="true" />
+
+	
+	<text id="screentext"/>
+	
+	<tabs id="tabs" x="45" y="75" width="920" height="503" tabwidth="150">
+		
+        <click selected="true"/>
+        <click/>
+        <click/>
+
+        <reveal>
+            <image x="460" y="4"/>
+			
+            <text x="40" y="40" width="380"/>
+        </reveal>
+
+        <reveal>
+            <image x="4" y="4"/>
+            <text x="500" y="40" width="380"/>
+        </reveal>
+
+        <reveal>
+            <image x="4" y="4"/>
+            <text x="500" y="40" width="380"/>
+        </reveal>
+
+    </tabs>
+</data>

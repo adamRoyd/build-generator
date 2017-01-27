@@ -47,10 +47,13 @@ public class HTMLconverter {
 		Docx4J.toHTML(htmlSettings, os, Docx4J.FLAG_EXPORT_PREFER_XSL);
 		String htmlString = ((ByteArrayOutputStream)os).toString();
 		
+
 		//CLEAN UP HTML CODE
 		Whitelist w1 = Whitelist.simpleText();
 		w1.addTags("p", "ul", "span", "b", "li","strong","ol","a");
 		w1.addAttributes("span","style");
+		w1.addAttributes("a", "href");
+		w1.addEnforcedAttribute("a", "target", "_blank");
 		htmlString = Jsoup.clean(htmlString, w1);
 		htmlString = htmlString.replace("<p>&nbsp;</p>", "").replace("&nbsp;", " "); //remove nbsp's
 		htmlString = htmlString.replaceAll("<p></p>",""); //remove empty p tags
@@ -58,10 +61,10 @@ public class HTMLconverter {
 		
 		//BOLD TEXT
 		//use DOM parser to locate 'style="font-weight:bold"' and delete other style attributes
-		
 		htmlString = createBoldTags(htmlString);
 
 		createTextFile(htmlString);
+		
 
 		// Clean up, so any ObfuscatedFontPart temp files can be deleted 
 		if (wordMLPackage.getMainDocumentPart().getFontTablePart()!=null) {
@@ -118,6 +121,7 @@ public class HTMLconverter {
 		s = s.replace("<span>", "").replace("</span>", "");
 		s = s.replace("<b></b>", "").replace("<b> </b>", " ");
 		s = s.replace("</b><b>", "").replace("</b> <b>", " ");
+		s = s.replace("<a target=\"_blank\"></a>","");
 		
 		return s;
 

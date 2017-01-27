@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<events>
+	
+		<event id="pass">
+			<show>feedback_pass</show>
+		</event>
+		
+		<event id="partial">
+			<show>feedback_partial</show>
+		</event>
+		
+		<event id="fail">
+			<show>feedback_fail</show>
+		</event>
+		
+		<event id="fail_attempt">			
+			<show>feedback_fail_attempt</show>
+		</event>
+			
+		<event id="reset">
+			<hide delay="0.3">feedbackHolder</hide>
+			<tween target="feedbackHolder" time="0.3"><![CDATA[y:200]]></tween>
+			<hide delay="0.3">feedback_pass</hide>
+			<hide delay="0.3">feedback_partial</hide>
+			<hide delay="0.3">feedback_fail</hide>
+			<hide delay="0.3">feedback_fail_attempt</hide>
+		</event>
+		
+		<event id="submit">
+			<log>submit</log>
+			<tween target="feedbackHolder" time="0"><![CDATA[y:200]]></tween>
+			<show>feedbackHolder</show>
+			<tween target="feedbackHolder" time="1"><![CDATA[y:0,wfEase:flat_bounce]]></tween>
+		</event>
+	</events>
+	
+	<custom id="gMCQ">
+		<settings radiomode="false" />
+
+		<option correct="true">item_1</option>
+		<option correct="false">item_2</option>
+		<option correct="true">item_3</option>
+		<option correct="true">item_4</option>
+
+	</custom>
+	
+    <text id="screentext" x="25" y="75" width="600">
+		<![CDATA[
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>
+		<p class="prompt">Select your answers, then Confirm.</p>
+		]]>
+	</text>
+
+	<box id="clicks" x="65" y="180">
+
+		<box id="item_1" class="click" x="0" y="0" width="200" height="190" bgcol="40535D">
+			<box class="over" width="100%" height="100%" bgcol="1A96B1" />
+			<image x="3" y="3"><![CDATA[lib/images/content/bws919_04_100_01.jpg]]></image>
+			<text x="40" y="145" width="145"><![CDATA[<p class="option">Option 1 text (correct)</p>]]></text>
+			<box class="radio" x="5" y="147" />
+		</box>
+		<box id="item_2" class="click" x="225" y="0" width="200" height="190" bgcol="40535D">
+			<box class="over" width="100%" height="100%" bgcol="1A96B1" />		
+			<image x="3" y="3"><![CDATA[lib/images/content/bws919_04_100_02.jpg]]></image>
+			<text x="40" y="145" width="145"><![CDATA[<p class="option">Option 2 text (incorrect)</p>]]></text>
+			<box class="radio" x="5" y="147" />
+		</box>
+		<box id="item_3" class="click" x="450" y="0" width="200" height="190" bgcol="40535D">
+			<box class="over" width="100%" height="100%" bgcol="1A96B1" />		
+			<image x="3" y="3"><![CDATA[lib/images/content/bws919_04_100_03.jpg]]></image>
+			<text x="40" y="145" width="145"><![CDATA[<p class="option">Option 3 text (correct)</p>]]></text>
+			<box class="radio" x="5" y="147" />
+		</box>
+		<box id="item_4" class="click" x="675" y="0" width="200" height="190" bgcol="40535D">
+			<box class="over" width="100%" height="100%" bgcol="1A96B1" />		
+			<image x="3" y="3"><![CDATA[lib/images/content/bws919_04_100_04.jpg]]></image>
+			<text x="40" y="145" width="145"><![CDATA[<p class="option">Option 4 text (correct)</p>]]></text>
+			<box class="radio" x="5" y="147" />
+		</box>
+	</box>
+
+	<box id="btns" x="360" y="380">		
+		<button id="resetBtn" 	x="150" y="0" enabled="false" func="reset"><![CDATA[<p>Reset</p>]]></button>
+		<button id="submitBtn" 	x="0" 	y="0" enabled="false" func="submit"><![CDATA[<p>Confirm</p>]]></button>
+	</box>
+	
+	<box id="feedbackHolder" x="195" y="450" width="620" height="145" class="relativeContents" anim="hidden">
+		<text id="feedback_pass" anim="hidden">
+			<![CDATA[
+			<p>Feedback - passed!</p>
+			]]>
+		</text>
+		<text id="feedback_partial" anim="hidden">
+			<![CDATA[
+			<p>Feedback - partial!</p>
+			]]>
+		</text>
+		<text id="feedback_fail" anim="hidden">
+			<![CDATA[
+			<p>Feedback - failed!</p>
+			]]>
+		</text>
+		<text id="feedback_fail_attempt" anim="hidden">
+			<![CDATA[<p>Feedback - fail attempt!</p>
+			]]>
+		</text>
+		<text>
+			<![CDATA[
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+		</text>
+	</box>
+	
+	
+
+</data>
+
+

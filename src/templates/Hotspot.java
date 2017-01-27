@@ -24,11 +24,34 @@ public class Hotspot extends XMLEditor{
 		
 		editIntroText();
 		
+		//editNumberOfHotspots();
+		
 		//editHotspotContent();
 		
 		return doc;
 	};	
 	
+	private void editNumberOfHotspots() {
+
+		int n = getNumberOfHotspots();
+		
+	}
+
+	private int getNumberOfHotspots() {
+		
+		int n = 1;
+
+		while(true){
+			
+			String s = getHeadingContent("TEXT FOR HOTSPOT " + n);
+			if(s == ""){
+				break;
+			}
+			n++;
+		}
+		return n;
+	}
+
 	private void editIntroText() {
 
 		String openingText = getHeadingContent( "OPENING TEXT");
@@ -51,7 +74,7 @@ public class Hotspot extends XMLEditor{
 		
 		while(true){
 
-			revealText = getHeadingContent( "HOTSPOT " + count + " TEXT");
+			revealText = getHeadingContent( "TEXT FOR HOTSPOT " + count);
 			if(revealText == ""){
 				break;
 			}

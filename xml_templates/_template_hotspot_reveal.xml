@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<settings autocomplete="true" resizereload="false" />
+
+	<events>
+		<event id="reset">
+			<function target="[ITEM]" name="sequenceIndex">1</function>
+		</event>
+	
+		<event id="show">
+		
+			<event id="reset" item="click1,click2,click3,click4,click5" exception="[ITEM]" />
+			<translate z="100">[ITEM]_group</translate>
+			<class add="active">[ITEM]</class>
+			<show>[ITEM]_reveal</show>
+			<scroll id="[ITEM]_group" />
+		</event>
+		<event id="hide">
+			<translate z="0">[ITEM]_group</translate>
+			<class remove="active">[ITEM]</class>
+			<hide>[ITEM]_reveal</hide>
+		</event>
+		
+    </events>
+
+    <text id="introText" x="25" y="75" width="615"><![CDATA[
+	<p>Photos, illustrations, diagrams, or pictures can be selected to reveal further information. This screen type allows learners to browse information at their own pace, breaking information into bit-sized chunks. Once all images have been clicked (in any order), a fifth image will display on screen.</p>
+	<p class="prompt">Select each picture to find out more.</p>]]></text>
+
+	<box x="100" y="200">
+		<image><![CDATA[lib/images/content/bws919_01_140.gif]]></image>
+		
+		
+		<box id="click1_group" x="60" y="50">
+
+			<svg id="click1" screensize="desktop" class="hotspot" x="0" y="0" width="40" height="40" sequence="show,hide" src="lib/images/ui/hotspot.svg" />
+			<box id="click1_reveal" class="reveal" x="-153" y="50" width="345" height="215" anim="hidden">
+				<pointer width="20" dir="up" class="reveal" />
+				<text>
+					<![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+				</text>
+			</box>
+		</box>
+		
+		<box id="click2_group" x="355" y="120">
+			<svg id="click2" class="hotspot" x="0" y="0" width="40" height="40" sequence="show,hide" src="lib/images/ui/hotspot.svg" />
+			<box id="click2_reveal" class="reveal" x="-153" y="-230" width="345" height="215" anim="hidden">
+				<pointer width="20" dir="down" class="reveal"/>
+				<text>
+					<![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+				</text>
+			</box>
+		</box>
+		
+		<box id="click3_group" x="470" y="0">
+			<svg id="click3" class="hotspot" x="0" y="0" width="40" height="40" sequence="show,hide" src="lib/images/ui/hotspot.svg" />
+			<box id="click3_reveal" class="reveal" x="-153" y="50" width="345" height="215" anim="hidden">
+				<pointer width="20" dir="up" class="reveal" />
+				<text>
+					<![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+				</text>
+			</box>
+		</box>
+		
+		<box id="click4_group" x="555" y="250">
+			<svg id="click4" class="hotspot" x="0" y="0" width="40" height="40" sequence="show,hide" src="lib/images/ui/hotspot.svg" />
+			<box id="click4_reveal" class="reveal" x="-153" y="-230" width="345" height="215" anim="hidden">
+				<pointer width="20" dir="down" class="reveal"/>
+				<text>
+					<![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+				</text>
+			</box>
+		</box>
+		
+		<box id="click5_group" x="155" y="300">
+			<svg id="click5" class="hotspot" x="0" y="0" width="40" height="40" sequence="show,hide" src="lib/images/ui/hotspot.svg" />
+			<box id="click5_reveal" class="reveal" x="-153" y="-230" width="345" height="215" anim="hidden">
+				<pointer width="20" dir="down" class="reveal"/>
+				<text>
+					<![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in blandit erat. Nam rutrum est sed nisi adipiscing, eu bibendum purus eleifend. Etiam elementum lorem tortor, quis scelerisque arcu imperdiet at.</p>]]>
+				</text>
+			</box>
+		</box>
+		
+	</box>
+</data>

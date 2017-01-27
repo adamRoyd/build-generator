@@ -61,7 +61,7 @@
 				<svg id="closeBtn1" class="navBtn" x="calc(100% - 40px)" y="10" width="20" height="20" src="lib/images/ui/ui_reveal_close_icon.svg" event="reset"/>
 			</box>
 			<text id="hotspot_3_text" width="calc(100% - 40px)" x="20" y="60"></text>
-
+		
 		</box>
 
 		
