@@ -123,7 +123,7 @@ public class RevealText extends XMLEditor{
 			}
 			
 			clickText = getHeadingContent("REVEAL HEADING " + i);
-			replaceText(clickNode, doc.createCDATASection(clickText));
+			replaceText(clickNode, clickText);
 			
 			//REPLACE REVEAL TEXT
 			if(revealNodeType.equals("text")){
@@ -133,7 +133,7 @@ public class RevealText extends XMLEditor{
 			}
 			
 			revealText = getHeadingContent("TEXT FOR REVEAL " + i);
-			replaceText(revealNode, doc.createCDATASection(revealText));
+			replaceText(revealNode, revealText);
 			
 		}
 	}
@@ -148,8 +148,8 @@ public class RevealText extends XMLEditor{
 		prompt = addClass(prompt,"prompt");
 		openingText = openingText + prompt;
 		
-		Node introText = doc.getElementsByTagName("text").item(0);
-		replaceText(introText, doc.createCDATASection(openingText));		
+		Node introText = getNodeById("text", "screentext");
+		replaceText(introText, openingText, "screentext");		
 	}
 	
 }

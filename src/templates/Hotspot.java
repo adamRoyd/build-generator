@@ -58,9 +58,9 @@ public class Hotspot extends XMLEditor{
 		String prompt = getHeadingContent("PROMPT");
 		prompt = addClass(prompt, "prompt");
 		openingText = openingText + prompt;
-		CDATASection cdata = doc.createCDATASection(openingText);
+
 		Node node = getNodeById( "text", "screentext");
-		replaceText(node, cdata);		
+		replaceText(node, openingText, "screentext");		
 	}
 
 	private void editHotspotContent() {
@@ -87,7 +87,7 @@ public class Hotspot extends XMLEditor{
 			}
 			
 			revealTextNode = getNodeById( "text", "reveal" + count + "text");
-			replaceText(revealTextNode,doc.createCDATASection(revealText));
+			replaceText(revealTextNode,revealText, "reveal" + count + "text");
 			
 			
 			labelText = getHeadingContent("REVEAL " + count + " ICON PLACEMENT");
@@ -95,7 +95,7 @@ public class Hotspot extends XMLEditor{
 			revealTitleNode = getNodeById("text","reveal" + count + "title");
 
 			//replaceText(labelNode,doc.createCDATASection(labelText));
-			replaceText(revealTitleNode,doc.createCDATASection(labelText));
+			replaceText(revealTitleNode,labelText,"reveal" + count + "title");
 
 			count++;
 		}	

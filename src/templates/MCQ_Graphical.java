@@ -39,25 +39,9 @@ public class MCQ_Graphical extends XMLEditor{
 		introText = introText + prompt;
 
 		Node text = getNodeById("text", "screentext");
-		CDATASection cdata = doc.createCDATASection(introText);
-		replaceText(text,cdata);		
-	}
-	
-	protected void editFeedbacks(){
 
-		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
-		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent("FAIL TEXT"));
-		
-		Node passNode = getNodeById("text", "feedback_pass");
-		Node partialNode = getNodeById("text", "feedback_partial");
-		Node failNode = getNodeById("text", "feedback_fail");		
-		
-		replaceText(passNode,pass);
-		replaceText(partialNode,partial);
-		replaceText(failNode,fail);
-	
-	}		
+		replaceText(text,introText, "screentext");		
+	}
 
 	
 }

@@ -40,16 +40,36 @@ public class XMLEditor {
 		return doc;
 	}
 	
-	protected void replaceText(Node node, CDATASection cdata){
+	//if possible, include id in replacetext method for debugging
+	protected void replaceText(Node node, String content, String id){
 		if(node == null){
-			System.out.println("NODE DOES NOT EXIST");
+			System.out.println(id + " NODE DOES NOT EXIST");
 		}
 		//replace text if there is content and node exists
-		if(node != null && cdata.getLength() != 0){	
+		if(node != null && content.length() != 0){	
+			
+			//clean up text
+			content = content.replaceAll("\\n", "");
+			
 			removeChilds(node);
-			node.appendChild(cdata);
+			node.appendChild(doc.createCDATASection(content));
 		}
 	}
+	
+	protected void replaceText(Node node, String content){
+		if(node == null){
+			System.out.println("NODE WITH NO ID DOES NOT EXIST");
+		}
+		//replace text if there is content and node exists
+		if(node != null && content.length() != 0){	
+			
+			//clean up text
+			content = content.replaceAll("\\n", "");
+			
+			removeChilds(node);
+			node.appendChild(doc.createCDATASection(content));
+		}
+	}	
 	
 	protected void removeChilds(Node node){
 		while(node.hasChildNodes()){
@@ -138,19 +158,35 @@ public class XMLEditor {
 	}	
 	
 	
+	protected void editFeedbacks(){
+
+		String correctText = getHeadingContent("CORRECT TEXT");
+		String partialText = getHeadingContent("CORRECT TEXT");		
+		String failText = getHeadingContent("CORRECT TEXT");		
+		
+		Node passNode = getNodeById("text", "feedback_pass");
+		Node partialNode = getNodeById("text", "feedback_partial");
+		Node failNode = getNodeById("text", "feedback_fail");	
+		
+		replaceText(passNode,correctText, "feedback_pass");
+		replaceText(partialNode,partialText, "feedback_partial");
+		replaceText(failNode,failText, "feedback_fail");
+	
+	}		
+	
 	protected void editImagePath(String id, String extension, String imageType) {
 		
 		String imagePath = "lib/images/content/" + getFilePath() + extension + "." + imageType;
-		CDATASection cdata = doc.createCDATASection(imagePath);
+
 		Node n = getNodeById("image",id);
-		replaceText(n,cdata);
+		replaceText(n,imagePath,id);
 	};	
 	
 	protected void editImagePath(Node n, String extension, String imageType) {
 		
 		String imagePath = "lib/images/content/" + getFilePath() + extension + "." + imageType;
-		CDATASection cdata = doc.createCDATASection(imagePath);
-		replaceText(n,cdata);
+
+		replaceText(n,imagePath);
 	};		
 
 	
@@ -210,7 +246,6 @@ public class XMLEditor {
 		line = line.replaceAll("\\<.*?>","").trim(); //remove html tags
 		
 		if(line.startsWith("Topic") || line.startsWith("TOPIC")){
-			System.out.println(line);
 			return true;
 		}
 		

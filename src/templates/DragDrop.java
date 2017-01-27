@@ -41,28 +41,11 @@ public class DragDrop extends XMLEditor{
 		String prompt = getHeadingContent("PROMPT");
 		prompt = addClass(prompt, "prompt");
 		openingText = openingText + prompt;
-		Node introTextNode = getNodeById("text", "introText");
-		CDATASection cdata = doc.createCDATASection(openingText);
-		replaceText(introTextNode, cdata);
+		Node introTextNode = getNodeById("text", "screentext");
+		replaceText(introTextNode, openingText,"introText");
 	}
 
 
-	protected void editFeedbacks(){
-
-		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
-		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent("FAIL TEXT"));
-		
-		Node passNode = getNodeById("text", "feedback_pass");
-		Node partialNode = getNodeById("text", "feedback_partial");
-		Node failNode = getNodeById("text", "feedback_fail");		
-		
-		replaceText(passNode,pass);
-		replaceText(partialNode,partial);
-		replaceText(failNode,fail);
-	
-	}	
-	
 	private void editDragsAndDropboxes() {
 		
 		
@@ -123,7 +106,7 @@ public class DragDrop extends XMLEditor{
 		CDATASection cdata;
 		int dragCount = 1;
 		for(String drag : dragItems){
-			cdata = doc.createCDATASection(drag);
+
 			dragNode = getNodeById("box", "drag" + dragCount);
 			
 			//create new node if none left
@@ -141,7 +124,7 @@ public class DragDrop extends XMLEditor{
 				Node n = list.item(j);
 				//locate the text node
 				if("text".equals(n.getNodeName())){
-					replaceText(n,cdata);
+					replaceText(n,drag,"drag" + dragCount);
 				}
 			}			
 

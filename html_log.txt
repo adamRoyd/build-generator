@@ -5,9 +5,9 @@
   <p></p> 
   <p></p> 
   <p>Script</p> 
-  <p><b>PROJECT TITLE</b></p> 
-  <p>project no: <b>PROJECT NO.</b></p> 
-  <p>reply to: <b>NAME </b><a href="mailto:NAME@BRIGHTWAVE.COM" target="_blank"><b>NAME@BRIGHTWAVE.COM</b></a>  </p> 
+  <p><b>Competition law</b></p> 
+  <p>project no: STW971</p> 
+  <p>reply to: <b>Amruta Mulay</b> <a href="mailto:amruta.mulay@brightwavegroup.com" target="_blank"><b>amruta.mulay@brightwavegroup.com</b></a> </p> 
   <p>Revision history</p> 
   <p>Version</p> 
   <p>Date</p> 
@@ -15,822 +15,1761 @@
   <p>Team </p> 
   <p>Summary of Revisions Made / Comments</p> 
   <p>0.1</p> 
+  <p>12/01/2017</p> 
+  <p>AM</p> 
+  <p>BW</p> 
+  <p>First draft</p> 
+  <p>0.2</p> 
+  <p>16/01/2017</p> 
+  <p>RH</p> 
+  <p>BW</p> 
+  <p>SLD review</p> 
+  <p>0.3</p> 
+  <p>17.01.2017</p> 
+  <p>KN</p> 
+  <p>BW</p> 
+  <p>Additions/edits based on new and missing content received.</p> 
+  <p>0.4</p> 
+  <p>17.01.2017</p> 
+  <p>KN</p> 
+  <p>BW</p> 
+  <p>Edits post SLD review</p> 
+  <p>0.5</p> 
+  <p>19/01/2017</p> 
+  <p>AM</p> 
+  <p>BW</p> 
+  <p>Final edits based on new and missing content received</p> 
+  <p>0.6</p> 
+  <p>19/01/2017</p> 
+  <p>JAD</p> 
+  <p>BW</p> 
+  <p>QA</p> 
+  <p>0.7</p> 
+  <p>20/01/2017</p> 
+  <p>AM</p> 
+  <p>BW</p> 
+  <p>QA amends</p> 
+  <p>1.0</p> 
+  <p>20/01/2017</p> 
+  <p>AM</p> 
+  <p>BW</p> 
+  <p>Released to the client</p> 
+  <p>1.1</p> 
+  <p>??</p> 
+  <p>STW</p> 
+  <p>Client review</p> 
+  <p>1.2</p> 
+  <p>??</p> 
+  <p>BW</p> 
+  <p>Updates post review</p> 
+  <p>1.3</p> 
+  <p>25/01/2017</p> 
+  <p>JAD</p> 
+  <p>BW</p> 
+  <p>QA of amends and Automation formatting</p> 
+  <p>1.0</p> 
+  <p>25/01/2017</p> 
+  <p>AC</p> 
+  <p>BW</p> 
+  <p>Released for sign off</p> 
   <p>Purpose of this document</p> 
   <p>This script details the exact text that will appear on each screen of the course, together with the interactions and any buttons that appear. It also indicates the kind of graphics or images that will be used, although these are not final at this stage.</p> 
   <p>It's important that you check everything appears as you want it within the script, so that there are minimal changes once the course is built.</p> 
   <p><b>As you read through this document, please use the Review tab to track any changes you would like made. You can also use comment boxes for more general points. </b></p> 
-  <p>Course overview</p> 
-  <p>Optional - provide info here to help reviewers</p> 
-  <p>Learning objectives</p> 
-  <p>Optional - Provide info here to help reviewers</p> 
-  <p> </p> 
-  <p>Other features / notes</p> 
-  <p>Optional - Provide info here to help reviewers</p> 
   <p>Contents</p> 
-  <p><a href="#_Toc422243257" target="_blank">Purpose of this document </a><a href="#_Toc422243257" target="_blank">1</a></p> 
-  <p><a href="#_Toc422243258" target="_blank">Course overview </a><a href="#_Toc422243258" target="_blank">1</a></p> 
-  <p><a href="#_Toc422243259" target="_blank">Learning objectives </a><a href="#_Toc422243259" target="_blank">1</a></p> 
-  <p><a href="#_Toc422243260" target="_blank">Other features / notes </a><a href="#_Toc422243260" target="_blank">1</a></p> 
-  <p><a href="#_Toc422243261" target="_blank">Topic 1: [title] </a><a href="#_Toc422243261" target="_blank">1</a></p> 
-  <p><a href="#_Toc422243262" target="_blank">SCREEN XX_XXX </a><a href="#_Toc422243262" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043483" target="_blank">Course menu </a><a href="#_Toc473043483" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043484" target="_blank">Topic 1: Introduction </a><a href="#_Toc473043484" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043485" target="_blank"><b>SCREEN 01_100</b> </a><a href="#_Toc473043485" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043486" target="_blank"><b>SCREEN 01_110</b> </a><a href="#_Toc473043486" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043487" target="_blank"><b>SCREEN 01_120</b> </a><a href="#_Toc473043487" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043488" target="_blank">Topic 2: The legal bit </a><a href="#_Toc473043488" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043489" target="_blank"><b>SCREEN 02_100</b> </a><a href="#_Toc473043489" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043490" target="_blank"><b>SCREEN 02_110</b> </a><a href="#_Toc473043490" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043491" target="_blank"><b>SCREEN 02_120</b> </a><a href="#_Toc473043491" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043492" target="_blank"><b>SCREEN 02_130</b> </a><a href="#_Toc473043492" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043493" target="_blank"><b>SCREEN 02_140</b> </a><a href="#_Toc473043493" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043494" target="_blank"><b>SCREEN 02_150</b> </a><a href="#_Toc473043494" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043495" target="_blank">Topic 3: Abuse of dominance </a><a href="#_Toc473043495" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043496" target="_blank"><b>SCREEN 03_100</b> </a><a href="#_Toc473043496" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043497" target="_blank"><b>SCREEN 03_110</b> </a><a href="#_Toc473043497" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043498" target="_blank"><b>SCREEN 03_120</b> </a><a href="#_Toc473043498" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043499" target="_blank"><b>SCREEN 03_130</b> </a><a href="#_Toc473043499" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043500" target="_blank"><b>SCREEN 03_140</b> </a><a href="#_Toc473043500" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043501" target="_blank"><b>SCREEN 03_150</b> </a><a href="#_Toc473043501" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043502" target="_blank">Topic 4: Leveraging </a><a href="#_Toc473043502" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043503" target="_blank"><b>SCREEN 04_100</b> </a><a href="#_Toc473043503" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043504" target="_blank"><b>SCREEN 04_110</b> </a><a href="#_Toc473043504" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043505" target="_blank"><b>SCREEN 04_120</b> </a><a href="#_Toc473043505" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043506" target="_blank"><b>SCREEN 04_130</b> </a><a href="#_Toc473043506" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043507" target="_blank">Topic 5: Anti-competitive agreements </a><a href="#_Toc473043507" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043508" target="_blank"><b>SCREEN 05_100</b> </a><a href="#_Toc473043508" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043509" target="_blank"><b>SCREEN 05_110</b> </a><a href="#_Toc473043509" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043510" target="_blank"><b>SCREEN 05_120</b> </a><a href="#_Toc473043510" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043511" target="_blank"><b>SCREEN 05_130</b> </a><a href="#_Toc473043511" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043512" target="_blank"><b>SCREEN 05_140</b> </a><a href="#_Toc473043512" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043513" target="_blank">SCREEN 05_150 </a><a href="#_Toc473043513" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043514" target="_blank"><b>SCREEN 05_160</b> </a><a href="#_Toc473043514" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043515" target="_blank"><b>SCREEN 05_170</b> </a><a href="#_Toc473043515" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043516" target="_blank"><b>SCREEN 05_180</b> </a><a href="#_Toc473043516" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043517" target="_blank"><b>SCREEN 05_190</b> </a><a href="#_Toc473043517" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043518" target="_blank">Topic 6: Market opening </a><a href="#_Toc473043518" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043519" target="_blank"><b>SCREEN 06_100</b> </a><a href="#_Toc473043519" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043520" target="_blank"><b>SCREEN 06_110</b> </a><a href="#_Toc473043520" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043521" target="_blank"><b>SCREEN 06_120</b> </a><a href="#_Toc473043521" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043522" target="_blank"><b>SCREEN 06_125</b> </a><a href="#_Toc473043522" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043523" target="_blank"><b>SCREEN 06_130</b> </a><a href="#_Toc473043523" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043524" target="_blank"><b>SCREEN 06_140</b> </a><a href="#_Toc473043524" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043525" target="_blank">Topic 7: Powers of investigators </a><a href="#_Toc473043525" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043526" target="_blank"><b>SCREEN 07_100</b> </a><a href="#_Toc473043526" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043527" target="_blank">Topic 8: Summary </a><a href="#_Toc473043527" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043528" target="_blank"><b>SCREEN 08_100</b> </a><a href="#_Toc473043528" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043529" target="_blank"><b>SCREEN 08_110</b> </a><a href="#_Toc473043529" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043530" target="_blank"><b>SCREEN 08_120</b> </a><a href="#_Toc473043530" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043531" target="_blank">Topic 9: Quiz </a><a href="#_Toc473043531" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043532" target="_blank"><b>SCREEN 09_100</b> </a><a href="#_Toc473043532" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043533" target="_blank"><b>SCREEN 09_110</b> </a><a href="#_Toc473043533" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043534" target="_blank"><b>SCREEN 09_120</b> </a><a href="#_Toc473043534" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043535" target="_blank"><b>SCREEN 09_130</b> </a><a href="#_Toc473043535" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043536" target="_blank"><b>SCREEN 09_140</b> </a><a href="#_Toc473043536" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043537" target="_blank"><b>SCREEN 09_150</b> </a><a href="#_Toc473043537" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043538" target="_blank"><b>SCREEN 09_160</b> </a><a href="#_Toc473043538" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043539" target="_blank"><b>SCREEN 09_170</b> </a><a href="#_Toc473043539" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043540" target="_blank"><b>SCREEN 09_180</b> </a><a href="#_Toc473043540" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043541" target="_blank"><b>SCREEN 09_190</b> </a><a href="#_Toc473043541" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043542" target="_blank"><b>SCREEN 09_200</b> </a><a href="#_Toc473043542" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043543" target="_blank"><b>SCREEN 09_210</b> </a><a href="#_Toc473043543" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043544" target="_blank"><b>SCREEN 09_220</b> </a><a href="#_Toc473043544" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043545" target="_blank"><b>SCREEN 09_230</b> </a><a href="#_Toc473043545" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043546" target="_blank"><b>SCREEN 09_240</b> </a><a href="#_Toc473043546" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043547" target="_blank"><b>SCREEN 09_250</b> </a><a href="#_Toc473043547" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043548" target="_blank"><b>SCREEN 09_260</b> </a><a href="#_Toc473043548" target="_blank">1</a></p> 
+  <p><a href="#_Toc473043549" target="_blank"><b>SCREEN 09_270</b> </a><a href="#_Toc473043549" target="_blank">1</a></p> 
+  <p>Course menu</p> 
+  <p>DESCRIPTION</p> 
+  <p>From the main menu the learner can access each topic in the course. Quiz will be locked until all topics are completed. </p> 
   <p></p> 
-  <p>Topic 1: [title]</p> 
+  <p>COURSE TITLE</p> 
+  <p>Competition law</p> 
+  <p>COURSE DESCRIPTION</p> 
+  <p>This course will take one hour and help you understand acceptable and unacceptable behaviours to ensure compliance with competition law. Complete all the topics to unlock the Quiz.</p> 
+  <p>TOPIC 1</p> 
+  <p>Introduction</p> 
+  <p>TOPIC 1 TIMING</p> 
+  <p>4 mins</p> 
+  <p>TOPIC 2</p> 
+  <p>The legal bit</p> 
+  <p>TOPIC 2 TIMING</p> 
+  <p>8 mins</p> 
+  <p>TOPIC 3</p> 
+  <p>Abuse of dominance</p> 
+  <p>TOPIC 3 TIMING</p> 
+  <p>11 mins</p> 
+  <p>TOPIC 4</p> 
+  <p>Leveraging</p> 
+  <p>TOPIC 4 TIMING</p> 
+  <p>6 mins</p> 
+  <p>TOPIC 5</p> 
+  <p>Anti-competitive agreements</p> 
+  <p>TOPIC 5 TIMING</p> 
+  <p>11 mins</p> 
+  <p>TOPIC 6</p> 
+  <p>Market opening</p> 
+  <p>TOPIC 6 TIMING</p> 
+  <p>10 mins</p> 
+  <p>TOPIC 7</p> 
+  <p>Powers of investigators</p> 
+  <p>TOPIC 7 TIMING</p> 
+  <p>2 mins</p> 
+  <p>TOPIC 8</p> 
+  <p>Summary</p> 
+  <p>TOPIC 8 TIMING</p> 
+  <p>5 mins</p> 
+  <p>TOPIC 9</p> 
+  <p>Quiz</p> 
+  <p>TOPIC 9 TIMING</p> 
+  <p>10 mins</p> 
+  <p>Topic 1: Introduction</p> 
   <p>SCREEN 01_100</p> 
-  <p><b>SCREEN TYPE</b>: Column Sort</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
   <p>DESCRIPTION</p> 
-  <p>A list of statements which the learner has to sort into two categories (for example, True or False) by selecting from two adjacent columns of buttons.</p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>QUESTION AUDIO </p> 
-  <p>Note down the audio file name here. If no question audio is used in the course, write "N/A". </p> 
-  <p>QUESTION TEXT (30 words max)</p> 
-  <p>Write the question text here.</p> 
-  <p>PROMPT</p> 
-  <p>Select an option beside each statement in one of the columns, then Confirm.</p> 
-  <p>OPTIONS (15 words max. per option)</p> 
-  <p>Write options here. Write titles for the columns on the right. Delete ticks from the incorrect options. Note that you can't have 2 ticks in the same row. It must be one or the other.</p> 
-  <p><b>TITLE 1</b></p> 
-  <p><b>TITLE 2</b></p> 
-  <p><b>1</b></p> 
-  <p>Option 1</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>2</b></p> 
-  <p>Option 2</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>3</b></p> 
-  <p>Option 2</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>4</b></p> 
-  <p>Option 2</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>5</b></p> 
-  <p>Option 2</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>6</b></p> 
-  <p>Option 2</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>CORRECT AUDIO FEEDBACK </p> 
-  <p>Drop in the file name of the correct feedback audio here; if audio is not used, write "N/A". </p> 
-  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
-  <p>Write correct feedback here.</p> 
-  <p>PARTIAL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name of the partial feedback audio here; if audio is not used, write "N/A". </p> 
-  <p>PARTIAL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write partial feedback here. </p> 
-  <p>FAIL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name of the correct feedback audio here; if audio is not used, write "N/A". </p> 
-  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write incorrect feedback here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Question audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Correct audio:</p> 
-  <p>projnum_sco_screen_fbc.mp3</p> 
-  <p>Incorrect audio :</p> 
-  <p>projnum_sco_screen_fbi.mp3</p> 
-  <p>Partial audio:</p> 
-  <p>projnum_sco_screen_fbp.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>projnum_sco_screen.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>IMAGE</p> 
+  <p>Picture of Liv Garfield from slide 2 L:\Projects\STW971_competition_law\from_client\content\ST_Competition_Law_E-learning_v7_17 01 17_KNreview.PPT</p> 
+  <p></p> 
+  <p>SCREEN TITLE</p> 
+  <p>Message from the CEO</p> 
+  <p>BODY TEXT</p> 
+  <p>Hello and welcome to our competition law course.</p> 
+  <p>At Severn Trent, our vision is to be the most trusted water company by 2020 – and that means always acting in an honest and ethical way.</p> 
+  <p>As you'd expect, we're fully committed to complying with competition law and this course is a big part of helping us with that. As you know, from April 2017 approximately 1.2 million eligible business customers in England will be able to choose their supplier of water and sewerage retail services. So it will be even more important that all of us are able to identify anti-competitive behaviour, and this is where this brilliant course comes in.</p> 
+  <p>Any breach of competition law means really serious consequences for companies and individuals – and could mean a disciplinary action or worse. So please do take the time to complete the course and make sure that you've taken it all in by testing yourself at the end.</p> 
+  <p>If you've got any questions, or would like some advice, then please do contact our General Counsel team.</p> 
+  <p>Thanks very much for your support.</p> 
+  <p>Best wishes</p> 
+  <p>Liv</p> 
+  <p>Liv Garfield, CEO</p> 
   <p>SCREEN 01_110</p> 
-  <p><b>SCREEN TYPE</b>: Drag and drop</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
   <p>DESCRIPTION</p> 
-  <p>The learner sorts items into categories by selecting them and dragging them into boxes, or 'drop zones'. A 'See correct answer' button appears for partially and fully incorrect answers.</p> 
-  <p>Draggable items can be TEXT or GRAPHICS. Make sure this has been specified in the description above.</p> 
-  <p>Drag and drop page functionality is not supported for mobile/tablets. If mobile platforms are used, think of an alternative screen type like column sort, text and graphic, reveal, etc. and specify it here. </p> 
-  <p><b>IMAGE</b></p> 
-  <p>Write a short description of the imagery for this page - include screen coverage, subject matter, etc. Drop in any wireframes or mock-ups of this page type you have ready.</p> 
-  <p><b>QUESTION TEXT (30 words max)</b></p> 
-  <p>Write here.</p> 
-  <p>OPENING AUDIO </p> 
-  <p>Drop in the opening audio file name here. If audio is not used on this page, write "N/A".</p> 
-  <p>PROMPT</p> 
-  <p>Drag each … to one of the …. When you're ready, select Confirm. </p> 
-  <p>OPTIONS (15 words max. per option)</p> 
-  <p>Write text for the Draggable items here. Remove the ticks that are not needed and change the column titles (Box 1, 2, 3) to suit. Note that you can have more than one tick in the same row.</p> 
-  <p><b>BOX 1</b></p> 
-  <p><b>BOX 2</b></p> 
-  <p><b>BOX 3</b></p> 
-  <p><b>1</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>2</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>3</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>4</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>5</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>6</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>7</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>8</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p><b>9</b></p> 
-  <p>Write a description of the draggable item.</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>�</p> 
-  <p>CORRECT AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the correct audio feedback here. If no audio is to be used, write "N/A".</p> 
-  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
-  <p>Write here.</p> 
-  <p>PARTIAL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the partial audio feedback here. If no audio is to be used, write "N/A".</p> 
-  <p>PARTIAL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write here. </p> 
-  <p>INCORRECT AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the incorrect audio feedback here. If no audio is to be used, write "N/A".</p> 
-  <p>INCORRECT TEXT FEEDBACK (50 words max)</p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Screen audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Correct audio:</p> 
-  <p>projnum_sco_screen_fbc.mp3</p> 
-  <p>Incorrect audio :</p> 
-  <p>projnum_sco_screen_fbi.mp3</p> 
-  <p>Partial audio:</p> 
-  <p>projnum_sco_screen_fbp.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>Graphic 1: </p> 
-  <p>projnum_sco_screen_01.ext</p> 
-  <p>Graphic 2:</p> 
-  <p>projnum_sco_screen_02.ext</p> 
-  <p>Graphic 3:</p> 
-  <p>projnum_sco_screen_03.ext</p> 
-  <p>Graphic 4:</p> 
-  <p>projnum_sco_screen_04.ext</p> 
-  <p>Graphic 5:</p> 
-  <p>projnum_sco_screen_05.ext</p> 
-  <p>Graphic 6:</p> 
-  <p>projnum_sco_screen_06.ext</p> 
-  <p>Graphic 7:</p> 
-  <p>projnum_sco_screen_07.ext</p> 
-  <p>Graphic 8:</p> 
-  <p>projnum_sco_screen_08.ext</p> 
-  <p>Graphic 9:</p> 
-  <p>projnum_sco_screen_09.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>What is competition law and how does it affect you? </p> 
+  <p>IMAGE</p> 
+  <p>L:\Key_Accounts\TIER 2\Severn Trent Water\images</p> 
+  <p>ST Branding Female Operative-20</p> 
+  <p></p> 
+  <p>BODY TEXT</p> 
+  <p>The law aims to:</p> 
+  <ul> 
+   <li>promote healthy competition</li> 
+   <li>prevent anti-competitive agreements between businesses such as price fixing or market sharing</li> 
+   <li>stop businesses from abusing a dominant market position.</li> 
+  </ul> 
+  <p>You need to be aware of the main rules so that you can avoid:</p> 
+  <ul> 
+   <li>breaching our Group Competition and Competitive Information Policy</li> 
+   <li>breaking the law</li> 
+   <li>becoming a victim of others' anti-competitive practices.</li> 
+  </ul> 
   <p>SCREEN 01_120</p> 
-  <p><b>SCREEN TYPE</b>: Graphic multiple choice question</p> 
-  <p>DESCRIPTION</p> 
-  <p>The learner answers a question by choosing from a number of graphic items then confirming their choices. They receive different feedback for correct, incorrect and partially correct answers.</p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>QUESTION AUDIO </p> 
-  <p>Drop in the file name for the question audio here. If no question audio is to be used, write "N/A".</p> 
-  <p>QUESTION TEXT (30 words max)</p> 
-  <p>Write here.</p> 
-  <p>PROMPT</p> 
-  <p>Select your answer, then Confirm.</p> 
-  <p>Select your answers, then Confirm. (or state how many)</p> 
-  <p>MOBILE PROMPT (remove if no mobile version)</p> 
-  <p>Select your answer, then Confirm.</p> 
-  <p>Select your answers, then Confirm. (or state how many)</p> 
-  <p>OPTIONS (15 words max. per option)</p> 
-  <p>Drop the graphic options here. Delete "correct" from the incorrect options. Delete "incorrect" from the correct options.</p> 
-  <p><b>1</b></p> 
-  <p>Option 1 [drop image here] </p> 
-  <p><b>Correct/</b>Incorrect</p> 
-  <p><b>2</b></p> 
-  <p>Option 2 [drop image here]</p> 
-  <p><b>Correct/Incorrect</b></p> 
-  <p><b>3</b></p> 
-  <p>Option 3 [drop image here]</p> 
-  <p><b>Correct/Incorrect</b></p> 
-  <p><b>4</b></p> 
-  <p>Option 4 [drop image here]</p> 
-  <p><b>Correct/Incorrect</b></p> 
-  <p><b>5</b></p> 
-  <p>Option 5 [drop image here]</p> 
-  <p><b>Correct/Incorrect</b></p> 
-  <p><b>6</b></p> 
-  <p>Option 6 [drop image here]</p> 
-  <p><b>Correct/Incorrect</b></p> 
-  <p>CORRECT AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the correct audio here. If no audio feedback is to be used, write "N/A".</p> 
-  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
-  <p>Write here.</p> 
-  <p>PARTIAL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the partial correct audio here. If no audio feedback is to be used, write "N/A".</p> 
-  <p>PARTIAL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write here.</p> 
-  <p>FAIL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the incorrect audio here. If no audio feedback is to be used, write "N/A".</p> 
-  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Question audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Incorrect audio:</p> 
-  <p>projnum_sco_screen_fbi.mp3</p> 
-  <p>Partial audio:</p> 
-  <p>projnum_sco_screen_fbp.mp3</p> 
-  <p>Correct audio:</p> 
-  <p>projnum_sco_screen_fbc.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>projnum_sco_screen.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_130</p> 
   <p><b>SCREEN TYPE</b>: Graphic reveal</p> 
   <p>DESCRIPTION</p> 
   <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p><b>IMAGES</b></p> 
-  <p>Write a short description of the imagery for this page - include screen position, subject matter, etc. Drop in any wireframes or mock-ups of this page type you have ready.</p> 
-  <p><b>OPENING AUDIO</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is to be used, please write "N/A".</p> 
-  <p><b>OPENING TEXT (30 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>PROMPT</b></p> 
-  <p>Select each … to find out more.</p> 
-  <p><b>MOBILE PROMPT (remove if no mobile version)</b></p> 
-  <p>Select each … to find out more.</p> 
-  <p><b>AUDIO FOR REVEAL 1</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is to be used, please write "N/A".</p> 
-  <p><b>TEXT FOR REVEAL 1 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR REVEAL 2</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is to be used, please write "N/A".</p> 
-  <p> </p> 
-  <p><b>TEXT FOR REVEAL 2 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR REVEAL 3</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is to be used, please write "N/A".</p> 
-  <p><b>TEXT FOR REVEAL 3 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR REVEAL 4</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is to be used, please write "N/A".</p> 
-  <p><b>TEXT FOR REVEAL 4 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR REVEAL 5</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is to be used, please write "N/A".</p> 
-  <p><b>TEXT FOR REVEAL 5 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Screen audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Reveal audio 1:</p> 
-  <p>projnum_sco_screen_rl1.mp3</p> 
-  <p>Reveal audio 2:</p> 
-  <p>projnum_sco_screen_rl2.mp3</p> 
-  <p>Reveal audio 3:</p> 
-  <p>projnum_sco_screen_rl3.mp3</p> 
-  <p>Reveal audio 4:</p> 
-  <p>projnum_sco_screen_rl4.mp3</p> 
-  <p>Reveal audio 5:</p> 
-  <p>projnum_sco_screen_rl5.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>Graphic 1: </p> 
-  <p>projnum_sco_screen_01.ext</p> 
-  <p>Graphic 2:</p> 
-  <p>projnum_sco_screen_02.ext</p> 
-  <p>Graphic 3:</p> 
-  <p>projnum_sco_screen_03.ext</p> 
-  <p>Graphic 4:</p> 
-  <p>projnum_sco_screen_04.ext</p> 
-  <p>Graphic 5:</p> 
-  <p>projnum_sco_screen_05.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_140</p> 
-  <p><b>SCREEN TYPE</b>: Hotspot</p> 
+  <p>Example mock-up: </p> 
+  <p></p> 
+  <p>Use images instead of icons.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Your responsibilities</p> 
+  <p>GRAPHIC 1</p> 
+  <p>Image of a policy / an open book. Text should not be legible</p> 
+  <p>GRAPHIC 2</p> 
+  <p>Show someone talking on a phone</p> 
+  <p>GRAPHIC 3</p> 
+  <p>Two people in a discussion in a meeting room</p> 
+  <p>GRAPHIC 4</p> 
+  <p>Two people in a conversation around a computer in the office</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>You have a role to play in avoiding and reporting any anti-competitive practices. It is important that you:</p> 
+  <p>PROMPT</p> 
+  <p>Select each image to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Understand and act in accordance with the Group Competition and Competitive Information Policy.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>Report any known or suspected instances of anti-competitive behaviour.</p> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Co-operate with any investigation into any concern.</p> 
+  <p>TEXT FOR REVEAL 4 (50 words max)</p> 
+  <p>Seek help from the Legal Team or your Line Manager if you have any queries or would like any further guidance.</p> 
+  <p>END OF TOPIC PROMPT(*Dev note - this should only appear once each reveal has been selected)</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 2: The legal bit</p> 
+  <p>SCREEN 02_100</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
   <p>DESCRIPTION</p> 
-  <p>A page that displays a full-size image, graphic or diagram. Specific parts of the graphic, image or diagram can be selected to reveal further information.</p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p><b>IMAGE</b></p> 
-  <p>Write a short description of the imagery for this page - include screen coverage, subject matter, etc. Drop in any wireframes or mock-ups of this page type you have ready.</p> 
-  <p><b>OPENING AUDIO</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is required, put "N/A".</p> 
-  <p><b>OPENING TEXT (30 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>PROMPT</b></p> 
-  <p>Select each … to find out more.</p> 
-  <p><b>MOBILE PROMPT (remove if no mobile version)</b></p> 
-  <p>Scroll down to find out more.</p> 
-  <p><b>HOTSPOT 1</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR HOTSPOT 1</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is required, put "N/A".</p> 
-  <p><b>TEXT FOR HOTSPOT 1 (50 words max)</b></p> 
-  <p>Write the reveal text for hotspot 1 here.</p> 
-  <p><b>HOTSPOT 2</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR HOTSPOT 2</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is required, put "N/A".</p> 
-  <p><b>TEXT FOR HOTSPOT 2 (50 words max)</b></p> 
-  <p>Write the reveal text for hotspot 2 here.</p> 
-  <p><b>HOTSPOT 3</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR HOTSPOT 3</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is required, put "N/A".</p> 
-  <p><b>TEXT FOR HOTSPOT 3 (50 words max)</b></p> 
-  <p>Write the reveal text for hotspot 3 here.</p> 
-  <p> </p> 
-  <p><b>HOTSPOT 4</b></p> 
-  <p>Write here.</p> 
-  <p><b>AUDIO FOR HOTSPOT 4</b></p> 
-  <p>Drop in the file name for the audio here. If no audio is required, put "N/A".</p> 
-  <p><b>TEXT FOR HOTSPOT 4 (50 words max)</b></p> 
-  <p>Write the reveal text for hotspot 4 here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Screen audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Reveal audio 1:</p> 
-  <p>projnum_sco_screen_rl1.mp3</p> 
-  <p>Reveal audio 2:</p> 
-  <p>projnum_sco_screen_rl2.mp3</p> 
-  <p>Reveal audio 3:</p> 
-  <p>projnum_sco_screen_rl3.mp3</p> 
-  <p>Reveal audio 4:</p> 
-  <p>projnum_sco_screen_rl4.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>Graphic 1: </p> 
-  <p>projnum_sco_screen_01.ext</p> 
-  <p>Graphic 2:</p> 
-  <p>projnum_sco_screen_02.ext</p> 
-  <p>Graphic 3:</p> 
-  <p>projnum_sco_screen_03.ext</p> 
-  <p>Graphic 4:</p> 
-  <p>projnum_sco_screen_04.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_150</p> 
-  <p><b>SCREEN TYPE</b>: Multiple choice question (correct and incorrect feedback)</p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>IMAGE</p> 
+  <p>L:\Key_Accounts\TIER 2\Severn Trent Water\images</p> 
+  <p>Settlement tank 4</p> 
+  <p></p> 
+  <p>SCREEN TITLE</p> 
+  <p>Introduction</p> 
+  <p>BODY TEXT</p> 
+  <p>Competition law derives mainly from EU Law and Articles 101 and 102 of Treaty of the Functioning of the European Union (TFEU).</p> 
+  <p>In the following screens, you will learn about the legal framework we operate within, our regulators and the consequences of breaching competition law.</p> 
+  <p>SCREEN 02_110</p> 
+  <p>SCREEN TYPE: Text reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
+  <p>Example mock-up</p> 
+  <p></p> 
+  <p>Use text labels instead of icons. Present the labels in a stylised manner to be consistent with the current STW courses.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>The legal framework</p> 
+  <p>REVEAL BUTTON 1</p> 
+  <p>Chapter I Competition Act 1998</p> 
+  <p>REVEAL BUTTON 2</p> 
+  <p>Chapter II Competition Act 1998</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Competition law has been embedded within UK law through the Competition Act 1998 and the Enterprise Act 2002.</p> 
+  <p>PROMPT</p> 
+  <p>Select each heading to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Prohibits anti-competitive agreements</p> 
+  <p>This rule prohibits an agreement, decision or concerted practice between two or more companies which may affect trade and has as its object or effect the restriction, prevention or distortion of competition.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>Prohibits the abuse of dominance</p> 
+  <p>Any conduct by one or more businesses that amounts to the abuse of a dominant position in a common market, and which may affect trade, is not allowed.</p> 
+  <p>SCREEN 02_120</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>IMAGE</p> 
+  <p>Show logos of OFWAT and CMA on either side of the image of UK.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Who regulates us?</p> 
+  <p>BODY TEXT</p> 
+  <p>Competition law in the UK is enforced primarily by the Competition and Markets Authority (CMA). However, in relation to the regulated business of Severn Trent Water (i.e. the provision of water and wastewater services), OFWAT also has enforcement powers.</p> 
+  <p>OFWAT and the CMA must agree which authority is best placed to conduct an investigation. However, legislation gives both the power to enforce and sanction.</p> 
+  <p>SCREEN 02_130</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
+  <p>Example mock-up: </p> 
+  <p></p> 
+  <p>Same icons as shown in the mock ups</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Consequences of a breach</p> 
+  <p>GRAPHIC 1</p> 
+  <p>Handcuffs as shown in the mock-up</p> 
+  <p>GRAPHIC 2</p> 
+  <p>Show a downward graph on share prices as shown in the mock-up</p> 
+  <p>GRAPHIC 3</p> 
+  <p>A torn paper as shown in the mock-up</p> 
+  <p>GRAPHIC 4</p> 
+  <p>Newspaper icon as shown in the mock-up</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Breaching competition law can have serious consequences.</p> 
+  <p>PROMPT</p> 
+  <p>Select each icon to learn about the consequences.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Criminal liability</p> 
+  <ul> 
+   <li>A prison sentence of up to five years for the Cartel Offence</li> 
+   <li>Unlimited fines</li> 
+  </ul> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>Financial damage</p> 
+  <ul> 
+   <li>Lengthy investigations by OFWAT / CMA requiring huge resource allocation</li> 
+   <li>A fine of up to 10% of group worldwide turnover</li> 
+   <li>Damages claims from third parties affected by anti-competitive behaviour</li> 
+   <li>A negative impact on share price</li> 
+  </ul> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Void Agreements</p> 
+  <p>Agreements which breach competition law may be void and unenforceable.</p> 
+  <p>TEXT FOR REVEAL 4 (50 words max)</p> 
+  <p>Reputational damage</p> 
+  <ul> 
+   <li>Negative media coverage</li> 
+   <li>Loss of customer / investor confidence</li> 
+  </ul> 
+  <p>SCREEN 02_140</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
+  <p>Example mock-up from STW843</p> 
+  <p></p> 
+  <p>Show two text labels in form of a newspaper headline:</p> 
+  <p>SCREEN TITLE</p> 
+  <p>When it goes wrong…</p> 
+  <p>GRAPHIC 1</p> 
+  <p>Water tank firms fined £2.6 million</p> 
+  <p>GRAPHIC 2</p> 
+  <p>ST Labs sold following allegations of abuse of dominance </p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Here are some examples of when it may go wrong</p> 
+  <p>PROMPT</p> 
+  <p>Select each headline to learn about the consequences.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>21 March 2016 – Water tank firms fined £2.6 million for market sharing and bid rigging</p> 
+  <p>Four companies providing galvanised steel tanks used for water storage admitted to sharing the market, fixing prices and rigging bids between 2005 and 2012.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>2012 – Severn Trent Labs sold in response to complaint of abuse of dominant position </p> 
+  <p>A complaint lodged with OFWAT alleged that ST Labs was winning contracts by pricing below cost and that it did this by getting a cross-subsidy from Severn Trent Water. </p> 
+  <p>Before the investigation concluded, Severn Trent PLC made a commitment to OFWAT to sell ST Labs and eliminate the risk of anti-competitive behaviour.</p> 
+  <p>SCREEN 02_150</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>IMAGE</p> 
+  <p>L:\Key_Accounts\Severn Trent Water\TIER 2\images</p> 
+  <p>STW Colleagues 5</p> 
+  <p></p> 
+  <p>SCREEN TITLE</p> 
+  <p>Common forms of anti-competitive behaviour</p> 
+  <p>BODY TEXT</p> 
+  <p>There are various forms of anti-competitive behaviour. Some common forms include abusing a dominant market position, leveraging dominance into related markets and entering into anti-competitive agreements.</p> 
+  <p>In the topics that follow, we will look at these behaviours and some examples of each.</p> 
+  <p>END OF TOPIC PROMPT</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 3: Abuse of dominance</p> 
+  <p>SCREEN 03_100</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>IMAGE</p> 
+  <p>Use image similar to the following:</p> 
+  <p>SCREEN TITLE</p> 
+  <p>What is a dominant position?</p> 
+  <p>BODY TEXT</p> 
+  <p>Let's begin by looking at the definition of dominant position adopted in numerous cases by European Court: </p> 
+  <p>"A position of economic strength enjoyed by an undertaking which enables it to prevent effective competition being maintained on the relevant market by giving it the power to behave to an appreciable extent independently of its competitors, customers and ultimately of its consumers."</p> 
+  <p>In simple terms, a company will hold a dominant position if it can effectively do as it wishes without worrying too much about either its competitors' or customers' reactions.</p> 
+  <p>SCREEN 03_110</p> 
+  <p><b>SCREEN TYPE</b>: Photostory</p> 
+  <p>DESCRIPTION</p> 
+  <p>A sequence of slides with related text. Each slide of the photostory is selected separately and reveals corresponding content of a variety of types. A photostory can contain pictures, animations, text and audio.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Market dominance</p> 
+  <p><b>Frame</b></p> 
+  <p><b>Picture</b></p> 
+  <p><b>Text</b></p> 
+  <p><b>1</b></p> 
+  <p>Recreate the following image from slide 12 of : L:\Projects\STW971_competition_law\from_client\content\ST_Competition_Law_E-learning_v7_17 01 17_KNreview.PPT</p> 
+  <p>TEXT</p> 
+  <p>To establish whether a company is dominant, we need to assess its market and its activities. </p> 
+  <p>A business with a 50% market share is presumed dominant. But dominance may well exist with market shares of 40% or more.</p> 
+  <p>PROMPT</p> 
+  <p>Select the arrow to find out more.</p> 
+  <p><b>2</b></p> 
+  <p>Recreate the following image from slide 12 of : L:\Projects\STW971_competition_law\from_client\content\ST_Competition_Law_E-learning_v7_17 01 17_KNreview.PPT</p> 
+  <p>Show some areas coloured in a specific colour.</p> 
+  <p>Show some other regions coloured in another region. Make sure these are lesser than the first coloured regions</p> 
+  <p>TEXT</p> 
+  <p>Some markets are naturally limited in terms of their geographic extent. They may be regional or local, and so market share is not necessarily measured on a national, European or global basis. It will depend on the goods or services concerned and where, and how, customers purchase these.</p> 
+  <p><b>3</b></p> 
+  <p>STW logo</p> 
+  <p>TEXT</p> 
+  <p>Within its area of appointment Severn Trent Water has 100% market share for providing wholesale water and wastewater services.</p> 
+  <p>That means Severn Trent Water operates as a monopoly provider, and will be automatically regarded as holding a dominant position in this market.</p> 
+  <p>Holding a position like this is not against the rules, but abusing that position is.</p> 
+  <p>Severn Trent Water therefore has a special duty not to act in an anti-competitive manner.</p> 
+  <p><b>4</b></p> 
+  <p>Severn Trent Services logo</p> 
+  <p>TEXT</p> 
+  <p>Associate companies within the Severn Trent PLC group such as Severn Trent Services might not hold such a dominant position in relation to their respective commercial activities. This means it is necessary to consider their market position separately.</p> 
+  <p>PROMPT</p> 
+  <p>Select the Next arrow to continue.</p> 
+  <p>SCREEN 03_120</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
+  <p>Example mock-up</p> 
+  <p></p> 
+  <p>Use STW and STS logo.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Abuse of dominance – pricing</p> 
+  <p>GRAPHIC 1</p> 
+  <p>STW logo</p> 
+  <p>GRAPHIC 2</p> 
+  <p>STS logo</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Where pricing behaviour has the effect of placing other companies in the market at a competitive disadvantage this will be considered an abuse of dominance.</p> 
+  <p>PROMPT</p> 
+  <p>Select each image to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Severn Trent Water's pricing is regulated by OFWAT. However, we still need to be mindful of the prices we charge for services which are not regulated by OFWAT (e.g. bulk supplies to New Appointments and Variations (NAVs)).</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>Any Severn Trent Services companies that may be dominant must always be aware of abusive pricing.</p> 
+  <p>SCREEN 03_130</p> 
+  <p>SCREEN TYPE: Text reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
+  <p>Example mock-up</p> 
+  <p></p> 
+  <p>Use text labels instead of icons. Present the labels in a stylised manner to be consistent with the current STW courses.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Abuse of dominance – pricing</p> 
+  <p>REVEAL BUTTON 1</p> 
+  <p>Excessive pricing</p> 
+  <p>REVEAL BUTTON 2</p> 
+  <p>Predatory pricing</p> 
+  <p>REVEAL BUTTON 3</p> 
+  <p>Discriminatory pricing</p> 
+  <p>REVEAL BUTTON 4</p> 
+  <p>Margin squeeze</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>There are several ways a company may use pricing to abuse its dominant position. </p> 
+  <p>PROMPT</p> 
+  <p>Select each heading to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Excessive pricing can occur when a dominant company abuses its position by charging unfairly high prices for its products and services.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>Predatory pricing is when a dominant company is prepared to suffer losses by charging very low prices in order to eliminate or substantially weaken a competitor's market position.</p> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Discriminatory pricing occurs when a dominant company charges different customers or different classes of customer different prices for goods or services which cost the same – without any valid justification for doing so.</p> 
+  <p>TEXT FOR REVEAL 4 (50 words max)</p> 
+  <p>A margin squeeze happens when a dominant company for a particular product or service at a wholesale level of the supply chain (i.e. the upstream market) also trades at the retail level of the supply chain (i.e. the downstream market), but charges higher prices to third-party retailers than it does to its own integrated or associated retailer.</p> 
+  <p>These higher costs create a reduction or 'squeeze' on the margin of the third-party retailer – even though they may be just as efficient in the downstream market as the wholesale supplier's integrated or associate retailer.</p> 
+  <p>SCREEN 03_140</p> 
+  <p>SCREEN TYPE: Photostory</p> 
+  <p>DESCRIPTION</p> 
+  <p>A sequence of slides with related text. Each slide of the photostory is selected separately and reveals corresponding content of a variety of types. A photostory can contain pictures, animations, text and audio. </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Examples of abuse of dominance – pricing</p> 
+  <p><b>Frame</b></p> 
+  <p><b>Picture</b></p> 
+  <p><b>Text</b></p> 
+  <p><b>1</b></p> 
+  <p>Recreate the following image from slide 15 of : L:\Projects\STW971_competition_law\from_client\content\ ST_Competition_Law_E-learning_v7_17 01 17_KNreview.PPT</p> 
+  <p>Bring it in-line with the with STW branding. Update the graphic with the following changes:</p> 
+  <ul> 
+   <li>Change NEWCO / New Co to NEWBIE (in 2 instances)</li> 
+   <li>Change Services Ltd. to WASC Ltd.</li> 
+  </ul> 
+  <p>TEXT </p> 
+  <p>Let's explore some of the examples of abuse of dominance based on pricing.</p> 
+  <p>TITLE</p> 
+  <p>Predatory pricing</p> 
+  <p>TEXT</p> 
+  <p>In this example WASC Ltd. is dominant in the market for the supply of filters. </p> 
+  <p>You can see that by significantly decreasing the price for filters, WASC Ltd. has driven NEWBIE out of the market, who could not compete at this level. </p> 
+  <p>WASC Ltd. recovered its losses later on by increasing the prices for filters.</p> 
+  <p>PROMPT</p> 
+  <p>Select the arrow to find out more.</p> 
+  <p><b>2</b></p> 
+  <p>Same as the following mock-up for the photostory:</p> 
+  <p>Change the company names: Change Sludge to Flow and C.O.D. to Flood</p> 
+  <p></p> 
+  <p><b>TITLE</b></p> 
+  <p>Discriminatory pricing</p> 
+  <p>TEXT</p> 
+  <p>Pumps Ltd. is a dominant supplier of chemical dosing pumps for water treatment.</p> 
+  <p>They provide Flow Co. with dosing pumps for £250 per unit. However, they provide Flood Ltd. with the same pumps for the same process for £450 per unit. </p> 
+  <p>This is an example of discriminatory pricing as Pumps Ltd. are giving different prices to each company without a valid reason (e.g. based on cost to serve / volumes purchased).</p> 
+  <p><b>3</b></p> 
+  <p>Show image similar to this:</p> 
+  <p></p> 
+  <p>Image ID:201370895</p> 
+  <p>TITLE</p> 
+  <p>Margin Squeeze</p> 
+  <p>TEXT</p> 
+  <p>Star Co. has successfully applied to serve a new development within Water Co's area of appointment called 'The Oaks'. </p> 
+  <p>They will have the same duties and responsibilities as any other appointed water company, but they will be getting their bulk supply of water from Water Co.</p> 
+  <p>Under competition law, Water Co has to make sure that the bulk supply price it offers Star Co. is fair and not abusive.</p> 
+  <p><b>4</b></p> 
+  <p>Recreate the diagram here:</p> 
+  <p>L:\Projects\STW971_competition_law\from_client\content\Severn_Trent_- Competition Law E-learning Content.pdf - p.62</p> 
+  <p>*But please change: Splash co retail -&gt; Star co</p> 
+  <p></p> 
+  <p>TITLE</p> 
+  <p>Margin Squeeze</p> 
+  <p>TEXT</p> 
+  <p>Water Co needs to ask itself: "Would its own downstream retail business be able to operate profitably (taking into account all other applicable costs) if it had to pay what they are proposing to charge Star Co?"</p> 
+  <p>If the answer is no, then they could be accused of practising market squeeze.</p> 
+  <p>PROMPT</p> 
+  <p>Select the Next arrow to continue.</p> 
+  <p>SCREEN 03_150</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Photos, illustrations or diagrams can be selected to reveal further information, usually in text form.</p> 
+  <p>Example mock-up</p> 
+  <p></p> 
+  <p>Use icons to represent the other types.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Other types of abuse of dominance</p> 
+  <p>REVEAL 1</p> 
+  <p>Essential facilities</p> 
+  <p>REVEAL 2</p> 
+  <p>Tying</p> 
+  <p>REVEAL 3</p> 
+  <p>Loyalty, Volume discounting</p> 
+  <p>GRAPHIC 1</p> 
+  <p>Show image of a tap with a water drop</p> 
+  <p>GRAPHIC 2</p> 
+  <p>Show two or three icons of services with an addition sign in between each to show additional products</p> 
+  <p>GRAPHIC 3</p> 
+  <p>Show image of a tag with % sign. Something similar to:</p> 
+  <p>Image ID:306828110</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Not all abuses relate solely to pricing. Dominant businesses may also engage in exclusionary practices which are not directly related to price.</p> 
+  <p>PROMPT</p> 
+  <p>Select each heading to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>An abuse may take place if the dominant company limits access to essential upstream facilities (a monopoly water / waste network, for example) or makes it so costly that a downstream business is unable to compete.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>'Tying' is an abusive practice in which a dominant company agrees to supply a particular product or service only if a purchaser agrees to buy other unrelated products or services from that company. </p> 
+  <p>These are often referred to as 'tying clauses' within contracts and are prohibited under competition law.</p> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Another form of abuse is when a dominant company uses discounts and rebates to tie a customer to them as sole supplier for future business, or to prevent them from buying from a rival supplier. </p> 
+  <p>It is fine to offer customers genuine volume rebates or discounts (for example, where real costs savings are achieved by providing in bulk), but these must be justifiable based on actual economies of scale and operated under a transparent system where the customer can clearly see how the discounts will apply. </p> 
+  <p>Any rebate which 'locks in' all or an increased proportion of a customer's business, and therefore prevents customers from buying products from competitors, is anti-competitive and prohibited when implemented by a dominant business.</p> 
+  <p>END OF TOPIC PROMPT (*Dev note - this should only appear once each reveal has been selected.)</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 4: Leveraging</p> 
+  <p>SCREEN 04_100</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>This screen presents information, usually with an illustrative graphic/image. The layout of text and image can vary.</p> 
+  <p>IMAGE</p> 
+  <p>Use image the following image:</p> 
+  <p>L:\Key_Accounts\TIER 2\Severn Trent Water\images</p> 
+  <p>23.03.12_SevernTrent_0243</p> 
+  <p></p> 
+  <p>SCREEN TITLE</p> 
+  <p>Leveraging a dominant position</p> 
+  <p>BODY TEXT</p> 
+  <p>Competition law also stops dominant companies from 'leveraging' their dominance in one market into different, but related, markets.</p> 
+  <p>A prime example of this would be where a dominant company subsidises a sister or group company in a different but related market, thereby giving that company an advantage over its competitors.</p> 
+  <p>Severn Trent Water is obliged under its Instrument of Appointment to ensure dealings with associate companies are conducted at 'arm's length'. It also needs to make sure that it neither gives nor receives any cross-subsidy. </p> 
+  <p> If Severn Trent Water adheres to these licence requirements, it is less likely to abuse its position. However, just complying with the requirements does not guarantee full compliance with competition law.</p> 
+  <p>SCREEN 04_110</p> 
+  <p>SCREEN TYPE: Photostory</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>A sequence of slides with related text. Each slide of the photostory is selected separately and reveals corresponding content of a variety of types. A photostory can contain pictures, animations, text and audio. </p> 
+  <p><b>SCREEN TITLE</b></p> 
+  <p>Example of leveraging</p> 
+  <p><b>Frame</b></p> 
+  <p><b>Picture</b></p> 
+  <p><b>Text</b></p> 
+  <p><b>1</b></p> 
+  <p>Stock image of a person working in a lab. Similar to:</p> 
+  <p>Image ID:368080166</p> 
+  <p>TEXT</p> 
+  <p>Lake Ltd. is a subsidiary company of Water Ltd., a monopoly water and sewerage undertaker in the north east of England.</p> 
+  <p>As part of its regulated duties, Water Ltd. is required to sample and test the quality of its potable water. </p> 
+  <p>For this, it employs the services of Lake Ltd., which takes water samples for Water Ltd. and provides analytical services from its laboratory in Gateshead. </p> 
+  <p>PROMPT</p> 
+  <p>Select the arrow to find out more.</p> 
+  <p><b>2</b></p> 
+  <p>Create two logos one for Water Ltd. and one for Lake Ltd.</p> 
+  <p>Show an arrow going from Water Ltd. to Lake Ltd. and under it show an agreement document with £ sign</p> 
+  <p>TEXT</p> 
+  <p>Water Ltd. and Lake Ltd. have the following arrangements in place: </p> 
+  <p>Lake Ltd. has been sampling for Water Ltd. for some time.</p> 
+  <p>Its rates were determined between the companies without being subject to a tender process or being market tested.</p> 
+  <p><b>3</b></p> 
+  <p>Show two logos one for Lake Ltd. and one for Stream Ltd.</p> 
+  <p>Show an arrow going from Lake Ltd. to Stream Ltd. and under it show an agreement document with a pound sign and a down arrow next to it to show reduced price</p> 
+  <p>TEXT</p> 
+  <p>Lake Ltd. is very profitable and now has the capability and resources to work for other water companies. </p> 
+  <p>It tenders for contracts with another company Stream Ltd. and offers its services at a cost well below that offered by its competitors.</p> 
+  <p>PROMPT</p> 
+  <p>Select the Next arrow to continue.</p> 
+  <p>SCREEN 04_120</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
   <p>DESCRIPTION</p> 
   <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p><b>IMAGE</b></p> 
-  <p>Write a short description of the imagery for this page - include screen coverage, subject matter, etc. Drop in any wireframes or mock-ups of this page type you have ready.</p> 
-  <p>QUESTION AUDIO </p> 
-  <p>Drop in the file name for the audio here. If no audio is required, put "N/A".</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Think about this…</p> 
   <p>QUESTION TEXT (30 words max)</p> 
-  <p>Write here.</p> 
+  <p>Should the arrangement between Water Ltd. and Lake Ltd. cause any concerns from a competition law perspective?</p> 
   <p>PROMPT</p> 
-  <p>Select your answer, then Confirm.</p> 
-  <p>MOBILE PROMPT</p> 
   <p>Select your answer, then Confirm.</p> 
   <p>OPTIONS (15 words max. per option)</p> 
   <p><b>1</b></p> 
-  <p>Red</p> 
+  <p>Yes</p> 
   <p><b>Correct</b></p> 
   <p><b>2</b></p> 
-  <p>Yellow</p> 
+  <p>No</p> 
   <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>Water Ltd. is leveraging its dominance in one market (i.e. the provision and water and waste water services as a monopoly undertaker) into the water testing market of Lake Ltd. </p> 
+  <p>Lake Ltd. is potentially gaining a significant advantage over its competitors by securing rates agreed between the parties that have not been market tested. This could have the effect of distorting competition.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>Water Ltd. is leveraging its dominance in one market (i.e. the provision and water and waste water services as a monopoly undertaker) into the water testing market of Lake Ltd. </p> 
+  <p>Lake Ltd. is potentially gaining a significant advantage over its competitors by securing rates agreed between the parties that have not been market tested. This could have the effect of distorting competition.</p> 
+  <p>SCREEN 04_130</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image </p> 
+  <p>SCREEN TITLE</p> 
+  <p>What if…</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Lake Ltd. is also keen to expand its business into waste water treatment and to offer services to industrial customers to treat their trade effluent.</p> 
+  <p>To ensure that it provides the best service to customers and that the business grows, it asks Water Ltd. to provide some technical expertise, as well giving them access to its technical working groups to help develop its practices. </p> 
+  <p>Should this arrangement cause any concerns from a competition law perspective?</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Yes</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>No</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>Water Ltd. may still be seen as leveraging their dominance in another market for Lake Ltd., as they are sharing expertise, resource and knowledge.</p> 
+  <p>END OF TOPIC PROMPT</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>Water Ltd. may still be seen as leveraging their dominance in another market for Lake Ltd., as they are sharing expertise, resource and knowledge.</p> 
+  <p>END OF TOPIC PROMPT</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 5: Anti-competitive agreements</p> 
+  <p>SCREEN 05_100</p> 
+  <p>SCREEN TYPE: Hotspot reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner selects parts of the diagram to reveal more information.</p> 
+  <p>IMAGE</p> 
+  <p>Recreate the following diagram:</p> 
+  <p>*Build note - the fourth step does not have a hotspot - see below</p> 
+  <p>SCREEN TITLE</p> 
+  <p>What is an anti-competitive agreement?</p> 
+  <p>HOTSPOT 1</p> 
+  <p>An AGREEMENT </p> 
+  <p>HOTSPOT 2</p> 
+  <p>or CONCERTED PRACTICE</p> 
+  <p>HOTSPOT 3</p> 
+  <p>between TWO OR MORE COMPANIES</p> 
+  <p>HOTSPOT 4</p> 
+  <p>which may AFFECT TRADE </p> 
+  <p>HOTSPOT 5</p> 
+  <p>The RESTRICTION, PREVENTION OR DISTORTION of competition</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Here's the definition of an anti-competitive agreement.</p> 
+  <p>PROMPT</p> 
+  <p>Select each part of the definition to find out more.</p> 
+  <p>HOTSPOT 1 TEXT (50 words max)</p> 
+  <p>An agreement can be in writing or made orally.</p> 
+  <p>HOTSPOT 2 TEXT (50 words max)</p> 
+  <p>A concerted practice is a looser form of an agreement involving direct or indirect contact between associated companies, which influences commercial conduct. I.e Senior Managers discussing future strategy or pricing policies at regular social events. </p> 
+  <p>HOTSPOT 3 TEXT (50 words max)</p> 
+  <p>This refers to two or more independent businesses – agreements between businesses which are part of the same corporate group may fall outside of this. However, there are other rules that govern the way in which we deal with intra-group arrangements. You will learn more about this in the Market opening topic.</p> 
+  <p>HOTSPOT 4 TEXT (50 words max)</p> 
+  <p>For example, trade would be affected if such an agreement or concerted practice makes it more difficult for other businesses to provide the same or similar goods or services.</p> 
+  <p>HOTSPOT 5 TEXT (50 words max)</p> 
+  <p>This includes potential as well as actual competition, and could include agreements to fix prices, rig bids, or share commercially sensitive information..</p> 
+  <p>SCREEN 05_110</p> 
+  <p>SCREEN TYPE: Text reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Select each icon to reveal explanation text (mock-up below).</p> 
+  <p></p> 
+  <p>*Dev note - Use text labels instead of icons. </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Potential anti-competitive agreements</p> 
+  <p>REVEAL BUTTON 1</p> 
+  <p>Price fixing</p> 
+  <p>REVEAL BUTTON 2</p> 
+  <p>Bid rigging</p> 
+  <p>REVEAL BUTTON 3</p> 
+  <p>Sharing commercially sensitive information</p> 
+  <p>REVEAL BUTTON 4</p> 
+  <p>Product limitation</p> 
+  <p>REVEAL BUTTON 5</p> 
+  <p>Research &amp; Development and Specialisation Agreements</p> 
+  <p>REVEAL BUTTON 6</p> 
+  <p>Market sharing</p> 
+  <p>REVEAL BUTTON 7</p> 
+  <p>Agreement on industry standards</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Here are some examples of anti-competitive agreements.</p> 
+  <p>PROMPT</p> 
+  <p>Select each heading to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Price fixing usually occurs when two or more competitors get together to agree on prices for their products or services. This is sometimes referred to as a cartel.</p> 
+  <p>Prices could include margins, discounts, wholesale or retail prices, rebates, or pricing changes.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>This is where competitors agree either not to submit a bid in a tender, or to submit a bid at a particular price.</p> 
+  <p>Discussing the fact that you are bidding (or not) should be avoided – act independently and do not discuss bids with competitors. This is particularly important for Severn Trent Services (STS).</p> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Commercially sensitive information includes future business strategy (not in the public domain), prices, future product specifications or any other information that may allow a competitor to adjust its own commercial conduct in the market. Such information should not be shared. New legal developments and best practice fall outside this. </p> 
+  <p>TEXT FOR REVEAL 4 (50 words max)</p> 
+  <p>This is where competitors attempt to boost profits by agreeing between themselves to reduce and limit production of particular products.</p> 
+  <p>TEXT FOR REVEAL 5 (50 words max)</p> 
+  <p>Two or more parties agree to give up the manufacture of a particular product and only obtain it from the other party instead. Or they may jointly agree to have a product manufactured exclusively. </p> 
+  <p>These agreements could be anti-competitive if they limited potential new entrants to the market.</p> 
+  <p>TEXT FOR REVEAL 6 (50 words max)</p> 
+  <p>This is where companies divide markets or choose to serve only a certain section of customers.</p> 
+  <p>TEXT FOR REVEAL 7 (50 words max)</p> 
+  <p>An example for this could be where competitors in the same industry agree to produce only goods with specified dimensions, type or quality. </p> 
+  <p>This affects competition as it potentially prevents new competitors from entering the market and also stifles innovation. </p> 
+  <p>SCREEN 05_120</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Price fixing</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Services Ltd. and Competitor Ltd. are both competitors for a particular service.</p> 
+  <p>James, a sales executive at Services Ltd., sends an internal email to another employee setting out his suggestions on some pricing issues relating to competitors. Which of the following may cause issues? </p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>At our latest meeting in Birmingham we eventually agreed on a Nationwide Common Pricing Policy with Competitor Ltd.</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>I gather Competitor Ltd. are going to increase prices next month and they have asked for our support</p> 
+  <p><b>Correct</b></p> 
   <p><b>3</b></p> 
-  <p>Blue</p> 
+  <p>Just received Competitor Ltd.'s latest price list – will help make sure our prices are the same</p> 
+  <p><b>Correct</b></p> 
+  <p><b>4</b></p> 
+  <p>Competitor Ltd. have finally agreed to tell us what they are charging our major customer – should stop prices dropping lower</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>All of these may cause issues as they can be considered as price fixing.</p> 
+  <p>PARTIAL TEXT FEEDBACK (50 words max)</p> 
+  <p>Not quite.</p> 
+  <p>Actually, all of these may cause issues as they can be considered as price fixing.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>Actually, all of these may cause issues as they can be considered as price fixing.</p> 
+  <p>SCREEN 05_130</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>Text on the left and image on the right.</p> 
+  <p>IMAGE</p> 
+  <p>Show something similar to the following but in a stylised manner:</p> 
+  <p></p> 
+  <p>SCREEN TITLE</p> 
+  <p>Price fixing in a manufacturer–distributor relationship</p> 
+  <p>BODY TEXT</p> 
+  <p>In a manufacturer–distributor relationship, a manufacturer cannot:</p> 
+  <ul> 
+   <li>agree prices at which a distributor will sell to its customer</li> 
+   <li>guarantee the distributor's margin</li> 
+   <li>fix the distributor's margin</li> 
+   <li>get the distributor to agree to offer maximum levels of discount</li> 
+   <li>refuse to supply because a distributor's resale price is too low.</li> 
+  </ul> 
+  <p>Although the manufacturer can recommend a resale price, it cannot enforce this – but it can set a maximum resale price.</p> 
+  <p>SCREEN 05_140</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Think about it…</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>In an email from a manufacturer to a distributor, which of the following could cause an issue? </p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Do not sell Product A for more than £500 per unit</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>2</b></p> 
+  <p>Do not sell Product B for less than £300 per unit</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>Our recommended resale prices are in the attached list</p> 
   <p><b>Incorrect</b></p> 
   <p><b>4</b></p> 
-  <p>Green</p> 
-  <p><b>Incorrect</b></p> 
+  <p>Please fix your margin at no less than 10%</p> 
+  <p><b>Correct</b></p> 
   <p><b>5</b></p> 
-  <p>Brown</p> 
-  <p><b>Incorrect</b></p> 
-  <p><b>6</b></p> 
-  <p>Purple</p> 
-  <p><b>Incorrect</b></p> 
-  <p>CORRECT AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the correct audio here. If no correct audio is required, put "N/A".</p> 
+  <p>We cannot guarantee supply if your discount more than 20% off list price because of damage to our brand</p> 
+  <p><b>Correct</b></p> 
   <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
-  <p>Write correct feedback here.</p> 
-  <p>PARTIAL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the partial audio here. If no partial audio is required, put "N/A".</p> 
+  <p>That's right!</p> 
+  <p>Remember, the manufacturer can recommend a resale price, but cannot enforce this. It can, however, set a maximum resale price.</p> 
   <p>PARTIAL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write partially correct feedback here, if required.</p> 
-  <p>FAIL AUDIO FEEDBACK </p> 
-  <p>Drop in the file name for the incorrect audio here. If no incorrect audio is required, put "N/A".</p> 
+  <p>Not quite.</p> 
+  <p>The correct answers are shown here.</p> 
+  <p>Remember, the manufacturer can recommend a resale price, but cannot enforce this. It can, however, set a maximum resale price.</p> 
   <p>FAIL TEXT FEEDBACK (50 words max)</p> 
-  <p>Write incorrect feedback here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Question audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Incorrect audio:</p> 
-  <p>projnum_sco_screen_fbi.mp3</p> 
-  <p>Partial audio:</p> 
-  <p>projnum_sco_screen_fbp.mp3</p> 
-  <p>Correct audio:</p> 
-  <p>projnum_sco_screen_fbc.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>projnum_sco_screen.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_160</p> 
-  <p><b>SCREEN TYPE</b>: Photostory</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>The correct answers are shown here.</p> 
+  <p>Remember, the manufacturer can recommend a resale price, but cannot enforce this. It can, however, set a maximum resale price.</p> 
+  <p>SCREEN 05_150</p> 
+  <p>SCREEN TYPE: Column sort</p> 
   <p>DESCRIPTION</p> 
-  <p>A sequence of slides with related text. Each slide of the photostory is selected separately and reveals corresponding content of a variety of types. A photostory can contain pictures, animations, text and audio. </p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
+  <p>There will be two columns – Do's and Don'ts and 5 options. </p> 
+  <p></p> 
+  <p>Same as the mock-up</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Bid rigging</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>You receive a new tender opportunity from a customer.</p> 
+  <p>Which of these are the correct ways to behave when responding to a tender opportunity?</p> 
+  <p>PROMPT</p> 
+  <p>Select an option beside each statement in one of the columns, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>Do</b></p> 
+  <p><b>Don't</b></p> 
+  <p><b>1</b></p> 
+  <p>Ensure that any decisions on whether to submit a bid or the terms of a bid are made independently by Severn Trent Services</p> 
+  <p>�</p> 
+  <p><b>2</b> </p> 
+  <p>Keep a written record of how decisions on bids are reached </p> 
+  <p>�</p> 
+  <p><b>3</b></p> 
+  <p>Discuss a specific tender opportunity with competitors who may also be proposing to submit a bid </p> 
+  <p>�</p> 
+  <p><b>4</b></p> 
+  <p>Discuss Severn Trent Services' intentions towards categories of tender opportunities with potential competitors </p> 
+  <p>�</p> 
+  <p><b>5</b></p> 
+  <p>Reach an agreement with a competitor about how to respond to a specific tender opportunity </p> 
+  <p>�</p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>You must ensure that any decisions on whether to submit a bid or the terms of a bid are made independently by Severn Trent Services. Make sure you keep a written record of how decisions on bids are reached too.</p> 
+  <p>Never discuss a specific tender opportunity or categories of tender opportunity with competitors who may also be proposing to submit a bid. You also should not reach any kind of agreement with a competitor about how to respond to a specific tender opportunity.</p> 
+  <p>PARTIAL TEXT FEEDBACK (50 words max)</p> 
+  <p>Not quite.</p> 
+  <p>You must ensure that any decisions on whether to submit a bid or the terms of a bid are made independently by Severn Trent Services. Make sure you keep a written record of how decisions on bids are reached too. </p> 
+  <p>Never discuss a specific tender opportunity or categories of tender opportunity with competitors who may also be proposing to submit a bid. You also should not reach any kind of agreement with a competitor about how to respond to a specific tender opportunity. </p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>You must ensure that any decisions on whether to submit a bid or the terms of a bid are made independently by Severn Trent Services. Make sure you keep a written record of how decisions on bids are reached too. </p> 
+  <p>Never discuss a specific tender opportunity or categories of tender opportunity with competitors who may also be proposing to submit a bid. You also should not reach any kind of agreement with a competitor about how to respond to a specific tender opportunity.</p> 
+  <p>SCREEN 05_160</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>Text on the left and image on the right.</p> 
+  <p>IMAGE</p> 
+  <p>Show the following table in a stylised manner:</p> 
+  <p><b>Allowed to share as not commercially sensitive information</b></p> 
+  <p><b>Not allowed to share as commercially sensitive information</b></p> 
+  <p>Interpretation of the requirements of new legislation, market codes etc.</p> 
+  <p>For example, what are wholesalers required to provide to retailers as part of their service offering? </p> 
+  <p>Specific proposals on service offerings intended to be provided over and above what is anticipated by the market architecture.</p> 
+  <p>Information that is already in the public domain</p> 
+  <p>For example, published tariff lists, scheme of charges.</p> 
+  <p>Information about proposed pricing strategies, costs or commercial strategy that is not in the public domain.</p> 
+  <p>Aggregated and anonymised data about market trends.</p> 
+  <p>Specific information relating to customers and potential customers of the company.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Information sharing</p> 
+  <p>BODY TEXT</p> 
+  <p>Sharing commercially sensitive information will breach competition law.</p> 
+  <p>It is vital that you understand what could be classed as commercially sensitive information and what is not. </p> 
+  <p>Ask yourself: Would this information provide the receiving party with a competitive advantage over others? Here are some examples of what you are allowed to share and what is considered as commercially sensitive information and should not be shared.</p> 
+  <p>SCREEN 05_170</p> 
+  <p><b>SCREEN TYPE</b>: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Think about it…</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>James, a Manager at Severn Trent Water, attends Water UK meetings on a regular basis with representatives of other Water Companies.</p> 
+  <p>During a particular meeting, one of the representatives begins to talk about their future business plan and pricing strategy and seeks to get others to participate.</p> 
+  <p>Would this be commercially sensitive information?</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Yes</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>No</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>This information would not be in the public domain and should not be shared.</p> 
+  <p>In this situation, ask for the discussion to be halted and, if it continues, excuse yourself from the meeting and don't share any information. You should report the incident to the legal team immediately.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>This information would not be in the public domain and should not be shared.</p> 
+  <p>In this situation, ask for the discussion to be halted and, if it continues, excuse yourself from the meeting and don't share any information. You should report the incident to the legal team immediately.</p> 
+  <p>SCREEN 05_180</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image</p> 
+  <p>SCREEN TITLE</p> 
+  <p>What if…</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Let's say the representative was sharing their interpretation of some upcoming legislation or best practice.</p> 
+  <p>Could that be commercially sensitive information?</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Yes</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>2</b></p> 
+  <p>No</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>This information is not considered commercially sensitive.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>This information is not considered commercially sensitive.</p> 
+  <p>SCREEN 05_190</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Select each icon to reveal explanation text (mock-up below).</p> 
+  <p></p> 
+  <p>Recreate two images from previous course to show dividing market on region and dividing customers.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Market sharing</p> 
+  <p>GRAPHIC 1</p> 
+  <p>Show a map similar to the one below. Show 3 different areas coloured in one colour and 3 other areas coloured in another.</p> 
+  <p>GRAPHIC 2</p> 
+  <p>Show two vans. </p> 
+  <p>Label for van 1:</p> 
+  <p>Company A</p> 
+  <p>Customers 1–20</p> 
+  <p>Label for van 1:</p> 
+  <p>Company B</p> 
+  <p>Customers 21–40</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Markets can be divided on territories or customers.</p> 
+  <p>PROMPT</p> 
+  <p>Select each image to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>It is illegal to divide a market into different territories and to agree not to sell in another competitor's area.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>It is also illegal to divide a market by particular customers, such that one company sells to certain customers and refuses to deal with those customers that have been allocated to a competitor.</p> 
+  <p>END OF TOPIC PROMPT (*Dev note - this should only appear once each reveal has been selected.)</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 6: Market opening</p> 
+  <p>SCREEN 06_100</p> 
+  <p>SCREEN TYPE: Photostory</p> 
+  <p>DESCRIPTION</p> 
+  <p>A sequence of slides with related text. Each slide of the photostory is selected separately and reveals corresponding content of a variety of types. A photostory can contain pictures, animations, text and audio.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Introduction</p> 
   <p><b>Frame</b></p> 
   <p><b>Picture</b></p> 
-  <p><b>Audio (Delete the column if there's no audio)</b></p> 
   <p><b>Text</b></p> 
   <p><b>1</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Speech 1</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Caption 1</p> 
-  <p><b>PROMPT</b></p> 
+  <p>Stock image of a factory or manufacturing unit. Also, show a calendar with date 3rd April 2017 circled.</p> 
+  <p>TEXT</p> 
+  <p>From 3rd April 2017, non-household (NHH) customers will be able to choose their water and waste water retailers. Services include billing, meter reading, water efficiency services and credit management.</p> 
+  <p>The wholesale element (the company that actually provides the water and waste service) will not change, but Severn Trent Water will no longer deal directly with non-household customers. Communication will be handled through retailers.</p> 
+  <p>PROMPT</p> 
   <p>Select the arrow to find out more.</p> 
-  <p><b>MOBILE PROMPT</b></p> 
-  <p>Scroll down to find out more.</p> 
-  <p>Check if swiping/scrolling action works. If so, change the prompt.</p> 
   <p><b>2</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
+  <p>Show logos of following as:</p> 
+  <p>STW logo + UU logo = Water Plus logo.</p> 
+  <p>TEXT</p> 
+  <p>On 1 June 2016, Severn Trent Water and United Utilities combined their non-household retail business to create a new retailer, Water Plus.</p> 
+  <p>On market opening in April 2017, Severn Trent Water will complete its 'retail exit' to Water Plus. That means all of Severn Trent Water's NHH customers will be served under a Water Plus licence and Severn Trent Water will no longer be able to provide retail services to NHH customers. </p> 
   <p><b>3</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>4</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>5</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>6</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>7</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>8</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>9</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p><b>10</b></p> 
-  <p>Describe here</p> 
-  <p>Write here</p> 
-  <p><b>SPEECH BUBBLE</b></p> 
-  <p>Write here.</p> 
-  <p><b>CAPTION</b></p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Screen audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Reveal audio 1:</p> 
-  <p>projnum_sco_screen_rl1.mp3</p> 
-  <p>Reveal audio 2:</p> 
-  <p>projnum_sco_screen_rl2.mp3</p> 
-  <p>Reveal audio 3:</p> 
-  <p>projnum_sco_screen_rl3.mp3</p> 
-  <p>Reveal audio 4:</p> 
-  <p>projnum_sco_screen_rl4.mp3</p> 
-  <p>Reveal audio 5:</p> 
-  <p>projnum_sco_screen_rl5.mp3</p> 
-  <p>Reveal audio 6:</p> 
-  <p>projnum_sco_screen_rl6.mp3</p> 
-  <p>Reveal audio 7:</p> 
-  <p>projnum_sco_screen_rl7.mp3</p> 
-  <p>Reveal audio 8:</p> 
-  <p>projnum_sco_screen_rl8.mp3</p> 
-  <p>Reveal audio 9:</p> 
-  <p>projnum_sco_screen_rl9.mp3</p> 
-  <p>Reveal audio 10:</p> 
-  <p>projnum_sco_screen_rl10.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>Graphic 1: </p> 
-  <p>projnum_sco_screen_01.ext</p> 
-  <p>Graphic 2:</p> 
-  <p>projnum_sco_screen_02.ext</p> 
-  <p>Graphic 3:</p> 
-  <p>projnum_sco_screen_03.ext</p> 
-  <p>Graphic 4:</p> 
-  <p>projnum_sco_screen_04.ext</p> 
-  <p>Graphic 5:</p> 
-  <p>projnum_sco_screen_05.ext</p> 
-  <p>Graphic 6:</p> 
-  <p>projnum_sco_screen_06.ext</p> 
-  <p>Graphic 7:</p> 
-  <p>projnum_sco_screen_07.ext</p> 
-  <p>Graphic 8:</p> 
-  <p>projnum_sco_screen_08.ext</p> 
-  <p>Graphic 9:</p> 
-  <p>projnum_sco_screen_09.ext</p> 
-  <p>Graphic 10:</p> 
-  <p>projnum_sco_screen_10.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_170</p> 
-  <p><b>SCREEN TYPE</b>: Tabs</p> 
+  <p>Show a pie chart. Show Water Plus's logo on it. Show it divided as 50% for Severn Trent Water (show its logo). Show the other half as United Utilities' logo</p> 
+  <p>TEXT</p> 
+  <p>As Water Plus is 50% owned by Severn Trent Water and 50% owned by United Utilities, Water Plus is a "related" company for the purpose of Severn Trent Water's Instrument of Appointment. </p> 
+  <p>All transactions between Severn Trent Water and Water Plus will therefore need to be at "arm's length", with no preferential treatment compared to other retailers.</p> 
+  <p>This is to ensure that a level playing field is maintained.</p> 
+  <p>PROMPT</p> 
+  <p>Select the Next arrow to continue.</p> 
+  <p>SCREEN 06_110</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
   <p>DESCRIPTION</p> 
-  <p>This is a type of reveal screen with a tabbed layout. The learner selects tabs along the top of the screen to reveal further information. Text, graphics and audio can be incorporated under each tab.</p> 
-  <p>PC/TABLET: Write a short description of screen layout/functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen layout/functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>IMAGE</p> 
-  <p>Write a short description of the imagery that will sit behind the tabbed panel (if required). Drop in any wireframes or mock-ups you have ready.</p> 
-  <p><b>DELETE THIS BOX WHEN YOU'VE READ THE INFORMATION</b></p> 
-  <p>You can set the tabs to reveal text, images or anything else you need.</p> 
-  <p>Try and keep the text for the tabs roughly the same length as each other.</p> 
+  <p>Select each icon to reveal explanation text (mock-up below).</p> 
   <p></p> 
-  <p><b>TAB 1 TITLE</b></p> 
-  <p>Write title</p> 
-  <p><b>TAB 2 TITLE</b></p> 
-  <p>Write title</p> 
-  <p><b>TAB 3 TITLE</b></p> 
-  <p>Write title</p> 
-  <p><b>TAB 4 TITLE</b></p> 
-  <p>Write title</p> 
-  <p><b>TAB 5 TITLE</b></p> 
-  <p>Write title</p> 
-  <p><b>TAB 6 TITLE</b></p> 
-  <p>Write title</p> 
-  <p><b>OPENING AUDIO</b></p> 
-  <p>Drop in the file name for any opening audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>OPENING TEXT (30 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>PROMPT</b></p> 
-  <p>Select each tab to find out more.</p> 
-  <p><b>MOBILE PROMPT</b></p> 
-  <p>Select the text headings to find out more.</p> 
-  <p><b>TAB 1 IMAGE</b></p> 
-  <p>Write a short description of any imagery for tab 1. Drop in any wireframes or mock-ups you have ready. If none are to be used, write "N/A".</p> 
-  <p><b>TAB 1 AUDIO</b></p> 
-  <p>Drop in the file name and transcript for tab 1 audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>TAB 1 TEXT (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TAB 2 IMAGE</b></p> 
-  <p>Write a short description of any imagery for tab 2. Drop in any wireframes or mock-ups you have ready. If none are to be used, write "N/A".</p> 
-  <p><b>TAB 2 AUDIO</b></p> 
-  <p>Drop in the file name and transcript for tab 2 audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>TAB 2 TEXT (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TAB 3 IMAGE</b></p> 
-  <p>Write a short description of any imagery for tab 3. Drop in any wireframes or mock-ups you have ready. If none are to be used, write "N/A".</p> 
-  <p><b>TAB 3 AUDIO</b></p> 
-  <p>Drop in the file name and transcript for tab 3 audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>TAB 3 TEXT (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TAB 4 IMAGE</b></p> 
-  <p>Write a short description of any imagery for tab 4. Drop in any wireframes or mock-ups you have ready. If none are to be used, write "N/A".</p> 
-  <p><b>TAB 4 AUDIO</b></p> 
-  <p>Drop in the file name and transcript for tab 4 audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>TAB 4 TEXT (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TAB 5 IMAGE</b></p> 
-  <p>Write a short description of any imagery for tab 5. Drop in any wireframes or mock-ups you have ready. If none are to be used, write "N/A".</p> 
-  <p><b>TAB 5 AUDIO</b></p> 
-  <p>Drop in the file name and transcript for tab 5 audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>TAB 5 TEXT (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TAB 6 IMAGE</b></p> 
-  <p>Write a short description of any imagery for tab 6. Drop in any wireframes or mock-ups you have ready. If none are to be used, write "N/A".</p> 
-  <p><b>TAB 6 AUDIO</b></p> 
-  <p>Drop in the file name and transcript for tab 6 audio here. If no audio is to be used, write "N/A".</p> 
-  <p><b>TAB 6 TEXT (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Screen audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Reveal audio 1:</p> 
-  <p>projnum_sco_screen_rl1.mp3</p> 
-  <p>Reveal audio 2:</p> 
-  <p>projnum_sco_screen_rl2.mp3</p> 
-  <p>Reveal audio 3:</p> 
-  <p>projnum_sco_screen_rl3.mp3</p> 
-  <p>Reveal audio 4:</p> 
-  <p>projnum_sco_screen_rl4.mp3</p> 
-  <p>Reveal audio 5:</p> 
-  <p>projnum_sco_screen_rl5.mp3</p> 
-  <p>Reveal audio 6:</p> 
-  <p>projnum_sco_screen_rl5.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>Graphic 1: </p> 
-  <p>projnum_sco_screen_01.ext</p> 
-  <p>Graphic 2:</p> 
-  <p>projnum_sco_screen_02.ext</p> 
-  <p>Graphic 3:</p> 
-  <p>projnum_sco_screen_03.ext</p> 
-  <p>Graphic 4:</p> 
-  <p>projnum_sco_screen_04.ext</p> 
-  <p>Graphic 5:</p> 
-  <p>projnum_sco_screen_05.ext</p> 
-  <p>Graphic 6:</p> 
-  <p>projnum_sco_screen_06.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_180</p> 
-  <p><b>SCREEN TYPE</b>: Text reveal</p> 
-  <p>DESCRIPTION</p> 
-  <p>Text headings can be selected to reveal further information in pop-up panels. Text, graphics and audio can all be used in reveals.</p> 
-  <p><b>REVEAL HEADING 1 (10 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>REVEAL HEADING 2 (10 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>REVEAL HEADING 3 (10 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>REVEAL HEADING 4 (10 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>REVEAL HEADING 5 (10 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>OPENING TEXT (30 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>PROMPT</b></p> 
-  <p>Select each…to find out more.</p> 
-  <p><b>TEXT FOR REVEAL 1 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TEXT FOR REVEAL 2 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TEXT FOR REVEAL 3 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TEXT FOR REVEAL 4 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p><b>TEXT FOR REVEAL 5 (50 words max)</b></p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>Screen audio:</p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p>Reveal audio 1:</p> 
-  <p>projnum_sco_screen_rl1.mp3</p> 
-  <p>Reveal audio 2:</p> 
-  <p>projnum_sco_screen_rl2.mp3</p> 
-  <p>Reveal audio 3:</p> 
-  <p>projnum_sco_screen_rl3.mp3</p> 
-  <p>Reveal audio 4:</p> 
-  <p>projnum_sco_screen_rl4.mp3</p> 
-  <p>Reveal audio 5:</p> 
-  <p>projnum_sco_screen_rl5.mp3</p> 
-  <p><b>Graphic filenames</b></p> 
-  <p>Graphic 1: </p> 
-  <p>projnum_sco_screen_01.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_190</p> 
-  <p><b>SCREEN TYPE</b>: Text and graphic</p> 
-  <p>DESCRIPTION</p> 
-  <p><b>This screen presents information, usually with an illustrative graphic/image. There are no learning instructions or interactions. The layout of text and image can vary.</b></p> 
-  <p>PC/TABLET: Write a short description of screen layout/functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen layout/functions that differ from the standard page. Remove if not relevant.</p> 
+  <p>Show four text labels in place of icons</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Key aspects</p> 
+  <p>REVEAL 1</p> 
+  <p>Instrument of Appointment</p> 
+  <p>REVEAL 2</p> 
+  <p>Arm's length</p> 
+  <p>REVEAL 3</p> 
+  <p>Cross-subsidy</p> 
+  <p>REVEAL 4</p> 
+  <p>Level playing field</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Let's now look at some of the key aspects regarding market opening.</p> 
+  <p>PROMPT</p> 
+  <p>Select each heading to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>Severn Trent Water's licence of appointment governs how it should operate.</p> 
+  <p>Licence condition F requires Severn Trent Water to:</p> 
+  <p>"Ensure that every transaction between the Appointed Business and Associated Company (or between the Appointed Business and any other business or activity of the Appointee) is at arm's length, so that neither gives to or receives from the other any cross-subsidy".</p> 
+  <p>Whilst compliance with our licence conditions will not automatically mean we are compliant with competition law, it will mean that, as a business, we are less likely to infringe competition law.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>It is important that Severn Trent Water treats other Severn Trent companies no differently from how it deals with external businesses. It must not give Associated Companies preferential treatment because of its position within the Severn Trent Group.</p> 
+  <p>Water Plus is no different to any other retailer.</p> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Severn Trent Water must pay the correct price for the goods or services it receives from a related Severn Trent company – neither overpaying nor underpaying for the quality of goods or services received.</p> 
+  <p>Conversely, Severn Trent Water must also receive the correct price for services it provides to a related Severn Trent company.</p> 
+  <p>TEXT FOR REVEAL 4 (50 words max)</p> 
+  <p>The new retail market will only be successful if customers and all companies in the market believe there is a 'level playing field'. In other words, existing water companies and their associated retailers do not have an unfair advantage over new companies entering the market.</p> 
+  <p>As an existing water company, we have to ensure we treat all retailers the same.</p> 
+  <p>SCREEN 06_120</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>SCREEN TITLE</p> 
+  <p>What does this mean in practice?</p> 
   <p>IMAGE</p> 
-  <p><b>Write a short description of the imagery for this page - include screen coverage, subject matter, etc. Drop in any wireframes or mock-ups of this page type you have ready.</b></p> 
-  <p>AUDIO </p> 
-  <p>Drop in the file name for any audio here. If no audio is to be used, write "N/A".</p> 
+  <p>Show the following image. Replace the boxes with logos. Under each logo show the text as presented below:</p> 
+  <p> (Refer Slide 39 from ST_Competition_Law_E-learning_v7_17 01 17_KNreview.PPT)</p> 
+  <p>Text under STW logo:</p> 
+  <ul> 
+   <li>Provides water and waste water services under a 'Licence of Appointment'</li> 
+   <li>Price regulated by OFWAT</li> 
+   <li>Paid for by customers</li> 
+  </ul> 
+  <p>Text under Water Plus logo:</p> 
+  <ul> 
+   <li>Self-sufficient retail business</li> 
+   <li>Operates in competitive market</li> 
+  </ul> 
   <p>BODY TEXT</p> 
-  <p>Write here.</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Audio filenames</b></p> 
-  <p>projnum_sco_screen.mp3</p> 
-  <p><b>Graphic filename</b></p> 
-  <p>projnum_sco_screen.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
-  <p>SCREEN 01_200</p> 
-  <p><b>SCREEN TYPE</b>: Video page</p> 
+  <p>As a wholesaler, Severn Trent Water will need to demonstrate that no preferential treatment is given to Water Plus, and that <b>all</b> retailers are treated the same.</p> 
+  <p>SCREEN 06_125</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>IMAGE</p> 
+  <p>Show the following image in a stylised manner. Show the given here below each column:</p> 
+  <p> (Refer Slide 40 from ST_Competition_Law_E-learning_v7_17 01 17_KNreview.PPT)</p> 
+  <p></p> 
+  <p>Text under Price column:</p> 
+  <ul> 
+   <li>All retailers pay the same wholesale charges.</li> 
+  </ul> 
+  <p>Text under Service column:</p> 
+  <ul> 
+   <li>All retailers have the same access to, and can expect, the same level of wholesale service.</li> 
+  </ul> 
+  <p>Text under Information column:</p> 
+  <ul> 
+   <li>All retailers have access to the same information.</li> 
+  </ul> 
+  <p>SCREEN TITLE</p> 
+  <p>Put another way…</p> 
+  <p>BODY TEXT</p> 
+  <p>Severn Trent Water must be able to show that we are maintaining a level playing field in the three key areas shown here.</p> 
+  <p>SCREEN 06_130</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
   <p>DESCRIPTION</p> 
-  <p><b>Key learning points are emphasised using video. Standard video controls are available and there is a transcript option.</b></p> 
-  <p>PC/TABLET: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p>MOBILE: Write a short description of screen functions that differ from the standard page. Remove if not relevant.</p> 
-  <p><b>IMAGE</b></p> 
-  <p>Write a short description of the imagery for this page - include screen coverage, subject matter, etc. Drop in any wireframes or mock-ups of this page type you have ready. </p> 
-  <p>OPENING TEXT</p> 
-  <p>Write here.</p> 
-  <p>PROMPT </p> 
-  <p>Select Play to watch the video.</p> 
-  <p>VIDEO</p> 
-  <p>Instructions: <b>[DELETE INSTRUCTIONS BEFORE COMPLETING SCRIPT PAGE]</b></p> 
-  <p><b>Always write scenes to be filmed using the film industry standard layout, as contained in this template. It is the way our production company partners and the actors are used to working and one page of script in this format (the page layout below in Courier 12) equals one minute of drama. </b></p> 
-  <p><b>There is more information on this kind of formatting here: M:\Production\audio_video\Video\NiceMedia\From_Nice\Script formatting guidelines.rtf</b></p> 
-  <p>To use the template<b>: On a fresh page, ensure ‘Scene Name’ Style is selected (either on the home ribbon above or alt+ctrl+shift+s brings up the Styles window), then start writing.</b></p> 
-  <p><b>When you press return the text style and formatting will automatically cycle through to the style you need. The order it will follow is:</b></p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Level playing field</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Mark, who works for a wholesaler, is good friends with John, who works for a particular retailer.</p> 
+  <p>John asks Mark to provide information about void properties and potential customers. Mark does not usually share this information with all retailers, but decides to share it with John as they are friends.</p> 
+  <p>Could this be seen as anti-competitive behaviour?</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Yes</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>No</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>This information is likely to give the retailer John works for a competitive advantage, so this would be seen as anti-competitive behaviour.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>This information is likely to give the retailer John works for a competitive advantage, so this would be seen as anti-competitive behaviour.</p> 
+  <p>SCREEN 06_140</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives different feedback for correct, incorrect and (optionally) partially correct answers.</p> 
+  <p>Example layout:</p> 
+  <p></p> 
+  <p>Use stock image</p> 
+  <p>SCREEN TITLE</p> 
+  <p>What if…</p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Let's say Mark, who works with the wholesaler, hosts a meeting each quarter where representatives from all retailers are invited to meet and share best practice.</p> 
+  <p>Would this be anti-competitive?</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Yes</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>2</b></p> 
+  <p>No</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right!</p> 
+  <p>Mark is treating all retailers in the same way and no commercially sensitive information is being shared, so this is not anti-competitive.</p> 
+  <p>The wholesaler should also be careful that they are not involved in meetings where the retailers are themselves exchanging sensitive information.</p> 
+  <p>END OF TOPIC PROMPT</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>Sorry, that's not right.</p> 
+  <p>Mark is treating all retailers in the same way and no commercially sensitive information is being shared, so this is not anti-competitive.</p> 
+  <p>The wholesaler should also be careful that they are not involved in meetings where the retailers are themselves exchanging sensitive information.</p> 
+  <p>END OF TOPIC PROMPT</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 7: Powers of investigators</p> 
+  <p>SCREEN 07_100</p> 
+  <p>SCREEN TYPE: Text reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Select each icon to reveal explanation text (mock-up below).</p> 
+  <p></p> 
+  <p>Use text labels instead of icons.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Different powers</p> 
+  <p>REVEAL BUTTON 1</p> 
+  <p>Information requests</p> 
+  <p>REVEAL BUTTON 2</p> 
+  <p>Dawn raids</p> 
+  <p>REVEAL BUTTON 3</p> 
+  <p>Cartels</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>Competition Authorities have extensive investigative powers. These can be used against companies and, in some cases, individual employees or directors.</p> 
+  <p>PROMPT</p> 
+  <p>Select each heading to find out more.</p> 
+  <p>TEXT FOR REVEAL 1 (50 words max)</p> 
+  <p>The CMA or OFWAT can request information from a company in order to assist with a competition investigation. </p> 
+  <p>Any request for information must be relevant, but can include document requests for e-mails, letters, minutes from meetings, diaries, and any other information kept electronically or in hard copy. </p> 
+  <p>It is important to comply with such requests. Line managers, as well as the legal team, must be informed immediately on receipt.</p> 
+  <p>TEXT FOR REVEAL 2 (50 words max)</p> 
+  <p>The CMA or OFWAT may turn up at a company's premises unannounced, enter and search for documents as part of their investigation. This is known as a 'dawn raid'.</p> 
+  <p>If this happens, it is important that we co-operate fully, as obstructing officers from carrying out their investigations is an offence. Severn Trent Water has a 'Dawn Raid Manual' which is available on the information hub and should be reviewed.</p> 
+  <p>Dawn raids may also be part of a criminal investigation. In such instances, inspectors are more likely to have a warrant to exercise additional powers, such as powers to search domestic premises (i.e. employees' houses) and vehicles.</p> 
+  <p>TEXT FOR REVEAL 3 (50 words max)</p> 
+  <p>Section 188 of the Enterprise Act 2002 sets out that it is a criminal offence for two or more competing companies to agree, directly or indirectly, to fix prices, to restrict supply or production, or to enter into bid-rigging or market-sharing arrangements. </p> 
+  <p>The CMA has the power to bring a criminal prosecution for cartel offences and can use their other powers, like dawn raids, to gather further evidence as part of their criminal investigation. </p> 
+  <p>END OF TOPIC PROMPT (*Dev note - this should only appear once each reveal has been selected.)</p> 
+  <p>You have now completed this topic. Go to the menu and select another topic.</p> 
+  <p>Topic 8: Summary</p> 
+  <p>SCREEN 08_100</p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>IMAGE</p> 
+  <p>L:\Projects\STW843_electrical_isolating\from_client\content\new_video_images </p> 
+  <p>SCREEN TITLE</p> 
+  <p>Abuse of a dominant position</p> 
+  <p>BODY TEXT</p> 
+  <p>A dominant position is usually defined as a position of economic strength that allows you to act independently of competitors or customers. It isn't unlawful to be dominant but it is unlawful to abuse your dominant position to hinder effective competition.</p> 
+  <p>Key questions to ask:</p> 
   <ul> 
-   <li>Scene Heading (this should include the location, whether it is interior or exterior and the time of day)</li> 
+   <li>Can the company do what it wants without worrying about the impact on its customers?</li> 
+   <li>Do the customers have a choice of getting the product or service from someone else?</li> 
   </ul> 
+  <p>SCREEN 08_110</p> 
+  <p><b>SCREEN TYPE</b>: Photostory</p> 
+  <p><b>DESCRIPTION</b></p> 
+  <p>A sequence of slides with related text. Layout similar to below.</p> 
+  <p><b>SCREEN TITLE</b></p> 
+  <p>So in summary</p> 
+  <p><b>Frame</b></p> 
+  <p><b>Picture</b></p> 
+  <p><b>Text</b></p> 
+  <p><b>1</b></p> 
+  <p>Show a stock image of 2-3 people working in an office environment</p> 
+  <p>TEXT</p> 
+  <p>Leveraging</p> 
+  <p>This is where a dominant company leverages its dominance in a related market and this affects competition. </p> 
+  <p>For example, where a dominant company subsidises a sister or group company in a different but related market whereby that company obtains an advantage over its competitors.</p> 
+  <p>Key questions to ask: </p> 
   <ul> 
-   <li>Scene Action</li> 
+   <li>Could Severn Trent Water be seen as leveraging its dominance in another market to help a group company? </li> 
+   <li>Will this have an effect of restricting, distorting or preventing competition?</li> 
   </ul> 
+  <p>PROMPT</p> 
+  <p>Select the arrow to find out more.</p> 
+  <p><b>2</b></p> 
+  <p>Show the flowchat of the definition on screen 05_100</p> 
+  <p>TEXT</p> 
+  <p>Anti-competitive agreements</p> 
+  <p>An agreement or concerted practice between two businesses which may affect trade and has as its object the restriction, prevention or distortion of competition.</p> 
+  <p>Key questions to ask: </p> 
   <ul> 
-   <li>Attribution</li> 
+   <li>Are we sharing any commercially sensitive information that may allow a competitor to adjust its own commercial conduct in the market in response to that information or compromise the independence of its decision making?</li> 
+   <li>Are we placing bids on tenders independently and without discussing with other competitors?</li> 
+   <li>Are we entering into any agreements to divide the market with our competitors or fix prices for products or services?</li> 
   </ul> 
+  <p><b>3</b></p> 
+  <p>Show the image from frame 3 of 06_120. Do not show the text under each column.</p> 
+  <p>TEXT</p> 
+  <p>Level playing field – market opening</p> 
+  <p>We need to ensure that we treat all retailers in the same way and we apply the Principle of Equivalence in Price, Service and Information. </p> 
+  <p>Key questions to ask:</p> 
   <ul> 
-   <li>Dialogue</li> 
+   <li>Are we treating all retailers the same?</li> 
+   <li>Are we providing a different service or information to a particular retailer which may alter the level playing field?</li> 
   </ul> 
+  <p>If you have any concerns in relation to any of these questions please contact the Legal Team.</p> 
+  <p>PROMPT</p> 
+  <p>Select the Next arrow to continue.</p> 
+  <p>SCREEN 08_120</p> 
+  <p>SCREEN TYPE: Graphic reveal</p> 
+  <p>DESCRIPTION</p> 
+  <p>Select each icon to reveal explanation text (mock-up below).</p> 
+  <p></p> 
+  <p>There will be 4 icons to represent each way of reporting. Selecting each icon will display a brief description.</p> 
+  <p>SCREEN TITLE</p> 
+  <p>How to report a concern</p> 
+  <p>GRAPHIC 1</p> 
+  <p>Show an icon for a conversation between an employee and their line manager</p> 
+  <p>GRAPHIC 2</p> 
+  <p>Show an icon for CEO</p> 
+  <p>GRAPHIC 3</p> 
+  <p>Show an icon of a telephone</p> 
+  <p>GRAPHIC 4</p> 
+  <p>Show an icon for policy documents</p> 
+  <p>OPENING TEXT (30 words max)</p> 
+  <p>There are various ways you can report a concern.</p> 
+  <p>PROMPT</p> 
+  <p>Select each image to find out more.</p> 
+  <p>TEXT FOR GRAPHIC 1 (50 words max)</p> 
+  <p>Any person who discovers or suspects anti-competitive behaviour should first raise concerns through their Line Manager.</p> 
+  <p>TEXT FOR GRAPHIC 2 (50 words max)</p> 
+  <p>Concerns may also be raised with any of the following Severn Trent Group Senior Executives: </p> 
   <ul> 
-   <li>Attribution</li> 
+   <li>The CEO</li> 
+   <li>The HR Director</li> 
+   <li>Group General Counsel and Company Secretary.</li> 
   </ul> 
-  <ul> 
-   <li>Dialogue</li> 
-  </ul> 
-  <ul> 
-   <li>etc</li> 
-  </ul> 
-  <p>When you want to <b>start a new scene select the ‘Scene Name’ style</b> on a fresh line and write.</p> 
-  <p>To <b>insert additional scene action between blocks of dialogue select Scene Action</b> on a fresh line.</p> 
-  <p><b>To insert scene transition direction select Transition</b> on a fresh line. </p> 
-  <p><b>Example:</b></p> 
-  <p>Scene #1 - INt. location #1 - day</p> 
-  <p>The scene action / description should only include things that can be seen and heard e.g. The two actors face each other across a broad table.</p> 
-  <p>Actor 1</p> 
-  <p>(Assertively)</p> 
-  <p>I will speak this scripted dialogue.</p> 
-  <p>Actor 2</p> 
-  <p>I also have scripted dialogue I can speak.</p> 
-  <p>Actor 3 enters the room.</p> 
-  <p>actor 3</p> 
-  <p>(Feeling left out)</p> 
-  <p>I too have dialogue attributed to me.</p> 
-  <p>Dissolve to:</p> 
-  <p>scene #2</p> 
-  <p><b>TRANSCRIPT</b></p> 
-  <p>Write any text for the transcript here. If no transcript is required, put "N/A".</p> 
-  <p>DEVELOPMENT INFO - for internal use only</p> 
-  <p><b>Video filenames</b></p> 
-  <p>projnum_sco_screen.mp4</p> 
-  <p><b>Graphic filename</b></p> 
-  <p>projnum_sco_screen.ext</p> 
-  <p><b>XML filename</b></p> 
-  <p>projnum_sco_screen.xml</p> 
-  <p><b>Comments</b></p> 
+  <p>TEXT FOR GRAPHIC 3 (50 words max)</p> 
+  <p>We recognise that individuals may feel vulnerable in certain circumstances. In such cases, employees are encouraged to raise concerns through the Safecall Whistleblowing Helpline. </p> 
+  <p>This helpline is operated by an independent company. The details of the numbers can be found in the Group Speak Up Policy.</p> 
+  <p>TEXT FOR GRAPHIC 4 (50 words max)</p> 
+  <p>Further guidance on competition law can be found in the Group Competition and Competitive Information Policy documents which will be available through the Resources tab of your Learning Management System. </p> 
+  <p>Alternatively, please feel free to get in touch with the Legal Team with any queries.</p> 
+  <p>END OF TOPIC PROMPT(*Dev note - this should only appear once each reveal has been selected.)</p> 
+  <p>You have now completed this topic. Go to the menu and have a go at the quiz.</p> 
+  <p>Topic 9: Quiz</p> 
+  <p><b>SCREEN 09_100</b></p> 
+  <p>SCREEN TYPE: Text and graphic</p> 
+  <p>DESCRIPTION</p> 
+  <p>Quiz start screen</p> 
+  <p>IMAGE</p> 
+  <p>Use stock image</p> 
+  <p>SCREEN TITLE</p> 
+  <p>Welcome to this quiz</p> 
+  <p>BODY TEXT</p> 
+  <p>This quiz will check your understanding of competition law by asking you <b>ten</b> questions.</p> 
+  <p>You have to get at least <b>eight</b> of these questions right to pass the quiz and complete this course. Some questions have more than one correct answer so you'll need to identify all the correct answers to get these questions right.</p> 
+  <p>You can attempt the quiz as many times as you need to. If you don't pass, you'll be prompted to go to the menu and try again.</p> 
+  <p>SCREEN 09_110</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of these may be a consequence for breaching competition law?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p><b>OPTIONS (15 words max. per option)</b></p> 
+  <p><b>1</b></p> 
+  <p>A custodial sentence of up to 5 years </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>Fines of up to 10% of group worldwide turnover</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>A custodial sentence of 10 years</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>An impact on share price</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_120</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Is this statement true or false?</p> 
+  <p>Severn Trent Water is in a dominant position for providing waste and water services.</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>True </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>False</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_130</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Is this statement true or false?</p> 
+  <p>As a general rule, to be dominant in a market a company needs to hold more than 40% of the market.</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>True </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>False</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_140</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of these could be seen as an abuse of dominant position?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Predatory pricing</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>Margin squeeze</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>Leveraging </p> 
+  <p><b>Correct</b></p> 
+  <p><b>4</b></p> 
+  <p>Bid rigging</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_150</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of these are examples of anti-competitive agreements?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Sharing commercially sensitive information </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>Bid rigging</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>Leveraging dominance in another market</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>Predatory pricing</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_160</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of these could be classed as commercially sensitive information and therefore should not be shared with competitors?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Information in the public domain </p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>2</b></p> 
+  <p>Information on pricing and strategy</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>Information on future product specifications</p> 
+  <p><b>Correct</b></p> 
+  <p><b>4</b></p> 
+  <p>Information on new legal developments and their interpretation</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_170</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>What do regulators have the power to do?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Search company premises</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>Take memory sticks, documents and computers</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>Destroy documents</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>Look at personal e-mails and diaries</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_180</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Is this statement true or false?</p> 
+  <p>Leveraging a dominant position is where a dominant company subsidises a sister or group company in a different but related market and, as a result of this, the sister company obtains an advantage over its competitors.</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>True </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>False</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_190</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of these statements are true?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Severn Trent Water needs to ensure that it has an arm's-length relationship with its group companies </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>A Wholesaler needs to treat its retailer in the same way as other retailers</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>A Wholesaler can treat its retailer more favourably than others</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>A Wholesaler can share more information with its retailer than other retailers</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_200</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of the following statements are true?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Predatory pricing occurs when a business charges unfairly high prices. </p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>2</b></p> 
+  <p>Anti-competitive agreements can only be made in writing. </p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>3</b></p> 
+  <p>Anti-competitive agreements can be made orally or in writing.</p> 
+  <p><b>Correct</b></p> 
+  <p><b>4</b></p> 
+  <p>Abusive pricing could be excessive, discriminatory and/ or predatory.</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_210</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Which of the following statements are true?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Price fixing could occur where a manufacturer and customer get together to agree resale prices</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>An agreement can only be made in writing, not orally</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>3</b></p> 
+  <p>Sharing interpretation of upcoming changes in legislation is anti-competitive and will breach competition law</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>Sharing information relating to future strategy and trading terms is anti-competitive and will breach competition law</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_220</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Aqua Ltd. has successfully applied to serve a new development within Severn Trent Water's area of appointment called 'The Oaks'. Aqua Ltd. requires a bulk supply of water from Severn Trent Water to serve the Oaks. </p> 
+  <p>Which one of the following is true?</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Severn Trent Water can charge the Aqua Ltd. a price that ensures a high level of profit, which it can then pass onto its customers</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>2</b></p> 
+  <p>Severn Trent Water can charge a premium for the conveyance of water within its network</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>3</b></p> 
+  <p>Severn Trent Water can inform its own downstream retail business in case it wishes to approach the developer to discuss the possibility of Severn Trent Water serving 'The Oaks' directly</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>Severn Trent Water should deal with the request in confidence and charge a price in line with the wholesale cost of its own downstream business to Aqua Ltd. for the bulk supply</p> 
+  <p><b>Correct</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_230</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>When submitting bids on behalf of Aqua UK Ltd., which two of the following should you do?</p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Ensure that any decisions on whether to submit a bid or the terms of a bid are made independently by Aqua UK Ltd.</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>Discuss a specific tender opportunity with competitors who may also be proposing to submit a bid</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>3</b></p> 
+  <p>Keep a written record of how decisions on bids are reached</p> 
+  <p><b>Correct</b></p> 
+  <p><b>4</b></p> 
+  <p>Reach an agreement with a competitor about how to respond to a specific tender opportunity</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_240</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Water Fittings Made Easy Ltd (the "manufacturer") makes circa 50% of the water fittings supplied to the UK. They have a group company Water Fittings Supply Limited (WFSL). WFSL is a distributor of water fittings and supplies them directly to customers. As they are group companies the manufacturer gives a big discount to WFSL which enables them to price water fittings at a much lower price than their competitors. </p> 
+  <p>What competition law issues do we need to consider? </p> 
+  <p>PROMPT</p> 
+  <p>Select all answers that apply, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Leveraging a dominant position </p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>Margin squeeze</p> 
+  <p><b>Correct</b></p> 
+  <p><b>3</b></p> 
+  <p>Anti-competitive agreements</p> 
+  <p><b>Incorrect</b></p> 
+  <p><b>4</b></p> 
+  <p>Price fixing</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_250</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Is this statement true or false?</p> 
+  <p>Severn Trent Water's licence sets out that every transaction between the Appointed Business and Associated Company should be at arm's length, so that neither gives to or receives from the other any cross-subsidy. This means that Severn Trent Water must deal with another Severn Trent company no differently to how it would deal with an external business.</p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>True</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>False</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_260</p> 
+  <p>SCREEN TYPE: Multiple choice question </p> 
+  <p>DESCRIPTION</p> 
+  <p>The learner answers a question by choosing an option or options from a list and receives feedback on whether the answer is correct or not.</p> 
+  <p>IMAGE</p> 
+  <p>An icon style graphic will appear on each question screen, for example:</p> 
+  <p></p> 
+  <p>QUESTION TEXT (30 words max)</p> 
+  <p>Sales Executives for two companies meet at a social event. They both provide services in Coventry and Leamington. Amongst other things, whilst chatting both Sales Executives agree that one of them will provide services to Coventry and the other will provide services to Leamington. </p> 
+  <p>Do you think this is an anti-competitive agreement? </p> 
+  <p>PROMPT</p> 
+  <p>Select your answer, then Confirm.</p> 
+  <p>OPTIONS (15 words max. per option)</p> 
+  <p><b>1</b></p> 
+  <p>Yes</p> 
+  <p><b>Correct</b></p> 
+  <p><b>2</b></p> 
+  <p>No</p> 
+  <p><b>Incorrect</b></p> 
+  <p>CORRECT TEXT FEEDBACK (50 words max)</p> 
+  <p>That's right.</p> 
+  <p>FAIL TEXT FEEDBACK (50 words max)</p> 
+  <p>That's not right.</p> 
+  <p>SCREEN 09_270</p> 
+  <p>SCREEN TYPE: Score</p> 
+  <p>DESCRIPTION</p> 
+  <p>Quiz end screen</p> 
+  <p>BODY TEXT (PASS)</p> 
+  <p>You scored XX%.</p> 
+  <p>You need to score at least 80% to pass this quiz and complete the course.</p> 
+  <p>You may wish to revisit the topics before trying the quiz again.</p> 
+  <p><b>PROMPT (PASS)</b></p> 
+  <p>Select the Menu button or Retake quiz to attempt the quiz again.</p> 
+  <p>BODY TEXT (FAIL)</p> 
+  <p>You scored XX%.</p> 
+  <p>Well done! You've passed the quiz and completed this course.</p> 
+  <p>PROMPT (FAIL)</p> 
+  <p>You can now leave the course by selecting the Close button.</p> 
  </body>
 </html>

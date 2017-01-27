@@ -37,8 +37,7 @@ public class TextGraphic extends XMLEditor{
 		introText = introText + prompt;
 
 		Node text = getNodeById("text", "screentext");
-		CDATASection cdata = doc.createCDATASection(introText);
-		replaceText(text,cdata);		
+		replaceText(text,introText,"screentext");		
 	}
 
 	

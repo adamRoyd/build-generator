@@ -122,7 +122,7 @@ public class RevealGraphic extends XMLEditor{
 			}
 			
 			revealText = getHeadingContent("TEXT FOR REVEAL " + i);
-			replaceText(revealNode, doc.createCDATASection(revealText));
+			replaceText(revealNode, revealText);
 			
 			//AMEND CLICK IMAGE PATHS
 			if(clickNodeType.equals("image")){
@@ -146,8 +146,8 @@ public class RevealGraphic extends XMLEditor{
 		prompt = addClass(prompt,"prompt");
 		openingText = openingText + prompt;
 		
-		Node introText = doc.getElementsByTagName("text").item(0);
-		replaceText(introText, doc.createCDATASection(openingText));		
+		Node introText = getNodeById("text", "screentext");
+		replaceText(introText, openingText, "screentext");		
 	}
 	
 }

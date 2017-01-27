@@ -71,6 +71,7 @@ public class Photostory extends XMLEditor{
 	private void editCellContents(ArrayList<String> cellList) {
 		
 			Node textNode;
+			Node imageNode;
 			CDATASection cdata;
 			Node custom = doc.getElementsByTagName("custom").item(0);
 			
@@ -89,7 +90,6 @@ public class Photostory extends XMLEditor{
 			titleText = addClass(titleText,"title");
 			promptText = addClass(promptText,"prompt");
 			text = titleText + speechText + captionText + text + promptText;
-			cdata = doc.createCDATASection(text);
 
 
 			//get text node
@@ -97,14 +97,15 @@ public class Photostory extends XMLEditor{
 
 			
 			
-			replaceText(textNode,cdata);
+			replaceText(textNode,text);
 			
 			
 			//edit image path
-			//editImagePath("cell" + cellNumber + "_image", "_0" + cellNumber,"jpg");
+			imageNode = ((Element) cellNodeList.item(cellNumber)).getElementsByTagName("image").item(0);
+			editImagePath(imageNode, "_0" + cellNumber,"jpg");
 			
 			//check asset
-			//checkImageAsset("_0" + cellNumber);
+			checkImageAsset("_0" + cellNumber);
 
 			cellNumber++;
 		}
@@ -190,8 +191,8 @@ public class Photostory extends XMLEditor{
 		introText = introText + prompt;
 
 		Node text = getNodeById("text", "screentext");
-		CDATASection cdata = doc.createCDATASection(introText);
-		replaceText(text,cdata);		
+
+		replaceText(text,introText, "screentext");		
 	}	
 
 }

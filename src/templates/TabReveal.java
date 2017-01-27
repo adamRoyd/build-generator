@@ -62,7 +62,7 @@ public class TabReveal extends XMLEditor{
 			
 			tabText = getHeadingContent("TAB " + (i + 1) + " TEXT");
 			
-			replaceText(revealTextNode, doc.createCDATASection(tabText));
+			replaceText(revealTextNode, tabText);
 		}
 	}
 
@@ -77,7 +77,7 @@ public class TabReveal extends XMLEditor{
 			
 			click = clicks.item(i);
 			tabTitle = getHeadingContent("TAB " + i + " TITLE");
-			replaceText(click, doc.createCDATASection(tabTitle));
+			replaceText(click, tabTitle);
 		}		
 	}
 
@@ -147,8 +147,7 @@ public class TabReveal extends XMLEditor{
 		introText = introText + prompt;
 
 		Node text = getNodeById("text", "screentext");
-		CDATASection cdata = doc.createCDATASection(introText);
-		replaceText(text,cdata);		
+		replaceText(text,introText);		
 	}
 
 	

@@ -39,8 +39,8 @@ public class Video extends XMLEditor{
 		prompt = addClass(prompt,"prompt");
 		introText = title + introText + prompt;		
 		Node textNode = getNodeById("text", "screentext");
-		CDATASection cdata = doc.createCDATASection(introText);
-		replaceText(textNode, cdata);		
+	
+		replaceText(textNode, introText);		
 	}
 
 	private void addTranscript() {

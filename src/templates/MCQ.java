@@ -39,9 +39,9 @@ public class MCQ extends XMLEditor{
 		prompt = addClass(prompt,"prompt");
 		
 		introText = introText + "\n" + prompt;	
-		CDATASection question = doc.createCDATASection(introText);
+
 		Node introTextNode = getNodeById("text", "screentext");
-		replaceText(introTextNode,question);
+		replaceText(introTextNode,introText, "screentext");
 	};		
 	
 	private void editOptions() {
@@ -78,8 +78,7 @@ public class MCQ extends XMLEditor{
 			/////OPTION TEXT/////
 			String optionText = it.next();
 			//System.out.println("OPTION TEXT" + optionText);
-			cdata = doc.createCDATASection(optionText);
-			replaceText(option,cdata);
+			replaceText(option,optionText);
 			
 			////TRUE OR FALSE ATTRIBUTE////
 			String correct = it.next();
@@ -103,21 +102,6 @@ public class MCQ extends XMLEditor{
 		}
 		
 	}
-	
-	protected void editFeedbacks(){
 
-		CDATASection pass = doc.createCDATASection(getHeadingContent("CORRECT TEXT"));
-		CDATASection partial = doc.createCDATASection(getHeadingContent("PARTIAL TEXT"));
-		CDATASection fail = doc.createCDATASection(getHeadingContent("FAIL TEXT"));
-		
-		Node passNode = getNodeById("text", "feedback_pass");
-		Node partialNode = getNodeById("text", "feedback_partial");
-		Node failNode = getNodeById("text", "feedback_fail");		
-		
-		replaceText(passNode,pass);
-		replaceText(partialNode,partial);
-		replaceText(failNode,fail);
-	
-	}	
 
 }
